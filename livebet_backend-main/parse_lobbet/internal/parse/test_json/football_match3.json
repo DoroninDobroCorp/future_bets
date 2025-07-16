@@ -1,0 +1,668 @@
+{
+  "IMatchLiveContainer": {
+    "matches": [
+      {
+        "id": 22509407,
+        "round": 24101,
+        "matchCode": 20537,
+        "leagueId": 157721,
+        "home": "Cardiff U21",
+        "away": "Watford U21",
+        "kickOffTime": 1734634800000,
+        "status": 0,
+        "matchResult": {
+          "resultType": "TwoHalfTimes",
+          "halfTime": {
+            "h": 1,
+            "a": 0,
+            "probability": 0.0
+          },
+          "fullTime": {
+            "h": 3,
+            "a": 1,
+            "probability": 0.0
+          },
+          "currentScore": {
+            "h": 3,
+            "a": 1,
+            "probability": 0.0
+          },
+          "firstGoal": "UNKNOWN_WAIT",
+          "lastGoal": "UNKNOWN_WAIT",
+          "status": "SCHEDULED",
+          "scores": [
+            {
+              "h": 1,
+              "a": 0,
+              "probability": 0.0
+            },
+            {
+              "h": 2,
+              "a": 1,
+              "probability": 0.0
+            }
+          ],
+          "toNextRound": "NORESULT",
+          "redCardScore": {
+            "h": 0,
+            "a": 0,
+            "probability": 0.0
+          },
+          "redCardHtScore": {
+            "h": 0,
+            "a": 0,
+            "probability": 0.0
+          },
+          "yellowCardScore": {
+            "h": 1,
+            "a": 2,
+            "probability": 0.0
+          },
+          "yellowCardHtScore": {
+            "h": 0,
+            "a": 2,
+            "probability": 0.0
+          },
+          "cornerScore": {
+            "h": 5,
+            "a": 1,
+            "probability": 0.0
+          },
+          "cornerHtScore": {
+            "h": 3,
+            "a": 0,
+            "probability": 0.0
+          },
+          "tieBreakScores": [],
+          "currentMinute": "91",
+          "resultLocked": false,
+          "phase": "SECOND_HALF",
+          "matchTurnoverStatus": "UNKNOWN_WAIT",
+          "firstGoalWay": "UNKNOWN",
+          "firstRestartType": "UNKNOWN",
+          "extendedMatchResult": {
+            "periods": null,
+            "dartsPeriods": null,
+            "winWay": null,
+            "playedRoundsNumber": null,
+            "allRoundsPlayed": null,
+            "m1Score": null,
+            "assistScore": null,
+            "outsScore": null,
+            "foulsScore": null,
+            "ballPossessionScore": null,
+            "goalOutsScore": null,
+            "savesScore": null,
+            "correctPassessScore": null,
+            "offsidesScore": null,
+            "substitutionsScore": null,
+            "pasPctSco": null,
+            "gkSco": null,
+            "tacSco": null,
+            "varSco": null,
+            "inj1p": null,
+            "inj2p": null,
+            "yc": null,
+            "rc": null,
+            "1stCA": null,
+            "PLDD": null,
+            "PLTD": null,
+            "PLRQ1": null,
+            "PLT": null,
+            "PLS": null,
+            "PLB": null
+          },
+          "ownGoal": "UNKNOWN_WAIT",
+          "wayToQualify": "UNKNOWN",
+          "resultConfirmed": false
+        },
+        "kickOffTimeStr": "19.12. 20:00",
+        "brMatchId": 53030643,
+        "leagueName": "ENGLAND, Premier League Cup",
+        "sport": "S",
+        "phase": "SECOND_HALF",
+        "messageType": 0,
+        "currentPhaseMinute": "90+",
+        "liveStatus": 1,
+        "bets": [
+          {
+            "id": 5309279664,
+            "liveBetCode": 1074,
+            "liveBetCaption": "OSTATAK MEČA",
+            "liveBetStatus": "U",
+            "orderNumber": 3700,
+            "picks": [
+              {
+                "liveBetPickCode": 3038,
+                "liveBetPickLabel": "ft ost. 1",
+                "oddValue": 11.0,
+                "specialValue": "3:1",
+                "specialDisplay": "3:1",
+                "caption": "ft ost. 1",
+                "mainPick": false,
+                "position": 1,
+                "tipTypeCode": 50915
+              },
+              {
+                "liveBetPickCode": 3039,
+                "liveBetPickLabel": "ft ost. X",
+                "oddValue": 1.12,
+                "specialValue": "3:1",
+                "specialDisplay": "3:1",
+                "caption": "ft ost. X",
+                "mainPick": false,
+                "position": 2,
+                "tipTypeCode": 50916
+              },
+              {
+                "liveBetPickCode": 3040,
+                "liveBetPickLabel": "ft ost. 2",
+                "oddValue": 11.0,
+                "specialValue": "3:1",
+                "specialDisplay": "3:1",
+                "caption": "ft ost. 2",
+                "mainPick": false,
+                "position": 3,
+                "tipTypeCode": 50917
+              }
+            ],
+            "specialValue": "3:1",
+            "tipClassTypeCode": 6,
+            "topPosition": 1,
+            "specialBetValueType": "CORRECT_SCORE",
+            "specialValuePick": "3:1",
+            "multyBet": false,
+            "disabled": false,
+            "lineCode": 1,
+            "betPickGroupId": 3580,
+            "betPickGroupIds": [
+              3580
+            ]
+          },
+          {
+            "id": 5309279590,
+            "liveBetCode": 1158,
+            "liveBetCaption": "POSTIŽE GOL",
+            "liveBetStatus": "U",
+            "orderNumber": 13054,
+            "picks": [
+              {
+                "liveBetPickCode": 3224,
+                "liveBetPickLabel": "ft 5. gol 1",
+                "oddValue": 7.7,
+                "specialValue": "5",
+                "caption": "ft 5. gol 1",
+                "mainPick": false,
+                "position": 1,
+                "tipTypeCode": 50926
+              },
+              {
+                "liveBetPickCode": 3225,
+                "liveBetPickLabel": "ft 5. gol X",
+                "oddValue": 1.12,
+                "specialValue": "5",
+                "caption": "ft 5. gol X",
+                "mainPick": false,
+                "position": 2,
+                "tipTypeCode": 50927
+              },
+              {
+                "liveBetPickCode": 3226,
+                "liveBetPickLabel": "ft 5. gol 2",
+                "oddValue": 10.5,
+                "specialValue": "5",
+                "caption": "ft 5. gol 2",
+                "mainPick": false,
+                "position": 3,
+                "tipTypeCode": 50928
+              }
+            ],
+            "specialValue": "5",
+            "tipClassTypeCode": 24,
+            "topPosition": 3,
+            "specialBetValueType": "GOAL",
+            "specialValuePick": "5",
+            "multyBet": false,
+            "disabled": false,
+            "lineCode": 5,
+            "betPickGroupId": 3581,
+            "betPickGroupIds": [
+              3581
+            ]
+          },
+          {
+            "id": 5309267100,
+            "liveBetCode": 0,
+            "liveBetCaption": "UKUPNO GOLOVA UŽIVO",
+            "liveBetStatus": "U",
+            "orderNumber": 14100,
+            "picks": [
+              {
+                "liveBetPickCode": 1054,
+                "liveBetPickLabel": "gol. uk<",
+                "oddValue": 1.12,
+                "specialValue": "4.5",
+                "specialDisplay": "4.5",
+                "caption": "gol. uk<",
+                "mainPick": true,
+                "position": 1,
+                "tipTypeCode": 228
+              },
+              {
+                "liveBetPickCode": 1055,
+                "liveBetPickLabel": "gol. uk>",
+                "oddValue": 4.85,
+                "specialValue": "4.5",
+                "specialDisplay": "4.5",
+                "caption": "gol. uk>",
+                "mainPick": true,
+                "position": 3,
+                "tipTypeCode": 227
+              }
+            ],
+            "tipClassTypeCode": 21,
+            "specialBetValueType": "OVER_UNDER",
+            "specialValuePick": "4.5",
+            "multyBet": true,
+            "lineCode": 5,
+            "betPickGroupId": 3584,
+            "picksPerRow": 2,
+            "betPickGroupIds": [
+              3584
+            ]
+          },
+          {
+            "id": 5309267317,
+            "liveBetCode": 0,
+            "liveBetCaption": "TIM1 UKUPNO GOLOVA",
+            "liveBetStatus": "U",
+            "orderNumber": 20700,
+            "picks": [
+              {
+                "liveBetPickCode": 1591,
+                "liveBetPickLabel": "tim1gol uk<",
+                "oddValue": 1.04,
+                "specialValue": "3.5",
+                "specialDisplay": "3.5",
+                "caption": "tim1gol uk<",
+                "mainPick": true,
+                "position": 1,
+                "tipTypeCode": 355
+              },
+              {
+                "liveBetPickCode": 1592,
+                "liveBetPickLabel": "tim1gol uk>",
+                "oddValue": 7.0,
+                "specialValue": "3.5",
+                "specialDisplay": "3.5",
+                "caption": "tim1gol uk>",
+                "mainPick": true,
+                "position": 3,
+                "tipTypeCode": 356
+              }
+            ],
+            "tipClassTypeCode": 28,
+            "specialBetValueType": "OVER_UNDER",
+            "specialValuePick": "3.5",
+            "multyBet": true,
+            "lineCode": 6,
+            "betPickGroupId": 3587,
+            "picksPerRow": 2,
+            "betPickGroupIds": [
+              3587
+            ]
+          },
+          {
+            "id": 5309267381,
+            "liveBetCode": 0,
+            "liveBetCaption": "KONAČAN ISHOD",
+            "liveBetStatus": "U",
+            "orderNumber": 22010,
+            "picks": [
+              {
+                "liveBetPickCode": 10878,
+                "liveBetPickLabel": "ds 1X",
+                "oddValue": 0.0,
+                "caption": "ds 1X",
+                "mainPick": false,
+                "position": 1,
+                "tipTypeCode": 7
+              },
+              {
+                "liveBetPickCode": 10882,
+                "liveBetPickLabel": "ds X2",
+                "oddValue": 56.0,
+                "caption": "ds X2",
+                "mainPick": false,
+                "position": 1,
+                "tipTypeCode": 9
+              },
+              {
+                "liveBetPickCode": 10880,
+                "liveBetPickLabel": "ds 12",
+                "oddValue": 0.0,
+                "caption": "ds 12",
+                "mainPick": false,
+                "position": 1,
+                "tipTypeCode": 8
+              }
+            ],
+            "tipClassTypeCode": 18,
+            "multyBet": true,
+            "lineCode": 18,
+            "betPickGroupId": 3903,
+            "picksPerRow": 3,
+            "betPickGroupIds": [
+              3903,
+              3130
+            ]
+          },
+          {
+            "id": 5309272046,
+            "liveBetCode": 5975,
+            "liveBetCaption": "HENDIKEP",
+            "liveBetStatus": "U",
+            "orderNumber": 5558502,
+            "picks": [
+              {
+                "liveBetPickCode": 14090,
+                "liveBetPickLabel": "h 1",
+                "oddValue": 11.0,
+                "specialValue": "-2",
+                "specialDisplay": "-2",
+                "caption": "h 1",
+                "mainPick": false,
+                "position": 1,
+                "tipTypeCode": 201
+              },
+              {
+                "liveBetPickCode": 14091,
+                "liveBetPickLabel": "h X",
+                "oddValue": 1.12,
+                "specialValue": "-2",
+                "specialDisplay": "-2",
+                "caption": "h X",
+                "mainPick": false,
+                "position": 2,
+                "tipTypeCode": 202
+              },
+              {
+                "liveBetPickCode": 14092,
+                "liveBetPickLabel": "h 2",
+                "oddValue": 11.0,
+                "specialValue": "-2",
+                "specialDisplay": "-2",
+                "caption": "h 2",
+                "mainPick": false,
+                "position": 3,
+                "tipTypeCode": 203
+              }
+            ],
+            "specialValue": "-2",
+            "tipClassTypeCode": 3,
+            "specialBetValueType": "HANDICAP",
+            "specialValuePick": "-2",
+            "multyBet": false,
+            "disabled": false,
+            "lineCode": 3,
+            "betPickGroupId": 3156,
+            "betPickGroupIds": [
+              3156
+            ]
+          },
+          {
+            "id": 5309267149,
+            "liveBetCode": 0,
+            "liveBetCaption": "KONAČAN ISHOD TAČAN REZULTAT",
+            "liveBetStatus": "U",
+            "orderNumber": 5566392,
+            "picks": [
+              {
+                "liveBetPickCode": 66889,
+                "liveBetPickLabel": "tr 4:0",
+                "oddValue": 0.0,
+                "caption": "tr 4:0",
+                "mainPick": false,
+                "position": 1,
+                "tipTypeCode": 58
+              },
+              {
+                "liveBetPickCode": 66890,
+                "liveBetPickLabel": "tr 4:1",
+                "oddValue": 8.4,
+                "caption": "tr 4:1",
+                "mainPick": false,
+                "position": 1,
+                "tipTypeCode": 72
+              },
+              {
+                "liveBetPickCode": 66891,
+                "liveBetPickLabel": "tr 4:2",
+                "oddValue": 50.0,
+                "caption": "tr 4:2",
+                "mainPick": false,
+                "position": 1,
+                "tipTypeCode": 85
+              },
+              {
+                "liveBetPickCode": 66892,
+                "liveBetPickLabel": "tr 4:3",
+                "oddValue": 0.0,
+                "caption": "tr 4:3",
+                "mainPick": false,
+                "position": 1,
+                "tipTypeCode": 96
+              },
+              {
+                "liveBetPickCode": 66893,
+                "liveBetPickLabel": "tr 3:4",
+                "oddValue": 0.0,
+                "caption": "tr 3:4",
+                "mainPick": false,
+                "position": 1,
+                "tipTypeCode": 97
+              },
+              {
+                "liveBetPickCode": 66894,
+                "liveBetPickLabel": "tr 2:4",
+                "oddValue": 0.0,
+                "caption": "tr 2:4",
+                "mainPick": false,
+                "position": 1,
+                "tipTypeCode": 86
+              },
+              {
+                "liveBetPickCode": 66895,
+                "liveBetPickLabel": "tr 1:4",
+                "oddValue": 0.0,
+                "caption": "tr 1:4",
+                "mainPick": false,
+                "position": 1,
+                "tipTypeCode": 73
+              },
+              {
+                "liveBetPickCode": 66896,
+                "liveBetPickLabel": "tr 0:4",
+                "oddValue": 0.0,
+                "caption": "tr 0:4",
+                "mainPick": false,
+                "position": 1,
+                "tipTypeCode": 59
+              },
+              {
+                "liveBetPickCode": 66905,
+                "liveBetPickLabel": "tr 4:4",
+                "oddValue": 0.0,
+                "caption": "tr 4:4",
+                "mainPick": false,
+                "position": 1,
+                "tipTypeCode": 106
+              },
+              {
+                "liveBetPickCode": 15771,
+                "liveBetPickLabel": "tr 0:0",
+                "oddValue": 0.0,
+                "caption": "tr 0:0",
+                "mainPick": false,
+                "position": 1,
+                "tipTypeCode": 51
+              },
+              {
+                "liveBetPickCode": 15803,
+                "liveBetPickLabel": "tr 1:0",
+                "oddValue": 0.0,
+                "caption": "tr 1:0",
+                "mainPick": false,
+                "position": 1,
+                "tipTypeCode": 52
+              },
+              {
+                "liveBetPickCode": 15775,
+                "liveBetPickLabel": "tr 2:0",
+                "oddValue": 0.0,
+                "caption": "tr 2:0",
+                "mainPick": false,
+                "position": 1,
+                "tipTypeCode": 54
+              },
+              {
+                "liveBetPickCode": 15777,
+                "liveBetPickLabel": "tr 3:0",
+                "oddValue": 0.0,
+                "caption": "tr 3:0",
+                "mainPick": false,
+                "position": 1,
+                "tipTypeCode": 56
+              },
+              {
+                "liveBetPickCode": 15779,
+                "liveBetPickLabel": "tr 0:1",
+                "oddValue": 0.0,
+                "caption": "tr 0:1",
+                "mainPick": false,
+                "position": 1,
+                "tipTypeCode": 53
+              },
+              {
+                "liveBetPickCode": 15781,
+                "liveBetPickLabel": "tr 1:1",
+                "oddValue": 0.0,
+                "caption": "tr 1:1",
+                "mainPick": false,
+                "position": 1,
+                "tipTypeCode": 67
+              },
+              {
+                "liveBetPickCode": 15783,
+                "liveBetPickLabel": "tr 2:1",
+                "oddValue": 0.0,
+                "caption": "tr 2:1",
+                "mainPick": false,
+                "position": 1,
+                "tipTypeCode": 68
+              },
+              {
+                "liveBetPickCode": 15785,
+                "liveBetPickLabel": "tr 3:1",
+                "oddValue": 1.12,
+                "caption": "tr 3:1",
+                "mainPick": false,
+                "position": 1,
+                "tipTypeCode": 70
+              },
+              {
+                "liveBetPickCode": 15787,
+                "liveBetPickLabel": "tr 0:2",
+                "oddValue": 0.0,
+                "caption": "tr 0:2",
+                "mainPick": false,
+                "position": 1,
+                "tipTypeCode": 55
+              },
+              {
+                "liveBetPickCode": 15789,
+                "liveBetPickLabel": "tr 1:2",
+                "oddValue": 0.0,
+                "caption": "tr 1:2",
+                "mainPick": false,
+                "position": 1,
+                "tipTypeCode": 69
+              },
+              {
+                "liveBetPickCode": 15791,
+                "liveBetPickLabel": "tr 2:2",
+                "oddValue": 0.0,
+                "caption": "tr 2:2",
+                "mainPick": false,
+                "position": 1,
+                "tipTypeCode": 82
+              },
+              {
+                "liveBetPickCode": 15793,
+                "liveBetPickLabel": "tr 3:2",
+                "oddValue": 11.5,
+                "caption": "tr 3:2",
+                "mainPick": false,
+                "position": 1,
+                "tipTypeCode": 83
+              },
+              {
+                "liveBetPickCode": 15795,
+                "liveBetPickLabel": "tr 0:3",
+                "oddValue": 0.0,
+                "caption": "tr 0:3",
+                "mainPick": false,
+                "position": 1,
+                "tipTypeCode": 57
+              },
+              {
+                "liveBetPickCode": 15797,
+                "liveBetPickLabel": "tr 1:3",
+                "oddValue": 0.0,
+                "caption": "tr 1:3",
+                "mainPick": false,
+                "position": 1,
+                "tipTypeCode": 71
+              },
+              {
+                "liveBetPickCode": 15799,
+                "liveBetPickLabel": "tr 2:3",
+                "oddValue": 0.0,
+                "caption": "tr 2:3",
+                "mainPick": false,
+                "position": 1,
+                "tipTypeCode": 84
+              },
+              {
+                "liveBetPickCode": 15801,
+                "liveBetPickLabel": "tr 3:3",
+                "oddValue": 92.0,
+                "caption": "tr 3:3",
+                "mainPick": false,
+                "position": 1,
+                "tipTypeCode": 95
+              },
+              {
+                "liveBetPickCode": 15773,
+                "liveBetPickLabel": "ost. rez.",
+                "oddValue": 86.0,
+                "caption": "ost. rez.",
+                "mainPick": false,
+                "position": 1,
+                "tipTypeCode": 467
+              }
+            ],
+            "tipClassTypeCode": 7,
+            "multyBet": true,
+            "lineCode": 1,
+            "betPickGroupId": 3138,
+            "betPickGroupIds": [
+              3138
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
+

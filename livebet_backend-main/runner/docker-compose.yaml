@@ -1,0 +1,80 @@
+services:
+  parse_lobbet:
+    container_name: parse_lobbet
+    entrypoint: /parse_lobbet
+    build:
+      context: ../
+      dockerfile: ./shared/Dockerfile
+      args:
+        code_dir: parse_lobbet
+    restart: always
+    ports:
+      - "9001:9001"
+    deploy:
+      mode: replicated
+      replicas: ${BOOKMAKER_1_REPLICAS}
+    env_file:
+      - ../parse_lobbet/.env
+    networks:
+      - livebets
+
+  parse_sansabet:
+    container_name: parse_sansabet
+    entrypoint: /parse_sansabet
+    build:
+      context: ../
+      dockerfile: ./shared/Dockerfile
+      args:
+        code_dir: parse_sansabet
+    restart: always
+    ports:
+      - "9003:9003"
+    deploy:
+      mode: replicated
+      replicas: ${BOOKMAKER_3_REPLICAS}
+    env_file:
+      - ../parse_sansabet/.env
+    networks:
+      - livebets
+
+  parse_starcasino:
+    container_name: parse_starcasino
+    entrypoint: /parse_starcasino
+    build:
+      context: ../
+      dockerfile: ./shared/Dockerfile
+      args:
+        code_dir: parse_starcasino
+    restart: always
+    ports:
+      - "9005:9005"
+    deploy:
+      mode: replicated
+      replicas: ${BOOKMAKER_5_REPLICAS}
+    env_file:
+      - ../parse_starcasino/.env
+    networks:
+      - livebets
+
+  parse_maxbet:
+    container_name: parse_maxbet
+    entrypoint: /parse_maxbet
+    build:
+      context: ../
+      dockerfile: ./shared/Dockerfile
+      args:
+        code_dir: parse_maxbet
+    restart: always
+    ports:
+      - "9009:9009"
+    deploy:
+      mode: replicated
+      replicas: ${BOOKMAKER_9_REPLICAS}
+    env_file:
+      - ../parse_maxbet/.env
+    networks:
+      - livebets
+
+networks:
+  livebets:
+    external: true

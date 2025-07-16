@@ -1,0 +1,39 @@
+version: '3.8'
+services:
+  postgres:
+    image: postgres:16.6
+    container_name: postgres_livebets
+    restart: always
+    shm_size: 1GB
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U matchingTeams -d matchingTeams"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 10s
+    # ... остальные параметры ...
+    environment:
+      POSTGRES_USER: matchingTeams
+      POSTGRES_PASSWORD: prod_password317
+      POSTGRES_DB: matchingTeams
+    ports:
+      - "127.0.0.1:54602:5432"
+    networks:
+      - livebets
+
+  redis:
+    container_name: redis_livebets
+    image: "redis:7.4.1"
+    restart: always
+    environment:
+      REDIS_PASSWORD: prod_password317
+    networks:
+      - livebets
+
+volumes:
+  postgres_data:
+  postgres-backups:
+
+networks:
+  livebets:
+    external: true

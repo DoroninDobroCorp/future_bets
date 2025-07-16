@@ -1,0 +1,45 @@
+.wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	height: 100%;
+	width: 100%;
+
+	margin-bottom: 14px;
+	background-color: var(--white);
+	box-shadow: rgb(0 0 0 / 15%) 1.95px 1.95px 2.6px;
+}
+
+.select {
+	height: 100%;
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #ddd;
+	border-radius: 8px;
+	background: #fefefe;
+	overflow-y: auto;
+	outline: none;
+} 
+
+.right {
+	text-align: right;
+}
+
+.center {
+	text-align: center;
+}
+
+@media (max-width: 765px) {
+	.wrapper {
+		font-size: 14px;
+	}
+
+	.center {
+		text-align: left;
+	}
+
+	.right {
+		text-align: left;
+	}
+}

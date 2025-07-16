@@ -1,0 +1,24 @@
+version: "3.8"
+
+services:
+  calculator:
+    container_name: calculator
+    entrypoint: /calculator
+    build:
+      context: ../
+      dockerfile: ./shared/Dockerfile
+      args:
+        code_dir: calculator
+    restart: always
+    ports:
+      - "7010:7010"
+    env_file:
+      - ../calculator/.env
+    volumes:
+      - /Users/vladimirdoronin/VovkaNowEngineer/future_bets/logs/bets_logs:/logs
+    networks:
+      - livebets
+
+networks:
+  livebets:
+    external: true

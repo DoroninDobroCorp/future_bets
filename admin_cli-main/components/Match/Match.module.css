@@ -1,0 +1,183 @@
+.wrapper {
+    position: relative;
+    padding: 10px 20px;
+
+	height: 100%;
+	width: 100%;
+
+	background-color: white;
+	box-shadow: rgb(0 0 0 / 15%) 1.95px 1.95px 2.6px;
+    margin-bottom: 10px;
+}
+
+.prematch {
+    background-color: #D3D3D3;
+}
+
+.h3 {
+    display: flex;
+    align-self: center;
+    gap: 4px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.h4 {
+    font-size: 22px;
+}
+
+.p {
+    font-size: 22px;
+}
+
+.outcomes {
+    height: 100%;
+	width: 100%;
+}
+
+.hide {
+    display: none;
+}
+
+.arrowIcon {
+    background-color: black;
+    height: 44px;
+    width: 44px;
+    padding: 0.5em;
+    margin: 1em auto;
+    display: block;
+    position: absolute;
+    top: 30%;
+    right: 20px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+  
+.leftBar {
+    position: absolute;
+    background-color: transparent;
+    top: 16px;
+    left: 2px;
+    width: 25px;
+    height: 8px;
+    display: block;
+    transform: rotate(35deg);
+    float: right;
+    border-radius: 2px;
+}
+.leftBar:after {
+    content: "";
+    background-color: white;
+    width: 25px;
+    height: 8px;
+    display: block;
+    float: right;
+    border-radius: 6px 10px 10px 6px;
+    transition: all 0.5s cubic-bezier(0.25, 1.7, 0.35, 0.8);
+    z-index: -1;
+}
+  
+.rightBar {
+    position: absolute;
+    background-color: transparent;
+    top: 16px;
+    left: 16px;
+    width: 25px;
+    height: 8px;
+    display: block;
+    transform: rotate(-35deg);
+    float: right;
+    border-radius: 2px;
+}
+.rightBar:after {
+    content: "";
+    background-color: white;
+    width: 25px;
+    height: 8px;
+    display: block;
+    float: right;
+    border-radius: 10px 6px 6px 10px;
+    transition: all 0.5s cubic-bezier(0.25, 1.7, 0.35, 0.8);
+    z-index: -1;
+}
+
+.open .leftBar:after {
+    transform-origin: center center;
+    transform: rotate(-70deg);
+}
+.open .rightBar:after {
+    transform-origin: center center;
+    transform: rotate(70deg);
+}
+
+.closeBtn {
+	cursor: pointer;
+	position: absolute;
+	top: 5%;
+	right: 25px;
+	width: 2em;
+  	height: 2em;
+  	background-color: gray;
+  	clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+}
+
+.closeBtn:hover {
+	background-color: black;
+}
+
+@media (max-width: 1024px) {
+    .wrapper {
+        padding: 4px 6px;
+        margin-bottom: 8px;
+    }
+    
+    .h3 {
+        font-size: 16px;
+        font-weight: bold;
+    }
+    
+    .h4 {
+        font-size: 14px;
+    }
+
+    .p {
+        font-size: 14px;
+    }
+
+    .arrowIcon {
+        height: 30px;
+        width: 30px;
+        padding: 0.5em;
+        top: 30%;
+        right: 10px;
+    }
+      
+    .leftBar {
+        top: 14px;
+        left: 8px;
+        width: 10px;
+        height: 6px;
+    }
+    .leftBar:after {
+        width: 18px;
+        height: 6px;
+    }
+      
+    .rightBar {
+        top: 10px;
+        left: 18px;
+        width: 10px;
+        height: 6px;
+    }
+    .rightBar:after {
+        width: 18px;
+        height: 6px;
+    }
+
+    .closeBtn {
+		top: 5%;
+		right: 15px;
+		width: 1.4em;
+		height: 1.4em;
+	}
+}

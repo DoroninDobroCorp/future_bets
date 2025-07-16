@@ -1,0 +1,153 @@
+.wrapper {
+    position: relative;
+    padding: 16px 24px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 12px;
+    transition: all 0.3s ease;
+}
+
+.mainInfo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.wrapper:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px);
+}
+
+.h3 {
+    width: 30%;
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+}
+
+.group {
+    width: 30%;
+    font-size: 16px;
+    color: #666;
+    text-align: center;
+}
+
+.statusContainer {
+    width: 30%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.status {
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.statusWorking {
+    background-color: #e6f7ee;
+    color: #00b327;
+}
+
+.statusNotWorking {
+    background-color: #ffebeb;
+    color: #f50606;
+}
+
+.filtersContainer {
+    width: 100%;
+    margin-top: 12px;
+    padding-top: 12px;
+    border-top: 1px solid #eee;
+}
+
+.filterItem {
+    margin-bottom: 8px;
+}
+
+.filterType {
+    font-weight: 600;
+    color: #555;
+    margin-right: 8px;
+}
+
+.sportsList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 4px;
+    margin-left: 16px;
+}
+
+.sportTag {
+    background-color: #f0f7ff;
+    color: #0066cc;
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-size: 12px;
+    display: inline-block;
+}
+
+@media (max-width: 768px) {
+    .wrapper {
+        padding: 10px 12px;
+    }
+
+    .mainInfo {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 8px 12px;
+    }
+
+    .name {
+        font-size: 16px;
+        font-weight: 600;
+        flex: 1 1 100%;
+        margin-bottom: 0;
+    }
+
+    .group {
+        font-size: 14px;
+        color: #666;
+        flex: 1;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        text-align: left;
+        order: 2;
+    }
+
+    .statusContainer {
+        flex: 0 0 auto;
+        order: 3;
+        margin-left: auto;
+    }
+
+    .status {
+        padding: 4px 10px;
+        font-size: 13px;
+    }
+
+    .filtersContainer {
+        margin-top: 10px;
+        padding-top: 10px;
+    }
+
+    .filterType {
+        font-size: 13px;
+    }
+
+    .sportTag {
+        font-size: 11px;
+        padding: 2px 6px;
+    }
+}

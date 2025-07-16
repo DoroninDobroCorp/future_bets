@@ -1,0 +1,21 @@
+api:
+  url: https://api.maxbet.me
+  timeout: 2
+  live:
+    leagues_url: /sport_filter?live=true&offer_plan=true&lang=en&categories=false
+    events_url: /events?lang=en&live=true&limit=1000&fields=all&tournaments=%tournamentId%&markets=&orderBy[]=startTimeAsc
+    interval_events: 2
+    interval_odds: 2
+  prematch:
+    leagues_url: /sport_filter?live=false&offer_plan=true&lang=en&start=%start%&end=%end%&categories=false
+    events_url: /events?lang=en&live=false&limit=1000&fields=all&tournaments=%tournamentId%&markets=&orderBy[]=startTimeAsc&start=%start%&end=%end%
+    odds_url: /events?events=%matchId%&markets=lfb,lbb,ltn,lvb,lhb,lih,laf,lbv,ltt,lvf,lft,lsn,lrb,lbs,ldt,lwp,lbm,les,lef,l3x3,lrg,lbf,lb20&lang=en
+    interval_events: 20
+    interval_odds: 20
+
+  sport:
+    football: true
+    tennis: true
+    basketball: false
+    volleyball: false
+    hockey: false

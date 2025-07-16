@@ -1,0 +1,162 @@
+.wrapperMain{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    width: 100%;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+
+    width: 100%;
+
+    font-size: 18px;
+}
+
+.checkBoxGroup {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+    width: 100%;
+}
+
+.checkboxWrapper *,
+.checkboxWrapper *::before,
+.checkboxWrapper *::after {
+    box-sizing: border-box;
+}
+
+.checkboxWrapper label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    cursor: pointer;
+}
+
+.checkboxWrapper input {
+    visibility: hidden;
+    display: none;
+}
+
+.checkboxWrapper input:checked ~ .checkbox {
+    transform: rotate(45deg);
+    width: 12px;
+    border-color: #24c78e;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-radius: 0;
+}
+
+.checkboxWrapper .checkbox {
+    display: block;
+    width: 20px;
+    height: 20px;
+    border: 3px solid #434343;
+    border-radius: 6px;
+    transition: all 0.375s;
+}
+
+.arrowIcon {
+    height: 44px;
+    width: 44px;
+    display: block;
+    position: relative;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: all 0.375s;
+}
+
+.wrapperHide {
+    display: none;
+}
+
+.arrowIconTransform {
+    transform: rotate(180deg); 
+}
+  
+.leftBar {
+    position: absolute;
+    background-color: transparent;
+    top: 16px;
+    left: 2px;
+    width: 25px;
+    height: 8px;
+    display: block;
+    transform: rotate(35deg);
+    float: right;
+    border-radius: 2px;
+}
+.leftBar:after {
+    content: "";
+    background-color: rgb(99, 99, 99);
+    width: 25px;
+    height: 8px;
+    display: block;
+    float: right;
+    border-radius: 6px 10px 10px 6px;
+    transition: all 0.5s cubic-bezier(0.25, 1.7, 0.35, 0.8);
+    z-index: -1;
+}
+  
+.rightBar {
+    position: absolute;
+    background-color: transparent;
+    top: 16px;
+    left: 16px;
+    width: 25px;
+    height: 8px;
+    display: block;
+    transform: rotate(-35deg);
+    float: right;
+    border-radius: 2px;
+}
+.rightBar:after {
+    content: "";
+    background-color: rgb(99, 99, 99);
+    width: 25px;
+    height: 8px;
+    display: block;
+    float: right;
+    border-radius: 10px 6px 6px 10px;
+    transition: all 0.5s cubic-bezier(0.25, 1.7, 0.35, 0.8);
+    z-index: -1;
+}
+
+@media (max-width: 1024px) {
+    .arrowIcon {
+        height: 30px;
+        width: 30px;
+    }
+      
+    .leftBar {
+        top: 14px;
+        left: 8px;
+        width: 10px;
+        height: 6px;
+    }
+    .leftBar:after {
+        width: 18px;
+        height: 6px;
+    }
+      
+    .rightBar {
+        top: 10px;
+        left: 18px;
+        width: 10px;
+        height: 6px;
+    }
+    .rightBar:after {
+        width: 18px;
+        height: 6px;
+    }
+}

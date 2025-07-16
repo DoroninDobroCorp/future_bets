@@ -1,0 +1,36 @@
+name: Sites
+
+on:
+  push:
+    branches:
+      - sites
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Upload configs
+        uses: appleboy/scp-action@master
+        with:
+          host: ${{ secrets.DEVOPS_HOST }}
+          port: ${{ secrets.DEVOPS_PORT }}
+          username: ${{ secrets.DEVOPS_USER }}
+          password: ${{ secrets.DEVOPS_PASS }}
+          source: "sites/"
+          target: "/projects/admin_cli/"
+
+      - name: Validate and reload
+        uses: appleboy/ssh-action@v1
+        with:
+          host: ${{ secrets.DEVOPS_HOST }}
+          port: ${{ secrets.DEVOPS_PORT }}
+          username: ${{ secrets.DEVOPS_USER }}
+          password: ${{ secrets.DEVOPS_PASS }}
+          script: |
+            cd /projects/admin_cli/sites
+            echo "We are in directory: $(pwd)"
+            
+            chmod +x deploy.sh
+            ./deploy.sh

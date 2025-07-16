@@ -1,0 +1,20 @@
+services:
+  results:
+    container_name: results
+    entrypoint: /results
+    build:
+      context: ../
+      dockerfile: ./shared/Dockerfile
+      args:
+        code_dir: results
+    restart: always
+    env_file:
+      - ../results/.env
+    volumes:
+      - /Users/vladimirdoronin/VovkaNowEngineer/future_bets/logs/statistic_file:/logs
+    networks:
+      - livebets
+
+networks:
+  livebets:
+    external: true

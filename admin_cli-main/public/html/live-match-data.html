@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Live Match Data</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f0f0;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      background: #fff;
+    }
+    h1 {
+      text-align: center;
+    }
+    .event-card {
+      border: 1px solid #ccc;
+      margin-bottom: 15px;
+      padding: 15px;
+      border-radius: 5px;
+      background: #fafafa;
+      position: relative;
+    }
+    .event-card:hover {
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+      cursor: pointer;
+    }
+    .event-card h2 {
+      margin-top: 0;
+    }
+    .pinned-match {
+      border: 2px solid #3498db;
+      background: #e8f4fc;
+      margin-bottom: 30px;
+      position: relative;
+    }
+    .pin-indicator {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background: #3498db;
+      color: white;
+      padding: 3px 8px;
+      border-radius: 3px;
+      font-size: 0.8em;
+    }
+    .unpin-btn {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background: #e74c3c;
+      color: white;
+      border: none;
+      border-radius: 3px;
+      padding: 5px 10px;
+      cursor: pointer;
+    }
+    .period-block {
+      border-top: 1px solid #ddd;
+      margin-top: 10px;
+      padding-top: 10px;
+    }
+    .period-block h3 {
+      margin: 5px 0;
+    }
+    table {
+      border-collapse: collapse;
+      margin: 5px 0;
+      width: 100%;
+    }
+    th, td {
+      border: 1px solid #aaa;
+      padding: 5px 8px;
+    }
+    #pinned-match-container {
+      margin-bottom: 20px;
+    }
+    .pin-hint {
+      text-align: center;
+      color: #666;
+      margin-bottom: 20px;
+      display: none;
+    }
+    .no-matches {
+      text-align: center;
+      padding: 20px;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Live Match Data</h1>
+    <p class="pin-hint" id="pin-hint">Нажмите на матч, чтобы закрепить его</p>
+    <div id="pinned-match-container"></div>
+    <div id="match-container">Загрузка данных...</div>
+  </div>
+
+  <script>
+    // URL, откуда берём данные
+    const DATA_URL = 'https://ibet.team/api/live-match-data';
+
+    // Интервал обновления (в миллисекундах)
+    const REFRESH_INTERVAL = 5000; // 5 секунд
+
+    // ID закрепленного матча
+    let pinnedMatchId = null;
+
+    // При загрузке страницы - запрашиваем данные сразу
+    window.addEventListener('DOMContentLoaded', () => {
+      loadMatchData();
+      // А затем каждую REFRESH_INTERVAL миллисекунд снова делаем запрос
+      setInterval(loadMatchData, REFRESH_INTERVAL);
+    });
+
+    async function loadMatchData() {
+      try {
+        const response = await fetch(DATA_URL);
+        const jsonData = await response.json();
+
+        // Предполагаем, что структура: { data: { eventKey: {...}, ... } }
+        const eventsData = jsonData.data || {};
+        renderEvents(eventsData);
+
+      } catch (error) {
+        console.error('Ошибка при загрузке данных:', error);
+        document.getElementById('match-container').textContent = 
+          'Ошибка при загрузке данных. Проверьте консоль.';
+      }
+    }
+
+    function renderEvents(events) {
+      const container = document.getElementById('match-container');
+      const pinnedContainer = document.getElementById('pinned-match-container');
+      const pinHint = document.getElementById('pin-hint');
+
+      // Очищаем обычный контейнер
+      container.innerHTML = ''; 
+      
+      // Проверяем, есть ли матчи
+      const hasMatches = Object.keys(events).length > 0;
+      
+      // Показываем подсказку о закреплении, если есть матчи
+      pinHint.style.display = hasMatches ? 'block' : 'none';
+      
+      // Если нет матчей, показываем сообщение
+      if (!hasMatches) {
+        container.innerHTML = '<div class="no-matches">Нет доступных матчей</div>';
+        return;
+      }
+
+      // Проверяем, существует ли закрепленный матч в текущих данных
+      let pinnedMatchExists = false;
+      if (pinnedMatchId && events[pinnedMatchId]) {
+        pinnedMatchExists = true;
+        // Рендерим закрепленный матч
+        pinnedContainer.innerHTML = '';
+        const pinnedCard = createMatchCard(pinnedMatchId, events[pinnedMatchId], true);
+        pinnedContainer.appendChild(pinnedCard);
+      } else {
+        // Если закрепленный матч больше не существует, очищаем контейнер
+        pinnedContainer.innerHTML = '';
+        pinnedMatchId = null;
+      }
+
+      // Перебираем все ключи в объекте events
+      for (const key in events) {
+        if (!events.hasOwnProperty(key)) continue;
+        
+        // Пропускаем закрепленный матч, так как он уже отрендерен
+        if (key === pinnedMatchId) continue;
+        
+        const match = events[key];
+        const card = createMatchCard(key, match, false);
+        container.appendChild(card);
+      }
+    }
+
+    function createMatchCard(matchKey, match, isPinned) {
+      // Создаём карточку события
+      const card = document.createElement('div');
+      card.className = isPinned ? 'event-card pinned-match' : 'event-card';
+      card.dataset.matchId = matchKey;
+
+      // Для незакрепленных матчей добавляем обработчик клика
+      if (!isPinned) {
+        card.addEventListener('click', () => pinMatch(matchKey));
+        card.innerHTML += '<span class="pin-indicator">Нажмите для закрепления</span>';
+      } else {
+        // Для закрепленного матча добавляем кнопку открепления
+        const unpinBtn = document.createElement('button');
+        unpinBtn.className = 'unpin-btn';
+        unpinBtn.textContent = 'Открепить';
+        unpinBtn.addEventListener('click', (e) => {
+          e.stopPropagation(); // Предотвращаем всплытие события
+          unpinMatch();
+        });
+        card.appendChild(unpinBtn);
+      }
+
+      // Основная информация (лига, команды, счёт, букмекер)
+      const headerHTML = `
+        <h2>${match.LeagueName || 'Без названия лиги'}</h2>
+        <p><strong>${match.homeName || 'home'}</strong> vs <strong>${match.awayName || 'away'}</strong></p>
+        <p>Score: ${match.HomeScore} - ${match.AwayScore}</p>
+        <p>Sport: ${match.SportName || '-'}</p>
+        <p>MatchID: ${match.MatchId || '-'}</p>
+        <p>Букмекер: ${match.Source || '-'}</p>
+        <p>CreatedAt: ${match.CreatedAt || '-'}</p>
+      `;
+      card.insertAdjacentHTML('afterbegin', headerHTML);
+
+      // Если есть периоды, отрисуем каждый
+      if (Array.isArray(match.Periods)) {
+        match.Periods.forEach((period, index) => {
+          const periodBlock = document.createElement('div');
+          periodBlock.className = 'period-block';
+          periodBlock.innerHTML = `<h3>Period ${index + 1}</h3>`;
+
+          // Отображаем ключи внутри периода
+          for (const prop in period) {
+            if (!period.hasOwnProperty(prop)) continue;
+            const subObj = period[prop];
+
+            // Если это объект (например, Win1x2, Totals), построим таблицу
+            if (typeof subObj === 'object' && subObj !== null) {
+              const table = document.createElement('table');
+              table.innerHTML = `<thead><tr><th colspan="2">${prop}</th></tr></thead>`;
+              const tbody = document.createElement('tbody');
+
+              for (const k in subObj) {
+                if (!subObj.hasOwnProperty(k)) continue;
+                const value = subObj[k];
+
+                if (typeof value === 'object' && value !== null) {
+                  // Если вложенный объект, можно сделать вложенную таблицу или красиво отобразить
+                  const nestedTable = document.createElement('table');
+                  nestedTable.className = 'nested-table';
+                  nestedTable.style.marginLeft = '20px';
+                  nestedTable.innerHTML = `<tr><th>${k}</th><th>Значение</th></tr>`;
+                  for (const subKey in value) {
+                    if (!value.hasOwnProperty(subKey)) continue;
+                    nestedTable.innerHTML += `<tr><td>${subKey}</td><td>${value[subKey]}</td></tr>`;
+                  }
+                  const row = document.createElement('tr');
+                  row.appendChild(document.createElement('td'));
+                  const td = document.createElement('td');
+                  td.appendChild(nestedTable);
+                  row.appendChild(td);
+                  tbody.appendChild(row);
+                } else {
+                  const row = document.createElement('tr');
+                  row.innerHTML = `<td>${k}</td><td>${value}</td>`;
+                  tbody.appendChild(row);
+                }
+              }
+
+              table.appendChild(tbody);
+              periodBlock.appendChild(table);
+
+            } else {
+              // Если не объект, просто показываем значение
+              const p = document.createElement('p');
+              p.textContent = `${prop}: ${subObj}`;
+              periodBlock.appendChild(p);
+            }
+          }
+
+          card.appendChild(periodBlock);
+        });
+      }
+
+      return card;
+    }
+
+    // Функция для закрепления матча
+    function pinMatch(matchId) {
+      pinnedMatchId = matchId;
+      loadMatchData(); // Обновляем отображение сразу
+    }
+
+    // Функция для открепления матча
+    function unpinMatch() {
+      pinnedMatchId = null;
+      loadMatchData(); // Обновляем отображение сразу
+    }
+  </script>
+</body>
+</html>

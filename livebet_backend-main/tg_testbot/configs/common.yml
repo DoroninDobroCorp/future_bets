@@ -1,0 +1,9 @@
+telegram_bot:
+  debug: false
+
+groups_by_bookmaker:
+  lobbet: -4793792615
+  ladbrokes: -4763729794
+  ladbrokes2: -4729413843
+  unibet: -4637255512
+  starcasino: -4764870907

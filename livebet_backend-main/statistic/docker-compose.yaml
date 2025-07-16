@@ -1,0 +1,13 @@
+services:
+  statistic:
+    container_name: statistic
+    build:
+      context: ../
+      dockerfile: ./statistic/Dockerfile
+    restart: always
+    networks:
+      - livebets
+
+networks:
+  livebets:
+    external: true

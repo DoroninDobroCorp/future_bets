@@ -1,0 +1,47 @@
+.wrapper {
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	justify-content: center;
+    gap: 20px;
+
+	margin: 16px 0;
+}
+
+.status {
+	display: block;
+
+	width: 20px;
+	height: 20px;
+
+	border-radius: 100%;
+	box-shadow: rgb(0 0 0 / 15%) 1.95px 1.95px 2.6px;
+}
+
+.ok {
+    background-color: lime;
+}
+
+.warn {
+    background-color: orange;
+}
+
+.error {
+    background-color: red;
+}
+
+@media (max-width: 765px) {
+	.wrapper {
+		gap: 6px;
+		margin: 6px 0;
+	}
+
+	.status {
+		width: 14px;
+		height: 14px;
+	}
+
+	.title {
+		font-size: 14px;
+	}
+}

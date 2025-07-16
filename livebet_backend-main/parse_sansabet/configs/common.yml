@@ -1,0 +1,8 @@
+sansa:
+  api:
+    url: https://apilive.sansabet.com/
+    timeout: 2
+    matches_url: api/LiveOdds/GetAll
+    odds_url: api/LiveOdds/GetByParIDs
+    interval_match: 2
+    interval_odds: 2

@@ -1,0 +1,20 @@
+services:
+  auto_matcher:
+    container_name: auto_matcher
+    entrypoint: /auto_matcher
+    build:
+      context: ../
+      dockerfile: ./shared/Dockerfile
+      args:
+        code_dir: auto_matcher
+    restart: always
+    ports:
+      - "7001:7001"
+    env_file:
+      - ../auto_matcher/.env
+    networks:
+      - livebets
+
+networks:
+  livebets:
+    external: true

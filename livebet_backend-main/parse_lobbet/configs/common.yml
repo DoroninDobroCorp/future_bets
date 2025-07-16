@@ -1,0 +1,17 @@
+api:
+  url: https://www.lobbet.me/
+  timeout: 2
+  live:
+    events_url: ibet/async/live/multy/-1.json
+    interval: 2
+  prematch:
+    events_url: ibet/async/live/multy/-1.json
+    odds_url: /ibet/offer/special/S/{matchId}.json
+    interval: 30
+
+  sport:
+    football: true
+    tennis: true
+    basketball: true
+
+parse_live: false

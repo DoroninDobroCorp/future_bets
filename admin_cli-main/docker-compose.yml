@@ -1,0 +1,15 @@
+services:
+  admin_cli:
+    container_name: admin_cli
+    build:
+      context: ./
+      dockerfile: ./Dockerfile
+    ports:
+      - "127.0.0.1:31562:31562"
+    restart: always
+    networks:
+      - livebets
+
+networks:
+  livebets:
+    external: true

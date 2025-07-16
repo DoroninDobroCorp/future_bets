@@ -1,0 +1,2517 @@
+{
+  "id": 11322681,
+  "feedEventId": 12044552,
+  "name": "Melbourne Knights vs. Heidelberg United",
+  "et": 0,
+  "liveTime": "72'",
+  "lst": "2025-02-06T08:46:16Z",
+  "sport": {
+    "typeId": 1,
+    "iconName": "soccer",
+    "hasLiveEvents": false,
+    "id": 66,
+    "name": "Football"
+  },
+  "champ": {"hasLiveEvents": false, "id": 4450, "name": "Victoria, NPL"},
+  "category": {
+    "iso": "AUS",
+    "hasLiveEvents": false,
+    "id": 550,
+    "name": "Australia"
+  },
+  "competitors": [
+    {"id": 67838, "name": "Melbourne Knights"},
+    {"id": 67836, "name": "Heidelberg United"}
+  ],
+  "marketGroups": [
+    {
+      "type": 0,
+      "marketIds": [
+        31046, 911610491, 911610457, 911610485, 911610497, 911610494,
+        911610446, 911610449, 915174196, 914283404, 911610428, 911610563,
+        911610478, 911610548, 911610522, 911610523, 911610506, 911610538,
+        911610502, 911610587, 911610561, 911610562
+      ],
+      "isBundle": false,
+      "sortOrder": 0,
+      "id": 1,
+      "name": "Main"
+    },
+    {
+      "type": 3,
+      "marketIds": [
+        911610491, 911610457, 911610485, 911610428, 911610446, 911610449,
+        911610478, 911610502
+      ],
+      "isBundle": false,
+      "sortOrder": 0,
+      "id": 23,
+      "name": "Bet Builder"
+    },
+    {
+      "type": 0,
+      "marketIds": [
+        911610457, 915207002, 911610478, 915219435, 915219438, 911610559,
+        911610446, 911610449, 911610502, 911610497, 911610522, 911610523,
+        911610587, 911610561, 911610562
+      ],
+      "isBundle": false,
+      "sortOrder": 0,
+      "id": 1624,
+      "name": "Goal"
+    },
+    {
+      "type": 1,
+      "marketIds": [915222451, 915222452, 915222908, 915223142],
+      "isBundle": false,
+      "sortOrder": 0,
+      "id": 18,
+      "name": "1 minute"
+    },
+    {
+      "type": 0,
+      "marketIds": [911610559, 911610542, 911610510, 911610423, 911610570],
+      "isBundle": false,
+      "sortOrder": 0,
+      "id": 1050,
+      "name": "Specials"
+    },
+    {
+      "type": 0,
+      "marketIds": [915174196, 915154580, 915154581],
+      "isBundle": false,
+      "sortOrder": 0,
+      "id": 5,
+      "name": "Corners"
+    },
+    {
+      "type": 0,
+      "marketIds": [915207002, 915219436, 915219438],
+      "isBundle": false,
+      "sortOrder": 0,
+      "id": 4,
+      "name": "Combo"
+    }
+  ],
+  "childMarketGroups": [],
+  "markets": [
+    {
+      "desktopOddIds": [],
+      "mobileOddIds": [],
+      "childMarketIds": [],
+      "isBB": false,
+      "variant": 7,
+      "so": 0,
+      "typeId": 31046,
+      "isMB": false,
+      "sportMarketId": 0,
+      "id": 31046,
+      "name": "Boosted Odds"
+    },
+    {
+      "shortName": "1x2",
+      "desktopOddIds": [ [2158220889], [2158220890], [2158220891] ],
+      "mobileOddIds": [ [2158220889], [2158220890], [2158220891] ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 1,
+      "isMB": false,
+      "sportMarketId": 70472,
+      "id": 911610491,
+      "name": "1x2"
+    },
+    {
+      "shortName": "Total",
+      "desktopOddIds": [
+        [2158220758, 2158220760, 2167638265],
+        [2158220759, 2158220761, 2167638266]
+      ],
+      "mobileOddIds": [
+        [2158220758, 2158220760, 2167638265],
+        [2158220759, 2158220761, 2167638266]
+      ],
+      "isBB": false,
+      "variant": 8,
+      "so": 0,
+      "typeId": 18,
+      "isMB": true,
+      "sportMarketId": 70520,
+      "sv": "4.5",
+      "id": 911610457,
+      "name": "Total"
+    },
+    {
+      "shortName": "Double chance",
+      "desktopOddIds": [ [2158220864], [2158220862], [2158220863] ],
+      "mobileOddIds": [ [2158220864, 2158220862, 2158220863] ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 10,
+      "isMB": false,
+      "sportMarketId": 70495,
+      "id": 911610485,
+      "name": "Double chance"
+    },
+    {
+      "shortName": "Exact goals ",
+      "desktopOddIds": [
+        [2158220910, 2158220911, 2158220912, 2158220914],
+        [2158220913, 2158220915                        ]
+      ],
+      "mobileOddIds": [
+        [2158220910, 2158220911, 2158220912, 2158220914, 2158220913, 2158220915]
+      ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 21,
+      "isMB": false,
+      "sportMarketId": 71660,
+      "id": 911610497,
+      "name": "Exact goals "
+    },
+    {
+      "shortName": "Draw no bet",
+      "desktopOddIds": [ [2158220896], [2158220897] ],
+      "mobileOddIds": [ [2158220896], [2158220897] ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 11,
+      "isMB": false,
+      "sportMarketId": 70500,
+      "id": 911610494,
+      "name": "Draw no bet"
+    },
+    {
+      "shortName": "Melbourne Knights total goals",
+      "desktopOddIds": [ [2158220736, 2167632228], [2158220737, 2167632229] ],
+      "mobileOddIds": [ [2158220736, 2167632228], [2158220737, 2167632229] ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 19,
+      "isMB": true,
+      "sportMarketId": 70525,
+      "sv": "2.5",
+      "id": 911610446,
+      "name": "Melbourne Knights total goals"
+    },
+    {
+      "shortName": "Heidelberg United total goals",
+      "desktopOddIds": [ [2158220742, 2167661384], [2158220743, 2167661385] ],
+      "mobileOddIds": [ [2158220742, 2167661384], [2158220743, 2167661385] ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 20,
+      "isMB": true,
+      "sportMarketId": 70530,
+      "sv": "2.5",
+      "id": 911610449,
+      "name": "Heidelberg United total goals"
+    },
+    {
+      "shortName": "Total corners",
+      "desktopOddIds": [ [2167551938], [2167551939] ],
+      "mobileOddIds": [ [2167551938], [2167551939] ],
+      "isBB": false,
+      "variant": 8,
+      "so": 0,
+      "typeId": 166,
+      "isMB": true,
+      "sportMarketId": 70739,
+      "sv": "13.5",
+      "id": 915174196,
+      "name": "Total corners"
+    },
+    {
+      "shortName": "\tHandicap 1x2",
+      "desktopOddIds": [
+        [2158221036, 2165384076, 2158221033],
+        [2158221037, 2165384077, 2158221034],
+        [2158221038, 2165384078, 2158221035]
+      ],
+      "mobileOddIds": [
+        [
+          2158221036, 2165384076, 2158221033, 2158221037, 2165384077,
+          2158221034, 2158221038, 2165384078, 2158221035
+        ]
+      ],
+      "isBB": false,
+      "variant": 9,
+      "so": 0,
+      "typeId": 14,
+      "isMB": false,
+      "sportMarketId": 70510,
+      "sv": "0:0",
+      "id": 914283404,
+      "name": "\tHandicap 1x2"
+    },
+    {
+      "shortName": "Handicap",
+      "desktopOddIds": [ [2158220702, 2158220700], [2158220703, 2158220701] ],
+      "mobileOddIds": [ [2158220702, 2158220700], [2158220703, 2158220701] ],
+      "isBB": false,
+      "variant": 8,
+      "so": 0,
+      "typeId": 16,
+      "isMB": false,
+      "sportMarketId": 70515,
+      "sv": "-0.5",
+      "id": 911610428,
+      "name": "Handicap"
+    },
+    {
+      "shortName": "Last goal",
+      "desktopOddIds": [ [2158221141], [2158221143], [2158221142] ],
+      "mobileOddIds": [ [2158221141], [2158221143], [2158221142] ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 9,
+      "isMB": false,
+      "sportMarketId": 70493,
+      "id": 911610563,
+      "name": "Last goal"
+    },
+    {
+      "shortName": "Correct score",
+      "desktopOddIds": [
+        [2158220813, 2158220814, 2158220822            ],
+        [2158220812, 2158220818, 2158220824, 2158220825],
+        [2158220817, 2158220821, 2158220823            ]
+      ],
+      "mobileOddIds": [
+        [2158220813, 2158220814, 2158220822            ],
+        [2158220812, 2158220818, 2158220824, 2158220825],
+        [2158220817, 2158220821, 2158220823            ]
+      ],
+      "isBB": false,
+      "variant": 3,
+      "so": 0,
+      "typeId": 45,
+      "isMB": false,
+      "sportMarketId": 70566,
+      "id": 911610478,
+      "name": "Correct score"
+    },
+    {
+      "shortName": "Winning margin",
+      "desktopOddIds": [
+        [2158221077, 2158221078, 2158221079],
+        [2158221076                        ],
+        [2158221080, 2158221081, 2158221082]
+      ],
+      "mobileOddIds": [
+        [
+          2158221077, 2158221078, 2158221079, 2158221076, 2158221080,
+          2158221081, 2158221082
+        ]
+      ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 15,
+      "isMB": false,
+      "sportMarketId": 71166,
+      "id": 911610548,
+      "name": "Winning margin"
+    },
+    {
+      "shortName": "Melbourne Knights exact goals",
+      "desktopOddIds": [ [2158221009, 2158221010] ],
+      "mobileOddIds": [ [2158221009, 2158221010] ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 23,
+      "isMB": false,
+      "sportMarketId": 71654,
+      "id": 911610522,
+      "name": "Melbourne Knights exact goals"
+    },
+    {
+      "shortName": "Heidelberg United exact goals",
+      "desktopOddIds": [ [2158221013, 2158221014] ],
+      "mobileOddIds": [ [2158221013, 2158221014] ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 24,
+      "isMB": false,
+      "sportMarketId": 71655,
+      "id": 911610523,
+      "name": "Heidelberg United exact goals"
+    },
+    {
+      "shortName": "Melbourne Knights no bet",
+      "desktopOddIds": [ [2158220940], [2158220941] ],
+      "mobileOddIds": [ [2158220940], [2158220941] ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 12,
+      "isMB": false,
+      "sportMarketId": 70506,
+      "id": 911610506,
+      "name": "Melbourne Knights no bet"
+    },
+    {
+      "shortName": "Heidelberg United no bet",
+      "desktopOddIds": [ [2158221049], [2158221050] ],
+      "mobileOddIds": [ [2158221049], [2158221050] ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 13,
+      "isMB": false,
+      "sportMarketId": 70508,
+      "id": 911610538,
+      "name": "Heidelberg United no bet"
+    },
+    {
+      "shortName": "Odd/even",
+      "desktopOddIds": [ [2158220932], [2158220933] ],
+      "mobileOddIds": [ [2158220932], [2158220933] ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 26,
+      "isMB": false,
+      "sportMarketId": 70535,
+      "id": 911610502,
+      "name": "Odd/even"
+    },
+    {
+      "shortName": "Multigoals",
+      "desktopOddIds": [
+        [
+          2158221364, 2158221349, 2158221365, 2158221352, 2158221355,
+          2158221358, 2158221361, 2158221367
+        ],
+        [
+          2158221350, 2158221353, 2158221356, 2158221359, 2158221362, 2158221366
+        ],
+        [2158221351, 2158221354, 2158221357, 2158221360, 2158221363]
+      ],
+      "mobileOddIds": [
+        [
+          2158221364, 2158221349, 2158221365, 2158221352, 2158221355,
+          2158221358, 2158221361, 2158221367
+        ],
+        [
+          2158221350, 2158221353, 2158221356, 2158221359, 2158221362, 2158221366
+        ],
+        [2158221351, 2158221354, 2158221357, 2158221360, 2158221363]
+      ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 548,
+      "isMB": false,
+      "sportMarketId": 71014,
+      "id": 911610587,
+      "name": "Multigoals"
+    },
+    {
+      "shortName": "Melbourne Knights multigoals",
+      "desktopOddIds": [
+        [2158221128, 2158221121, 2158221127, 2158221129, 2158221123],
+        [2158221122, 2158221130                                    ],
+        [2158221124, 2158221125, 2158221126                        ]
+      ],
+      "mobileOddIds": [
+        [
+          2158221128, 2158221121, 2158221127, 2158221129, 2158221123,
+          2158221125, 2158221126
+        ],
+        [2158221122, 2158221130],
+        [2158221124]
+      ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 549,
+      "isMB": false,
+      "sportMarketId": 71015,
+      "id": 911610561,
+      "name": "Melbourne Knights multigoals"
+    },
+    {
+      "shortName": "Heidelberg United multigoals",
+      "desktopOddIds": [
+        [2158221137, 2158221138, 2158221131, 2158221139, 2158221133],
+        [2158221132, 2158221140                                    ],
+        [2158221134, 2158221135, 2158221136                        ]
+      ],
+      "mobileOddIds": [
+        [
+          2158221137, 2158221138, 2158221131, 2158221139, 2158221133,
+          2158221135, 2158221136
+        ],
+        [2158221132, 2158221140],
+        [2158221134]
+      ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 550,
+      "isMB": false,
+      "sportMarketId": 71016,
+      "id": 911610562,
+      "name": "Heidelberg United multigoals"
+    },
+    {
+      "shortName": "1x2",
+      "desktopOddIds": [ [2158220889], [2158220890], [2158220891] ],
+      "mobileOddIds": [ [2158220889], [2158220890], [2158220891] ],
+      "isBB": true,
+      "so": 0,
+      "typeId": 1,
+      "isMB": false,
+      "sportMarketId": 70472,
+      "id": 911610491,
+      "name": "1x2"
+    },
+    {
+      "shortName": "Total",
+      "desktopOddIds": [
+        [2158220758, 2158220760, 2167638265],
+        [2158220759, 2158220761, 2167638266]
+      ],
+      "mobileOddIds": [
+        [2158220758, 2158220760, 2167638265],
+        [2158220759, 2158220761, 2167638266]
+      ],
+      "isBB": true,
+      "variant": 8,
+      "so": 0,
+      "typeId": 18,
+      "isMB": true,
+      "sportMarketId": 70520,
+      "sv": "4.5",
+      "id": 911610457,
+      "name": "Total"
+    },
+    {
+      "shortName": "Double chance",
+      "desktopOddIds": [ [2158220864], [2158220862], [2158220863] ],
+      "mobileOddIds": [ [2158220864, 2158220862, 2158220863] ],
+      "isBB": true,
+      "so": 0,
+      "typeId": 10,
+      "isMB": false,
+      "sportMarketId": 70495,
+      "id": 911610485,
+      "name": "Double chance"
+    },
+    {
+      "shortName": "Handicap",
+      "desktopOddIds": [ [2158220702, 2158220700], [2158220703, 2158220701] ],
+      "mobileOddIds": [ [2158220702, 2158220700], [2158220703, 2158220701] ],
+      "isBB": true,
+      "variant": 8,
+      "so": 0,
+      "typeId": 16,
+      "isMB": false,
+      "sportMarketId": 70515,
+      "sv": "-0.5",
+      "id": 911610428,
+      "name": "Handicap"
+    },
+    {
+      "shortName": "Melbourne Knights total goals",
+      "desktopOddIds": [ [2158220736, 2167632228], [2158220737, 2167632229] ],
+      "mobileOddIds": [ [2158220736, 2167632228], [2158220737, 2167632229] ],
+      "isBB": true,
+      "so": 0,
+      "typeId": 19,
+      "isMB": true,
+      "sportMarketId": 70525,
+      "sv": "2.5",
+      "id": 911610446,
+      "name": "Melbourne Knights total goals"
+    },
+    {
+      "shortName": "Heidelberg United total goals",
+      "desktopOddIds": [ [2158220742, 2167661384], [2158220743, 2167661385] ],
+      "mobileOddIds": [ [2158220742, 2167661384], [2158220743, 2167661385] ],
+      "isBB": true,
+      "so": 0,
+      "typeId": 20,
+      "isMB": true,
+      "sportMarketId": 70530,
+      "sv": "2.5",
+      "id": 911610449,
+      "name": "Heidelberg United total goals"
+    },
+    {
+      "shortName": "Correct score",
+      "desktopOddIds": [
+        [2158220813, 2158220814, 2158220822            ],
+        [2158220812, 2158220818, 2158220824, 2158220825],
+        [2158220817, 2158220821, 2158220823            ]
+      ],
+      "mobileOddIds": [
+        [2158220813, 2158220814, 2158220822            ],
+        [2158220812, 2158220818, 2158220824, 2158220825],
+        [2158220817, 2158220821, 2158220823            ]
+      ],
+      "isBB": true,
+      "variant": 3,
+      "so": 0,
+      "typeId": 45,
+      "isMB": false,
+      "sportMarketId": 70566,
+      "id": 911610478,
+      "name": "Correct score"
+    },
+    {
+      "shortName": "Odd/even",
+      "desktopOddIds": [ [2158220932], [2158220933] ],
+      "mobileOddIds": [ [2158220932], [2158220933] ],
+      "isBB": true,
+      "so": 0,
+      "typeId": 26,
+      "isMB": false,
+      "sportMarketId": 70535,
+      "id": 911610502,
+      "name": "Odd/even"
+    },
+    {
+      "shortName": "1x2 & total",
+      "desktopOddIds": [
+        [2167632240, 2167632238],
+        [2167632243, 2167632242],
+        [2167632241, 2167632239]
+      ],
+      "mobileOddIds": [
+        [2167632240, 2167632243, 2167632241, 2167632238, 2167632242, 2167632239]
+      ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 37,
+      "isMB": false,
+      "sportMarketId": 70558,
+      "sv": "5.5",
+      "id": 915207002,
+      "name": "1x2 & total"
+    },
+    {
+      "shortName": "Next Goal",
+      "desktopOddIds": [ [2167661374], [2167661376], [2167661375] ],
+      "mobileOddIds": [ [2167661374], [2167661376], [2167661375] ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 8,
+      "isMB": true,
+      "sportMarketId": 70491,
+      "sv": "5",
+      "id": 915219435,
+      "name": "Next Goal"
+    },
+    {
+      "shortName": "Double chance & total 5.5",
+      "desktopOddIds": [
+        [2167661389, 2167661386],
+        [2167661391, 2167661388],
+        [2167661390, 2167661387]
+      ],
+      "mobileOddIds": [
+        [2167661389, 2167661390, 2167661391, 2167661386, 2167661387, 2167661388]
+      ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 547,
+      "isMB": false,
+      "sportMarketId": 71013,
+      "sv": "5.5",
+      "id": 915219438,
+      "name": "Double chance & total 5.5"
+    },
+    {
+      "shortName": "Goal range",
+      "desktopOddIds": [ [2158221108, 2158221110] ],
+      "mobileOddIds": [ [2158221108, 2158221110] ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 25,
+      "isMB": false,
+      "sportMarketId": 72136,
+      "id": 911610559,
+      "name": "Goal range"
+    },
+    {
+      "shortName": "What will happen in next minute (74:00 - 74:59)",
+      "desktopOddIds": [ [2167669073] ],
+      "mobileOddIds": [ [2167669073] ],
+      "isBB": false,
+      "variant": 2,
+      "so": 0,
+      "typeId": 17520,
+      "isMB": false,
+      "sportMarketId": 71735,
+      "sv": "74:00|74:59",
+      "id": 915222451,
+      "name": "What will happen in next minute (74:00 - 74:59)"
+    },
+    {
+      "shortName": "What will happen in next minute (75:00 - 75:59)",
+      "desktopOddIds": [ [2167670153], [2167669074] ],
+      "mobileOddIds": [ [2167670153, 2167669074] ],
+      "isBB": false,
+      "variant": 2,
+      "so": 0,
+      "typeId": 17520,
+      "isMB": false,
+      "sportMarketId": 71735,
+      "sv": "75:00|75:59",
+      "id": 915222452,
+      "name": "What will happen in next minute (75:00 - 75:59)"
+    },
+    {
+      "shortName": "What will happen in next minute (76:00 - 76:59)",
+      "desktopOddIds": [ [2167670722], [2167670154] ],
+      "mobileOddIds": [ [2167670722, 2167670154] ],
+      "isBB": false,
+      "variant": 2,
+      "so": 0,
+      "typeId": 17520,
+      "isMB": false,
+      "sportMarketId": 71735,
+      "sv": "76:00|76:59",
+      "id": 915222908,
+      "name": "What will happen in next minute (76:00 - 76:59)"
+    },
+    {
+      "shortName": "What will happen in next minute (77:00 - 77:59)",
+      "desktopOddIds": [ [2167670723] ],
+      "mobileOddIds": [ [2167670723] ],
+      "isBB": false,
+      "variant": 2,
+      "so": 0,
+      "typeId": 17520,
+      "isMB": false,
+      "sportMarketId": 71735,
+      "sv": "77:00|77:59",
+      "id": 915223142,
+      "name": "What will happen in next minute (77:00 - 77:59)"
+    },
+    {
+      "shortName": "Heidelberg United to win",
+      "desktopOddIds": [ [2158221057], [2158221058] ],
+      "mobileOddIds": [ [2158221057], [2158221058] ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 879,
+      "isMB": false,
+      "sportMarketId": 71122,
+      "id": 911610542,
+      "name": "Heidelberg United to win"
+    },
+    {
+      "shortName": "Melbourne Knights to win",
+      "desktopOddIds": [ [2158220948], [2158220949] ],
+      "mobileOddIds": [ [2158220948], [2158220949] ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 880,
+      "isMB": false,
+      "sportMarketId": 71123,
+      "id": 911610510,
+      "name": "Melbourne Knights to win"
+    },
+    {
+      "shortName": "Any team to win",
+      "desktopOddIds": [ [2158220690], [2158220691] ],
+      "mobileOddIds": [ [2158220690], [2158220691] ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 881,
+      "isMB": false,
+      "sportMarketId": 71124,
+      "id": 911610423,
+      "name": "Any team to win"
+    },
+    {
+      "shortName": "Multiscores",
+      "desktopOddIds": [
+        [2158221215, 2158221219, 2158221221, 2158221217, 2158221223],
+        [2158221225                                                ],
+        [2158221216, 2158221220, 2158221222, 2158221218, 2158221224]
+      ],
+      "mobileOddIds": [
+        [
+          2158221215, 2158221219, 2158221221, 2158221217, 2158221223,
+          2158221225, 2158221216, 2158221220, 2158221222, 2158221218, 2158221224
+        ]
+      ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 551,
+      "isMB": false,
+      "sportMarketId": 71017,
+      "id": 911610570,
+      "name": "Multiscores"
+    },
+    {
+      "shortName": "Last corner",
+      "desktopOddIds": [ [2167409736], [2167409739], [2167409737] ],
+      "mobileOddIds": [ [2167409736], [2167409739], [2167409737] ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 164,
+      "isMB": false,
+      "sportMarketId": 70737,
+      "id": 915154580,
+      "name": "Last corner"
+    },
+    {
+      "shortName": "Odd/even corners",
+      "desktopOddIds": [ [2167409741], [2167409743] ],
+      "mobileOddIds": [ [2167409741], [2167409743] ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 172,
+      "isMB": false,
+      "sportMarketId": 70742,
+      "id": 915154581,
+      "name": "Odd/even corners"
+    },
+    {
+      "shortName": "Fifth goal & 1x2",
+      "desktopOddIds": [
+        [2167661377, 2167661378, 2167661379],
+        [2167661383                        ],
+        [2167661380, 2167661381, 2167661382]
+      ],
+      "mobileOddIds": [
+        [
+          2167661377, 2167661378, 2167661379, 2167661383, 2167661380,
+          2167661381, 2167661382
+        ]
+      ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 184,
+      "isMB": false,
+      "sportMarketId": 70753,
+      "sv": "5",
+      "id": 915219436,
+      "name": "Fifth goal & 1x2"
+    }
+  ],
+  "childMarkets": [],
+  "odds": [
+    {
+      "typeId": 1,
+      "price": 4.5,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2158220889,
+      "name": "Melbourne Knights"
+    },
+    {
+      "typeId": 2,
+      "price": 1.8182,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2158220890,
+      "name": "X"
+    },
+    {
+      "typeId": 3,
+      "price": 3.25,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2158220891,
+      "name": "Heidelberg United"
+    },
+    {
+      "typeId": 12,
+      "price": 1.6667,
+      "isMB": true,
+      "oddStatus": 0,
+      "sv": "4.5",
+      "id": 2158220758,
+      "name": "Over 4.5"
+    },
+    {
+      "typeId": 12,
+      "price": 4.2,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "5.5",
+      "id": 2158220760,
+      "name": "Over 5.5"
+    },
+    {
+      "typeId": 12,
+      "price": 9,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "6.5",
+      "id": 2167638265,
+      "name": "Over 6.5"
+    },
+    {
+      "typeId": 13,
+      "price": 2.1,
+      "isMB": true,
+      "oddStatus": 0,
+      "sv": "4.5",
+      "id": 2158220759,
+      "name": "Under 4.5"
+    },
+    {
+      "typeId": 13,
+      "price": 1.1819,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "5.5",
+      "id": 2158220761,
+      "name": "Under 5.5"
+    },
+    {
+      "typeId": 13,
+      "price": 1.02,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "6.5",
+      "id": 2167638266,
+      "name": "Under 6.5"
+    },
+    {
+      "typeId": 9,
+      "price": 1.3,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2158220864,
+      "name": "Melbourne Knights or draw"
+    },
+    {
+      "typeId": 10,
+      "price": 1.8889,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2158220862,
+      "name": "Melbourne Knights or Heidelberg United"
+    },
+    {
+      "typeId": 11,
+      "price": 1.1667,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2158220863,
+      "name": "Draw or Heidelberg United"
+    },
+    {
+      "typeId": 54,
+      "price": 0,
+      "isMB": false,
+      "oddStatus": 7,
+      "id": 2158220910,
+      "name": "0"
+    },
+    {
+      "typeId": 56,
+      "price": 0,
+      "isMB": false,
+      "oddStatus": 7,
+      "id": 2158220911,
+      "name": "1"
+    },
+    {
+      "typeId": 58,
+      "price": 0,
+      "isMB": false,
+      "oddStatus": 7,
+      "id": 2158220912,
+      "name": "2"
+    },
+    {
+      "typeId": 734,
+      "price": 0,
+      "isMB": false,
+      "oddStatus": 7,
+      "id": 2158220914,
+      "name": "3"
+    },
+    {
+      "typeId": 712,
+      "price": 2.1,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2158220913,
+      "name": "4"
+    },
+    {
+      "typeId": 966,
+      "price": 1.6667,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2158220915,
+      "name": "5+"
+    },
+    {
+      "typeId": 1,
+      "price": 2.2,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2158220896,
+      "name": "Melbourne Knights"
+    },
+    {
+      "typeId": 3,
+      "price": 1.6,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2158220897,
+      "name": "Heidelberg United"
+    },
+    {
+      "typeId": 12,
+      "price": 3,
+      "isMB": true,
+      "oddStatus": 0,
+      "sv": "2.5",
+      "id": 2158220736,
+      "name": "Over 2.5"
+    },
+    {
+      "typeId": 12,
+      "price": 9,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "3.5",
+      "id": 2167632228,
+      "name": "Over 3.5"
+    },
+    {
+      "typeId": 13,
+      "price": 1.3334,
+      "isMB": true,
+      "oddStatus": 0,
+      "sv": "2.5",
+      "id": 2158220737,
+      "name": "Under 2.5"
+    },
+    {
+      "typeId": 13,
+      "price": 1.02,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "3.5",
+      "id": 2167632229,
+      "name": "Under 3.5"
+    },
+    {
+      "typeId": 12,
+      "price": 2.4,
+      "isMB": true,
+      "oddStatus": 0,
+      "sv": "2.5",
+      "id": 2158220742,
+      "name": "Over 2.5"
+    },
+    {
+      "typeId": 12,
+      "price": 8,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "3.5",
+      "id": 2167661384,
+      "name": "Over 3.5"
+    },
+    {
+      "typeId": 13,
+      "price": 1.5,
+      "isMB": true,
+      "oddStatus": 0,
+      "sv": "2.5",
+      "id": 2158220743,
+      "name": "Under 2.5"
+    },
+    {
+      "typeId": 13,
+      "price": 1.04,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "3.5",
+      "id": 2167661385,
+      "name": "Under 3.5"
+    },
+    {
+      "typeId": 12,
+      "price": 1.8,
+      "isMB": true,
+      "oddStatus": 0,
+      "sv": "13.5",
+      "id": 2167551938,
+      "name": "Over 13.5"
+    },
+    {
+      "typeId": 13,
+      "price": 1.85,
+      "isMB": true,
+      "oddStatus": 0,
+      "sv": "13.5",
+      "id": 2167551939,
+      "name": "Under 13.5"
+    },
+    {
+      "typeId": 1711,
+      "price": 1.3,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "1:0",
+      "id": 2158221036,
+      "name": "Melbourne Knights (1:0)"
+    },
+    {
+      "typeId": 1711,
+      "price": 4.5,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "0:0",
+      "id": 2165384076,
+      "name": "Melbourne Knights (0:0)"
+    },
+    {
+      "typeId": 1711,
+      "price": 10,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "0:1",
+      "id": 2158221033,
+      "name": "Melbourne Knights (0:1)"
+    },
+    {
+      "typeId": 1712,
+      "price": 4.2,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "1:0",
+      "id": 2158221037,
+      "name": "Draw (1:0)"
+    },
+    {
+      "typeId": 1712,
+      "price": 1.8182,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "0:0",
+      "id": 2165384077,
+      "name": "Draw (0:0)"
+    },
+    {
+      "typeId": 1712,
+      "price": 5.75,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "0:1",
+      "id": 2158221034,
+      "name": "Draw (0:1)"
+    },
+    {
+      "typeId": 1713,
+      "price": 8.5,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "1:0",
+      "id": 2158221038,
+      "name": "Heidelberg United (1:0)"
+    },
+    {
+      "typeId": 1713,
+      "price": 3.25,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "0:0",
+      "id": 2165384078,
+      "name": "Heidelberg United (0:0)"
+    },
+    {
+      "typeId": 1713,
+      "price": 1.1667,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "0:1",
+      "id": 2158221035,
+      "name": "Heidelberg United (0:1)"
+    },
+    {
+      "typeId": 1714,
+      "price": 1.3,
+      "isMB": true,
+      "oddStatus": 0,
+      "sv": "+0.5",
+      "id": 2158220702,
+      "name": "Melbourne Knights (+0.5)"
+    },
+    {
+      "typeId": 1714,
+      "price": 4.5,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "-0.5",
+      "id": 2158220700,
+      "name": "Melbourne Knights (-0.5)"
+    },
+    {
+      "typeId": 1715,
+      "price": 3.25,
+      "isMB": true,
+      "oddStatus": 0,
+      "sv": "+0.5",
+      "id": 2158220703,
+      "name": "Heidelberg United (-0.5)"
+    },
+    {
+      "typeId": 1715,
+      "price": 1.1667,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "-0.5",
+      "id": 2158220701,
+      "name": "Heidelberg United (+0.5)"
+    },
+    {
+      "typeId": 1,
+      "price": 3.2,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2158221141,
+      "name": "Melbourne Knights"
+    },
+    {
+      "typeId": 7,
+      "price": 0,
+      "isMB": false,
+      "oddStatus": 7,
+      "id": 2158221143,
+      "name": "None"
+    },
+    {
+      "typeId": 3,
+      "price": 1.2223,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2158221142,
+      "name": "Heidelberg United"
+    },
+    {
+      "typeId": 144,
+      "price": 4,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2158220813,
+      "name": "3:2"
+    },
+    {
+      "typeId": 146,
+      "price": 20,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2158220814,
+      "name": "4:2"
+    },
+    {
+      "typeId": 312,
+      "price": 41,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2158220822,
+      "name": "4:3"
+    },
+    {
+      "typeId": 142,
+      "price": 2.1,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2158220812,
+      "name": "2:2"
+    },
+    {
+      "typeId": 154,
+      "price": 8,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2158220818,
+      "name": "3:3"
+    },
+    {
+      "typeId": 322,
+      "price": 151,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2158220824,
+      "name": "4:4"
+    },
+    {
+      "typeId": 324,
+      "price": 31,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2158220825,
+      "name": "Other"
+    },
+    {
+      "typeId": 152,
+      "price": 3.1,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2158220817,
+      "name": "2:3"
+    },
+    {
+      "typeId": 160,
+      "price": 12,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2158220821,
+      "name": "2:4"
+    },
+    {
+      "typeId": 320,
+      "price": 31,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2158220823,
+      "name": "3:4"
+    },
+    {
+      "typeId": 630,
+      "price": 5.75,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2158221077,
+      "name": "Melbourne Knights by 1"
+    },
+    {
+      "typeId": 632,
+      "price": 0,
+      "isMB": false,
+      "oddStatus": 7,
+      "id": 2158221078,
+      "name": "Melbourne Knights by 2"
+    },
+    {
+      "typeId": 634,
+      "price": 0,
+      "isMB": false,
+      "oddStatus": 7,
+      "id": 2158221079,
+      "name": "Melbourne Knights by 3+"
+    },
+    {
+      "typeId": 2,
+      "price": 1.8182,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2158221076,
+      "name": "Draw"
+    },
+    {
+      "typeId": 636,
+      "price": 4.2,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2158221080,
+      "name": "Heidelberg United by 1"
+    },
+    {
+      "typeId": 638,
+      "price": 0,
+      "isMB": false,
+      "oddStatus": 7,
+      "id": 2158221081,
+      "name": "Heidelberg United by 2"
+    },
+    {
+      "typeId": 640,
+      "price": 0,
+      "isMB": false,
+      "oddStatus": 7,
+      "id": 2158221082,
+      "name": "Heidelberg United by 3+"
+    },
+    {
+      "typeId": 58,
+      "price": 1.3334,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2158221009,
+      "name": "2"
+    },
+    {
+      "typeId": 60,
+      "price": 3,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2158221010,
+      "name": "3+"
+    },
+    {
+      "typeId": 58,
+      "price": 1.5,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2158221013,
+      "name": "2"
+    },
+    {
+      "typeId": 60,
+      "price": 2.4,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2158221014,
+      "name": "3+"
+    },
+    {
+      "typeId": 2,
+      "price": 1.4546,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2158220940,
+      "name": "Draw"
+    },
+    {
+      "typeId": 3,
+      "price": 2.5455,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2158220941,
+      "name": "Heidelberg United"
+    },
+    {
+      "typeId": 1,
+      "price": 3,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2158221049,
+      "name": "Melbourne Knights"
+    },
+    {
+      "typeId": 2,
+      "price": 1.3334,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2158221050,
+      "name": "Draw"
+    },
+    {
+      "typeId": 70,
+      "price": 2.2858,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2158220932,
+      "name": "Odd"
+    },
+    {
+      "typeId": 72,
+      "price": 1.5556,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2158220933,
+      "name": "Even"
+    },
+    {
+      "typeId": 1993,
+      "price": 0,
+      "isMB": false,
+      "oddStatus": 7,
+      "id": 2158221364,
+      "name": "0-2"
+    },
+    {
+      "typeId": 1730,
+      "price": 0,
+      "isMB": false,
+      "oddStatus": 7,
+      "id": 2158221349,
+      "name": "1-2"
+    },
+    {
+      "typeId": 730,
+      "price": 0,
+      "isMB": false,
+      "oddStatus": 7,
+      "id": 2158221365,
+      "name": "0-1"
+    },
+    {
+      "typeId": 1733,
+      "price": 1.1765,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2158221352,
+      "name": "1-5"
+    },
+    {
+      "typeId": 1736,
+      "price": 2,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2158221355,
+      "name": "2-4"
+    },
+    {
+      "typeId": 1739,
+      "price": 2,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2158221358,
+      "name": "3-4"
+    },
+    {
+      "typeId": 1742,
+      "price": 1.1765,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2158221361,
+      "name": "4-5"
+    },
+    {
+      "typeId": 885,
+      "price": 12,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2158221367,
+      "name": "7+"
+    },
+    {
+      "typeId": 1731,
+      "price": 0,
+      "isMB": false,
+      "oddStatus": 7,
+      "id": 2158221350,
+      "name": "1-3"
+    },
+    {
+      "typeId": 1734,
+      "price": 1.0304,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2158221353,
+      "name": "1-6"
+    },
+    {
+      "typeId": 1737,
+      "price": 1.1765,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2158221356,
+      "name": "2-5"
+    },
+    {
+      "typeId": 1740,
+      "price": 1.1765,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2158221359,
+      "name": "3-5"
+    },
+    {
+      "typeId": 1743,
+      "price": 1.0304,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2158221362,
+      "name": "4-6"
+    },
+    {
+      "typeId": 826,
+      "price": 0,
+      "isMB": false,
+      "oddStatus": 7,
+      "id": 2158221366,
+      "name": "No goal"
+    },
+    {
+      "typeId": 1732,
+      "price": 2,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2158221351,
+      "name": "1-4"
+    },
+    {
+      "typeId": 1735,
+      "price": 0,
+      "isMB": false,
+      "oddStatus": 7,
+      "id": 2158221354,
+      "name": "2-3"
+    },
+    {
+      "typeId": 1738,
+      "price": 1.0304,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2158221357,
+      "name": "2-6"
+    },
+    {
+      "typeId": 1741,
+      "price": 1.0304,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2158221360,
+      "name": "3-6"
+    },
+    {
+      "typeId": 1744,
+      "price": 1.7778,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2158221363,
+      "name": "5-6"
+    },
+    {
+      "typeId": 730,
+      "price": 0,
+      "isMB": false,
+      "oddStatus": 7,
+      "id": 2158221128,
+      "name": "0-1"
+    },
+    {
+      "typeId": 1730,
+      "price": 1.3,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2158221121,
+      "name": "1-2"
+    },
+    {
+      "typeId": 1993,
+      "price": 1.3,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2158221127,
+      "name": "0-2"
+    },
+    {
+      "typeId": 736,
+      "price": 11,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2158221129,
+      "name": "4+"
+    },
+    {
+      "typeId": 1731,
+      "price": 1.0304,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2158221122,
+      "name": "1-3"
+    },
+    {
+      "typeId": 1732,
+      "price": 1,
+      "isMB": false,
+      "oddStatus": 7,
+      "id": 2158221123,
+      "name": "1-4"
+    },
+    {
+      "typeId": 826,
+      "price": 0,
+      "isMB": false,
+      "oddStatus": 7,
+      "id": 2158221130,
+      "name": "No goal"
+    },
+    {
+      "typeId": 1735,
+      "price": 1.0304,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2158221124,
+      "name": "2-3"
+    },
+    {
+      "typeId": 1736,
+      "price": 1,
+      "isMB": false,
+      "oddStatus": 7,
+      "id": 2158221125,
+      "name": "2-4"
+    },
+    {
+      "typeId": 1739,
+      "price": 2.6667,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2158221126,
+      "name": "3-4"
+    },
+    {
+      "typeId": 1993,
+      "price": 1.4286,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2158221137,
+      "name": "0-2"
+    },
+    {
+      "typeId": 730,
+      "price": 0,
+      "isMB": false,
+      "oddStatus": 7,
+      "id": 2158221138,
+      "name": "0-1"
+    },
+    {
+      "typeId": 1730,
+      "price": 1.4286,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2158221131,
+      "name": "1-2"
+    },
+    {
+      "typeId": 736,
+      "price": 7.5,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2158221139,
+      "name": "4+"
+    },
+    {
+      "typeId": 1731,
+      "price": 1.05,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2158221132,
+      "name": "1-3"
+    },
+    {
+      "typeId": 1732,
+      "price": 1,
+      "isMB": false,
+      "oddStatus": 7,
+      "id": 2158221133,
+      "name": "1-4"
+    },
+    {
+      "typeId": 826,
+      "price": 0,
+      "isMB": false,
+      "oddStatus": 7,
+      "id": 2158221140,
+      "name": "No goal"
+    },
+    {
+      "typeId": 1735,
+      "price": 1.05,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2158221134,
+      "name": "2-3"
+    },
+    {
+      "typeId": 1736,
+      "price": 1,
+      "isMB": false,
+      "oddStatus": 7,
+      "id": 2158221135,
+      "name": "2-4"
+    },
+    {
+      "typeId": 1739,
+      "price": 2.2858,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2158221136,
+      "name": "3-4"
+    },
+    {
+      "typeId": 1,
+      "price": 4.5,
+      "isMB": false,
+      "oddStatus": 0,
+      "isBB": true,
+      "id": 2158220889,
+      "name": "Melbourne Knights"
+    },
+    {
+      "typeId": 2,
+      "price": 1.8182,
+      "isMB": false,
+      "oddStatus": 0,
+      "isBB": true,
+      "id": 2158220890,
+      "name": "X"
+    },
+    {
+      "typeId": 3,
+      "price": 3.25,
+      "isMB": false,
+      "oddStatus": 0,
+      "isBB": true,
+      "id": 2158220891,
+      "name": "Heidelberg United"
+    },
+    {
+      "typeId": 12,
+      "price": 1.6667,
+      "isMB": true,
+      "oddStatus": 0,
+      "sv": "4.5",
+      "isBB": true,
+      "id": 2158220758,
+      "name": "Over 4.5"
+    },
+    {
+      "typeId": 12,
+      "price": 4.2,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "5.5",
+      "isBB": true,
+      "id": 2158220760,
+      "name": "Over 5.5"
+    },
+    {
+      "typeId": 12,
+      "price": 9,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "6.5",
+      "isBB": true,
+      "id": 2167638265,
+      "name": "Over 6.5"
+    },
+    {
+      "typeId": 13,
+      "price": 2.1,
+      "isMB": true,
+      "oddStatus": 0,
+      "sv": "4.5",
+      "isBB": true,
+      "id": 2158220759,
+      "name": "Under 4.5"
+    },
+    {
+      "typeId": 13,
+      "price": 1.1819,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "5.5",
+      "isBB": true,
+      "id": 2158220761,
+      "name": "Under 5.5"
+    },
+    {
+      "typeId": 13,
+      "price": 1.02,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "6.5",
+      "isBB": true,
+      "id": 2167638266,
+      "name": "Under 6.5"
+    },
+    {
+      "typeId": 9,
+      "price": 1.3,
+      "isMB": false,
+      "oddStatus": 0,
+      "isBB": true,
+      "id": 2158220864,
+      "name": "Melbourne Knights or draw"
+    },
+    {
+      "typeId": 10,
+      "price": 1.8889,
+      "isMB": false,
+      "oddStatus": 0,
+      "isBB": true,
+      "id": 2158220862,
+      "name": "Melbourne Knights or Heidelberg United"
+    },
+    {
+      "typeId": 11,
+      "price": 1.1667,
+      "isMB": false,
+      "oddStatus": 0,
+      "isBB": true,
+      "id": 2158220863,
+      "name": "Draw or Heidelberg United"
+    },
+    {
+      "typeId": 1714,
+      "price": 1.3,
+      "isMB": true,
+      "oddStatus": 0,
+      "sv": "+0.5",
+      "isBB": true,
+      "id": 2158220702,
+      "name": "Melbourne Knights (+0.5)"
+    },
+    {
+      "typeId": 1714,
+      "price": 4.5,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "-0.5",
+      "isBB": true,
+      "id": 2158220700,
+      "name": "Melbourne Knights (-0.5)"
+    },
+    {
+      "typeId": 1715,
+      "price": 3.25,
+      "isMB": true,
+      "oddStatus": 0,
+      "sv": "+0.5",
+      "isBB": true,
+      "id": 2158220703,
+      "name": "Heidelberg United (-0.5)"
+    },
+    {
+      "typeId": 1715,
+      "price": 1.1667,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "-0.5",
+      "isBB": true,
+      "id": 2158220701,
+      "name": "Heidelberg United (+0.5)"
+    },
+    {
+      "typeId": 12,
+      "price": 3,
+      "isMB": true,
+      "oddStatus": 0,
+      "sv": "2.5",
+      "isBB": true,
+      "id": 2158220736,
+      "name": "Over 2.5"
+    },
+    {
+      "typeId": 12,
+      "price": 9,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "3.5",
+      "isBB": true,
+      "id": 2167632228,
+      "name": "Over 3.5"
+    },
+    {
+      "typeId": 13,
+      "price": 1.3334,
+      "isMB": true,
+      "oddStatus": 0,
+      "sv": "2.5",
+      "isBB": true,
+      "id": 2158220737,
+      "name": "Under 2.5"
+    },
+    {
+      "typeId": 13,
+      "price": 1.02,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "3.5",
+      "isBB": true,
+      "id": 2167632229,
+      "name": "Under 3.5"
+    },
+    {
+      "typeId": 12,
+      "price": 2.4,
+      "isMB": true,
+      "oddStatus": 0,
+      "sv": "2.5",
+      "isBB": true,
+      "id": 2158220742,
+      "name": "Over 2.5"
+    },
+    {
+      "typeId": 12,
+      "price": 8,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "3.5",
+      "isBB": true,
+      "id": 2167661384,
+      "name": "Over 3.5"
+    },
+    {
+      "typeId": 13,
+      "price": 1.5,
+      "isMB": true,
+      "oddStatus": 0,
+      "sv": "2.5",
+      "isBB": true,
+      "id": 2158220743,
+      "name": "Under 2.5"
+    },
+    {
+      "typeId": 13,
+      "price": 1.04,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "3.5",
+      "isBB": true,
+      "id": 2167661385,
+      "name": "Under 3.5"
+    },
+    {
+      "typeId": 144,
+      "price": 4,
+      "isMB": false,
+      "oddStatus": 0,
+      "isBB": true,
+      "id": 2158220813,
+      "name": "3:2"
+    },
+    {
+      "typeId": 146,
+      "price": 20,
+      "isMB": false,
+      "oddStatus": 0,
+      "isBB": true,
+      "id": 2158220814,
+      "name": "4:2"
+    },
+    {
+      "typeId": 312,
+      "price": 41,
+      "isMB": false,
+      "oddStatus": 0,
+      "isBB": true,
+      "id": 2158220822,
+      "name": "4:3"
+    },
+    {
+      "typeId": 142,
+      "price": 2.1,
+      "isMB": false,
+      "oddStatus": 0,
+      "isBB": true,
+      "id": 2158220812,
+      "name": "2:2"
+    },
+    {
+      "typeId": 154,
+      "price": 8,
+      "isMB": false,
+      "oddStatus": 0,
+      "isBB": true,
+      "id": 2158220818,
+      "name": "3:3"
+    },
+    {
+      "typeId": 322,
+      "price": 151,
+      "isMB": false,
+      "oddStatus": 0,
+      "isBB": true,
+      "id": 2158220824,
+      "name": "4:4"
+    },
+    {
+      "typeId": 324,
+      "price": 31,
+      "isMB": false,
+      "oddStatus": 0,
+      "isBB": true,
+      "id": 2158220825,
+      "name": "Other"
+    },
+    {
+      "typeId": 152,
+      "price": 3.1,
+      "isMB": false,
+      "oddStatus": 0,
+      "isBB": true,
+      "id": 2158220817,
+      "name": "2:3"
+    },
+    {
+      "typeId": 160,
+      "price": 12,
+      "isMB": false,
+      "oddStatus": 0,
+      "isBB": true,
+      "id": 2158220821,
+      "name": "2:4"
+    },
+    {
+      "typeId": 320,
+      "price": 31,
+      "isMB": false,
+      "oddStatus": 0,
+      "isBB": true,
+      "id": 2158220823,
+      "name": "3:4"
+    },
+    {
+      "typeId": 70,
+      "price": 2.2858,
+      "isMB": false,
+      "oddStatus": 0,
+      "isBB": true,
+      "id": 2158220932,
+      "name": "Odd"
+    },
+    {
+      "typeId": 72,
+      "price": 1.5556,
+      "isMB": false,
+      "oddStatus": 0,
+      "isBB": true,
+      "id": 2158220933,
+      "name": "Even"
+    },
+    {
+      "typeId": 660,
+      "price": 15,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "5.5",
+      "id": 2167632240,
+      "name": "Melbourne Knights & over 5.5"
+    },
+    {
+      "typeId": 800,
+      "price": 11,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "5.5",
+      "id": 2167632243,
+      "name": "Draw & over 5.5"
+    },
+    {
+      "typeId": 662,
+      "price": 11,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "5.5",
+      "id": 2167632241,
+      "name": "Heidelberg United & over 5.5"
+    },
+    {
+      "typeId": 656,
+      "price": 5.5,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "5.5",
+      "id": 2167632238,
+      "name": "Melbourne Knights & under 5.5"
+    },
+    {
+      "typeId": 798,
+      "price": 2.05,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "5.5",
+      "id": 2167632242,
+      "name": "Draw & under 5.5"
+    },
+    {
+      "typeId": 658,
+      "price": 4.2,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "5.5",
+      "id": 2167632239,
+      "name": "Heidelberg United & under 5.5"
+    },
+    {
+      "typeId": 1,
+      "price": 3.5,
+      "isMB": true,
+      "oddStatus": 0,
+      "sv": "5",
+      "id": 2167661374,
+      "name": "Melbourne Knights"
+    },
+    {
+      "typeId": 7,
+      "price": 2.1,
+      "isMB": true,
+      "oddStatus": 0,
+      "sv": "5",
+      "id": 2167661376,
+      "name": "None"
+    },
+    {
+      "typeId": 3,
+      "price": 2.7143,
+      "isMB": true,
+      "oddStatus": 0,
+      "sv": "5",
+      "id": 2167661375,
+      "name": "Heidelberg United"
+    },
+    {
+      "typeId": 1727,
+      "price": 6.5,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "5.5",
+      "id": 2167661389,
+      "name": "Melbourne Knights/X & over 5.5"
+    },
+    {
+      "typeId": 1728,
+      "price": 6.3334,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "5.5",
+      "id": 2167661390,
+      "name": "Melbourne Knights/Heidelberg United & over 5.5"
+    },
+    {
+      "typeId": 1729,
+      "price": 5.3334,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "5.5",
+      "id": 2167661391,
+      "name": "X/Heidelberg United & over 5.5"
+    },
+    {
+      "typeId": 1724,
+      "price": 1.52,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "5.5",
+      "id": 2167661386,
+      "name": "Melbourne Knights/X & under 5.5"
+    },
+    {
+      "typeId": 1725,
+      "price": 2.3334,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "5.5",
+      "id": 2167661387,
+      "name": "Melbourne Knights/Heidelberg United & under 5.5"
+    },
+    {
+      "typeId": 1726,
+      "price": 1.4167,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "5.5",
+      "id": 2167661388,
+      "name": "X/Heidelberg United & under 5.5"
+    },
+    {
+      "typeId": 1743,
+      "price": 1.02,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2158221108,
+      "name": "4-6"
+    },
+    {
+      "typeId": 885,
+      "price": 7.5,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2158221110,
+      "name": "7+"
+    },
+    {
+      "typeId": 2086,
+      "price": 15,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "74:00|74:59",
+      "iconName": "goal",
+      "id": 2167669073,
+      "name": "Goal"
+    },
+    {
+      "typeId": 2086,
+      "price": 15,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "75:00|75:59",
+      "iconName": "goal",
+      "id": 2167670153,
+      "name": "Goal"
+    },
+    {
+      "typeId": 2088,
+      "price": 11,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "75:00|75:59",
+      "iconName": "booking",
+      "id": 2167669074,
+      "name": "Booking"
+    },
+    {
+      "typeId": 2086,
+      "price": 15,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "76:00|76:59",
+      "iconName": "goal",
+      "id": 2167670722,
+      "name": "Goal"
+    },
+    {
+      "typeId": 2088,
+      "price": 11,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "76:00|76:59",
+      "iconName": "booking",
+      "id": 2167670154,
+      "name": "Booking"
+    },
+    {
+      "typeId": 2088,
+      "price": 11,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "77:00|77:59",
+      "iconName": "booking",
+      "id": 2167670723,
+      "name": "Booking"
+    },
+    {
+      "typeId": 74,
+      "price": 3.25,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2158221057,
+      "name": "Yes"
+    },
+    {
+      "typeId": 76,
+      "price": 1.3,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2158221058,
+      "name": "No"
+    },
+    {
+      "typeId": 74,
+      "price": 4.5,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2158220948,
+      "name": "Yes"
+    },
+    {
+      "typeId": 76,
+      "price": 1.1667,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2158220949,
+      "name": "No"
+    },
+    {
+      "typeId": 74,
+      "price": 1.8889,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2158220690,
+      "name": "Yes"
+    },
+    {
+      "typeId": 76,
+      "price": 1.8182,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2158220691,
+      "name": "No"
+    },
+    {
+      "typeId": 1750,
+      "price": 0,
+      "isMB": false,
+      "oddStatus": 7,
+      "id": 2158221215,
+      "name": "1:0, 2:0 or 3:0"
+    },
+    {
+      "typeId": 1754,
+      "price": 0,
+      "isMB": false,
+      "oddStatus": 7,
+      "id": 2158221219,
+      "name": "2:1, 3:1 or 4:1"
+    },
+    {
+      "typeId": 1756,
+      "price": 3.6,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2158221221,
+      "name": "3:2, 4:2, 4:3 or 5:1"
+    },
+    {
+      "typeId": 1752,
+      "price": 0,
+      "isMB": false,
+      "oddStatus": 7,
+      "id": 2158221217,
+      "name": "4:0, 5:0 or 6:0"
+    },
+    {
+      "typeId": 1758,
+      "price": 51,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2158221223,
+      "name": "Other homewin"
+    },
+    {
+      "typeId": 2,
+      "price": 1.6,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2158221225,
+      "name": "Draw"
+    },
+    {
+      "typeId": 1751,
+      "price": 0,
+      "isMB": false,
+      "oddStatus": 7,
+      "id": 2158221216,
+      "name": "0:1, 0:2 or 0:3"
+    },
+    {
+      "typeId": 1755,
+      "price": 0,
+      "isMB": false,
+      "oddStatus": 7,
+      "id": 2158221220,
+      "name": "1:2, 1:3 or 1:4"
+    },
+    {
+      "typeId": 1757,
+      "price": 2.7143,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2158221222,
+      "name": "2:3, 2:4, 3:4 or 1:5"
+    },
+    {
+      "typeId": 1753,
+      "price": 0,
+      "isMB": false,
+      "oddStatus": 7,
+      "id": 2158221218,
+      "name": "0:4, 0:5 or 0:6"
+    },
+    {
+      "typeId": 1759,
+      "price": 51,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2158221224,
+      "name": "Other awaywin"
+    },
+    {
+      "typeId": 1,
+      "price": 1.8667,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2167409736,
+      "name": "Melbourne Knights"
+    },
+    {
+      "typeId": 7,
+      "price": 0,
+      "isMB": false,
+      "oddStatus": 7,
+      "id": 2167409739,
+      "name": "None"
+    },
+    {
+      "typeId": 3,
+      "price": 1.75,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2167409737,
+      "name": "Heidelberg United"
+    },
+    {
+      "typeId": 70,
+      "price": 1.8,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2167409741,
+      "name": "Odd"
+    },
+    {
+      "typeId": 72,
+      "price": 1.85,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2167409743,
+      "name": "Even"
+    },
+    {
+      "typeId": 814,
+      "price": 4.2,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "5",
+      "id": 2167661377,
+      "name": "Melbourne Knights goal & Melbourne Knights"
+    },
+    {
+      "typeId": 816,
+      "price": 20,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "5",
+      "id": 2167661378,
+      "name": "Melbourne Knights goal & draw"
+    },
+    {
+      "typeId": 818,
+      "price": 51,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "5",
+      "id": 2167661379,
+      "name": "Melbourne Knights goal & Heidelberg United"
+    },
+    {
+      "typeId": 826,
+      "price": 1.96,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "5",
+      "id": 2167661383,
+      "name": "No goal"
+    },
+    {
+      "typeId": 820,
+      "price": 51,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "5",
+      "id": 2167661380,
+      "name": "Heidelberg United goal & Melbourne Knights"
+    },
+    {
+      "typeId": 822,
+      "price": 20,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "5",
+      "id": 2167661381,
+      "name": "Heidelberg United goal & draw"
+    },
+    {
+      "typeId": 824,
+      "price": 3,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "5",
+      "id": 2167661382,
+      "name": "Heidelberg United goal & Heidelberg United"
+    }
+  ],
+  "boosts": [],
+  "isParlay": false,
+  "eventCode": 7285,
+  "rc": false,
+  "startDate": "2025-02-06T08:30:00Z",
+  "showAll": true
+}

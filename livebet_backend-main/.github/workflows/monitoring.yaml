@@ -1,0 +1,106 @@
+name: Monitoring
+
+on:
+  push:
+    branches:
+      - monitoring
+
+jobs:
+  detect-changes:
+    runs-on: ubuntu-latest
+    outputs:
+      changed-modules: ${{ steps.get-changed.outputs.modules }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - name: Get changed modules
+        id: get-changed
+        run: |
+          # Only included dirs in automation
+          # "" - means all dir
+          INCLUDED_DIRS="monitoring"
+          
+          # Dirs excluded from automation
+          EXCLUDED_DIRS="^(\.|devops|shared|parse|runner)" 
+          
+          changed=$(git diff --name-only HEAD^ HEAD | cut -d'/' -f1 | grep -E "$INCLUDED_DIRS" | grep -v -E "$EXCLUDED_DIRS" | sort -u) 
+          #echo "Result string:"
+          #echo "git diff --name-only HEAD^ HEAD | cut -d'/' -f1 | grep -E .$INCLUDED_DIRS. | grep -v -E .$EXCLUDED_DIRS."
+          echo "Input string:"
+          echo "$(git diff --name-only HEAD^ HEAD | cut -d'/' -f1)"
+          
+          echo "Input string after INCLUDED_DIRS:"
+          echo "$(git diff --name-only HEAD^ HEAD | cut -d'/' -f1 | grep -E "$INCLUDED_DIRS")"
+
+          echo "Input string after INCLUDED_DIRS and $EXCLUDED_DIRS:"
+          echo "$(git diff --name-only HEAD^ HEAD | cut -d'/' -f1 | grep -E "$INCLUDED_DIRS" | grep -v -E "$EXCLUDED_DIRS")"
+
+          echo "Echo: changed = $changed"
+          modules=$(echo "$changed" | tr '\n' ' ')
+          echo "modules=$modules" >> $GITHUB_OUTPUT
+          echo "Echo: modules=$modules"
+
+  deploy:
+    needs: detect-changes
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Sync code and build on production
+        uses: appleboy/ssh-action@v1
+        with:
+          host: ${{ secrets.DEVOPS_HOST }}
+          port: ${{ secrets.DEVOPS_PORT }}
+          username: ${{ secrets.DEVOPS_USER }}
+          password: ${{ secrets.DEVOPS_PASS }}
+          script: |
+            
+            PROJECT_PATH=/projects/livebet_backend
+            
+            cd $PROJECT_PATH
+            echo "We are in directory: $(pwd)"
+            
+            echo "We are on branch:"
+            git branch
+            
+            # Получаем свежий код
+            USER=${{ secrets.GIT_USERNAME }}
+            TOKEN=${{ secrets.GIT_TOKEN }}
+            REPOSITORY="https://$USER:$TOKEN@github.com/FutureOfBets/livebet_backend.git"
+            
+            echo "Fetching from GitHub:"
+            git fetch "$REPOSITORY"
+
+            BRANCH_NAME=${{ github.ref_name }}
+
+            git checkout $BRANCH_NAME
+            echo "We are on branch:"
+            git branch
+            
+            echo "Pulling from GitHub:"
+            git pull "$REPOSITORY" $BRANCH_NAME
+            
+            CHANGED_MODULES="${{ needs.detect-changes.outputs.changed-modules }}"
+            echo "Echo: changed modules = $CHANGED_MODULES"
+            
+            # Пересобираем только изменённые модули
+            for module in $CHANGED_MODULES; do
+              echo "Devops change $module ..."
+            
+              cd $PROJECT_PATH/$module
+              echo "We are on $(pwd)"
+            
+              docker compose down
+              docker compose up -d # --no-deps $CHANGED_MODULES
+            
+            done
+            
+            wait # Ожидаем завершения всех фоновых процессов
+            
+            cd $PROJECT_PATH
+            
+            git checkout main
+            echo "We are on branch:"
+            git branch

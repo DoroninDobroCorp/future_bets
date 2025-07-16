@@ -1,0 +1,734 @@
+{
+  "IMatchLiveContainer": {
+    "matches": [
+      {
+        "id": 22572215,
+        "round": 24103,
+        "matchCode": 2973,
+        "leagueId": 172713,
+        "home": "Meralco Bolts",
+        "away": "Converge FiberXers",
+        "kickOffTime": 1735117200000,
+        "status": 0,
+        "matchResult": {
+          "resultType": "FourQuarters",
+          "halfTime": {"h": 41, "a": 58, "probability": 0.0},
+          "fullTime": {"h": 74, "a": 90, "probability": 0.0},
+          "currentScore": {"h": 74, "a": 90, "probability": 0.0},
+          "firstGoal": "UNKNOWN_WAIT",
+          "lastGoal": "UNKNOWN_WAIT",
+          "status": "SCHEDULED",
+          "scores": [
+            {"h": 20, "a": 26, "probability": 0.0},
+            {"h": 21, "a": 32, "probability": 0.0},
+            {"h": 25, "a": 27, "probability": 0.0},
+            {"h":  8, "a":  5, "probability": 0.0}
+          ],
+          "overtime": {"h": 74, "a": 90, "probability": 0.0},
+          "toNextRound": "NORESULT",
+          "tieBreakScores": [],
+          "resultLocked": false,
+          "phase": "FORTH_QUARTER",
+          "remainingMinutePeriod": "07:50",
+          "matchTurnoverStatus": "UNKNOWN_WAIT",
+          "firstGoalWay": "UNKNOWN",
+          "firstRestartType": "UNKNOWN",
+          "extendedMatchResult": {
+            "periods"            : null,
+            "dartsPeriods"       : null,
+            "winWay"             : null,
+            "playedRoundsNumber" : null,
+            "allRoundsPlayed"    : null,
+            "m1Score"            : null,
+            "assistScore"        : null,
+            "outsScore"          : null,
+            "foulsScore"         : null,
+            "ballPossessionScore": null,
+            "goalOutsScore"      : null,
+            "savesScore"         : null,
+            "correctPassessScore": null,
+            "offsidesScore"      : null,
+            "substitutionsScore" : null,
+            "pasPctSco"          : null,
+            "gkSco"              : null,
+            "tacSco"             : null,
+            "varSco"             : null,
+            "inj1p"              : null,
+            "inj2p"              : null,
+            "yc"                 : null,
+            "rc"                 : null,
+            "1stCA"              : null,
+            "PLDD"               : null,
+            "PLTD"               : null,
+            "PLRQ1"              : null,
+            "PLT"                : null,
+            "PLS"                : null,
+            "PLB"                : null
+          },
+          "ownGoal": "UNKNOWN_WAIT",
+          "wayToQualify": "UNKNOWN",
+          "resultConfirmed": false
+        },
+        "kickOffTimeStr": "25.12. 10:00",
+        "brMatchId": 55707513,
+        "leagueName": "Philippines, Commissioners Cup",
+        "sport": "B",
+        "phase": "FORTH_QUARTER",
+        "messageType": 0,
+        "liveStatus": 1,
+        "bets": [
+          {
+            "id": 5312935605,
+            "liveBetCode": 465,
+            "liveBetCaption": "HENDIKEP - SA PRODUŽECIMA",
+            "liveBetStatus": "U",
+            "orderNumber": 38900,
+            "picks": [
+              {
+                "liveBetPickCode": 1784,
+                "liveBetPickLabel": "hksp 1",
+                "oddValue": 1.62,
+                "specialValue": "17.5",
+                "specialDisplay": "17.5",
+                "caption": "hksp 1",
+                "mainPick": false,
+                "position": 1,
+                "tipTypeCode": 50430
+              },
+              {
+                "liveBetPickCode": 1785,
+                "liveBetPickLabel": "hksp 2",
+                "oddValue": 2.15,
+                "specialValue": "17.5",
+                "specialDisplay": "17.5",
+                "caption": "hksp 2",
+                "mainPick": false,
+                "position": 3,
+                "tipTypeCode": 50431
+              }
+            ],
+            "specialValue": "17.5",
+            "tipClassTypeCode": 222,
+            "specialBetValueType": "HANDICAP",
+            "specialValuePick": "17.5",
+            "multyBet": false,
+            "disabled": false,
+            "lineCode": 3,
+            "betPickGroupId": 3248,
+            "betPickGroupIds": [3248]
+          },
+          {
+            "id": 5312935579,
+            "liveBetCode": 464,
+            "liveBetCaption": "HENDIKEP - SA PRODUŽECIMA",
+            "liveBetStatus": "U",
+            "orderNumber": 39000,
+            "picks": [
+              {
+                "liveBetPickCode": 1782,
+                "liveBetPickLabel": "hksp 1",
+                "oddValue": 1.75,
+                "specialValue": "16.5",
+                "specialDisplay": "16.5",
+                "caption": "hksp 1",
+                "mainPick": false,
+                "position": 1,
+                "tipTypeCode": 50430
+              },
+              {
+                "liveBetPickCode": 1783,
+                "liveBetPickLabel": "hksp 2",
+                "oddValue": 1.95,
+                "specialValue": "16.5",
+                "specialDisplay": "16.5",
+                "caption": "hksp 2",
+                "mainPick": false,
+                "position": 3,
+                "tipTypeCode": 50431
+              }
+            ],
+            "specialValue": "16.5",
+            "tipClassTypeCode": 222,
+            "specialBetValueType": "HANDICAP",
+            "specialValuePick": "16.5",
+            "multyBet": false,
+            "disabled": false,
+            "lineCode": 3,
+            "betPickGroupId": 3248,
+            "betPickGroupIds": [3248]
+          },
+          {
+            "id": 5312932707,
+            "liveBetCode": 463,
+            "liveBetCaption": "HENDIKEP - SA PRODUŽECIMA",
+            "liveBetStatus": "U",
+            "orderNumber": 39100,
+            "picks": [
+              {
+                "liveBetPickCode": 1780,
+                "liveBetPickLabel": "hksp 1",
+                "oddValue": 1.95,
+                "specialValue": "15.5",
+                "specialDisplay": "15.5",
+                "caption": "hksp 1",
+                "mainPick": false,
+                "position": 1,
+                "tipTypeCode": 50430
+              },
+              {
+                "liveBetPickCode": 1781,
+                "liveBetPickLabel": "hksp 2",
+                "oddValue": 1.77,
+                "specialValue": "15.5",
+                "specialDisplay": "15.5",
+                "caption": "hksp 2",
+                "mainPick": false,
+                "position": 3,
+                "tipTypeCode": 50431
+              }
+            ],
+            "specialValue": "15.5",
+            "tipClassTypeCode": 222,
+            "specialBetValueType": "HANDICAP",
+            "specialValuePick": "15.5",
+            "multyBet": false,
+            "disabled": false,
+            "lineCode": 3,
+            "betPickGroupId": 3248,
+            "betPickGroupIds": [3248]
+          },
+          {
+            "id": 5312935697,
+            "liveBetCode": 520,
+            "liveBetCaption": "IV ČETVRTINA HENDIKEP",
+            "liveBetStatus": "U",
+            "orderNumber": 63100,
+            "picks": [
+              {
+                "liveBetPickCode": 1894,
+                "liveBetPickLabel": "h IVc 1",
+                "oddValue": 1.75,
+                "specialValue": "-2.5",
+                "specialDisplay": "-2.5",
+                "caption": "h IVc 1",
+                "mainPick": false,
+                "position": 1,
+                "tipTypeCode": 50143
+              },
+              {
+                "liveBetPickCode": 1895,
+                "liveBetPickLabel": "h IVc 2",
+                "oddValue": 1.95,
+                "specialValue": "-2.5",
+                "specialDisplay": "-2.5",
+                "caption": "h IVc 2",
+                "mainPick": false,
+                "position": 3,
+                "tipTypeCode": 50144
+              }
+            ],
+            "specialValue": "-2.5",
+            "tipClassTypeCode": 134,
+            "specialBetValueType": "HANDICAP",
+            "specialValuePick": "-2.5",
+            "multyBet": false,
+            "periodNumber": 4,
+            "disabled": false,
+            "lineCode": 13,
+            "betPickGroupId": 3259,
+            "betPickGroupIds": [3259]
+          },
+          {
+            "id": 5312936713,
+            "liveBetCode": 0,
+            "liveBetCaption": "IV ČETVRTINA UKUPNO POENA",
+            "liveBetStatus": "U",
+            "orderNumber": 84800,
+            "picks": [
+              {
+                "liveBetPickCode": 2608,
+                "liveBetPickLabel": "up IVc<",
+                "oddValue": 1.82,
+                "specialValue": "44.5",
+                "specialDisplay": "44.5",
+                "caption": "up IVc<",
+                "mainPick": true,
+                "position": 1,
+                "tipTypeCode": 50169
+              },
+              {
+                "liveBetPickCode": 2609,
+                "liveBetPickLabel": "up IVc>",
+                "oddValue": 1.88,
+                "specialValue": "44.5",
+                "specialDisplay": "44.5",
+                "caption": "up IVc>",
+                "mainPick": true,
+                "position": 3,
+                "tipTypeCode": 50170
+              }
+            ],
+            "tipClassTypeCode": 135,
+            "specialBetValueType": "OVER_UNDER",
+            "specialValuePick": "44.5",
+            "multyBet": true,
+            "periodNumber": 4,
+            "lineCode": 13,
+            "betPickGroupId": 3225,
+            "picksPerRow": 2,
+            "betPickGroupIds": [3225]
+          },
+          {
+            "id": 5312930244,
+            "liveBetCode": 0,
+            "liveBetCaption": "UKUPNO POENA - SA PRODUŽECIMA",
+            "liveBetStatus": "U",
+            "orderNumber": 98600,
+            "picks": [
+              {
+                "liveBetPickCode": 2628,
+                "liveBetPickLabel": "upsp<",
+                "oddValue": 2.1,
+                "specialValue": "194.5",
+                "specialDisplay": "194.5",
+                "caption": "upsp<",
+                "mainPick": false,
+                "position": 1,
+                "tipTypeCode": 50444
+              },
+              {
+                "liveBetPickCode": 2629,
+                "liveBetPickLabel": "upsp>",
+                "oddValue": 1.62,
+                "specialValue": "194.5",
+                "specialDisplay": "194.5",
+                "caption": "upsp>",
+                "mainPick": false,
+                "position": 3,
+                "tipTypeCode": 50445
+              },
+              {
+                "liveBetPickCode": 2630,
+                "liveBetPickLabel": "upsp<",
+                "oddValue": 1.83,
+                "specialValue": "195.5",
+                "specialDisplay": "195.5",
+                "caption": "upsp<",
+                "mainPick": true,
+                "position": 1,
+                "tipTypeCode": 50444
+              },
+              {
+                "liveBetPickCode": 2631,
+                "liveBetPickLabel": "upsp>",
+                "oddValue": 1.87,
+                "specialValue": "195.5",
+                "specialDisplay": "195.5",
+                "caption": "upsp>",
+                "mainPick": true,
+                "position": 3,
+                "tipTypeCode": 50445
+              },
+              {
+                "liveBetPickCode": 2632,
+                "liveBetPickLabel": "upsp<",
+                "oddValue": 1.6,
+                "specialValue": "196.5",
+                "specialDisplay": "196.5",
+                "caption": "upsp<",
+                "mainPick": false,
+                "position": 1,
+                "tipTypeCode": 50444
+              },
+              {
+                "liveBetPickCode": 2633,
+                "liveBetPickLabel": "upsp>",
+                "oddValue": 2.15,
+                "specialValue": "196.5",
+                "specialDisplay": "196.5",
+                "caption": "upsp>",
+                "mainPick": false,
+                "position": 3,
+                "tipTypeCode": 50445
+              }
+            ],
+            "tipClassTypeCode": 150,
+            "specialBetValueType": "OVER_UNDER",
+            "specialValuePick": "194.5",
+            "multyBet": true,
+            "lineCode": 14,
+            "betPickGroupId": 3205,
+            "picksPerRow": 2,
+            "betPickGroupIds": [3205]
+          },
+          {
+            "id": 5312936172,
+            "liveBetCode": 0,
+            "liveBetCaption": "TIM1 UKUPNO POENA SA PRODUŽECIMA",
+            "liveBetStatus": "U",
+            "orderNumber": 144100,
+            "picks": [
+              {
+                "liveBetPickCode": 7671,
+                "liveBetPickLabel": "tim1p uk<",
+                "oddValue": 1.9,
+                "specialValue": "89.5",
+                "specialDisplay": "89.5",
+                "caption": "tim1p uk<",
+                "mainPick": true,
+                "position": 1,
+                "tipTypeCode": 50466
+              },
+              {
+                "liveBetPickCode": 7672,
+                "liveBetPickLabel": "tim1p uk>",
+                "oddValue": 1.75,
+                "specialValue": "89.5",
+                "specialDisplay": "89.5",
+                "caption": "tim1p uk>",
+                "mainPick": true,
+                "position": 3,
+                "tipTypeCode": 50467
+              }
+            ],
+            "tipClassTypeCode": 223,
+            "specialBetValueType": "OVER_UNDER",
+            "specialValuePick": "89.5",
+            "multyBet": true,
+            "lineCode": 15,
+            "betPickGroupId": 3260,
+            "picksPerRow": 2,
+            "betPickGroupIds": [3260]
+          },
+          {
+            "id": 5312930346,
+            "liveBetCode": 0,
+            "liveBetCaption": "TIM2 UKUPNO POENA SA PRODUŽECIMA",
+            "liveBetStatus": "U",
+            "orderNumber": 155800,
+            "picks": [
+              {
+                "liveBetPickCode": 7905,
+                "liveBetPickLabel": "tim2p uk<",
+                "oddValue": 1.93,
+                "specialValue": "105.5",
+                "specialDisplay": "105.5",
+                "caption": "tim2p uk<",
+                "mainPick": true,
+                "position": 1,
+                "tipTypeCode": 50478
+              },
+              {
+                "liveBetPickCode": 7906,
+                "liveBetPickLabel": "tim2p uk>",
+                "oddValue": 1.75,
+                "specialValue": "105.5",
+                "specialDisplay": "105.5",
+                "caption": "tim2p uk>",
+                "mainPick": true,
+                "position": 3,
+                "tipTypeCode": 50479
+              }
+            ],
+            "tipClassTypeCode": 224,
+            "specialBetValueType": "OVER_UNDER",
+            "specialValuePick": "105.5",
+            "multyBet": true,
+            "lineCode": 16,
+            "betPickGroupId": 3261,
+            "picksPerRow": 2,
+            "betPickGroupIds": [3261]
+          },
+          {
+            "id": 5312928536,
+            "liveBetCode": 4833,
+            "liveBetCaption": "IV ČETVRTINA WINNER",
+            "liveBetStatus": "U",
+            "orderNumber": 159800,
+            "picks": [
+              {
+                "liveBetPickCode": 10935,
+                "liveBetPickLabel": "IVc win 1",
+                "oddValue": 1.38,
+                "caption": "IVc win 1",
+                "mainPick": false,
+                "position": 1,
+                "tipTypeCode": 50177
+              },
+              {
+                "liveBetPickCode": 10936,
+                "liveBetPickLabel": "IVc win 2",
+                "oddValue": 2.7,
+                "caption": "IVc win 2",
+                "mainPick": false,
+                "position": 3,
+                "tipTypeCode": 50178
+              }
+            ],
+            "tipClassTypeCode": 236,
+            "multyBet": false,
+            "periodNumber": 4,
+            "disabled": false,
+            "lineCode": 13,
+            "betPickGroupId": 4126,
+            "picksPerRow": 2,
+            "betPickGroupIds": [4126]
+          },
+          {
+            "id": 5312928522,
+            "liveBetCode": 5995,
+            "liveBetCaption": "IV ČETVRTINA",
+            "liveBetStatus": "U",
+            "orderNumber": 5558522,
+            "picks": [
+              {
+                "liveBetPickCode": 14150,
+                "liveBetPickLabel": "IVc 1",
+                "oddValue": 1.5,
+                "caption": "IVc 1",
+                "mainPick": false,
+                "position": 1,
+                "tipTypeCode": 50153
+              },
+              {
+                "liveBetPickCode": 14151,
+                "liveBetPickLabel": "IVc X",
+                "oddValue": 12.0,
+                "caption": "IVc X",
+                "mainPick": false,
+                "position": 2,
+                "tipTypeCode": 50154
+              },
+              {
+                "liveBetPickCode": 14152,
+                "liveBetPickLabel": "IVc 2",
+                "oddValue": 2.8,
+                "caption": "IVc 2",
+                "mainPick": false,
+                "position": 3,
+                "tipTypeCode": 50155
+              }
+            ],
+            "tipClassTypeCode": 253,
+            "multyBet": false,
+            "periodNumber": 4,
+            "disabled": false,
+            "lineCode": 13,
+            "betPickGroupId": 3238,
+            "betPickGroupIds": [3238]
+          },
+          {
+            "id": 5312931169,
+            "liveBetCode": 0,
+            "liveBetCaption": "UKUPNO POENA - BEZ PRODUŽETAKA",
+            "liveBetStatus": "U",
+            "orderNumber": 5568212,
+            "picks": [
+              {
+                "liveBetPickCode": 16173,
+                "liveBetPickLabel": "upbp<",
+                "oddValue": 1.82,
+                "specialValue": "195.5",
+                "specialDisplay": "195.5",
+                "caption": "upbp<",
+                "mainPick": true,
+                "position": 1,
+                "tipTypeCode": 50977
+              },
+              {
+                "liveBetPickCode": 16174,
+                "liveBetPickLabel": "upbp>",
+                "oddValue": 1.9,
+                "specialValue": "195.5",
+                "specialDisplay": "195.5",
+                "caption": "upbp>",
+                "mainPick": true,
+                "position": 3,
+                "tipTypeCode": 50976
+              }
+            ],
+            "tipClassTypeCode": 136,
+            "specialBetValueType": "OVER_UNDER",
+            "specialValuePick": "195.5",
+            "multyBet": true,
+            "lineCode": 14,
+            "betPickGroupId": 3842,
+            "picksPerRow": 2,
+            "betPickGroupIds": [3842]
+          },
+          {
+            "id": 5312935690,
+            "liveBetCode": 7107,
+            "liveBetCaption": "HENDIKEP - BEZ PRODUŽETAKA",
+            "liveBetStatus": "U",
+            "orderNumber": 5569642,
+            "picks": [
+              {
+                "liveBetPickCode": 16459,
+                "liveBetPickLabel": "hkbp 1",
+                "oddValue": 1.75,
+                "specialValue": "16.5",
+                "specialDisplay": "16.5",
+                "caption": "hkbp 1",
+                "mainPick": false,
+                "position": 1,
+                "tipTypeCode": 50900
+              },
+              {
+                "liveBetPickCode": 16460,
+                "liveBetPickLabel": "hkbp 2",
+                "oddValue": 1.95,
+                "specialValue": "16.5",
+                "specialDisplay": "16.5",
+                "caption": "hkbp 2",
+                "mainPick": false,
+                "position": 3,
+                "tipTypeCode": 50902
+              }
+            ],
+            "specialValue": "16.5",
+            "tipClassTypeCode": 133,
+            "specialBetValueType": "HANDICAP",
+            "specialValuePick": "16.5",
+            "multyBet": false,
+            "disabled": false,
+            "lineCode": 3,
+            "betPickGroupId": 3841,
+            "picksPerRow": 3,
+            "betPickGroupIds": [3841]
+          }
+        ],
+        "tmstmp": 2422977197,
+        "showInLive": true,
+        "showInNajava": false,
+        "hasLiveSpecial": false,
+        "powerPlay": "N",
+        "lastChangeTime": 1735123887000,
+        "externalId": "BA_5878689",
+        "leagueCode": 37115,
+        "disabled": false,
+        "topBets": [
+          {
+            "liveBetCode": 0,
+            "tipClassTypeCode": 131,
+            "topPosition": 0,
+            "multyBet": false
+          },
+          {
+            "id": 5312931169,
+            "liveBetCode": 6964,
+            "liveBetCaption": "UKUPNO POENA - BEZ PRODUŽETAKA",
+            "liveBetStatus": "U",
+            "orderNumber": 5568212,
+            "picks": [
+              {
+                "liveBetPickCode": 16173,
+                "liveBetPickLabel": "upbp<",
+                "oddValue": 1.82,
+                "specialValue": "195.5",
+                "specialDisplay": "195.5",
+                "caption": "upbp<",
+                "mainPick": true,
+                "position": 1,
+                "tipTypeCode": 50977
+              },
+              {
+                "liveBetPickCode": 16174,
+                "liveBetPickLabel": "upbp>",
+                "oddValue": 1.9,
+                "specialValue": "195.5",
+                "specialDisplay": "195.5",
+                "caption": "upbp>",
+                "mainPick": true,
+                "position": 3,
+                "tipTypeCode": 50976
+              }
+            ],
+            "specialValue": "195.5",
+            "tipClassTypeCode": 136,
+            "topPosition": 2,
+            "specialBetValueType": "OVER_UNDER",
+            "specialValuePick": "195.5",
+            "multyBet": true,
+            "disabled": false,
+            "lineCode": 14,
+            "betPickGroupId": 3842,
+            "picksPerRow": 2,
+            "betPickGroupIds": [3842]
+          },
+          null,
+          null,
+          {
+            "id": 5312935690,
+            "liveBetCode": 7107,
+            "liveBetCaption": "HENDIKEP - BEZ PRODUŽETAKA",
+            "liveBetStatus": "U",
+            "orderNumber": 5569642,
+            "picks": [
+              {
+                "liveBetPickCode": 16459,
+                "liveBetPickLabel": "hkbp 1",
+                "oddValue": 1.75,
+                "specialValue": "16.5",
+                "specialDisplay": "16.5",
+                "caption": "hkbp 1",
+                "mainPick": false,
+                "position": 1,
+                "tipTypeCode": 50900
+              },
+              {
+                "liveBetPickCode": 16460,
+                "liveBetPickLabel": "hkbp 2",
+                "oddValue": 1.95,
+                "specialValue": "16.5",
+                "specialDisplay": "16.5",
+                "caption": "hkbp 2",
+                "mainPick": false,
+                "position": 3,
+                "tipTypeCode": 50902
+              }
+            ],
+            "specialValue": "16.5",
+            "tipClassTypeCode": 133,
+            "specialBetValueType": "HANDICAP",
+            "specialValuePick": "16.5",
+            "multyBet": false,
+            "disabled": false,
+            "lineCode": 3,
+            "betPickGroupId": 3841,
+            "picksPerRow": 3,
+            "betPickGroupIds": [3841]
+          },
+          {"liveBetCode": 0, "topPosition": 2, "multyBet": false},
+          null,
+          null
+        ],
+        "virtualSport": false,
+        "brHomeId": "18478706",
+        "brAwayId": "18482828",
+        "homeId": 1210822,
+        "awayId": 1383043,
+        "remainingPeriodTime": 470,
+        "tvDurations": [
+          { "numOfTvOuts": 1, "duration": [7                  ] },
+          { "numOfTvOuts": 2, "duration": [7, 0               ] },
+          { "numOfTvOuts": 3, "duration": [0, 0, 0            ] },
+          { "numOfTvOuts": 4, "duration": [0, 0, 0, 0         ] },
+          { "numOfTvOuts": 5, "duration": [0, 0, 0, 0, 0      ] },
+          { "numOfTvOuts": 6, "duration": [0, 0, 0, 0, 0, 0   ] },
+          { "numOfTvOuts": 7, "duration": [0, 0, 0, 0, 0, 0, 0] }
+        ],
+        "leaguePrintOrder": 2147483647,
+        "sportName": "Košarka",
+        "sportOrderNumber": 11.0,
+        "favorite": false,
+        "streamSource": "IMG#",
+        "matchTrackerEnabled": true,
+        "imgId": 468365,
+        "feed": "BA:1:1",
+        "bonusDisabled": false
+      }
+    ]
+  }
+}
+

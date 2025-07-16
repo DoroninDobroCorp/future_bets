@@ -1,0 +1,47 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+
+    height: 100%;
+}
+
+.lists {
+    display: flex;
+    flex-direction: row;
+
+    height: 100%;
+    gap: 30px;
+    margin-bottom: 10px;
+}
+
+.buttonContainer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.button {
+	max-width: 500px;
+	width: 100%;
+	margin-top: 20px;
+	padding: 12px 24px;
+	background: #007BFF;
+	color: white;
+	border: none;
+	border-radius: 8px;
+	cursor: pointer;
+	font-size: 16px;
+	transition: 0.3s, transform 0.2s;
+}
+
+.button:hover {
+	background: #0056b3;
+}
+
+
+@media (max-width: 765px) {
+	.lists {
+        gap: 10px;
+        margin-bottom: 2px;
+    }
+}

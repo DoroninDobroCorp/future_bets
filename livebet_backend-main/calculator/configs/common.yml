@@ -1,0 +1,15 @@
+analyzer_api:
+  url: http://192.168.1.115:7005/
+  timeout: 5
+  prices_url: prices-by-time
+
+analyzer_pre_api:
+  url: http://192.168.1.115:7006/
+  timeout: 30
+  prices_url: prices-by-time
+
+logs_service:
+  users_cache_interval: 3
+  users_cache_timeout: 3
+  percent_cache_interval: 300
+  percent_cache_timeout: 10800

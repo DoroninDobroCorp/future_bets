@@ -1,0 +1,859 @@
+{
+  "IMatchLiveContainer": {
+    "matches": [
+      {
+        "id": 22357517,
+        "round": 24098,
+        "matchCode": 1076,
+        "leagueId": 174626,
+        "home": "Mohamed Safwat",
+        "away": "Marek Gengel",
+        "kickOffTime": 1733472000000,
+        "status": 0,
+        "matchResult": {
+          "resultType": "FiveSets",
+          "halfTime": {
+            "h": 0,
+            "a": 3,
+            "probability": 0.0
+          },
+          "fullTime": {
+            "h": 0,
+            "a": 0,
+            "probability": 0.0
+          },
+          "currentScore": {
+            "h": 0,
+            "a": 0,
+            "probability": 0.0
+          },
+          "firstGoal": "UNKNOWN_WAIT",
+          "lastGoal": "UNKNOWN_WAIT",
+          "status": "SCHEDULED",
+          "scores": [
+            {
+              "h": 0,
+              "a": 3,
+              "probability": 0.0
+            },
+            {
+              "h": 0,
+              "a": 0,
+              "probability": 0.0
+            },
+            {
+              "h": 0,
+              "a": 0,
+              "probability": 0.0
+            },
+            {
+              "h": 0,
+              "a": 0,
+              "probability": 0.0
+            },
+            {
+              "h": 0,
+              "a": 0,
+              "probability": 0.0
+            }
+          ],
+          "toNextRound": "NORESULT",
+          "tieBreakScores": [],
+          "gemScore": {
+            "h": 0,
+            "a": 0,
+            "probability": 0.0
+          },
+          "resultLocked": false,
+          "phase": "FIRST_SET",
+          "matchTurnoverStatus": "UNKNOWN_WAIT",
+          "firstGoalWay": "UNKNOWN",
+          "firstRestartType": "UNKNOWN",
+          "extendedMatchResult": {
+            "periods": null,
+            "dartsPeriods": null,
+            "winWay": null,
+            "playedRoundsNumber": null,
+            "allRoundsPlayed": null,
+            "m1Score": null,
+            "assistScore": null,
+            "outsScore": null,
+            "foulsScore": null,
+            "ballPossessionScore": null,
+            "goalOutsScore": null,
+            "savesScore": null,
+            "correctPassessScore": null,
+            "offsidesScore": null,
+            "substitutionsScore": null,
+            "pasPctSco": null,
+            "gkSco": null,
+            "tacSco": null,
+            "varSco": null,
+            "inj1p": null,
+            "inj2p": null,
+            "yc": null,
+            "rc": null,
+            "1stCA": null,
+            "PLDD": null,
+            "PLTD": null,
+            "PLRQ1": null,
+            "PLT": null,
+            "PLS": null,
+            "PLB": null
+          },
+          "ownGoal": "UNKNOWN_WAIT",
+          "wayToQualify": "UNKNOWN",
+          "resultConfirmed": false
+        },
+        "kickOffTimeStr": "06.12. 09:00",
+        "brMatchId": 56186933,
+        "leagueName": "ITF 2 Doubles STB Men, M15 Sharm El Sheikh (Egypt), hard",
+        "sport": "T",
+        "phase": "FIRST_SET",
+        "messageType": 0,
+        "liveStatus": 1,
+        "bets": [
+          {
+            "id": 5305611061,
+            "liveBetCode": 404,
+            "liveBetCaption": "KONAČAN ISHOD",
+            "liveBetStatus": "U",
+            "orderNumber": 160100,
+            "picks": [
+              {
+                "liveBetPickCode": 1658,
+                "liveBetPickLabel": "ki 1",
+                "oddValue": 6.4,
+                "caption": "ki 1",
+                "mainPick": false,
+                "position": 1,
+                "tipTypeCode": 1
+              },
+              {
+                "liveBetPickCode": 1659,
+                "liveBetPickLabel": "ki 2",
+                "oddValue": 1.08,
+                "caption": "ki 2",
+                "mainPick": false,
+                "position": 3,
+                "tipTypeCode": 3
+              }
+            ],
+            "tipClassTypeCode": 101,
+            "topPosition": 0,
+            "multyBet": false,
+            "disabled": false,
+            "lineCode": 1,
+            "betPickGroupId": 3304,
+            "betPickGroupIds": [
+              3304
+            ]
+          },
+          {
+            "id": 5305611067,
+            "liveBetCode": 186,
+            "liveBetCaption": "I SET",
+            "liveBetStatus": "U",
+            "orderNumber": 160200,
+            "picks": [
+              {
+                "liveBetPickCode": 1192,
+                "liveBetPickLabel": "Is 1",
+                "oddValue": 7.8,
+                "caption": "Is 1",
+                "mainPick": false,
+                "position": 1,
+                "tipTypeCode": 50510
+              },
+              {
+                "liveBetPickCode": 1193,
+                "liveBetPickLabel": "Is 2",
+                "oddValue": 1.04,
+                "caption": "Is 2",
+                "mainPick": false,
+                "position": 3,
+                "tipTypeCode": 50511
+              }
+            ],
+            "tipClassTypeCode": 103,
+            "specialBetValueType": "SET",
+            "multyBet": false,
+            "periodNumber": 1,
+            "disabled": false,
+            "lineCode": 201,
+            "betPickGroupId": 3300,
+            "betPickGroupIds": [
+              3300
+            ]
+          },
+          {
+            "id": 5305611074,
+            "liveBetCode": 188,
+            "liveBetCaption": "II SET",
+            "liveBetStatus": "U",
+            "orderNumber": 160300,
+            "picks": [
+              {
+                "liveBetPickCode": 1196,
+                "liveBetPickLabel": "IIs 1",
+                "oddValue": 3.95,
+                "caption": "IIs 1",
+                "mainPick": false,
+                "position": 1,
+                "tipTypeCode": 50512
+              },
+              {
+                "liveBetPickCode": 1197,
+                "liveBetPickLabel": "IIs 2",
+                "oddValue": 1.2,
+                "caption": "IIs 2",
+                "mainPick": false,
+                "position": 3,
+                "tipTypeCode": 50513
+              }
+            ],
+            "tipClassTypeCode": 103,
+            "specialBetValueType": "SET",
+            "multyBet": false,
+            "periodNumber": 2,
+            "disabled": false,
+            "lineCode": 201,
+            "betPickGroupId": 3301,
+            "betPickGroupIds": [
+              3301
+            ]
+          },
+          {
+            "id": 5305611075,
+            "liveBetCode": 0,
+            "liveBetCaption": "I SET UKUPNO GEMOVA",
+            "liveBetStatus": "U",
+            "orderNumber": 160800,
+            "picks": [
+              {
+                "liveBetPickCode": 13283,
+                "liveBetPickLabel": "Isg<",
+                "oddValue": 5.4,
+                "specialValue": "6.5",
+                "specialDisplay": "6.5",
+                "caption": "Isg<",
+                "mainPick": false,
+                "position": 1,
+                "tipTypeCode": 257
+              },
+              {
+                "liveBetPickCode": 13284,
+                "liveBetPickLabel": "Isg>",
+                "oddValue": 1.11,
+                "specialValue": "6.5",
+                "specialDisplay": "6.5",
+                "caption": "Isg>",
+                "mainPick": false,
+                "position": 3,
+                "tipTypeCode": 259
+              },
+              {
+                "liveBetPickCode": 13223,
+                "liveBetPickLabel": "Isg<",
+                "oddValue": 1.9,
+                "specialValue": "7.5",
+                "specialDisplay": "7.5",
+                "caption": "Isg<",
+                "mainPick": true,
+                "position": 1,
+                "tipTypeCode": 257
+              },
+              {
+                "liveBetPickCode": 13224,
+                "liveBetPickLabel": "Isg>",
+                "oddValue": 1.8,
+                "specialValue": "7.5",
+                "specialDisplay": "7.5",
+                "caption": "Isg>",
+                "mainPick": true,
+                "position": 3,
+                "tipTypeCode": 259
+              },
+              {
+                "liveBetPickCode": 13225,
+                "liveBetPickLabel": "Isg<",
+                "oddValue": 1.48,
+                "specialValue": "8.5",
+                "specialDisplay": "8.5",
+                "caption": "Isg<",
+                "mainPick": false,
+                "position": 1,
+                "tipTypeCode": 257
+              },
+              {
+                "liveBetPickCode": 13226,
+                "liveBetPickLabel": "Isg>",
+                "oddValue": 2.45,
+                "specialValue": "8.5",
+                "specialDisplay": "8.5",
+                "caption": "Isg>",
+                "mainPick": false,
+                "position": 3,
+                "tipTypeCode": 259
+              },
+              {
+                "liveBetPickCode": 13243,
+                "liveBetPickLabel": "Isg<",
+                "oddValue": 1.11,
+                "specialValue": "9.5",
+                "specialDisplay": "9.5",
+                "caption": "Isg<",
+                "mainPick": false,
+                "position": 1,
+                "tipTypeCode": 257
+              },
+              {
+                "liveBetPickCode": 13244,
+                "liveBetPickLabel": "Isg>",
+                "oddValue": 5.4,
+                "specialValue": "9.5",
+                "specialDisplay": "9.5",
+                "caption": "Isg>",
+                "mainPick": false,
+                "position": 3,
+                "tipTypeCode": 259
+              },
+              {
+                "liveBetPickCode": 13253,
+                "liveBetPickLabel": "Isg<",
+                "oddValue": 1.04,
+                "specialValue": "10.5",
+                "specialDisplay": "10.5",
+                "caption": "Isg<",
+                "mainPick": false,
+                "position": 1,
+                "tipTypeCode": 257
+              },
+              {
+                "liveBetPickCode": 13254,
+                "liveBetPickLabel": "Isg>",
+                "oddValue": 7.85,
+                "specialValue": "10.5",
+                "specialDisplay": "10.5",
+                "caption": "Isg>",
+                "mainPick": false,
+                "position": 3,
+                "tipTypeCode": 259
+              },
+              {
+                "liveBetPickCode": 13273,
+                "liveBetPickLabel": "Isg<",
+                "oddValue": 1.02,
+                "specialValue": "12.5",
+                "specialDisplay": "12.5",
+                "caption": "Isg<",
+                "mainPick": false,
+                "position": 1,
+                "tipTypeCode": 257
+              },
+              {
+                "liveBetPickCode": 13274,
+                "liveBetPickLabel": "Isg>",
+                "oddValue": 9.85,
+                "specialValue": "12.5",
+                "specialDisplay": "12.5",
+                "caption": "Isg>",
+                "mainPick": false,
+                "position": 3,
+                "tipTypeCode": 259
+              }
+            ],
+            "tipClassTypeCode": 105,
+            "specialBetValueType": "OVER_UNDER",
+            "specialValuePick": "6.5",
+            "multyBet": true,
+            "periodNumber": 1,
+            "lineCode": 200,
+            "betPickGroupId": 3306,
+            "picksPerRow": 2,
+            "betPickGroupIds": [
+              3306
+            ]
+          },
+          {
+            "id": 5305636255,
+            "liveBetCode": 0,
+            "liveBetCaption": "UKUPNO GEMOVA",
+            "liveBetStatus": "U",
+            "orderNumber": 199600,
+            "picks": [
+              {
+                "liveBetPickCode": 2826,
+                "liveBetPickLabel": "ug<",
+                "oddValue": 1.85,
+                "specialValue": "17.5",
+                "specialDisplay": "17.5",
+                "caption": "ug<",
+                "mainPick": true,
+                "position": 1,
+                "tipTypeCode": 254
+              },
+              {
+                "liveBetPickCode": 2827,
+                "liveBetPickLabel": "ug>",
+                "oddValue": 1.85,
+                "specialValue": "17.5",
+                "specialDisplay": "17.5",
+                "caption": "ug>",
+                "mainPick": true,
+                "position": 3,
+                "tipTypeCode": 256
+              }
+            ],
+            "tipClassTypeCode": 106,
+            "specialBetValueType": "OVER_UNDER",
+            "specialValuePick": "17.5",
+            "multyBet": true,
+            "lineCode": 200,
+            "betPickGroupId": 3311,
+            "picksPerRow": 2,
+            "betPickGroupIds": [
+              3311
+            ]
+          },
+          {
+            "id": 5305635399,
+            "liveBetCode": 1195,
+            "liveBetCaption": "HENDIKEP U GEMOVIMA",
+            "liveBetStatus": "U",
+            "orderNumber": 206900,
+            "picks": [
+              {
+                "liveBetPickCode": 3314,
+                "liveBetPickLabel": "hg 1",
+                "oddValue": 2.05,
+                "specialValue": "6.5",
+                "specialDisplay": "6.5",
+                "caption": "hg 1",
+                "mainPick": false,
+                "position": 1,
+                "tipTypeCode": 251
+              },
+              {
+                "liveBetPickCode": 3315,
+                "liveBetPickLabel": "hg 2",
+                "oddValue": 1.65,
+                "specialValue": "6.5",
+                "specialDisplay": "6.5",
+                "caption": "hg 2",
+                "mainPick": false,
+                "position": 3,
+                "tipTypeCode": 253
+              }
+            ],
+            "specialValue": "6.5",
+            "tipClassTypeCode": 108,
+            "specialBetValueType": "HANDICAP",
+            "specialValuePick": "6.5",
+            "multyBet": false,
+            "disabled": false,
+            "lineCode": 3,
+            "betPickGroupId": 3310,
+            "picksPerRow": 2,
+            "betPickGroupIds": [
+              3310
+            ]
+          },
+          {
+            "id": 5305611083,
+            "liveBetCode": 0,
+            "liveBetCaption": "TIM2 UKUPNO GEMOVA",
+            "liveBetStatus": "U",
+            "orderNumber": 216100,
+            "picks": [
+              {
+                "liveBetPickCode": 12973,
+                "liveBetPickLabel": "tim2 ug<",
+                "oddValue": 1.43,
+                "specialValue": "12.5",
+                "specialDisplay": "12.5",
+                "caption": "tim2 ug<",
+                "mainPick": true,
+                "position": 1,
+                "tipTypeCode": 50942
+              },
+              {
+                "liveBetPickCode": 12974,
+                "liveBetPickLabel": "tim2 ug>",
+                "oddValue": 2.6,
+                "specialValue": "12.5",
+                "specialDisplay": "12.5",
+                "caption": "tim2 ug>",
+                "mainPick": true,
+                "position": 3,
+                "tipTypeCode": 50943
+              }
+            ],
+            "tipClassTypeCode": 246,
+            "specialBetValueType": "OVER_UNDER",
+            "specialValuePick": "12.5",
+            "multyBet": true,
+            "betPickGroupId": 3633,
+            "picksPerRow": 2,
+            "betPickGroupIds": [
+              3633
+            ]
+          },
+          {
+            "id": 5305638535,
+            "liveBetCode": 5718,
+            "liveBetCaption": "OSVAJA GEM",
+            "liveBetStatus": "U",
+            "orderNumber": 223400,
+            "picks": [
+              {
+                "liveBetPickCode": 13365,
+                "liveBetPickLabel": "5. gem 1. seta 1",
+                "oddValue": 4.95,
+                "specialValue": "5",
+                "caption": "5. gem 1. seta 1",
+                "mainPick": false,
+                "position": 1,
+                "tipTypeCode": 50944
+              },
+              {
+                "liveBetPickCode": 13366,
+                "liveBetPickLabel": "5. gem 1. seta 2",
+                "oddValue": 1.13,
+                "specialValue": "5",
+                "caption": "5. gem 1. seta 2",
+                "mainPick": false,
+                "position": 3,
+                "tipTypeCode": 50945
+              }
+            ],
+            "specialValue": "5",
+            "tipClassTypeCode": 247,
+            "specialBetValueType": "GAME",
+            "specialValuePick": "5",
+            "multyBet": false,
+            "periodNumber": 1,
+            "disabled": false,
+            "betPickGroupId": 3843,
+            "betPickGroupIds": [
+              3843
+            ]
+          },
+          {
+            "id": 5305638536,
+            "liveBetCode": 5781,
+            "liveBetCaption": "OSVAJA DVA GEMA",
+            "liveBetStatus": "U",
+            "orderNumber": 5533000,
+            "picks": [
+              {
+                "liveBetPickCode": 13508,
+                "liveBetPickLabel": "5. i 6. gem 1. seta 1",
+                "oddValue": 7.65,
+                "specialValue": "5/6",
+                "caption": "5. i 6. gem 1. seta 1",
+                "mainPick": false,
+                "position": 1,
+                "tipTypeCode": 50954
+              },
+              {
+                "liveBetPickCode": 13509,
+                "liveBetPickLabel": "5. i 6. gem 1. seta X",
+                "oddValue": 1.65,
+                "specialValue": "5/6",
+                "caption": "5. i 6. gem 1. seta X",
+                "mainPick": false,
+                "position": 2,
+                "tipTypeCode": 50955
+              },
+              {
+                "liveBetPickCode": 13510,
+                "liveBetPickLabel": "5. i 6. gem 1. seta 2",
+                "oddValue": 2.7,
+                "specialValue": "5/6",
+                "caption": "5. i 6. gem 1. seta 2",
+                "mainPick": false,
+                "position": 3,
+                "tipTypeCode": 50956
+              }
+            ],
+            "specialValue": "5/6",
+            "tipClassTypeCode": 248,
+            "specialBetValueType": "MULTI_GAMES_WINNER",
+            "specialValuePick": "5/6",
+            "multyBet": false,
+            "periodNumber": 1,
+            "disabled": false,
+            "betPickGroupId": 3844,
+            "betPickGroupIds": [
+              3844
+            ]
+          },
+          {
+            "id": 5305635400,
+            "liveBetCode": 0,
+            "liveBetCaption": "TIM1 UKUPNO GEMOVA",
+            "liveBetStatus": "U",
+            "orderNumber": 5641272,
+            "picks": [
+              {
+                "liveBetPickCode": 31778,
+                "liveBetPickLabel": "tim1 ug<",
+                "oddValue": 1.85,
+                "specialValue": "5.5",
+                "specialDisplay": "5.5",
+                "caption": "under",
+                "mainPick": true,
+                "position": 31778,
+                "tipTypeCode": 50940
+              },
+              {
+                "liveBetPickCode": 31779,
+                "liveBetPickLabel": "tim1 ug>",
+                "oddValue": 1.85,
+                "specialValue": "5.5",
+                "specialDisplay": "5.5",
+                "caption": "over",
+                "mainPick": true,
+                "position": 31779,
+                "tipTypeCode": 50941
+              }
+            ],
+            "tipClassTypeCode": 245,
+            "specialBetValueType": "OVER_UNDER",
+            "specialValuePick": "5.5",
+            "multyBet": true,
+            "betPickGroupId": 3632,
+            "picksPerRow": 2,
+            "betPickGroupIds": [
+              3632
+            ]
+          }
+        ],
+        "tmstmp": 2412453655,
+        "showInLive": true,
+        "showInNajava": false,
+        "hasLiveSpecial": false,
+        "powerPlay": "N",
+        "lastChangeTime": 1733473022000,
+        "externalId": "BA_5836389",
+        "leagueCode": 38633,
+        "disabled": false,
+        "servingPlayer": "HOME",
+        "topBets": [
+          {
+            "id": 5305611061,
+            "liveBetCode": 404,
+            "liveBetCaption": "KONAČAN ISHOD",
+            "liveBetStatus": "U",
+            "orderNumber": 160100,
+            "picks": [
+              {
+                "liveBetPickCode": 1658,
+                "liveBetPickLabel": "ki 1",
+                "oddValue": 6.4,
+                "caption": "ki 1",
+                "mainPick": false,
+                "position": 1,
+                "tipTypeCode": 1
+              },
+              {
+                "liveBetPickCode": 1659,
+                "liveBetPickLabel": "ki 2",
+                "oddValue": 1.08,
+                "caption": "ki 2",
+                "mainPick": false,
+                "position": 3,
+                "tipTypeCode": 3
+              }
+            ],
+            "tipClassTypeCode": 101,
+            "topPosition": 0,
+            "multyBet": false,
+            "disabled": false,
+            "lineCode": 1,
+            "betPickGroupId": 3304,
+            "betPickGroupIds": [
+              3304
+            ]
+          },
+          {
+            "id": 5305636255,
+            "liveBetCode": 985,
+            "liveBetCaption": "UKUPNO GEMOVA",
+            "liveBetStatus": "U",
+            "orderNumber": 199600,
+            "picks": [
+              {
+                "liveBetPickCode": 2826,
+                "liveBetPickLabel": "ug<",
+                "oddValue": 1.85,
+                "specialValue": "17.5",
+                "specialDisplay": "17.5",
+                "caption": "ug<",
+                "mainPick": true,
+                "position": 1,
+                "tipTypeCode": 254
+              },
+              {
+                "liveBetPickCode": 2827,
+                "liveBetPickLabel": "ug>",
+                "oddValue": 1.85,
+                "specialValue": "17.5",
+                "specialDisplay": "17.5",
+                "caption": "ug>",
+                "mainPick": true,
+                "position": 3,
+                "tipTypeCode": 256
+              }
+            ],
+            "specialValue": "17.5",
+            "tipClassTypeCode": 106,
+            "topPosition": 2,
+            "specialBetValueType": "OVER_UNDER",
+            "specialValuePick": "17.5",
+            "multyBet": true,
+            "disabled": false,
+            "lineCode": 200,
+            "betPickGroupId": 3311,
+            "picksPerRow": 2,
+            "betPickGroupIds": [
+              3311
+            ]
+          },
+          null,
+          null,
+          {
+            "id": 5305635399,
+            "liveBetCode": 1195,
+            "liveBetCaption": "HENDIKEP U GEMOVIMA",
+            "liveBetStatus": "U",
+            "orderNumber": 206900,
+            "picks": [
+              {
+                "liveBetPickCode": 3314,
+                "liveBetPickLabel": "hg 1",
+                "oddValue": 2.05,
+                "specialValue": "6.5",
+                "specialDisplay": "6.5",
+                "caption": "hg 1",
+                "mainPick": false,
+                "position": 1,
+                "tipTypeCode": 251
+              },
+              {
+                "liveBetPickCode": 3315,
+                "liveBetPickLabel": "hg 2",
+                "oddValue": 1.65,
+                "specialValue": "6.5",
+                "specialDisplay": "6.5",
+                "caption": "hg 2",
+                "mainPick": false,
+                "position": 3,
+                "tipTypeCode": 253
+              }
+            ],
+            "specialValue": "6.5",
+            "tipClassTypeCode": 108,
+            "specialBetValueType": "HANDICAP",
+            "specialValuePick": "6.5",
+            "multyBet": false,
+            "disabled": false,
+            "lineCode": 3,
+            "betPickGroupId": 3310,
+            "picksPerRow": 2,
+            "betPickGroupIds": [
+              3310
+            ]
+          },
+          {
+            "liveBetCode": 0,
+            "tipClassTypeCode": 105,
+            "topPosition": 2,
+            "multyBet": false
+          },
+          null,
+          null
+        ],
+        "virtualSport": false,
+        "brHomeId": "20013963",
+        "brAwayId": "20013226",
+        "homeId": 1417394,
+        "awayId": 1416360,
+        "tvDurations": [
+          {
+            "numOfTvOuts": 1,
+            "duration": [
+              7
+            ]
+          },
+          {
+            "numOfTvOuts": 2,
+            "duration": [
+              7,
+              0
+            ]
+          },
+          {
+            "numOfTvOuts": 3,
+            "duration": [
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "numOfTvOuts": 4,
+            "duration": [
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "numOfTvOuts": 5,
+            "duration": [
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "numOfTvOuts": 6,
+            "duration": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          },
+          {
+            "numOfTvOuts": 7,
+            "duration": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          }
+        ],
+        "leaguePrintOrder": 2147483647,
+        "sportName": "Tenis",
+        "sportOrderNumber": 11.5,
+        "favorite": false,
+        "matchTrackerEnabled": true,
+        "feed": "BA:1:1",
+        "bonusDisabled": false
+      }
+    ]
+  }
+}
+

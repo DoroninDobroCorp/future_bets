@@ -1,0 +1,23 @@
+api:
+  url: https://sb2frontend-altenar2.biahosted.com/
+  timeout: 10
+  live:
+    events_url: api/widget/GetLiveOverview
+    odds_url: api/widget/GetEventDetails
+    events_interval: 4
+    odds_interval: 2
+  prematch:
+    events_url: api/widget/GetUpcoming
+    odds_url: api/widget/GetEventDetails
+    events_interval: 15
+    odds_interval: 20
+
+
+  sport:
+    football: true
+    tennis: true
+    basketball: false
+    volleyball: false
+    hockey: false
+
+parse_live: true

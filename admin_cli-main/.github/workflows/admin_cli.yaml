@@ -1,0 +1,51 @@
+name: Admin CLI
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Sync code and build on production
+        uses: appleboy/ssh-action@v1
+        with:
+          host: ${{ secrets.DEVOPS_HOST }}
+          port: ${{ secrets.DEVOPS_PORT }}
+          username: ${{ secrets.DEVOPS_USER }}
+          password: ${{ secrets.DEVOPS_PASS }}
+          script: |
+            
+            PROJECT_PATH=/projects/admin_cli
+            
+            cd $PROJECT_PATH
+            echo "We are in directory: $(pwd)"
+            
+            echo "We are on branch:"
+            git branch
+            
+            BRANCH_NAME=${{ github.ref_name }}
+
+            git switch $BRANCH_NAME
+            echo "We are on branch:"
+            git branch
+
+            # Получаем свежий код
+            USER=${{ secrets.GIT_USERNAME }}
+            TOKEN=${{ secrets.GIT_TOKEN }}
+
+            echo "Pulling from GitHub:"
+            git pull "https://$USER:$TOKEN@github.com/FutureOfBets/admin_cli.git"
+                     
+            echo "Devops change ..."
+            
+            docker-compose down
+            docker-compose up -d --build
+            
+            git checkout main
+            echo "We are on branch:"
+            git branch

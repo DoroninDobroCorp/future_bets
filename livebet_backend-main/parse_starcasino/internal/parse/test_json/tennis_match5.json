@@ -1,0 +1,2293 @@
+{
+  "id": 11763769,
+  "feedEventId": 12332316,
+  "name": "Tabur, Clement vs. Damas, Miguel",
+  "et": 0,
+  "liveTime": "1º set",
+  "sport": {
+    "typeId": 4,
+    "iconName": "tennis",
+    "hasLiveEvents": false,
+    "id": 68,
+    "name": "Tennis"
+  },
+  "champ": {
+    "hasLiveEvents": false,
+    "id": 40078,
+    "name": "ATP Challenger Tenerife 2, Spain Men Singles"
+  },
+  "category": {
+    "iso": "",
+    "hasLiveEvents": false,
+    "id": 742,
+    "name": "Challenger"
+  },
+  "competitors": [
+    {
+      "id": 55424,
+      "name": "Tabur, Clement"
+    },
+    {
+      "id": 67062,
+      "name": "Damas, Miguel"
+    }
+  ],
+  "marketGroups": [
+    {
+      "type": 0,
+      "marketIds": [
+        918364535,
+        31046,
+        918389510,
+        918863582,
+        918857837,
+        918857834,
+        918364534,
+        918364539,
+        918857812,
+        918867245,
+        918865733,
+        918510937,
+        918863591,
+        918510935,
+        918364540,
+        918364529,
+        918364536,
+        918364538,
+        918364533,
+        918364532
+      ],
+      "isBundle": false,
+      "sortOrder": 0,
+      "id": 1,
+      "name": "Main"
+    },
+    {
+      "type": 0,
+      "marketIds": [
+        918364541,
+        918364539,
+        918857812,
+        918510933,
+        918863594,
+        918510939,
+        918863567,
+        918863561,
+        918857839,
+        918389510
+      ],
+      "isBundle": false,
+      "sortOrder": 0,
+      "id": 13,
+      "name": "Set Markets"
+    },
+    {
+      "type": 0,
+      "marketIds": [
+        918871589,
+        918874070,
+        918874066,
+        918874075,
+        918874072,
+        918874074,
+        918874068,
+        918874071,
+        918874073,
+        918871587,
+        918874076,
+        918874069
+      ],
+      "isBundle": false,
+      "sortOrder": 0,
+      "id": 1045,
+      "name": "Game Markets"
+    },
+    {
+      "type": 0,
+      "marketIds": [
+        918871589,
+        918874070,
+        918510937,
+        918863591
+      ],
+      "isBundle": false,
+      "sortOrder": 0,
+      "id": 1603,
+      "name": "Player Markets"
+    }
+  ],
+  "childMarketGroups": [],
+  "markets": [
+    {
+      "shortName": "Winner",
+      "desktopOddIds": [
+        [
+          2175223263
+        ],
+        [
+          2175223264
+        ]
+      ],
+      "mobileOddIds": [
+        [
+          2175223263
+        ],
+        [
+          2175223264
+        ]
+      ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 186,
+      "isMB": false,
+      "sportMarketId": 70755,
+      "id": 918364535,
+      "name": "Winner"
+    },
+    {
+      "desktopOddIds": [],
+      "mobileOddIds": [],
+      "childMarketIds": [],
+      "isBB": false,
+      "variant": 7,
+      "so": 0,
+      "typeId": 31046,
+      "isMB": false,
+      "sportMarketId": 0,
+      "id": 31046,
+      "name": "Boosted Odds"
+    },
+    {
+      "shortName": "Set handicap",
+      "desktopOddIds": [
+        [
+          2175223267,
+          2175310771
+        ],
+        [
+          2175223268,
+          2175310772
+        ]
+      ],
+      "mobileOddIds": [
+        [
+          2175223267,
+          2175310771
+        ],
+        [
+          2175223268,
+          2175310772
+        ]
+      ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 188,
+      "isMB": true,
+      "sportMarketId": 70761,
+      "sv": "-1.5",
+      "id": 918389510,
+      "name": "Set handicap"
+    },
+    {
+      "shortName": "Game handicap",
+      "desktopOddIds": [
+        [
+          2176605967
+        ],
+        [
+          2176605968
+        ]
+      ],
+      "mobileOddIds": [
+        [
+          2176605967
+        ],
+        [
+          2176605968
+        ]
+      ],
+      "isBB": false,
+      "variant": 8,
+      "so": 0,
+      "typeId": 187,
+      "isMB": true,
+      "sportMarketId": 70760,
+      "sv": "-4.5",
+      "id": 918863582,
+      "name": "Game handicap"
+    },
+    {
+      "shortName": "Total sets",
+      "desktopOddIds": [
+        [
+          2176581508
+        ],
+        [
+          2176581509
+        ]
+      ],
+      "mobileOddIds": [
+        [
+          2176581508
+        ],
+        [
+          2176581509
+        ]
+      ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 314,
+      "isMB": true,
+      "sportMarketId": 70898,
+      "sv": "2.5",
+      "id": 918857837,
+      "name": "Total sets"
+    },
+    {
+      "shortName": "Total games",
+      "desktopOddIds": [
+        [
+          2176581506
+        ],
+        [
+          2176581507
+        ]
+      ],
+      "mobileOddIds": [
+        [
+          2176581506
+        ],
+        [
+          2176581507
+        ]
+      ],
+      "headers": [
+        {
+          "typeId": 189,
+          "odds": [
+            {
+              "id": 12,
+              "name": "Over"
+            },
+            {
+              "id": 13,
+              "name": "Under"
+            }
+          ]
+        }
+      ],
+      "isBB": false,
+      "variant": 10,
+      "so": 0,
+      "typeId": 189,
+      "isMB": true,
+      "sportMarketId": 70762,
+      "sv": "20.5",
+      "id": 918857834,
+      "name": "Total games"
+    },
+    {
+      "shortName": "Correct score",
+      "desktopOddIds": [
+        [
+          2175223259,
+          2175223260
+        ],
+        [
+          2175223262,
+          2175223261
+        ]
+      ],
+      "mobileOddIds": [
+        [
+          2175223259,
+          2175223260
+        ],
+        [
+          2175223262,
+          2175223261
+        ]
+      ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 199,
+      "isMB": false,
+      "sportMarketId": 72337,
+      "sv": "sr:correct_score:bestof:3",
+      "id": 918364534,
+      "name": "Correct score"
+    },
+    {
+      "shortName": "First set - winner",
+      "desktopOddIds": [
+        [
+          2175223271
+        ],
+        [
+          2175223272
+        ]
+      ],
+      "mobileOddIds": [
+        [
+          2175223271
+        ],
+        [
+          2175223272
+        ]
+      ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 202,
+      "isMB": false,
+      "sportMarketId": 70773,
+      "sv": "1",
+      "id": 918364539,
+      "name": "First set - winner"
+    },
+    {
+      "shortName": "Second set - winner",
+      "desktopOddIds": [
+        [
+          2176581497
+        ],
+        [
+          2176581498
+        ]
+      ],
+      "mobileOddIds": [
+        [
+          2176581497
+        ],
+        [
+          2176581498
+        ]
+      ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 202,
+      "isMB": false,
+      "sportMarketId": 70773,
+      "sv": "2",
+      "id": 918857812,
+      "name": "Second set - winner"
+    },
+    {
+      "shortName": "Winner & total",
+      "desktopOddIds": [
+        [
+          2176605969,
+          2176605971
+        ],
+        [
+          2176605970,
+          2176605972
+        ]
+      ],
+      "mobileOddIds": [
+        [
+          2176605969,
+          2176605971,
+          2176605970,
+          2176605972
+        ]
+      ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 1055,
+      "isMB": false,
+      "sportMarketId": 71150,
+      "sv": "20.5",
+      "id": 918867245,
+      "name": "Winner & total"
+    },
+    {
+      "shortName": "Will there be a tiebreak",
+      "desktopOddIds": [
+        [
+          2176602432
+        ],
+        [
+          2176602433
+        ]
+      ],
+      "mobileOddIds": [
+        [
+          2176602432
+        ],
+        [
+          2176602433
+        ]
+      ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 195,
+      "isMB": false,
+      "sportMarketId": 70770,
+      "id": 918865733,
+      "name": "Will there be a tiebreak"
+    },
+    {
+      "shortName": "Tabur, Clement total games",
+      "desktopOddIds": [
+        [
+          2175749885
+        ],
+        [
+          2175749886
+        ]
+      ],
+      "mobileOddIds": [
+        [
+          2175749885
+        ],
+        [
+          2175749886
+        ]
+      ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 190,
+      "isMB": true,
+      "sportMarketId": 70763,
+      "sv": "12.5",
+      "id": 918510937,
+      "name": "Tabur, Clement total games"
+    },
+    {
+      "shortName": "Damas, Miguel total games",
+      "desktopOddIds": [
+        [
+          2176611042
+        ],
+        [
+          2176611043
+        ]
+      ],
+      "mobileOddIds": [
+        [
+          2176611042
+        ],
+        [
+          2176611043
+        ]
+      ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 191,
+      "isMB": true,
+      "sportMarketId": 70764,
+      "sv": "8.5",
+      "id": 918863591,
+      "name": "Damas, Miguel total games"
+    },
+    {
+      "shortName": "Any set to nil",
+      "desktopOddIds": [
+        [
+          2175749881
+        ],
+        [
+          2175749882
+        ]
+      ],
+      "mobileOddIds": [
+        [
+          2175749881
+        ],
+        [
+          2175749882
+        ]
+      ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 194,
+      "isMB": false,
+      "sportMarketId": 70769,
+      "id": 918510935,
+      "name": "Any set to nil"
+    },
+    {
+      "shortName": "Tabur, Clement to win a set",
+      "desktopOddIds": [
+        [
+          2175223273
+        ],
+        [
+          2175223274
+        ]
+      ],
+      "mobileOddIds": [
+        [
+          2175223273
+        ],
+        [
+          2175223274
+        ]
+      ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 192,
+      "isMB": false,
+      "sportMarketId": 70765,
+      "id": 918364540,
+      "name": "Tabur, Clement to win a set"
+    },
+    {
+      "shortName": "Damas, Miguel to win a set",
+      "desktopOddIds": [
+        [
+          2175223247
+        ],
+        [
+          2175223248
+        ]
+      ],
+      "mobileOddIds": [
+        [
+          2175223247
+        ],
+        [
+          2175223248
+        ]
+      ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 193,
+      "isMB": false,
+      "sportMarketId": 70767,
+      "id": 918364529,
+      "name": "Damas, Miguel to win a set"
+    },
+    {
+      "shortName": "Tabur, Clement to win exactly 1 set",
+      "desktopOddIds": [
+        [
+          2175223265
+        ],
+        [
+          2175223266
+        ]
+      ],
+      "mobileOddIds": [
+        [
+          2175223265
+        ],
+        [
+          2175223266
+        ]
+      ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 850,
+      "isMB": false,
+      "sportMarketId": 71102,
+      "id": 918364536,
+      "name": "Tabur, Clement to win exactly 1 set"
+    },
+    {
+      "shortName": "Damas, Miguel to win exactly 1 set",
+      "desktopOddIds": [
+        [
+          2175223269
+        ],
+        [
+          2175223270
+        ]
+      ],
+      "mobileOddIds": [
+        [
+          2175223269
+        ],
+        [
+          2175223270
+        ]
+      ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 851,
+      "isMB": false,
+      "sportMarketId": 71104,
+      "id": 918364538,
+      "name": "Damas, Miguel to win exactly 1 set"
+    },
+    {
+      "shortName": "Odd/even games",
+      "desktopOddIds": [
+        [
+          2175223257
+        ],
+        [
+          2175223258
+        ]
+      ],
+      "mobileOddIds": [
+        [
+          2175223257
+        ],
+        [
+          2175223258
+        ]
+      ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 198,
+      "isMB": false,
+      "sportMarketId": 70771,
+      "id": 918364533,
+      "name": "Odd/even games"
+    },
+    {
+      "shortName": "Double result (1st set/match)",
+      "desktopOddIds": [
+        [
+          2175223253,
+          2175223255
+        ],
+        [
+          2175223254,
+          2175223256
+        ]
+      ],
+      "mobileOddIds": [
+        [
+          2175223253,
+          2175223255,
+          2175223254,
+          2175223256
+        ]
+      ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 201,
+      "isMB": false,
+      "sportMarketId": 70772,
+      "id": 918364532,
+      "name": "Double result (1st set/match)"
+    },
+    {
+      "shortName": "Exact sets",
+      "desktopOddIds": [
+        [
+          2175223275
+        ],
+        [
+          2175223276
+        ]
+      ],
+      "mobileOddIds": [
+        [
+          2175223275
+        ],
+        [
+          2175223276
+        ]
+      ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 196,
+      "isMB": false,
+      "sportMarketId": 72971,
+      "sv": "sr:exact_sets:bestof:3",
+      "id": 918364541,
+      "name": "Exact sets"
+    },
+    {
+      "shortName": "First set - total games",
+      "desktopOddIds": [
+        [
+          2175749873
+        ],
+        [
+          2175749874
+        ]
+      ],
+      "mobileOddIds": [
+        [
+          2175749873
+        ],
+        [
+          2175749874
+        ]
+      ],
+      "headers": [
+        {
+          "typeId": 204,
+          "odds": [
+            {
+              "id": 12,
+              "name": "Over"
+            },
+            {
+              "id": 13,
+              "name": "Under"
+            }
+          ]
+        }
+      ],
+      "isBB": false,
+      "variant": 10,
+      "so": 0,
+      "typeId": 204,
+      "isMB": true,
+      "sportMarketId": 70777,
+      "sv": "1|9.5",
+      "id": 918510933,
+      "name": "First set - total games"
+    },
+    {
+      "shortName": "First set - game handicap",
+      "desktopOddIds": [
+        [
+          2176605562
+        ],
+        [
+          2176605563
+        ]
+      ],
+      "mobileOddIds": [
+        [
+          2176605562
+        ],
+        [
+          2176605563
+        ]
+      ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 203,
+      "isMB": true,
+      "sportMarketId": 70776,
+      "sv": "1|-2.5",
+      "id": 918863594,
+      "name": "First set - game handicap"
+    },
+    {
+      "shortName": "First set - correct score",
+      "desktopOddIds": [
+        [
+          2175749890,
+          2175749891,
+          2175749892,
+          2175749893,
+          2175749894,
+          2175749895
+        ],
+        [
+          2175749898,
+          2175749899,
+          2175749900,
+          2175749901,
+          2175749902
+        ]
+      ],
+      "mobileOddIds": [
+        [
+          2175749890,
+          2175749891,
+          2175749892,
+          2175749893,
+          2175749894,
+          2175749895
+        ],
+        [
+          2175749898,
+          2175749899,
+          2175749900,
+          2175749901,
+          2175749902
+        ]
+      ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 207,
+      "isMB": false,
+      "sportMarketId": 70780,
+      "sv": "1",
+      "id": 918510939,
+      "name": "First set - correct score"
+    },
+    {
+      "shortName": "First Set - Race to Games",
+      "desktopOddIds": [
+        [
+          2176596611,
+          2176596613,
+          2176596619
+        ],
+        [
+          2176596612,
+          2176596614,
+          2176596620
+        ]
+      ],
+      "mobileOddIds": [
+        [
+          2176596611,
+          2176596613,
+          2176596619,
+          2176596612,
+          2176596614,
+          2176596620
+        ]
+      ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 208,
+      "isMB": false,
+      "sportMarketId": 70781,
+      "sv": "1|3",
+      "id": 918863567,
+      "name": "First Set - Race to Games"
+    },
+    {
+      "shortName": "First set - odd/even games",
+      "desktopOddIds": [
+        [
+          2176596609
+        ],
+        [
+          2176596610
+        ]
+      ],
+      "mobileOddIds": [
+        [
+          2176596609
+        ],
+        [
+          2176596610
+        ]
+      ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 205,
+      "isMB": false,
+      "sportMarketId": 70778,
+      "sv": "1",
+      "id": 918863561,
+      "name": "First set - odd/even games"
+    },
+    {
+      "shortName": "First set - will there be a tiebreak",
+      "desktopOddIds": [
+        [
+          2176581510
+        ],
+        [
+          2176581511
+        ]
+      ],
+      "mobileOddIds": [
+        [
+          2176581510
+        ],
+        [
+          2176581511
+        ]
+      ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 206,
+      "isMB": false,
+      "sportMarketId": 70779,
+      "sv": "1",
+      "id": 918857839,
+      "name": "First set - will there be a tiebreak"
+    },
+    {
+      "shortName": "First set game 4 - winner",
+      "desktopOddIds": [
+        [
+          2176616541
+        ],
+        [
+          2176616542
+        ]
+      ],
+      "mobileOddIds": [
+        [
+          2176616541
+        ],
+        [
+          2176616542
+        ]
+      ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 210,
+      "isMB": false,
+      "sportMarketId": 70783,
+      "sv": "1|4",
+      "id": 918871589,
+      "name": "First set game 4 - winner"
+    },
+    {
+      "shortName": "First set game 5 - winner",
+      "desktopOddIds": [
+        [
+          2176621851
+        ],
+        [
+          2176621852
+        ]
+      ],
+      "mobileOddIds": [
+        [
+          2176621851
+        ],
+        [
+          2176621852
+        ]
+      ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 210,
+      "isMB": false,
+      "sportMarketId": 70783,
+      "sv": "1|5",
+      "id": 918874070,
+      "name": "First set game 5 - winner"
+    },
+    {
+      "shortName": "First Set Game 4 - Point Betting",
+      "desktopOddIds": [
+        [
+          2176621840,
+          2176621838,
+          2176621842
+        ],
+        [
+          2176621841,
+          2176621839,
+          2176621843
+        ]
+      ],
+      "mobileOddIds": [
+        [
+          2176621840,
+          2176621838,
+          2176621842,
+          2176621841,
+          2176621839,
+          2176621843
+        ]
+      ],
+      "headers": [
+        {
+          "typeId": 218,
+          "odds": [
+            {
+              "id": 663,
+              "name": "Tabur, Clement"
+            },
+            {
+              "id": 664,
+              "name": "Damas, Miguel"
+            }
+          ]
+        }
+      ],
+      "isBB": false,
+      "variant": 10,
+      "so": 0,
+      "typeId": 218,
+      "isMB": false,
+      "sportMarketId": 70791,
+      "sv": "1|4|2",
+      "id": 918874066,
+      "name": "First Set Game 4 - Point Betting"
+    },
+    {
+      "shortName": "First set game 5 - first 2 points winner",
+      "desktopOddIds": [
+        [
+          2176621869
+        ],
+        [
+          2176621870
+        ],
+        [
+          2176621871
+        ]
+      ],
+      "mobileOddIds": [
+        [
+          2176621869,
+          2176621870,
+          2176621871
+        ]
+      ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 217,
+      "isMB": false,
+      "sportMarketId": 70790,
+      "sv": "1|5|2",
+      "id": 918874075,
+      "name": "First set game 5 - first 2 points winner"
+    },
+    {
+      "shortName": "First set game 5 - to deuce",
+      "desktopOddIds": [
+        [
+          2176621857
+        ],
+        [
+          2176621858
+        ]
+      ],
+      "mobileOddIds": [
+        [
+          2176621857
+        ],
+        [
+          2176621858
+        ]
+      ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 212,
+      "isMB": false,
+      "sportMarketId": 70785,
+      "sv": "1|5",
+      "id": 918874072,
+      "name": "First set game 5 - to deuce"
+    },
+    {
+      "shortName": "First set game 5 - correct score",
+      "desktopOddIds": [
+        [
+          2176621861,
+          2176621862,
+          2176621863,
+          2176621864
+        ],
+        [
+          2176621865,
+          2176621866,
+          2176621867,
+          2176621868
+        ]
+      ],
+      "mobileOddIds": [
+        [
+          2176621861,
+          2176621862,
+          2176621863,
+          2176621864,
+          2176621865,
+          2176621866,
+          2176621867,
+          2176621868
+        ]
+      ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 214,
+      "isMB": false,
+      "sportMarketId": 70787,
+      "sv": "1|5",
+      "id": 918874074,
+      "name": "First set game 5 - correct score"
+    },
+    {
+      "shortName": "First set game 5 - correct score or break",
+      "desktopOddIds": [
+        [
+          2176621844,
+          2176621845
+        ],
+        [
+          2176621846,
+          2176621847,
+          2176621848
+        ]
+      ],
+      "mobileOddIds": [
+        [
+          2176621844,
+          2176621845,
+          2176621846,
+          2176621847,
+          2176621848
+        ]
+      ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 215,
+      "isMB": false,
+      "sportMarketId": 70788,
+      "sv": "1|5|sr:competitor:197674",
+      "id": 918874068,
+      "name": "First set game 5 - correct score or break"
+    },
+    {
+      "shortName": "First set game 5 - exact points",
+      "desktopOddIds": [
+        [
+          2176621853
+        ],
+        [
+          2176621854
+        ],
+        [
+          2176621855
+        ],
+        [
+          2176621856
+        ]
+      ],
+      "mobileOddIds": [
+        [
+          2176621853,
+          2176621855
+        ],
+        [
+          2176621854,
+          2176621856
+        ]
+      ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 211,
+      "isMB": false,
+      "sportMarketId": 70784,
+      "sv": "1|5",
+      "id": 918874071,
+      "name": "First set game 5 - exact points"
+    },
+    {
+      "shortName": "First Set Game 5 - Race to Points",
+      "desktopOddIds": [
+        [
+          2176621859
+        ],
+        [
+          2176621860
+        ]
+      ],
+      "mobileOddIds": [
+        [
+          2176621859,
+          2176621860
+        ]
+      ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 216,
+      "isMB": false,
+      "sportMarketId": 70789,
+      "sv": "1|5|2",
+      "id": 918874073,
+      "name": "First Set Game 5 - Race to Points"
+    },
+    {
+      "shortName": "1 set - 5 and 6 game winner",
+      "desktopOddIds": [
+        [
+          2176616534
+        ],
+        [
+          2176616535
+        ],
+        [
+          2176616536
+        ]
+      ],
+      "mobileOddIds": [
+        [
+          2176616534,
+          2176616535,
+          2176616536
+        ]
+      ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 209,
+      "isMB": false,
+      "sportMarketId": 70782,
+      "sv": "1|5|6",
+      "id": 918871587,
+      "name": "1 set - 5 and 6 game winner"
+    },
+    {
+      "shortName": "1 set - 6 and 7 game winner",
+      "desktopOddIds": [
+        [
+          2176621872
+        ],
+        [
+          2176621873
+        ],
+        [
+          2176621874
+        ]
+      ],
+      "mobileOddIds": [
+        [
+          2176621872,
+          2176621873,
+          2176621874
+        ]
+      ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 209,
+      "isMB": false,
+      "sportMarketId": 70782,
+      "sv": "1|6|7",
+      "id": 918874076,
+      "name": "1 set - 6 and 7 game winner"
+    },
+    {
+      "shortName": "First set game 5 - odd/even points",
+      "desktopOddIds": [
+        [
+          2176621849
+        ],
+        [
+          2176621850
+        ]
+      ],
+      "mobileOddIds": [
+        [
+          2176621849
+        ],
+        [
+          2176621850
+        ]
+      ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 213,
+      "isMB": false,
+      "sportMarketId": 70786,
+      "sv": "1|5",
+      "id": 918874069,
+      "name": "First set game 5 - odd/even points"
+    }
+  ],
+  "childMarkets": [],
+  "odds": [
+    {
+      "typeId": 1,
+      "price": 1.2,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2175223263,
+      "name": "Tabur, Clement"
+    },
+    {
+      "typeId": 3,
+      "price": 4.15,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2175223264,
+      "name": "Damas, Miguel"
+    },
+    {
+      "typeId": 1714,
+      "price": 1.04,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "+1.5",
+      "id": 2175223267,
+      "name": "Tabur, Clement (+1.5)"
+    },
+    {
+      "typeId": 1714,
+      "price": 1.5,
+      "isMB": true,
+      "oddStatus": 0,
+      "sv": "-1.5",
+      "id": 2175310771,
+      "name": "Tabur, Clement (-1.5)"
+    },
+    {
+      "typeId": 1715,
+      "price": 7,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "+1.5",
+      "id": 2175223268,
+      "name": "Damas, Miguel (-1.5)"
+    },
+    {
+      "typeId": 1715,
+      "price": 2.3,
+      "isMB": true,
+      "oddStatus": 0,
+      "sv": "-1.5",
+      "id": 2175310772,
+      "name": "Damas, Miguel (+1.5)"
+    },
+    {
+      "typeId": 1714,
+      "price": 1.8334,
+      "isMB": true,
+      "oddStatus": 0,
+      "sv": "-4.5",
+      "id": 2176605967,
+      "name": "Tabur, Clement (-4.5)"
+    },
+    {
+      "typeId": 1715,
+      "price": 1.8334,
+      "isMB": true,
+      "oddStatus": 0,
+      "sv": "-4.5",
+      "id": 2176605968,
+      "name": "Damas, Miguel (+4.5)"
+    },
+    {
+      "typeId": 12,
+      "price": 2.8,
+      "isMB": true,
+      "oddStatus": 0,
+      "sv": "2.5",
+      "id": 2176581508,
+      "name": "Over 2.5"
+    },
+    {
+      "typeId": 13,
+      "price": 1.4,
+      "isMB": true,
+      "oddStatus": 0,
+      "sv": "2.5",
+      "id": 2176581509,
+      "name": "Under 2.5"
+    },
+    {
+      "typeId": 12,
+      "price": 1.8334,
+      "isMB": true,
+      "oddStatus": 0,
+      "sv": "20.5",
+      "id": 2176581506,
+      "name": "Over 20.5"
+    },
+    {
+      "typeId": 13,
+      "price": 1.8334,
+      "isMB": true,
+      "oddStatus": 0,
+      "sv": "20.5",
+      "id": 2176581507,
+      "name": "Under 20.5"
+    },
+    {
+      "typeId": 116,
+      "price": 1.5,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "sr:correct_score:bestof:3",
+      "id": 2175223259,
+      "name": "2:0"
+    },
+    {
+      "typeId": 130,
+      "price": 4.25,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "sr:correct_score:bestof:3",
+      "id": 2175223260,
+      "name": "2:1"
+    },
+    {
+      "typeId": 138,
+      "price": 10.25,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "sr:correct_score:bestof:3",
+      "id": 2175223262,
+      "name": "0:2"
+    },
+    {
+      "typeId": 140,
+      "price": 6,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "sr:correct_score:bestof:3",
+      "id": 2175223261,
+      "name": "1:2"
+    },
+    {
+      "typeId": 1,
+      "price": 1.14,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "1",
+      "id": 2175223271,
+      "name": "Tabur, Clement"
+    },
+    {
+      "typeId": 3,
+      "price": 4.95,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "1",
+      "id": 2175223272,
+      "name": "Damas, Miguel"
+    },
+    {
+      "typeId": 1,
+      "price": 1.35,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "2",
+      "id": 2176581497,
+      "name": "Tabur, Clement"
+    },
+    {
+      "typeId": 3,
+      "price": 2.85,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "2",
+      "id": 2176581498,
+      "name": "Damas, Miguel"
+    },
+    {
+      "typeId": 660,
+      "price": 2.65,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "20.5",
+      "id": 2176605969,
+      "name": "Tabur, Clement & over 20.5"
+    },
+    {
+      "typeId": 656,
+      "price": 1.9,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "20.5",
+      "id": 2176605971,
+      "name": "Tabur, Clement & under 20.5"
+    },
+    {
+      "typeId": 662,
+      "price": 4.85,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "20.5",
+      "id": 2176605970,
+      "name": "Damas, Miguel & over 20.5"
+    },
+    {
+      "typeId": 658,
+      "price": 26,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "20.5",
+      "id": 2176605972,
+      "name": "Damas, Miguel & under 20.5"
+    },
+    {
+      "typeId": 74,
+      "price": 3.05,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2176602432,
+      "name": "Yes"
+    },
+    {
+      "typeId": 76,
+      "price": 1.35,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2176602433,
+      "name": "No"
+    },
+    {
+      "typeId": 12,
+      "price": 1.95,
+      "isMB": true,
+      "oddStatus": 0,
+      "sv": "12.5",
+      "id": 2175749885,
+      "name": "Over 12.5"
+    },
+    {
+      "typeId": 13,
+      "price": 1.7,
+      "isMB": true,
+      "oddStatus": 0,
+      "sv": "12.5",
+      "id": 2175749886,
+      "name": "Under 12.5"
+    },
+    {
+      "typeId": 12,
+      "price": 1.85,
+      "isMB": true,
+      "oddStatus": 0,
+      "sv": "8.5",
+      "id": 2176611042,
+      "name": "Over 8.5"
+    },
+    {
+      "typeId": 13,
+      "price": 1.8,
+      "isMB": true,
+      "oddStatus": 0,
+      "sv": "8.5",
+      "id": 2176611043,
+      "name": "Under 8.5"
+    },
+    {
+      "typeId": 74,
+      "price": 10,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2175749881,
+      "name": "Yes"
+    },
+    {
+      "typeId": 76,
+      "price": 1.01,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2175749882,
+      "name": "No"
+    },
+    {
+      "typeId": 74,
+      "price": 1.04,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2175223273,
+      "name": "Yes"
+    },
+    {
+      "typeId": 76,
+      "price": 7,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2175223274,
+      "name": "No"
+    },
+    {
+      "typeId": 74,
+      "price": 2.3,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2175223247,
+      "name": "Yes"
+    },
+    {
+      "typeId": 76,
+      "price": 1.5,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2175223248,
+      "name": "No"
+    },
+    {
+      "typeId": 74,
+      "price": 5.3334,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2175223265,
+      "name": "Yes"
+    },
+    {
+      "typeId": 76,
+      "price": 1.1,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2175223266,
+      "name": "No"
+    },
+    {
+      "typeId": 74,
+      "price": 4,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2175223269,
+      "name": "Yes"
+    },
+    {
+      "typeId": 76,
+      "price": 1.1667,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2175223270,
+      "name": "No"
+    },
+    {
+      "typeId": 70,
+      "price": 2.2,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2175223257,
+      "name": "Odd"
+    },
+    {
+      "typeId": 72,
+      "price": 1.6,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2175223258,
+      "name": "Even"
+    },
+    {
+      "typeId": 418,
+      "price": 1.25,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2175223253,
+      "name": "Tabur, Clement/Tabur, Clement"
+    },
+    {
+      "typeId": 422,
+      "price": 7.5,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2175223255,
+      "name": "Tabur, Clement/Damas, Miguel"
+    },
+    {
+      "typeId": 430,
+      "price": 13.75,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2175223254,
+      "name": "Damas, Miguel/Tabur, Clement"
+    },
+    {
+      "typeId": 434,
+      "price": 7,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2175223256,
+      "name": "Damas, Miguel/Damas, Miguel"
+    },
+    {
+      "typeId": 58,
+      "price": 1.35,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "sr:exact_sets:bestof:3",
+      "id": 2175223275,
+      "name": "2"
+    },
+    {
+      "typeId": 734,
+      "price": 2.75,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "sr:exact_sets:bestof:3",
+      "id": 2175223276,
+      "name": "3"
+    },
+    {
+      "typeId": 12,
+      "price": 1.8,
+      "isMB": true,
+      "oddStatus": 0,
+      "sv": "9.5",
+      "id": 2175749873,
+      "name": "Over 9.5"
+    },
+    {
+      "typeId": 13,
+      "price": 1.9,
+      "isMB": true,
+      "oddStatus": 0,
+      "sv": "9.5",
+      "id": 2175749874,
+      "name": "Under 9.5"
+    },
+    {
+      "typeId": 1714,
+      "price": 2.05,
+      "isMB": true,
+      "oddStatus": 0,
+      "sv": "-2.5",
+      "id": 2176605562,
+      "name": "Tabur, Clement (-2.5)"
+    },
+    {
+      "typeId": 1715,
+      "price": 1.7,
+      "isMB": true,
+      "oddStatus": 0,
+      "sv": "-2.5",
+      "id": 2176605563,
+      "name": "Damas, Miguel (+2.5)"
+    },
+    {
+      "typeId": 866,
+      "price": 9.75,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "1",
+      "id": 2175749890,
+      "name": "6:1"
+    },
+    {
+      "typeId": 867,
+      "price": 3.05,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "1",
+      "id": 2175749891,
+      "name": "6:2"
+    },
+    {
+      "typeId": 868,
+      "price": 6,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "1",
+      "id": 2175749892,
+      "name": "6:3"
+    },
+    {
+      "typeId": 869,
+      "price": 2.8,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "1",
+      "id": 2175749893,
+      "name": "6:4"
+    },
+    {
+      "typeId": 870,
+      "price": 16.75,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "1",
+      "id": 2175749894,
+      "name": "7:5"
+    },
+    {
+      "typeId": 871,
+      "price": 10.5,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "1",
+      "id": 2175749895,
+      "name": "7:6"
+    },
+    {
+      "typeId": 874,
+      "price": 100,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "1",
+      "id": 2175749898,
+      "name": "2:6"
+    },
+    {
+      "typeId": 875,
+      "price": 19.75,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "1",
+      "id": 2175749899,
+      "name": "3:6"
+    },
+    {
+      "typeId": 876,
+      "price": 22,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "1",
+      "id": 2175749900,
+      "name": "4:6"
+    },
+    {
+      "typeId": 877,
+      "price": 25,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "1",
+      "id": 2175749901,
+      "name": "5:7"
+    },
+    {
+      "typeId": 878,
+      "price": 13,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "1",
+      "id": 2175749902,
+      "name": "6:7"
+    },
+    {
+      "typeId": 665,
+      "price": 1.1,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "3",
+      "id": 2176596611,
+      "name": "Tabur, Clement (game 3)"
+    },
+    {
+      "typeId": 665,
+      "price": 1.1667,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "4",
+      "id": 2176596613,
+      "name": "Tabur, Clement (game 4)"
+    },
+    {
+      "typeId": 665,
+      "price": 1.1819,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "5",
+      "id": 2176596619,
+      "name": "Tabur, Clement (game 5)"
+    },
+    {
+      "typeId": 666,
+      "price": 5.3334,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "3",
+      "id": 2176596612,
+      "name": "Damas, Miguel (game 3)"
+    },
+    {
+      "typeId": 666,
+      "price": 4,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "4",
+      "id": 2176596614,
+      "name": "Damas, Miguel (game 4)"
+    },
+    {
+      "typeId": 666,
+      "price": 3.8,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "5",
+      "id": 2176596620,
+      "name": "Damas, Miguel (game 5)"
+    },
+    {
+      "typeId": 70,
+      "price": 2.5455,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "1",
+      "id": 2176596609,
+      "name": "Odd"
+    },
+    {
+      "typeId": 72,
+      "price": 1.4546,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "1",
+      "id": 2176596610,
+      "name": "Even"
+    },
+    {
+      "typeId": 74,
+      "price": 5.75,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "1",
+      "id": 2176581510,
+      "name": "Yes"
+    },
+    {
+      "typeId": 76,
+      "price": 1.1,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "1",
+      "id": 2176581511,
+      "name": "No"
+    },
+    {
+      "typeId": 1,
+      "price": 1.1667,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "1|4",
+      "id": 2176616541,
+      "name": "Tabur, Clement"
+    },
+    {
+      "typeId": 3,
+      "price": 4.5,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "1|4",
+      "id": 2176616542,
+      "name": "Damas, Miguel"
+    },
+    {
+      "typeId": 1,
+      "price": 3,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "1|5",
+      "id": 2176621851,
+      "name": "Tabur, Clement"
+    },
+    {
+      "typeId": 3,
+      "price": 1.3572,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "1|5",
+      "id": 2176621852,
+      "name": "Damas, Miguel"
+    },
+    {
+      "typeId": 663,
+      "price": 1.4546,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "2",
+      "id": 2176621840,
+      "name": "Tabur, Clement (point 2)"
+    },
+    {
+      "typeId": 663,
+      "price": 1.4546,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "3",
+      "id": 2176621838,
+      "name": "Tabur, Clement (point 3)"
+    },
+    {
+      "typeId": 663,
+      "price": 1.4546,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "4",
+      "id": 2176621842,
+      "name": "Tabur, Clement (point 4)"
+    },
+    {
+      "typeId": 664,
+      "price": 2.5455,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "2",
+      "id": 2176621841,
+      "name": "Damas, Miguel (point 2)"
+    },
+    {
+      "typeId": 664,
+      "price": 2.5455,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "3",
+      "id": 2176621839,
+      "name": "Damas, Miguel (point 3)"
+    },
+    {
+      "typeId": 664,
+      "price": 2.5455,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "4",
+      "id": 2176621843,
+      "name": "Damas, Miguel (point 4)"
+    },
+    {
+      "typeId": 1,
+      "price": 5.25,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "1|5|2",
+      "id": 2176621869,
+      "name": "Tabur, Clement"
+    },
+    {
+      "typeId": 2,
+      "price": 1.9,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "1|5|2",
+      "id": 2176621870,
+      "name": "Draw"
+    },
+    {
+      "typeId": 3,
+      "price": 2.65,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "1|5|2",
+      "id": 2176621871,
+      "name": "Damas, Miguel"
+    },
+    {
+      "typeId": 74,
+      "price": 3.2,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "1|5",
+      "id": 2176621857,
+      "name": "Yes"
+    },
+    {
+      "typeId": 76,
+      "price": 1.3,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "1|5",
+      "id": 2176621858,
+      "name": "No"
+    },
+    {
+      "typeId": 886,
+      "price": 27,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "1|5",
+      "id": 2176621861,
+      "name": "Tabur, Clement to 0"
+    },
+    {
+      "typeId": 887,
+      "price": 11.75,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "1|5",
+      "id": 2176621862,
+      "name": "Tabur, Clement to 15"
+    },
+    {
+      "typeId": 888,
+      "price": 8,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "1|5",
+      "id": 2176621863,
+      "name": "Tabur, Clement to 30"
+    },
+    {
+      "typeId": 889,
+      "price": 8.5,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "1|5",
+      "id": 2176621864,
+      "name": "Tabur, Clement to 40"
+    },
+    {
+      "typeId": 890,
+      "price": 6.25,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "1|5",
+      "id": 2176621865,
+      "name": "Damas, Miguel to 0"
+    },
+    {
+      "typeId": 891,
+      "price": 4.25,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "1|5",
+      "id": 2176621866,
+      "name": "Damas, Miguel to 15"
+    },
+    {
+      "typeId": 892,
+      "price": 4.15,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "1|5",
+      "id": 2176621867,
+      "name": "Damas, Miguel to 30"
+    },
+    {
+      "typeId": 893,
+      "price": 4.7,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "1|5",
+      "id": 2176621868,
+      "name": "Damas, Miguel to 40"
+    },
+    {
+      "typeId": 894,
+      "price": 6.5,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "1|5|sr:competitor:197674",
+      "id": 2176621844,
+      "name": "Damas, Miguel to 0"
+    },
+    {
+      "typeId": 895,
+      "price": 4.45,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "1|5|sr:competitor:197674",
+      "id": 2176621845,
+      "name": "Damas, Miguel to 15"
+    },
+    {
+      "typeId": 896,
+      "price": 4.3,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "1|5|sr:competitor:197674",
+      "id": 2176621846,
+      "name": "Damas, Miguel to 30"
+    },
+    {
+      "typeId": 897,
+      "price": 4.85,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "1|5|sr:competitor:197674",
+      "id": 2176621847,
+      "name": "Damas, Miguel to 40"
+    },
+    {
+      "typeId": 898,
+      "price": 3,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "1|5|sr:competitor:197674",
+      "id": 2176621848,
+      "name": "Break"
+    },
+    {
+      "typeId": 712,
+      "price": 5.25,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "1|5",
+      "id": 2176621853,
+      "name": "4"
+    },
+    {
+      "typeId": 716,
+      "price": 2.9,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "1|5",
+      "id": 2176621855,
+      "name": "6"
+    },
+    {
+      "typeId": 714,
+      "price": 3.3,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "1|5",
+      "id": 2176621854,
+      "name": "5"
+    },
+    {
+      "typeId": 885,
+      "price": 3.2,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "1|5",
+      "id": 2176621856,
+      "name": "7+"
+    },
+    {
+      "typeId": 663,
+      "price": 2.4,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "2",
+      "id": 2176621859,
+      "name": "Tabur, Clement (point 2)"
+    },
+    {
+      "typeId": 664,
+      "price": 1.5,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "2",
+      "id": 2176621860,
+      "name": "Damas, Miguel (point 2)"
+    },
+    {
+      "typeId": 1,
+      "price": 3.5,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "1|5|6",
+      "id": 2176616534,
+      "name": "Tabur, Clement"
+    },
+    {
+      "typeId": 2,
+      "price": 1.5,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "1|5|6",
+      "id": 2176616535,
+      "name": "Draw"
+    },
+    {
+      "typeId": 3,
+      "price": 6.5,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "1|5|6",
+      "id": 2176616536,
+      "name": "Damas, Miguel"
+    },
+    {
+      "typeId": 1,
+      "price": 3.4,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "1|6|7",
+      "id": 2176621872,
+      "name": "Tabur, Clement"
+    },
+    {
+      "typeId": 2,
+      "price": 1.5,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "1|6|7",
+      "id": 2176621873,
+      "name": "Draw"
+    },
+    {
+      "typeId": 3,
+      "price": 6.5,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "1|6|7",
+      "id": 2176621874,
+      "name": "Damas, Miguel"
+    },
+    {
+      "typeId": 70,
+      "price": 3.3334,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "1|5",
+      "id": 2176621849,
+      "name": "Odd"
+    },
+    {
+      "typeId": 72,
+      "price": 1.2858,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "1|5",
+      "id": 2176621850,
+      "name": "Even"
+    }
+  ],
+  "boosts": [],
+  "isParlay": false,
+  "eventCode": 4301,
+  "rc": false,
+  "startDate": "2025-02-09T10:00:00Z",
+  "showAll": true
+}

@@ -1,0 +1,6 @@
+command:
+  port: 9200
+  env_path: ./.env
+
+status:
+  interval: 5

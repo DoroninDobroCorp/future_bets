@@ -1,0 +1,2145 @@
+{
+  "id": 11756621,
+  "feedEventId": 12159125,
+  "name": "Alcaraz, Carlos vs. Hurkacz, Hubert",
+  "et": 0,
+  "liveTime": "1° set",
+  "sport": {
+    "typeId": 4,
+    "iconName": "tennis",
+    "hasLiveEvents": false,
+    "id": 68,
+    "name": "Tennis"
+  },
+  "champ": {
+    "hasLiveEvents": false,
+    "id": 4491,
+    "name": "ATP Double Doubles 2 Rotterdam, Netherlands Men Singles"
+  },
+  "category": {
+    "hasLiveEvents": false,
+    "id": 542,
+    "name": "ATP"
+  },
+  "competitors": [
+    {
+      "id": 55470,
+      "name": "Alcaraz, Carlos"
+    },
+    {
+      "id": 46182,
+      "name": "Hurkacz, Hubert"
+    }
+  ],
+  "marketGroups": [
+    {
+      "type": 0,
+      "marketIds": [
+        916989966,
+        31046,
+        916989969,
+        918098258,
+        916989960,
+        917264594,
+        916989965,
+        916989971,
+        916989963,
+        918115190,
+        918086679,
+        918098246,
+        918098248,
+        917264747,
+        916989972,
+        916989958,
+        916989967,
+        916989970,
+        916989964,
+        916989962
+      ],
+      "isBundle": false,
+      "sortOrder": 0,
+      "id": 1,
+      "name": "Main"
+    },
+    {
+      "type": 0,
+      "marketIds": [
+        916989973,
+        916989971,
+        916989963,
+        917264744,
+        917264757,
+        917264756,
+        918098253,
+        918098247,
+        918086685,
+        916989969
+      ],
+      "isBundle": false,
+      "sortOrder": 0,
+      "id": 13,
+      "name": "Set Markets"
+    },
+    {
+      "type": 0,
+      "marketIds": [
+        918126866,
+        918145645,
+        918149360,
+        918145653,
+        918145648,
+        918145655,
+        918145654,
+        918145647,
+        918145652,
+        918145644
+      ],
+      "isBundle": false,
+      "sortOrder": 0,
+      "id": 1045,
+      "name": "Game Markets"
+    },
+    {
+      "type": 0,
+      "marketIds": [
+        918126866,
+        918145645,
+        918098246,
+        918098248
+      ],
+      "isBundle": false,
+      "sortOrder": 0,
+      "id": 1603,
+      "name": "Player Markets"
+    }
+  ],
+  "childMarketGroups": [],
+  "markets": [
+    {
+      "shortName": "Winner",
+      "desktopOddIds": [
+        [
+          2172045072
+        ],
+        [
+          2172045073
+        ]
+      ],
+      "mobileOddIds": [
+        [
+          2172045072
+        ],
+        [
+          2172045073
+        ]
+      ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 186,
+      "isMB": false,
+      "sportMarketId": 70755,
+      "id": 916989966,
+      "name": "Winner"
+    },
+    {
+      "desktopOddIds": [],
+      "mobileOddIds": [],
+      "childMarketIds": [],
+      "isBB": false,
+      "variant": 7,
+      "so": 0,
+      "typeId": 31046,
+      "isMB": false,
+      "sportMarketId": 0,
+      "id": 31046,
+      "name": "Boosted Odds"
+    },
+    {
+      "shortName": "Set handicap",
+      "desktopOddIds": [
+        [
+          2172045076,
+          2172045078
+        ],
+        [
+          2172045077,
+          2172045079
+        ]
+      ],
+      "mobileOddIds": [
+        [
+          2172045076,
+          2172045078
+        ],
+        [
+          2172045077,
+          2172045079
+        ]
+      ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 188,
+      "isMB": false,
+      "sportMarketId": 70761,
+      "sv": "-1.5",
+      "id": 916989969,
+      "name": "Set handicap"
+    },
+    {
+      "shortName": "Game handicap",
+      "desktopOddIds": [
+        [
+          2174713714,
+          2174711493,
+          2174693447
+        ],
+        [
+          2174713715,
+          2174711494,
+          2174693448
+        ]
+      ],
+      "mobileOddIds": [
+        [
+          2174713714,
+          2174711493,
+          2174693447
+        ],
+        [
+          2174713715,
+          2174711494,
+          2174693448
+        ]
+      ],
+      "isBB": false,
+      "variant": 8,
+      "so": 0,
+      "typeId": 187,
+      "isMB": true,
+      "sportMarketId": 70760,
+      "sv": "+0.5",
+      "id": 918098258,
+      "name": "Game handicap"
+    },
+    {
+      "shortName": "Total sets",
+      "desktopOddIds": [
+        [
+          2172045056
+        ],
+        [
+          2172045057
+        ]
+      ],
+      "mobileOddIds": [
+        [
+          2172045056
+        ],
+        [
+          2172045057
+        ]
+      ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 314,
+      "isMB": true,
+      "sportMarketId": 70898,
+      "sv": "2.5",
+      "id": 916989960,
+      "name": "Total sets"
+    },
+    {
+      "shortName": "Total games",
+      "desktopOddIds": [
+        [
+          2172697253,
+          2172697251,
+          2172697249
+        ],
+        [
+          2172697254,
+          2172697252,
+          2172697250
+        ]
+      ],
+      "mobileOddIds": [
+        [
+          2172697253,
+          2172697251,
+          2172697249
+        ],
+        [
+          2172697254,
+          2172697252,
+          2172697250
+        ]
+      ],
+      "headers": [
+        {
+          "typeId": 189,
+          "odds": [
+            {
+              "id": 12,
+              "name": "Over"
+            },
+            {
+              "id": 13,
+              "name": "Under"
+            }
+          ]
+        }
+      ],
+      "isBB": false,
+      "variant": 10,
+      "so": 0,
+      "typeId": 189,
+      "isMB": true,
+      "sportMarketId": 70762,
+      "sv": "25.5",
+      "id": 917264594,
+      "name": "Total games"
+    },
+    {
+      "shortName": "Correct score",
+      "desktopOddIds": [
+        [
+          2172045068,
+          2172045069
+        ],
+        [
+          2172045071,
+          2172045070
+        ]
+      ],
+      "mobileOddIds": [
+        [
+          2172045068,
+          2172045069
+        ],
+        [
+          2172045071,
+          2172045070
+        ]
+      ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 199,
+      "isMB": false,
+      "sportMarketId": 72337,
+      "sv": "sr:correct_score:bestof:3",
+      "id": 916989965,
+      "name": "Correct score"
+    },
+    {
+      "shortName": "First set - winner",
+      "desktopOddIds": [
+        [
+          2172045082
+        ],
+        [
+          2172045083
+        ]
+      ],
+      "mobileOddIds": [
+        [
+          2172045082
+        ],
+        [
+          2172045083
+        ]
+      ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 202,
+      "isMB": false,
+      "sportMarketId": 70773,
+      "sv": "1",
+      "id": 916989971,
+      "name": "First set - winner"
+    },
+    {
+      "shortName": "Second set - winner",
+      "desktopOddIds": [
+        [
+          2172045064
+        ],
+        [
+          2172045065
+        ]
+      ],
+      "mobileOddIds": [
+        [
+          2172045064
+        ],
+        [
+          2172045065
+        ]
+      ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 202,
+      "isMB": false,
+      "sportMarketId": 70773,
+      "sv": "2",
+      "id": 916989963,
+      "name": "Second set - winner"
+    },
+    {
+      "shortName": "Winner & total",
+      "desktopOddIds": [
+        [
+          2174702607,
+          2174702609
+        ],
+        [
+          2174702608,
+          2174702610
+        ]
+      ],
+      "mobileOddIds": [
+        [
+          2174702607,
+          2174702609,
+          2174702608,
+          2174702610
+        ]
+      ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 1055,
+      "isMB": false,
+      "sportMarketId": 71150,
+      "sv": "25.5",
+      "id": 918115190,
+      "name": "Winner & total"
+    },
+    {
+      "shortName": "Will there be a tiebreak",
+      "desktopOddIds": [
+        [
+          2174636982
+        ],
+        [
+          2174636983
+        ]
+      ],
+      "mobileOddIds": [
+        [
+          2174636982
+        ],
+        [
+          2174636983
+        ]
+      ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 195,
+      "isMB": false,
+      "sportMarketId": 70770,
+      "id": 918086679,
+      "name": "Will there be a tiebreak"
+    },
+    {
+      "shortName": "Alcaraz, Carlos total games",
+      "desktopOddIds": [
+        [
+          2174680577
+        ],
+        [
+          2174680578
+        ]
+      ],
+      "mobileOddIds": [
+        [
+          2174680577
+        ],
+        [
+          2174680578
+        ]
+      ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 190,
+      "isMB": true,
+      "sportMarketId": 70763,
+      "sv": "13.5",
+      "id": 918098246,
+      "name": "Alcaraz, Carlos total games"
+    },
+    {
+      "shortName": "Hurkacz, Hubert total games",
+      "desktopOddIds": [
+        [
+          2174693443
+        ],
+        [
+          2174693444
+        ]
+      ],
+      "mobileOddIds": [
+        [
+          2174693443
+        ],
+        [
+          2174693444
+        ]
+      ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 191,
+      "isMB": true,
+      "sportMarketId": 70764,
+      "sv": "12.5",
+      "id": 918098248,
+      "name": "Hurkacz, Hubert total games"
+    },
+    {
+      "shortName": "Any set to nil",
+      "desktopOddIds": [
+        [
+          2172697536
+        ],
+        [
+          2172697537
+        ]
+      ],
+      "mobileOddIds": [
+        [
+          2172697536
+        ],
+        [
+          2172697537
+        ]
+      ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 194,
+      "isMB": false,
+      "sportMarketId": 70769,
+      "id": 917264747,
+      "name": "Any set to nil"
+    },
+    {
+      "shortName": "Alcaraz, Carlos to win a set",
+      "desktopOddIds": [
+        [
+          2172045084
+        ],
+        [
+          2172045085
+        ]
+      ],
+      "mobileOddIds": [
+        [
+          2172045084
+        ],
+        [
+          2172045085
+        ]
+      ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 192,
+      "isMB": false,
+      "sportMarketId": 70765,
+      "id": 916989972,
+      "name": "Alcaraz, Carlos to win a set"
+    },
+    {
+      "shortName": "Hurkacz, Hubert to win a set",
+      "desktopOddIds": [
+        [
+          2172045052
+        ],
+        [
+          2172045053
+        ]
+      ],
+      "mobileOddIds": [
+        [
+          2172045052
+        ],
+        [
+          2172045053
+        ]
+      ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 193,
+      "isMB": false,
+      "sportMarketId": 70767,
+      "id": 916989958,
+      "name": "Hurkacz, Hubert to win a set"
+    },
+    {
+      "shortName": "Alcaraz, Carlos to win exactly 1 set",
+      "desktopOddIds": [
+        [
+          2172045074
+        ],
+        [
+          2172045075
+        ]
+      ],
+      "mobileOddIds": [
+        [
+          2172045074
+        ],
+        [
+          2172045075
+        ]
+      ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 850,
+      "isMB": false,
+      "sportMarketId": 71102,
+      "id": 916989967,
+      "name": "Alcaraz, Carlos to win exactly 1 set"
+    },
+    {
+      "shortName": "Hurkacz, Hubert to win exactly 1 set",
+      "desktopOddIds": [
+        [
+          2172045080
+        ],
+        [
+          2172045081
+        ]
+      ],
+      "mobileOddIds": [
+        [
+          2172045080
+        ],
+        [
+          2172045081
+        ]
+      ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 851,
+      "isMB": false,
+      "sportMarketId": 71104,
+      "id": 916989970,
+      "name": "Hurkacz, Hubert to win exactly 1 set"
+    },
+    {
+      "shortName": "Odd/even games",
+      "desktopOddIds": [
+        [
+          2172045066
+        ],
+        [
+          2172045067
+        ]
+      ],
+      "mobileOddIds": [
+        [
+          2172045066
+        ],
+        [
+          2172045067
+        ]
+      ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 198,
+      "isMB": false,
+      "sportMarketId": 70771,
+      "id": 916989964,
+      "name": "Odd/even games"
+    },
+    {
+      "shortName": "Double result (1st set/match)",
+      "desktopOddIds": [
+        [
+          2172045060,
+          2172045062
+        ],
+        [
+          2172045061,
+          2172045063
+        ]
+      ],
+      "mobileOddIds": [
+        [
+          2172045060,
+          2172045062,
+          2172045061,
+          2172045063
+        ]
+      ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 201,
+      "isMB": false,
+      "sportMarketId": 70772,
+      "id": 916989962,
+      "name": "Double result (1st set/match)"
+    },
+    {
+      "shortName": "Exact sets",
+      "desktopOddIds": [
+        [
+          2172045086
+        ],
+        [
+          2172045087
+        ]
+      ],
+      "mobileOddIds": [
+        [
+          2172045086
+        ],
+        [
+          2172045087
+        ]
+      ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 196,
+      "isMB": false,
+      "sportMarketId": 72971,
+      "sv": "sr:exact_sets:bestof:3",
+      "id": 916989973,
+      "name": "Exact sets"
+    },
+    {
+      "shortName": "First set - total games",
+      "desktopOddIds": [
+        [
+          2172697524
+        ],
+        [
+          2172697525
+        ]
+      ],
+      "mobileOddIds": [
+        [
+          2172697524
+        ],
+        [
+          2172697525
+        ]
+      ],
+      "headers": [
+        {
+          "typeId": 204,
+          "odds": [
+            {
+              "id": 12,
+              "name": "Over"
+            },
+            {
+              "id": 13,
+              "name": "Under"
+            }
+          ]
+        }
+      ],
+      "isBB": false,
+      "variant": 10,
+      "so": 0,
+      "typeId": 204,
+      "isMB": true,
+      "sportMarketId": 70777,
+      "sv": "1|8.5",
+      "id": 917264744,
+      "name": "First set - total games"
+    },
+    {
+      "shortName": "First set - game handicap",
+      "desktopOddIds": [
+        [
+          2172697570
+        ],
+        [
+          2172697571
+        ]
+      ],
+      "mobileOddIds": [
+        [
+          2172697570
+        ],
+        [
+          2172697571
+        ]
+      ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 203,
+      "isMB": true,
+      "sportMarketId": 70776,
+      "sv": "1|-1.5",
+      "id": 917264757,
+      "name": "First set - game handicap"
+    },
+    {
+      "shortName": "First set - correct score",
+      "desktopOddIds": [
+        [
+          2172697560,
+          2172697561,
+          2172697562
+        ],
+        [
+          2172697565,
+          2172697566,
+          2172697567,
+          2172697568,
+          2172697569
+        ]
+      ],
+      "mobileOddIds": [
+        [
+          2172697560,
+          2172697561,
+          2172697562
+        ],
+        [
+          2172697565,
+          2172697566,
+          2172697567,
+          2172697568,
+          2172697569
+        ]
+      ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 207,
+      "isMB": false,
+      "sportMarketId": 70780,
+      "sv": "1",
+      "id": 917264756,
+      "name": "First set - correct score"
+    },
+    {
+      "shortName": "First Set - Race to Games",
+      "desktopOddIds": [
+        [
+          2174664860
+        ],
+        [
+          2174664861
+        ]
+      ],
+      "mobileOddIds": [
+        [
+          2174664860,
+          2174664861
+        ]
+      ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 208,
+      "isMB": false,
+      "sportMarketId": 70781,
+      "sv": "1|5",
+      "id": 918098253,
+      "name": "First Set - Race to Games"
+    },
+    {
+      "shortName": "First set - odd/even games",
+      "desktopOddIds": [
+        [
+          2174664852
+        ],
+        [
+          2174664853
+        ]
+      ],
+      "mobileOddIds": [
+        [
+          2174664852
+        ],
+        [
+          2174664853
+        ]
+      ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 205,
+      "isMB": false,
+      "sportMarketId": 70778,
+      "sv": "1",
+      "id": 918098247,
+      "name": "First set - odd/even games"
+    },
+    {
+      "shortName": "First set - will there be a tiebreak",
+      "desktopOddIds": [
+        [
+          2174636986
+        ],
+        [
+          2174636987
+        ]
+      ],
+      "mobileOddIds": [
+        [
+          2174636986
+        ],
+        [
+          2174636987
+        ]
+      ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 206,
+      "isMB": false,
+      "sportMarketId": 70779,
+      "sv": "1",
+      "id": 918086685,
+      "name": "First set - will there be a tiebreak"
+    },
+    {
+      "shortName": "First set game 7 - winner",
+      "desktopOddIds": [
+        [
+          2174729014
+        ],
+        [
+          2174729015
+        ]
+      ],
+      "mobileOddIds": [
+        [
+          2174729014
+        ],
+        [
+          2174729015
+        ]
+      ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 210,
+      "isMB": false,
+      "sportMarketId": 70783,
+      "sv": "1|7",
+      "id": 918126866,
+      "name": "First set game 7 - winner"
+    },
+    {
+      "shortName": "First set game 8 - winner",
+      "desktopOddIds": [
+        [
+          2174765751
+        ],
+        [
+          2174765752
+        ]
+      ],
+      "mobileOddIds": [
+        [
+          2174765751
+        ],
+        [
+          2174765752
+        ]
+      ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 210,
+      "isMB": false,
+      "sportMarketId": 70783,
+      "sv": "1|8",
+      "id": 918145645,
+      "name": "First set game 8 - winner"
+    },
+    {
+      "shortName": "First Set Game 7 - Point Betting",
+      "desktopOddIds": [
+        [
+          2174773379
+        ],
+        [
+          2174773380
+        ]
+      ],
+      "mobileOddIds": [
+        [
+          2174773379,
+          2174773380
+        ]
+      ],
+      "headers": [
+        {
+          "typeId": 218,
+          "odds": [
+            {
+              "id": 663,
+              "name": "Alcaraz, Carlos"
+            },
+            {
+              "id": 664,
+              "name": "Hurkacz, Hubert"
+            }
+          ]
+        }
+      ],
+      "isBB": false,
+      "variant": 10,
+      "so": 0,
+      "typeId": 218,
+      "isMB": false,
+      "sportMarketId": 70791,
+      "sv": "1|7|6",
+      "id": 918149360,
+      "name": "First Set Game 7 - Point Betting"
+    },
+    {
+      "shortName": "First set game 8 - first 2 points winner",
+      "desktopOddIds": [
+        [
+          2174765767
+        ],
+        [
+          2174765768
+        ],
+        [
+          2174765769
+        ]
+      ],
+      "mobileOddIds": [
+        [
+          2174765767,
+          2174765768,
+          2174765769
+        ]
+      ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 217,
+      "isMB": false,
+      "sportMarketId": 70790,
+      "sv": "1|8|2",
+      "id": 918145653,
+      "name": "First set game 8 - first 2 points winner"
+    },
+    {
+      "shortName": "First set game 8 - to deuce",
+      "desktopOddIds": [
+        [
+          2174765757
+        ],
+        [
+          2174765758
+        ]
+      ],
+      "mobileOddIds": [
+        [
+          2174765757
+        ],
+        [
+          2174765758
+        ]
+      ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 212,
+      "isMB": false,
+      "sportMarketId": 70785,
+      "sv": "1|8",
+      "id": 918145648,
+      "name": "First set game 8 - to deuce"
+    },
+    {
+      "shortName": "First set game 8 - correct score",
+      "desktopOddIds": [
+        [
+          2174765775,
+          2174765776,
+          2174765777,
+          2174765778
+        ],
+        [
+          2174765779,
+          2174765780,
+          2174765781,
+          2174765782
+        ]
+      ],
+      "mobileOddIds": [
+        [
+          2174765775,
+          2174765776,
+          2174765777,
+          2174765778,
+          2174765779,
+          2174765780,
+          2174765781,
+          2174765782
+        ]
+      ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 214,
+      "isMB": false,
+      "sportMarketId": 70787,
+      "sv": "1|8",
+      "id": 918145655,
+      "name": "First set game 8 - correct score"
+    },
+    {
+      "shortName": "First set game 8 - correct score or break",
+      "desktopOddIds": [
+        [
+          2174765770,
+          2174765771
+        ],
+        [
+          2174765772,
+          2174765773,
+          2174765774
+        ]
+      ],
+      "mobileOddIds": [
+        [
+          2174765770,
+          2174765771,
+          2174765772,
+          2174765773,
+          2174765774
+        ]
+      ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 215,
+      "isMB": false,
+      "sportMarketId": 70788,
+      "sv": "1|8|sr:competitor:407573",
+      "id": 918145654,
+      "name": "First set game 8 - correct score or break"
+    },
+    {
+      "shortName": "First set game 8 - exact points",
+      "desktopOddIds": [
+        [
+          2174765753
+        ],
+        [
+          2174765754
+        ],
+        [
+          2174765755
+        ],
+        [
+          2174765756
+        ]
+      ],
+      "mobileOddIds": [
+        [
+          2174765753,
+          2174765755
+        ],
+        [
+          2174765754,
+          2174765756
+        ]
+      ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 211,
+      "isMB": false,
+      "sportMarketId": 70784,
+      "sv": "1|8",
+      "id": 918145647,
+      "name": "First set game 8 - exact points"
+    },
+    {
+      "shortName": "First Set Game 8 - Race to Points",
+      "desktopOddIds": [
+        [
+          2174765765
+        ],
+        [
+          2174765766
+        ]
+      ],
+      "mobileOddIds": [
+        [
+          2174765765,
+          2174765766
+        ]
+      ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 216,
+      "isMB": false,
+      "sportMarketId": 70789,
+      "sv": "1|8|2",
+      "id": 918145652,
+      "name": "First Set Game 8 - Race to Points"
+    },
+    {
+      "shortName": "First set game 8 - odd/even points",
+      "desktopOddIds": [
+        [
+          2174765749
+        ],
+        [
+          2174765750
+        ]
+      ],
+      "mobileOddIds": [
+        [
+          2174765749
+        ],
+        [
+          2174765750
+        ]
+      ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 213,
+      "isMB": false,
+      "sportMarketId": 70786,
+      "sv": "1|8",
+      "id": 918145644,
+      "name": "First set game 8 - odd/even points"
+    }
+  ],
+  "childMarkets": [],
+  "odds": [
+    {
+      "typeId": 1,
+      "price": 1.7,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2172045072,
+      "name": "Alcaraz, Carlos"
+    },
+    {
+      "typeId": 3,
+      "price": 2.2,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2172045073,
+      "name": "Hurkacz, Hubert"
+    },
+    {
+      "typeId": 1714,
+      "price": 1.3334,
+      "isMB": true,
+      "oddStatus": 0,
+      "sv": "+1.5",
+      "id": 2172045076,
+      "name": "Alcaraz, Carlos (+1.5)"
+    },
+    {
+      "typeId": 1714,
+      "price": 4.5,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "-1.5",
+      "id": 2172045078,
+      "name": "Alcaraz, Carlos (-1.5)"
+    },
+    {
+      "typeId": 1715,
+      "price": 3,
+      "isMB": true,
+      "oddStatus": 0,
+      "sv": "+1.5",
+      "id": 2172045077,
+      "name": "Hurkacz, Hubert (-1.5)"
+    },
+    {
+      "typeId": 1715,
+      "price": 1.1539,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "-1.5",
+      "id": 2172045079,
+      "name": "Hurkacz, Hubert (+1.5)"
+    },
+    {
+      "typeId": 1714,
+      "price": 1.4546,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "+2.5",
+      "id": 2174713714,
+      "name": "Alcaraz, Carlos (+2.5)"
+    },
+    {
+      "typeId": 1714,
+      "price": 1.5556,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "+1.5",
+      "id": 2174711493,
+      "name": "Alcaraz, Carlos (+1.5)"
+    },
+    {
+      "typeId": 1714,
+      "price": 1.6667,
+      "isMB": true,
+      "oddStatus": 0,
+      "sv": "+0.5",
+      "id": 2174693447,
+      "name": "Alcaraz, Carlos (+0.5)"
+    },
+    {
+      "typeId": 1715,
+      "price": 2.5455,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "+2.5",
+      "id": 2174713715,
+      "name": "Hurkacz, Hubert (-2.5)"
+    },
+    {
+      "typeId": 1715,
+      "price": 2.2858,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "+1.5",
+      "id": 2174711494,
+      "name": "Hurkacz, Hubert (-1.5)"
+    },
+    {
+      "typeId": 1715,
+      "price": 2.1,
+      "isMB": true,
+      "oddStatus": 0,
+      "sv": "+0.5",
+      "id": 2174693448,
+      "name": "Hurkacz, Hubert (-0.5)"
+    },
+    {
+      "typeId": 12,
+      "price": 1.7,
+      "isMB": true,
+      "oddStatus": 0,
+      "sv": "2.5",
+      "id": 2172045056,
+      "name": "Over 2.5"
+    },
+    {
+      "typeId": 13,
+      "price": 2,
+      "isMB": true,
+      "oddStatus": 0,
+      "sv": "2.5",
+      "id": 2172045057,
+      "name": "Under 2.5"
+    },
+    {
+      "typeId": 12,
+      "price": 1.6667,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "24.5",
+      "id": 2172697253,
+      "name": "Over 24.5"
+    },
+    {
+      "typeId": 12,
+      "price": 1.8,
+      "isMB": true,
+      "oddStatus": 0,
+      "sv": "25.5",
+      "id": 2172697251,
+      "name": "Over 25.5"
+    },
+    {
+      "typeId": 12,
+      "price": 2.1,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "26.5",
+      "id": 2172697249,
+      "name": "Over 26.5"
+    },
+    {
+      "typeId": 13,
+      "price": 2.1,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "24.5",
+      "id": 2172697254,
+      "name": "Under 24.5"
+    },
+    {
+      "typeId": 13,
+      "price": 1.9,
+      "isMB": true,
+      "oddStatus": 0,
+      "sv": "25.5",
+      "id": 2172697252,
+      "name": "Under 25.5"
+    },
+    {
+      "typeId": 13,
+      "price": 1.6667,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "26.5",
+      "id": 2172697250,
+      "name": "Under 26.5"
+    },
+    {
+      "typeId": 116,
+      "price": 4.8,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "sr:correct_score:bestof:3",
+      "id": 2172045068,
+      "name": "2:0"
+    },
+    {
+      "typeId": 130,
+      "price": 2.25,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "sr:correct_score:bestof:3",
+      "id": 2172045069,
+      "name": "2:1"
+    },
+    {
+      "typeId": 138,
+      "price": 3.05,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "sr:correct_score:bestof:3",
+      "id": 2172045071,
+      "name": "0:2"
+    },
+    {
+      "typeId": 140,
+      "price": 5.75,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "sr:correct_score:bestof:3",
+      "id": 2172045070,
+      "name": "1:2"
+    },
+    {
+      "typeId": 1,
+      "price": 3.75,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "1",
+      "id": 2172045082,
+      "name": "Alcaraz, Carlos"
+    },
+    {
+      "typeId": 3,
+      "price": 1.25,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "1",
+      "id": 2172045083,
+      "name": "Hurkacz, Hubert"
+    },
+    {
+      "typeId": 1,
+      "price": 1.45,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "2",
+      "id": 2172045064,
+      "name": "Alcaraz, Carlos"
+    },
+    {
+      "typeId": 3,
+      "price": 2.65,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "2",
+      "id": 2172045065,
+      "name": "Hurkacz, Hubert"
+    },
+    {
+      "typeId": 660,
+      "price": 2.4,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "25.5",
+      "id": 2174702607,
+      "name": "Alcaraz, Carlos & over 25.5"
+    },
+    {
+      "typeId": 656,
+      "price": 4.6,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "25.5",
+      "id": 2174702609,
+      "name": "Alcaraz, Carlos & under 25.5"
+    },
+    {
+      "typeId": 662,
+      "price": 6,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "25.5",
+      "id": 2174702608,
+      "name": "Hurkacz, Hubert & over 25.5"
+    },
+    {
+      "typeId": 658,
+      "price": 3.1,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "25.5",
+      "id": 2174702610,
+      "name": "Hurkacz, Hubert & under 25.5"
+    },
+    {
+      "typeId": 74,
+      "price": 2,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2174636982,
+      "name": "Yes"
+    },
+    {
+      "typeId": 76,
+      "price": 1.7,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2174636983,
+      "name": "No"
+    },
+    {
+      "typeId": 12,
+      "price": 1.8334,
+      "isMB": true,
+      "oddStatus": 0,
+      "sv": "13.5",
+      "id": 2174680577,
+      "name": "Over 13.5"
+    },
+    {
+      "typeId": 13,
+      "price": 1.8334,
+      "isMB": true,
+      "oddStatus": 0,
+      "sv": "13.5",
+      "id": 2174680578,
+      "name": "Under 13.5"
+    },
+    {
+      "typeId": 12,
+      "price": 1.7,
+      "isMB": true,
+      "oddStatus": 0,
+      "sv": "12.5",
+      "id": 2174693443,
+      "name": "Over 12.5"
+    },
+    {
+      "typeId": 13,
+      "price": 2.05,
+      "isMB": true,
+      "oddStatus": 0,
+      "sv": "12.5",
+      "id": 2174693444,
+      "name": "Under 12.5"
+    },
+    {
+      "typeId": 74,
+      "price": 10,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2172697536,
+      "name": "Yes"
+    },
+    {
+      "typeId": 76,
+      "price": 1.01,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2172697537,
+      "name": "No"
+    },
+    {
+      "typeId": 74,
+      "price": 1.3334,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2172045084,
+      "name": "Yes"
+    },
+    {
+      "typeId": 76,
+      "price": 3,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2172045085,
+      "name": "No"
+    },
+    {
+      "typeId": 74,
+      "price": 1.1539,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2172045052,
+      "name": "Yes"
+    },
+    {
+      "typeId": 76,
+      "price": 4.5,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2172045053,
+      "name": "No"
+    },
+    {
+      "typeId": 74,
+      "price": 5.3334,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2172045074,
+      "name": "Yes"
+    },
+    {
+      "typeId": 76,
+      "price": 1.1112,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2172045075,
+      "name": "No"
+    },
+    {
+      "typeId": 74,
+      "price": 2.2858,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2172045080,
+      "name": "Yes"
+    },
+    {
+      "typeId": 76,
+      "price": 1.5556,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2172045081,
+      "name": "No"
+    },
+    {
+      "typeId": 70,
+      "price": 2,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2172045066,
+      "name": "Odd"
+    },
+    {
+      "typeId": 72,
+      "price": 1.8,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2172045067,
+      "name": "Even"
+    },
+    {
+      "typeId": 418,
+      "price": 4.05,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2172045060,
+      "name": "Alcaraz, Carlos/Alcaraz, Carlos"
+    },
+    {
+      "typeId": 422,
+      "price": 52,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2172045062,
+      "name": "Alcaraz, Carlos/Hurkacz, Hubert"
+    },
+    {
+      "typeId": 430,
+      "price": 2.5,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2172045061,
+      "name": "Hurkacz, Hubert/Alcaraz, Carlos"
+    },
+    {
+      "typeId": 434,
+      "price": 2.15,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2172045063,
+      "name": "Hurkacz, Hubert/Hurkacz, Hubert"
+    },
+    {
+      "typeId": 58,
+      "price": 2,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "sr:exact_sets:bestof:3",
+      "id": 2172045086,
+      "name": "2"
+    },
+    {
+      "typeId": 734,
+      "price": 1.7,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "sr:exact_sets:bestof:3",
+      "id": 2172045087,
+      "name": "3"
+    },
+    {
+      "typeId": 12,
+      "price": 1.0625,
+      "isMB": true,
+      "oddStatus": 0,
+      "sv": "8.5",
+      "id": 2172697524,
+      "name": "Over 8.5"
+    },
+    {
+      "typeId": 13,
+      "price": 7,
+      "isMB": true,
+      "oddStatus": 0,
+      "sv": "8.5",
+      "id": 2172697525,
+      "name": "Under 8.5"
+    },
+    {
+      "typeId": 1714,
+      "price": 7,
+      "isMB": true,
+      "oddStatus": 0,
+      "sv": "-1.5",
+      "id": 2172697570,
+      "name": "Alcaraz, Carlos (-1.5)"
+    },
+    {
+      "typeId": 1715,
+      "price": 1.0625,
+      "isMB": true,
+      "oddStatus": 0,
+      "sv": "-1.5",
+      "id": 2172697571,
+      "name": "Hurkacz, Hubert (+1.5)"
+    },
+    {
+      "typeId": 869,
+      "price": 16,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "1",
+      "id": 2172697560,
+      "name": "6:4"
+    },
+    {
+      "typeId": 870,
+      "price": 12.75,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "1",
+      "id": 2172697561,
+      "name": "7:5"
+    },
+    {
+      "typeId": 871,
+      "price": 5.75,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "1",
+      "id": 2172697562,
+      "name": "7:6"
+    },
+    {
+      "typeId": 874,
+      "price": 8.25,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "1",
+      "id": 2172697565,
+      "name": "2:6"
+    },
+    {
+      "typeId": 875,
+      "price": 1.6,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "1",
+      "id": 2172697566,
+      "name": "3:6"
+    },
+    {
+      "typeId": 876,
+      "price": 22,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "1",
+      "id": 2172697567,
+      "name": "4:6"
+    },
+    {
+      "typeId": 877,
+      "price": 31,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "1",
+      "id": 2172697568,
+      "name": "5:7"
+    },
+    {
+      "typeId": 878,
+      "price": 9.5,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "1",
+      "id": 2172697569,
+      "name": "6:7"
+    },
+    {
+      "typeId": 665,
+      "price": 9,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "5",
+      "id": 2174664860,
+      "name": "Alcaraz, Carlos (game 5)"
+    },
+    {
+      "typeId": 666,
+      "price": 1.02,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "5",
+      "id": 2174664861,
+      "name": "Hurkacz, Hubert (game 5)"
+    },
+    {
+      "typeId": 70,
+      "price": 1.2728,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "1",
+      "id": 2174664852,
+      "name": "Odd"
+    },
+    {
+      "typeId": 72,
+      "price": 3.6667,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "1",
+      "id": 2174664853,
+      "name": "Even"
+    },
+    {
+      "typeId": 74,
+      "price": 4,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "1",
+      "id": 2174636986,
+      "name": "Yes"
+    },
+    {
+      "typeId": 76,
+      "price": 1.2,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "1",
+      "id": 2174636987,
+      "name": "No"
+    },
+    {
+      "typeId": 1,
+      "price": 3.4,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "1|7",
+      "id": 2174729014,
+      "name": "Alcaraz, Carlos"
+    },
+    {
+      "typeId": 3,
+      "price": 1.2858,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "1|7",
+      "id": 2174729015,
+      "name": "Hurkacz, Hubert"
+    },
+    {
+      "typeId": 1,
+      "price": 1.1,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "1|8",
+      "id": 2174765751,
+      "name": "Alcaraz, Carlos"
+    },
+    {
+      "typeId": 3,
+      "price": 6.5,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "1|8",
+      "id": 2174765752,
+      "name": "Hurkacz, Hubert"
+    },
+    {
+      "typeId": 663,
+      "price": 2.4,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "6",
+      "id": 2174773379,
+      "name": "Alcaraz, Carlos (point 6)"
+    },
+    {
+      "typeId": 664,
+      "price": 1.5,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "6",
+      "id": 2174773380,
+      "name": "Hurkacz, Hubert (point 6)"
+    },
+    {
+      "typeId": 1,
+      "price": 1.95,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "1|8|2",
+      "id": 2174765767,
+      "name": "Alcaraz, Carlos"
+    },
+    {
+      "typeId": 2,
+      "price": 2.1,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "1|8|2",
+      "id": 2174765768,
+      "name": "Draw"
+    },
+    {
+      "typeId": 3,
+      "price": 8.75,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "1|8|2",
+      "id": 2174765769,
+      "name": "Hurkacz, Hubert"
+    },
+    {
+      "typeId": 74,
+      "price": 4.3334,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "1|8",
+      "id": 2174765757,
+      "name": "Yes"
+    },
+    {
+      "typeId": 76,
+      "price": 1.1667,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "1|8",
+      "id": 2174765758,
+      "name": "No"
+    },
+    {
+      "typeId": 886,
+      "price": 3.55,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "1|8",
+      "id": 2174765775,
+      "name": "Alcaraz, Carlos to 0"
+    },
+    {
+      "typeId": 887,
+      "price": 3.05,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "1|8",
+      "id": 2174765776,
+      "name": "Alcaraz, Carlos to 15"
+    },
+    {
+      "typeId": 888,
+      "price": 3.85,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "1|8",
+      "id": 2174765777,
+      "name": "Alcaraz, Carlos to 30"
+    },
+    {
+      "typeId": 889,
+      "price": 5.5,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "1|8",
+      "id": 2174765778,
+      "name": "Alcaraz, Carlos to 40"
+    },
+    {
+      "typeId": 890,
+      "price": 52,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "1|8",
+      "id": 2174765779,
+      "name": "Hurkacz, Hubert to 0"
+    },
+    {
+      "typeId": 891,
+      "price": 30,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "1|8",
+      "id": 2174765780,
+      "name": "Hurkacz, Hubert to 15"
+    },
+    {
+      "typeId": 892,
+      "price": 17.5,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "1|8",
+      "id": 2174765781,
+      "name": "Hurkacz, Hubert to 30"
+    },
+    {
+      "typeId": 893,
+      "price": 23,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "1|8",
+      "id": 2174765782,
+      "name": "Hurkacz, Hubert to 40"
+    },
+    {
+      "typeId": 894,
+      "price": 3.75,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "1|8|sr:competitor:407573",
+      "id": 2174765770,
+      "name": "Alcaraz, Carlos to 0"
+    },
+    {
+      "typeId": 895,
+      "price": 3.2,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "1|8|sr:competitor:407573",
+      "id": 2174765771,
+      "name": "Alcaraz, Carlos to 15"
+    },
+    {
+      "typeId": 896,
+      "price": 4.05,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "1|8|sr:competitor:407573",
+      "id": 2174765772,
+      "name": "Alcaraz, Carlos to 30"
+    },
+    {
+      "typeId": 897,
+      "price": 5.75,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "1|8|sr:competitor:407573",
+      "id": 2174765773,
+      "name": "Alcaraz, Carlos to 40"
+    },
+    {
+      "typeId": 898,
+      "price": 7.5,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "1|8|sr:competitor:407573",
+      "id": 2174765774,
+      "name": "Break"
+    },
+    {
+      "typeId": 712,
+      "price": 3.55,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "1|8",
+      "id": 2174765753,
+      "name": "4"
+    },
+    {
+      "typeId": 716,
+      "price": 3.35,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "1|8",
+      "id": 2174765755,
+      "name": "6"
+    },
+    {
+      "typeId": 714,
+      "price": 2.95,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "1|8",
+      "id": 2174765754,
+      "name": "5"
+    },
+    {
+      "typeId": 885,
+      "price": 4.75,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "1|8",
+      "id": 2174765756,
+      "name": "7+"
+    },
+    {
+      "typeId": 663,
+      "price": 1.25,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "2",
+      "id": 2174765765,
+      "name": "Alcaraz, Carlos (point 2)"
+    },
+    {
+      "typeId": 664,
+      "price": 3.6,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "2",
+      "id": 2174765766,
+      "name": "Hurkacz, Hubert (point 2)"
+    },
+    {
+      "typeId": 70,
+      "price": 2.9,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "1|8",
+      "id": 2174765749,
+      "name": "Odd"
+    },
+    {
+      "typeId": 72,
+      "price": 1.4,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "1|8",
+      "id": 2174765750,
+      "name": "Even"
+    }
+  ],
+  "boosts": [],
+  "isParlay": false,
+  "eventCode": 7705,
+  "rc": false,
+  "startDate": "2025-02-08T18:30:00Z",
+  "showAll": true
+}

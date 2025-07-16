@@ -1,0 +1,6088 @@
+{
+  "id": 11174143,
+  "feedEventId": 12056439,
+  "name": "Aparecidense/GO vs. CRAC/GO",
+  "et": 0,
+  "liveTime": "25'",
+  "lst": "2025-02-06T22:34:19Z",
+  "sport": {
+    "typeId": 1,
+    "iconName": "soccer",
+    "hasLiveEvents": false,
+    "id": 66,
+    "name": "Football"
+  },
+  "champ": {"hasLiveEvents": false, "id": 3447, "name": "Goiano"},
+  "category": {
+    "iso": "BRA",
+    "hasLiveEvents": false,
+    "id": 593,
+    "name": "Brazil"
+  },
+  "competitors": [
+    {"id": 54897, "name": "Aparecidense/GO"},
+    {"id": 60171, "name": "CRAC/GO"        }
+  ],
+  "marketGroups": [
+    {
+      "type": 0,
+      "marketIds": [
+        31046, 913334072, 913334036, 913334064, 913334056, 913334078,
+        913334075, 913334025, 913334029, 913334079, 915249779, 913334070,
+        913334062, 913334032, 913334019, 913334022, 913334076, 913334071,
+        915788413, 913334114, 913334011, 913334144, 913334057, 913334147,
+        913334129, 913334103, 913334104, 915249769, 913334087, 913334119,
+        913334060, 913334100, 913334061, 913334083, 915249780, 915249768,
+        913334090, 913334167, 913334142, 913334143
+      ],
+      "isBundle": false,
+      "sortOrder": 0,
+      "id": 1,
+      "name": "Main"
+    },
+    {
+      "type": 3,
+      "marketIds": [
+        913334072, 913334036, 913334064, 913334011, 913334056, 913334025,
+        913334029, 913334057, 913334083, 913334070, 913334062, 913334032,
+        913334019, 913334022, 913334054, 913334141, 913334081, 915788413,
+        913334055
+      ],
+      "isBundle": false,
+      "sortOrder": 0,
+      "id": 23,
+      "name": "Bet Builder"
+    },
+    {
+      "type": 0,
+      "marketIds": [
+        913334056, 913334036, 913678512, 913334057, 915787394, 915249803,
+        913334068, 913334140, 913334025, 913334029, 913334147, 913334032,
+        913334019, 913334022, 913334054, 913334141, 913334081, 913334083,
+        915788413, 913334078, 913334103, 913334104, 915249769, 915249780,
+        915249768, 913334090, 913334167, 913334142, 913334143, 913334145,
+        915249812, 915249799, 913334088, 913334101, 913334102, 913334095,
+        913334166, 913334082, 913334156
+      ],
+      "isBundle": false,
+      "sortOrder": 0,
+      "id": 1624,
+      "name": "Goal"
+    },
+    {
+      "type": 1,
+      "marketIds": [915789639, 915789640, 915789915, 915790238],
+      "isBundle": false,
+      "sortOrder": 0,
+      "id": 18,
+      "name": "1 minute"
+    },
+    {
+      "type": 0,
+      "marketIds": [
+        913334140, 913334123, 913334091, 913334125, 913334004, 913334118,
+        913334080, 913334105, 913334106, 913334151, 913334145
+      ],
+      "isBundle": false,
+      "sortOrder": 0,
+      "id": 1050,
+      "name": "Specials"
+    },
+    {
+      "type": 0,
+      "marketIds": [
+        913334070, 913334062, 913334032, 913334054, 915787402, 913334007,
+        913334141, 913334019, 913334022, 915249812, 915249799, 915787401,
+        913334088, 913334076, 913334101, 913334102, 913334116, 913334081,
+        913334124, 913334145
+      ],
+      "isBundle": false,
+      "sortOrder": 0,
+      "id": 2,
+      "name": "1st Half"
+    },
+    {
+      "type": 0,
+      "marketIds": [
+        913334071, 913334063, 915788413, 913334055, 915263577, 913334074,
+        913334098, 913334095, 913334166, 913334082
+      ],
+      "isBundle": false,
+      "sortOrder": 0,
+      "id": 3,
+      "name": "2nd Half"
+    },
+    {
+      "type": 0,
+      "marketIds": [
+        913678512, 915249779, 913334115, 915787395, 913334068, 915249803,
+        913334156, 913334149, 913334152
+      ],
+      "isBundle": false,
+      "sortOrder": 0,
+      "id": 4,
+      "name": "Combo"
+    }
+  ],
+  "childMarketGroups": [],
+  "markets": [
+    {
+      "desktopOddIds": [],
+      "mobileOddIds": [],
+      "childMarketIds": [],
+      "isBB": false,
+      "variant": 7,
+      "so": 0,
+      "typeId": 31046,
+      "isMB": false,
+      "sportMarketId": 0,
+      "id": 31046,
+      "name": "Boosted Odds"
+    },
+    {
+      "shortName": "1x2",
+      "desktopOddIds": [ [2162438040], [2162438041], [2162438042] ],
+      "mobileOddIds": [ [2162438040], [2162438041], [2162438042] ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 1,
+      "isMB": false,
+      "sportMarketId": 70472,
+      "id": 913334072,
+      "name": "1x2"
+    },
+    {
+      "shortName": "Total",
+      "desktopOddIds": [
+        [2162437897, 2162437899, 2162437901, 2162437903],
+        [2162437898, 2162437900, 2162437902, 2162437904]
+      ],
+      "mobileOddIds": [
+        [2162437897, 2162437899, 2162437901, 2162437903],
+        [2162437898, 2162437900, 2162437902, 2162437904]
+      ],
+      "isBB": false,
+      "variant": 8,
+      "so": 0,
+      "typeId": 18,
+      "isMB": false,
+      "sportMarketId": 70520,
+      "sv": "1.5",
+      "id": 913334036,
+      "name": "Total"
+    },
+    {
+      "shortName": "Double chance",
+      "desktopOddIds": [ [2162438003], [2162438001], [2162438002] ],
+      "mobileOddIds": [ [2162438003, 2162438001, 2162438002] ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 10,
+      "isMB": false,
+      "sportMarketId": 70495,
+      "id": 913334064,
+      "name": "Double chance"
+    },
+    {
+      "shortName": "Both Teams To Score",
+      "desktopOddIds": [ [2162437937], [2162437938] ],
+      "mobileOddIds": [ [2162437937], [2162437938] ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 29,
+      "isMB": false,
+      "sportMarketId": 70545,
+      "id": 913334056,
+      "name": "Both Teams To Score"
+    },
+    {
+      "shortName": "Exact goals ",
+      "desktopOddIds": [
+        [2162438061, 2162438062, 2162438063, 2162438065],
+        [2162438064, 2162438066                        ]
+      ],
+      "mobileOddIds": [
+        [2162438061, 2162438062, 2162438063, 2162438065, 2162438064, 2162438066]
+      ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 21,
+      "isMB": false,
+      "sportMarketId": 71660,
+      "id": 913334078,
+      "name": "Exact goals "
+    },
+    {
+      "shortName": "Draw no bet",
+      "desktopOddIds": [ [2162438047], [2162438048] ],
+      "mobileOddIds": [ [2162438047], [2162438048] ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 11,
+      "isMB": false,
+      "sportMarketId": 70500,
+      "id": 913334075,
+      "name": "Draw no bet"
+    },
+    {
+      "shortName": "Aparecidense/GO total goals",
+      "desktopOddIds": [ [2162437875, 2162437877], [2162437876, 2162437878] ],
+      "mobileOddIds": [ [2162437875, 2162437877], [2162437876, 2162437878] ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 19,
+      "isMB": true,
+      "sportMarketId": 70525,
+      "sv": "0.5",
+      "id": 913334025,
+      "name": "Aparecidense/GO total goals"
+    },
+    {
+      "shortName": "CRAC/GO total goals",
+      "desktopOddIds": [ [2162437883, 2162437885], [2162437884, 2162437886] ],
+      "mobileOddIds": [ [2162437883, 2162437885], [2162437884, 2162437886] ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 20,
+      "isMB": true,
+      "sportMarketId": 70530,
+      "sv": "1.5",
+      "id": 913334029,
+      "name": "CRAC/GO total goals"
+    },
+    {
+      "shortName": "Halftime/fulltime",
+      "desktopOddIds": [
+        [2162438067, 2162438070, 2162438073],
+        [2162438068, 2162438071, 2162438074],
+        [2162438069, 2162438072, 2162438075]
+      ],
+      "mobileOddIds": [
+        [
+          2162438067, 2162438068, 2162438069, 2162438070, 2162438071,
+          2162438072, 2162438073, 2162438074, 2162438075
+        ]
+      ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 47,
+      "isMB": false,
+      "sportMarketId": 70568,
+      "id": 913334079,
+      "name": "Halftime/fulltime"
+    },
+    {
+      "shortName": "1x2 & both teams to score",
+      "desktopOddIds": [
+        [2167759357, 2167759358],
+        [2167759359, 2167759360],
+        [2167759361, 2167759362]
+      ],
+      "mobileOddIds": [
+        [2167759357, 2167759358, 2167759359, 2167759360, 2167759361, 2167759362]
+      ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 35,
+      "isMB": false,
+      "sportMarketId": 70555,
+      "id": 915249779,
+      "name": "1x2 & both teams to score"
+    },
+    {
+      "shortName": "1st half - 1x2",
+      "desktopOddIds": [ [2162438034], [2162438035], [2162438036] ],
+      "mobileOddIds": [ [2162438034, 2162438035, 2162438036] ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 60,
+      "isMB": false,
+      "sportMarketId": 70591,
+      "id": 913334070,
+      "name": "1st half - 1x2"
+    },
+    {
+      "shortName": "1st half - double chance",
+      "desktopOddIds": [ [2162437997], [2162437995], [2162437996] ],
+      "mobileOddIds": [ [2162437997, 2162437995, 2162437996] ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 63,
+      "isMB": false,
+      "sportMarketId": 70599,
+      "id": 913334062,
+      "name": "1st half - double chance"
+    },
+    {
+      "shortName": "1st half - total",
+      "desktopOddIds": [ [2162437889, 2162437891], [2162437890, 2162437892] ],
+      "mobileOddIds": [ [2162437889, 2162437891], [2162437890, 2162437892] ],
+      "isBB": false,
+      "variant": 8,
+      "so": 0,
+      "typeId": 68,
+      "isMB": true,
+      "sportMarketId": 70615,
+      "sv": "1.5",
+      "id": 913334032,
+      "name": "1st half - total"
+    },
+    {
+      "shortName": "1st half - Aparecidense/GO total",
+      "desktopOddIds": [ [2162437863], [2162437864] ],
+      "mobileOddIds": [ [2162437863], [2162437864] ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 69,
+      "isMB": true,
+      "sportMarketId": 70620,
+      "sv": "0.5",
+      "id": 913334019,
+      "name": "1st half - Aparecidense/GO total"
+    },
+    {
+      "shortName": "1st half - CRAC/GO total",
+      "desktopOddIds": [ [2162437869], [2162437870] ],
+      "mobileOddIds": [ [2162437869], [2162437870] ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 70,
+      "isMB": true,
+      "sportMarketId": 70625,
+      "sv": "1.5",
+      "id": 913334022,
+      "name": "1st half - CRAC/GO total"
+    },
+    {
+      "shortName": "1st half - exact goals",
+      "desktopOddIds": [ [2162438050, 2162438051, 2162438053], [2162438052] ],
+      "mobileOddIds": [ [2162438050, 2162438051, 2162438053], [2162438052] ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 71,
+      "isMB": false,
+      "sportMarketId": 71658,
+      "id": 913334076,
+      "name": "1st half - exact goals"
+    },
+    {
+      "shortName": "2nd half - 1x2",
+      "desktopOddIds": [ [2162438037], [2162438038], [2162438039] ],
+      "mobileOddIds": [ [2162438037, 2162438038, 2162438039] ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 83,
+      "isMB": false,
+      "sportMarketId": 70643,
+      "id": 913334071,
+      "name": "2nd half - 1x2"
+    },
+    {
+      "shortName": "2nd half - total",
+      "desktopOddIds": [ [2169060998], [2169060999] ],
+      "mobileOddIds": [ [2169060998], [2169060999] ],
+      "isBB": false,
+      "variant": 8,
+      "so": 0,
+      "typeId": 90,
+      "isMB": true,
+      "sportMarketId": 70657,
+      "sv": "1.5",
+      "id": 915788413,
+      "name": "2nd half - total"
+    },
+    {
+      "shortName": "\tHandicap 1x2",
+      "desktopOddIds": [
+        [2169058764, 2162438187, 2167799264],
+        [2169058765, 2162438188, 2167799265],
+        [2169058766, 2162438189, 2167799266]
+      ],
+      "mobileOddIds": [
+        [
+          2169058764, 2162438187, 2167799264, 2169058765, 2162438188,
+          2167799265, 2169058766, 2162438189, 2167799266
+        ]
+      ],
+      "isBB": false,
+      "variant": 9,
+      "so": 0,
+      "typeId": 14,
+      "isMB": false,
+      "sportMarketId": 70510,
+      "sv": "1:0",
+      "id": 913334114,
+      "name": "\tHandicap 1x2"
+    },
+    {
+      "shortName": "Handicap",
+      "desktopOddIds": [ [2162437849, 2162437847], [2162437850, 2162437848] ],
+      "mobileOddIds": [ [2162437849, 2162437847], [2162437850, 2162437848] ],
+      "isBB": false,
+      "variant": 8,
+      "so": 0,
+      "typeId": 16,
+      "isMB": true,
+      "sportMarketId": 70515,
+      "sv": "+0.5",
+      "id": 913334011,
+      "name": "Handicap"
+    },
+    {
+      "shortName": "Last goal",
+      "desktopOddIds": [ [2162438292], [2162438294], [2162438293] ],
+      "mobileOddIds": [ [2162438292], [2162438294], [2162438293] ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 9,
+      "isMB": false,
+      "sportMarketId": 70493,
+      "id": 913334144,
+      "name": "Last goal"
+    },
+    {
+      "shortName": "Correct score",
+      "desktopOddIds": [
+        [
+          2162437946, 2162437947, 2162437952, 2162437948, 2162437953, 2162437961
+        ],
+        [2162437945, 2162437951, 2162437957, 2162437963, 2162437964],
+        [
+          2162437944, 2162437949, 2162437950, 2162437954, 2162437955,
+          2162437956, 2162437958, 2162437959, 2162437960, 2162437962
+        ]
+      ],
+      "mobileOddIds": [
+        [
+          2162437946, 2162437947, 2162437952, 2162437948, 2162437953, 2162437961
+        ],
+        [2162437945, 2162437951, 2162437957, 2162437963, 2162437964],
+        [
+          2162437944, 2162437949, 2162437950, 2162437954, 2162437955,
+          2162437956, 2162437958, 2162437959, 2162437960, 2162437962
+        ]
+      ],
+      "isBB": false,
+      "variant": 3,
+      "so": 0,
+      "typeId": 45,
+      "isMB": false,
+      "sportMarketId": 70566,
+      "id": 913334057,
+      "name": "Correct score"
+    },
+    {
+      "shortName": "Halftime/fulltime correct score",
+      "desktopOddIds": [
+        [2162438342, 2162438343],
+        [2162438332, 2162438334, 2162438333, 2162438335, 2162438346],
+        [
+          2162438312, 2162438313, 2162438314, 2162438315, 2162438316,
+          2162438317, 2162438318, 2162438319, 2162438320, 2162438321,
+          2162438322, 2162438323, 2162438324, 2162438336, 2162438337
+        ]
+      ],
+      "mobileOddIds": [
+        [2162438342, 2162438343],
+        [
+          2162438332, 2162438334, 2162438333, 2162438335, 2162438346,
+          2162438312, 2162438313, 2162438314, 2162438315, 2162438316,
+          2162438317, 2162438318, 2162438319, 2162438320, 2162438321,
+          2162438322, 2162438323, 2162438324, 2162438336, 2162438337
+        ]
+      ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 46,
+      "isMB": false,
+      "sportMarketId": 70567,
+      "id": 913334147,
+      "name": "Halftime/fulltime correct score"
+    },
+    {
+      "shortName": "Winning margin",
+      "desktopOddIds": [
+        [2162438228, 2162438229, 2162438230],
+        [2162438227                        ],
+        [2162438231, 2162438232, 2162438233]
+      ],
+      "mobileOddIds": [
+        [
+          2162438228, 2162438229, 2162438230, 2162438227, 2162438231,
+          2162438232, 2162438233
+        ]
+      ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 15,
+      "isMB": false,
+      "sportMarketId": 71166,
+      "id": 913334129,
+      "name": "Winning margin"
+    },
+    {
+      "shortName": "Aparecidense/GO exact goals",
+      "desktopOddIds": [ [2162438158, 2162438159, 2162438160, 2162438161] ],
+      "mobileOddIds": [ [2162438158, 2162438159, 2162438160, 2162438161] ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 23,
+      "isMB": false,
+      "sportMarketId": 71654,
+      "id": 913334103,
+      "name": "Aparecidense/GO exact goals"
+    },
+    {
+      "shortName": "CRAC/GO exact goals",
+      "desktopOddIds": [ [2162438163, 2162438164, 2162438165] ],
+      "mobileOddIds": [ [2162438163, 2162438164, 2162438165] ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 24,
+      "isMB": false,
+      "sportMarketId": 71655,
+      "id": 913334104,
+      "name": "CRAC/GO exact goals"
+    },
+    {
+      "shortName": "Which team to score",
+      "desktopOddIds": [ [2167759331, 2167759330], [2167759332, 2167759333] ],
+      "mobileOddIds": [ [2167759331, 2167759330], [2167759332, 2167759333] ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 30,
+      "isMB": false,
+      "sportMarketId": 70547,
+      "id": 915249769,
+      "name": "Which team to score"
+    },
+    {
+      "shortName": "Aparecidense/GO no bet",
+      "desktopOddIds": [ [2162438091], [2162438092] ],
+      "mobileOddIds": [ [2162438091], [2162438092] ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 12,
+      "isMB": false,
+      "sportMarketId": 70506,
+      "id": 913334087,
+      "name": "Aparecidense/GO no bet"
+    },
+    {
+      "shortName": "CRAC/GO no bet",
+      "desktopOddIds": [ [2162438200], [2162438201] ],
+      "mobileOddIds": [ [2162438200], [2162438201] ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 13,
+      "isMB": false,
+      "sportMarketId": 70508,
+      "id": 913334119,
+      "name": "CRAC/GO no bet"
+    },
+    {
+      "shortName": "DC Halftime/ DC Fulltime",
+      "desktopOddIds": [
+        [
+          2162437977, 2162437978, 2162437979, 2162437980, 2162437981,
+          2162437982, 2162437983, 2162437984, 2162437985
+        ]
+      ],
+      "mobileOddIds": [
+        [
+          2162437977, 2162437978, 2162437979, 2162437980, 2162437981,
+          2162437982, 2162437983, 2162437984, 2162437985
+        ]
+      ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 17625,
+      "isMB": false,
+      "sportMarketId": 72649,
+      "id": 913334060,
+      "name": "DC Halftime/ DC Fulltime"
+    },
+    {
+      "shortName": "1X2 Halftime/ DC Fulltime",
+      "desktopOddIds": [
+        [
+          2162438141, 2162438142, 2162438143, 2162438144, 2162438145,
+          2162438146, 2162438147, 2162438148, 2162438149
+        ]
+      ],
+      "mobileOddIds": [
+        [
+          2162438141, 2162438142, 2162438143, 2162438144, 2162438145,
+          2162438146, 2162438147, 2162438148, 2162438149
+        ]
+      ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 17711,
+      "isMB": false,
+      "sportMarketId": 72654,
+      "id": 913334100,
+      "name": "1X2 Halftime/ DC Fulltime"
+    },
+    {
+      "shortName": "DC Halftime/ 1X2 Fulltime",
+      "desktopOddIds": [
+        [
+          2162437986, 2162437987, 2162437988, 2162437989, 2162437990,
+          2162437991, 2162437992, 2162437993, 2162437994
+        ]
+      ],
+      "mobileOddIds": [
+        [
+          2162437986, 2162437987, 2162437988, 2162437989, 2162437990,
+          2162437991, 2162437992, 2162437993, 2162437994
+        ]
+      ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 17712,
+      "isMB": false,
+      "sportMarketId": 72653,
+      "id": 913334061,
+      "name": "DC Halftime/ 1X2 Fulltime"
+    },
+    {
+      "shortName": "Odd/even",
+      "desktopOddIds": [ [2162438083], [2162438084] ],
+      "mobileOddIds": [ [2162438083], [2162438084] ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 26,
+      "isMB": false,
+      "sportMarketId": 70535,
+      "id": 913334083,
+      "name": "Odd/even"
+    },
+    {
+      "shortName": "Aparecidense/GO odd/even",
+      "desktopOddIds": [ [2167759364], [2167759363] ],
+      "mobileOddIds": [ [2167759364], [2167759363] ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 27,
+      "isMB": false,
+      "sportMarketId": 70541,
+      "id": 915249780,
+      "name": "Aparecidense/GO odd/even"
+    },
+    {
+      "shortName": "CRAC/GO odd/even",
+      "desktopOddIds": [ [2167759329], [2167759328] ],
+      "mobileOddIds": [ [2167759329], [2167759328] ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 28,
+      "isMB": false,
+      "sportMarketId": 70543,
+      "id": 915249768,
+      "name": "CRAC/GO odd/even"
+    },
+    {
+      "shortName": "Aparecidense/GO to score",
+      "desktopOddIds": [ [2162438097], [2162438098] ],
+      "mobileOddIds": [ [2162438097], [2162438098] ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 17663,
+      "isMB": false,
+      "sportMarketId": 72189,
+      "id": 913334090,
+      "name": "Aparecidense/GO to score"
+    },
+    {
+      "shortName": "Multigoals",
+      "desktopOddIds": [
+        [
+          2162438498, 2162438513, 2162438514, 2162438501, 2162438504,
+          2162438507, 2162438510, 2162438516
+        ],
+        [
+          2162438499, 2162438502, 2162438505, 2162438508, 2162438511, 2162438515
+        ],
+        [2162438500, 2162438503, 2162438506, 2162438509, 2162438512]
+      ],
+      "mobileOddIds": [
+        [
+          2162438498, 2162438513, 2162438514, 2162438501, 2162438504,
+          2162438507, 2162438510, 2162438516
+        ],
+        [
+          2162438499, 2162438502, 2162438505, 2162438508, 2162438511, 2162438515
+        ],
+        [2162438500, 2162438503, 2162438506, 2162438509, 2162438512]
+      ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 548,
+      "isMB": false,
+      "sportMarketId": 71014,
+      "id": 913334167,
+      "name": "Multigoals"
+    },
+    {
+      "shortName": "Aparecidense/GO multigoals",
+      "desktopOddIds": [
+        [2162438279, 2162438278, 2162438272, 2162438274, 2162438280],
+        [2162438273, 2162438281                                    ],
+        [2162438275, 2162438276, 2162438277                        ]
+      ],
+      "mobileOddIds": [
+        [
+          2162438279, 2162438278, 2162438272, 2162438274, 2162438280,
+          2162438276, 2162438277
+        ],
+        [2162438273, 2162438281],
+        [2162438275]
+      ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 549,
+      "isMB": false,
+      "sportMarketId": 71015,
+      "id": 913334142,
+      "name": "Aparecidense/GO multigoals"
+    },
+    {
+      "shortName": "CRAC/GO multigoals",
+      "desktopOddIds": [
+        [2162438282, 2162438289, 2162438288, 2162438290, 2162438284],
+        [2162438283, 2162438291                                    ],
+        [2162438285, 2162438286, 2162438287                        ]
+      ],
+      "mobileOddIds": [
+        [
+          2162438282, 2162438289, 2162438288, 2162438290, 2162438284,
+          2162438286, 2162438287
+        ],
+        [2162438283, 2162438291],
+        [2162438285]
+      ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 550,
+      "isMB": false,
+      "sportMarketId": 71016,
+      "id": 913334143,
+      "name": "CRAC/GO multigoals"
+    },
+    {
+      "shortName": "1x2",
+      "desktopOddIds": [ [2162438040], [2162438041], [2162438042] ],
+      "mobileOddIds": [ [2162438040], [2162438041], [2162438042] ],
+      "isBB": true,
+      "so": 0,
+      "typeId": 1,
+      "isMB": false,
+      "sportMarketId": 70472,
+      "id": 913334072,
+      "name": "1x2"
+    },
+    {
+      "shortName": "Total",
+      "desktopOddIds": [
+        [2162437897, 2162437899, 2162437901, 2162437903],
+        [2162437898, 2162437900, 2162437902, 2162437904]
+      ],
+      "mobileOddIds": [
+        [2162437897, 2162437899, 2162437901, 2162437903],
+        [2162437898, 2162437900, 2162437902, 2162437904]
+      ],
+      "isBB": true,
+      "variant": 8,
+      "so": 0,
+      "typeId": 18,
+      "isMB": false,
+      "sportMarketId": 70520,
+      "sv": "1.5",
+      "id": 913334036,
+      "name": "Total"
+    },
+    {
+      "shortName": "Double chance",
+      "desktopOddIds": [ [2162438003], [2162438001], [2162438002] ],
+      "mobileOddIds": [ [2162438003, 2162438001, 2162438002] ],
+      "isBB": true,
+      "so": 0,
+      "typeId": 10,
+      "isMB": false,
+      "sportMarketId": 70495,
+      "id": 913334064,
+      "name": "Double chance"
+    },
+    {
+      "shortName": "Handicap",
+      "desktopOddIds": [ [2162437849, 2162437847], [2162437850, 2162437848] ],
+      "mobileOddIds": [ [2162437849, 2162437847], [2162437850, 2162437848] ],
+      "isBB": true,
+      "variant": 8,
+      "so": 0,
+      "typeId": 16,
+      "isMB": true,
+      "sportMarketId": 70515,
+      "sv": "+0.5",
+      "id": 913334011,
+      "name": "Handicap"
+    },
+    {
+      "shortName": "Both Teams To Score",
+      "desktopOddIds": [ [2162437937], [2162437938] ],
+      "mobileOddIds": [ [2162437937], [2162437938] ],
+      "isBB": true,
+      "so": 0,
+      "typeId": 29,
+      "isMB": false,
+      "sportMarketId": 70545,
+      "id": 913334056,
+      "name": "Both Teams To Score"
+    },
+    {
+      "shortName": "Aparecidense/GO total goals",
+      "desktopOddIds": [ [2162437875, 2162437877], [2162437876, 2162437878] ],
+      "mobileOddIds": [ [2162437875, 2162437877], [2162437876, 2162437878] ],
+      "isBB": true,
+      "so": 0,
+      "typeId": 19,
+      "isMB": true,
+      "sportMarketId": 70525,
+      "sv": "0.5",
+      "id": 913334025,
+      "name": "Aparecidense/GO total goals"
+    },
+    {
+      "shortName": "CRAC/GO total goals",
+      "desktopOddIds": [ [2162437883, 2162437885], [2162437884, 2162437886] ],
+      "mobileOddIds": [ [2162437883, 2162437885], [2162437884, 2162437886] ],
+      "isBB": true,
+      "so": 0,
+      "typeId": 20,
+      "isMB": true,
+      "sportMarketId": 70530,
+      "sv": "1.5",
+      "id": 913334029,
+      "name": "CRAC/GO total goals"
+    },
+    {
+      "shortName": "Correct score",
+      "desktopOddIds": [
+        [
+          2162437946, 2162437947, 2162437952, 2162437948, 2162437953, 2162437961
+        ],
+        [2162437945, 2162437951, 2162437957, 2162437963, 2162437964],
+        [
+          2162437944, 2162437949, 2162437950, 2162437954, 2162437955,
+          2162437956, 2162437958, 2162437959, 2162437960, 2162437962
+        ]
+      ],
+      "mobileOddIds": [
+        [
+          2162437946, 2162437947, 2162437952, 2162437948, 2162437953, 2162437961
+        ],
+        [2162437945, 2162437951, 2162437957, 2162437963, 2162437964],
+        [
+          2162437944, 2162437949, 2162437950, 2162437954, 2162437955,
+          2162437956, 2162437958, 2162437959, 2162437960, 2162437962
+        ]
+      ],
+      "isBB": true,
+      "variant": 3,
+      "so": 0,
+      "typeId": 45,
+      "isMB": false,
+      "sportMarketId": 70566,
+      "id": 913334057,
+      "name": "Correct score"
+    },
+    {
+      "shortName": "Odd/even",
+      "desktopOddIds": [ [2162438083], [2162438084] ],
+      "mobileOddIds": [ [2162438083], [2162438084] ],
+      "isBB": true,
+      "so": 0,
+      "typeId": 26,
+      "isMB": false,
+      "sportMarketId": 70535,
+      "id": 913334083,
+      "name": "Odd/even"
+    },
+    {
+      "shortName": "1st half - 1x2",
+      "desktopOddIds": [ [2162438034], [2162438035], [2162438036] ],
+      "mobileOddIds": [ [2162438034, 2162438035, 2162438036] ],
+      "isBB": true,
+      "so": 0,
+      "typeId": 60,
+      "isMB": false,
+      "sportMarketId": 70591,
+      "id": 913334070,
+      "name": "1st half - 1x2"
+    },
+    {
+      "shortName": "1st half - double chance",
+      "desktopOddIds": [ [2162437997], [2162437995], [2162437996] ],
+      "mobileOddIds": [ [2162437997, 2162437995, 2162437996] ],
+      "isBB": true,
+      "so": 0,
+      "typeId": 63,
+      "isMB": false,
+      "sportMarketId": 70599,
+      "id": 913334062,
+      "name": "1st half - double chance"
+    },
+    {
+      "shortName": "1st half - total",
+      "desktopOddIds": [ [2162437889, 2162437891], [2162437890, 2162437892] ],
+      "mobileOddIds": [ [2162437889, 2162437891], [2162437890, 2162437892] ],
+      "isBB": true,
+      "variant": 8,
+      "so": 0,
+      "typeId": 68,
+      "isMB": true,
+      "sportMarketId": 70615,
+      "sv": "1.5",
+      "id": 913334032,
+      "name": "1st half - total"
+    },
+    {
+      "shortName": "1st half - Aparecidense/GO total",
+      "desktopOddIds": [ [2162437863], [2162437864] ],
+      "mobileOddIds": [ [2162437863], [2162437864] ],
+      "isBB": true,
+      "so": 0,
+      "typeId": 69,
+      "isMB": true,
+      "sportMarketId": 70620,
+      "sv": "0.5",
+      "id": 913334019,
+      "name": "1st half - Aparecidense/GO total"
+    },
+    {
+      "shortName": "1st half - CRAC/GO total",
+      "desktopOddIds": [ [2162437869], [2162437870] ],
+      "mobileOddIds": [ [2162437869], [2162437870] ],
+      "isBB": true,
+      "so": 0,
+      "typeId": 70,
+      "isMB": true,
+      "sportMarketId": 70625,
+      "sv": "1.5",
+      "id": 913334022,
+      "name": "1st half - CRAC/GO total"
+    },
+    {
+      "shortName": "1st half - both teams to score",
+      "desktopOddIds": [ [2162437933], [2162437934] ],
+      "mobileOddIds": [ [2162437933], [2162437934] ],
+      "isBB": true,
+      "so": 0,
+      "typeId": 75,
+      "isMB": false,
+      "sportMarketId": 70635,
+      "id": 913334054,
+      "name": "1st half - both teams to score"
+    },
+    {
+      "shortName": "1st half - correct score",
+      "desktopOddIds": [
+        [2162438263, 2162438264, 2162438267            ],
+        [2162438262, 2162438266, 2162438270, 2162438271],
+        [2162438265, 2162438268, 2162438269            ]
+      ],
+      "mobileOddIds": [
+        [2162438263, 2162438264, 2162438267            ],
+        [2162438262, 2162438266, 2162438270, 2162438271],
+        [2162438265, 2162438268, 2162438269            ]
+      ],
+      "isBB": true,
+      "variant": 3,
+      "so": 0,
+      "typeId": 81,
+      "isMB": false,
+      "sportMarketId": 70642,
+      "id": 913334141,
+      "name": "1st half - correct score"
+    },
+    {
+      "shortName": "1st half - odd/even",
+      "desktopOddIds": [ [2162438079], [2162438080] ],
+      "mobileOddIds": [ [2162438079], [2162438080] ],
+      "isBB": true,
+      "so": 0,
+      "typeId": 74,
+      "isMB": false,
+      "sportMarketId": 70630,
+      "id": 913334081,
+      "name": "1st half - odd/even"
+    },
+    {
+      "shortName": "2nd half - total",
+      "desktopOddIds": [ [2169060998], [2169060999] ],
+      "mobileOddIds": [ [2169060998], [2169060999] ],
+      "isBB": true,
+      "variant": 8,
+      "so": 0,
+      "typeId": 90,
+      "isMB": true,
+      "sportMarketId": 70657,
+      "sv": "1.5",
+      "id": 915788413,
+      "name": "2nd half - total"
+    },
+    {
+      "shortName": "2nd half - both teams to score",
+      "desktopOddIds": [ [2162437935], [2162437936] ],
+      "mobileOddIds": [ [2162437935], [2162437936] ],
+      "isBB": true,
+      "so": 0,
+      "typeId": 95,
+      "isMB": false,
+      "sportMarketId": 70665,
+      "id": 913334055,
+      "name": "2nd half - both teams to score"
+    },
+    {
+      "shortName": "1x2 & total",
+      "desktopOddIds": [
+        [2163455838, 2163455836],
+        [2163455841, 2163455840],
+        [2163455839, 2163455837]
+      ],
+      "mobileOddIds": [
+        [2163455838, 2163455841, 2163455839, 2163455836, 2163455840, 2163455837]
+      ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 37,
+      "isMB": false,
+      "sportMarketId": 70558,
+      "sv": "3.5",
+      "id": 913678512,
+      "name": "1x2 & total"
+    },
+    {
+      "shortName": "Next Goal",
+      "desktopOddIds": [ [2169058735], [2169058737], [2169058736] ],
+      "mobileOddIds": [ [2169058735], [2169058737], [2169058736] ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 8,
+      "isMB": true,
+      "sportMarketId": 70491,
+      "sv": "2",
+      "id": 915787394,
+      "name": "Next Goal"
+    },
+    {
+      "shortName": "Double chance & both teams to score",
+      "desktopOddIds": [
+        [2167759446, 2167759449],
+        [2167759447, 2167759450],
+        [2167759448, 2167759451]
+      ],
+      "mobileOddIds": [
+        [2167759446, 2167759447, 2167759448, 2167759449, 2167759450, 2167759451]
+      ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 546,
+      "isMB": false,
+      "sportMarketId": 71012,
+      "id": 915249803,
+      "name": "Double chance & both teams to score"
+    },
+    {
+      "shortName": "Double chance & total 2.5",
+      "desktopOddIds": [
+        [2162438025, 2162438022],
+        [2162438027, 2162438024],
+        [2162438026, 2162438023]
+      ],
+      "mobileOddIds": [
+        [2162438025, 2162438026, 2162438027, 2162438022, 2162438023, 2162438024]
+      ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 547,
+      "isMB": false,
+      "sportMarketId": 71013,
+      "sv": "2.5",
+      "id": 913334068,
+      "name": "Double chance & total 2.5"
+    },
+    {
+      "shortName": "Goal range",
+      "desktopOddIds": [ [2162438260, 2162438258, 2162438259, 2162438261] ],
+      "mobileOddIds": [ [2162438260], [2162438258, 2162438259, 2162438261] ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 25,
+      "isMB": false,
+      "sportMarketId": 72136,
+      "id": 913334140,
+      "name": "Goal range"
+    },
+    {
+      "shortName": "1st half - both teams to score",
+      "desktopOddIds": [ [2162437933], [2162437934] ],
+      "mobileOddIds": [ [2162437933], [2162437934] ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 75,
+      "isMB": false,
+      "sportMarketId": 70635,
+      "id": 913334054,
+      "name": "1st half - both teams to score"
+    },
+    {
+      "shortName": "1st half - correct score",
+      "desktopOddIds": [
+        [2162438263, 2162438264, 2162438267            ],
+        [2162438262, 2162438266, 2162438270, 2162438271],
+        [2162438265, 2162438268, 2162438269            ]
+      ],
+      "mobileOddIds": [
+        [2162438263, 2162438264, 2162438267            ],
+        [2162438262, 2162438266, 2162438270, 2162438271],
+        [2162438265, 2162438268, 2162438269            ]
+      ],
+      "isBB": false,
+      "variant": 3,
+      "so": 0,
+      "typeId": 81,
+      "isMB": false,
+      "sportMarketId": 70642,
+      "id": 913334141,
+      "name": "1st half - correct score"
+    },
+    {
+      "shortName": "1st half - odd/even",
+      "desktopOddIds": [ [2162438079], [2162438080] ],
+      "mobileOddIds": [ [2162438079], [2162438080] ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 74,
+      "isMB": false,
+      "sportMarketId": 70630,
+      "id": 913334081,
+      "name": "1st half - odd/even"
+    },
+    {
+      "shortName": "First half - Last goal",
+      "desktopOddIds": [ [2162438295], [2162438297], [2162438296] ],
+      "mobileOddIds": [ [2162438295], [2162438297], [2162438296] ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 3253,
+      "isMB": false,
+      "sportMarketId": 73739,
+      "id": 913334145,
+      "name": "First half - Last goal"
+    },
+    {
+      "shortName": "1st half - 1x2 & total",
+      "desktopOddIds": [
+        [2167759496, 2167759497],
+        [2167759498, 2167759499],
+        [2167759500, 2167759501]
+      ],
+      "mobileOddIds": [
+        [2167759496, 2167759498, 2167759500, 2167759497, 2167759499, 2167759501]
+      ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 79,
+      "isMB": false,
+      "sportMarketId": 70639,
+      "sv": "1.5",
+      "id": 915249812,
+      "name": "1st half - 1x2 & total"
+    },
+    {
+      "shortName": "1st half - 1x2 & both teams to score",
+      "desktopOddIds": [
+        [2167759423, 2167759424],
+        [2167759425, 2167759426],
+        [2167759427, 2167759428]
+      ],
+      "mobileOddIds": [
+        [2167759423, 2167759424, 2167759425, 2167759426, 2167759427, 2167759428]
+      ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 78,
+      "isMB": false,
+      "sportMarketId": 70638,
+      "id": 915249799,
+      "name": "1st half - 1x2 & both teams to score"
+    },
+    {
+      "shortName": "1st half - Aparecidense/GO to score",
+      "desktopOddIds": [ [2162438093], [2162438094] ],
+      "mobileOddIds": [ [2162438093], [2162438094] ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 17680,
+      "isMB": false,
+      "sportMarketId": 72192,
+      "id": 913334088,
+      "name": "1st half - Aparecidense/GO to score"
+    },
+    {
+      "shortName": "1st half - Aparecidense/GO exact goals",
+      "desktopOddIds": [ [2162438150, 2162438151, 2162438152] ],
+      "mobileOddIds": [ [2162438150, 2162438151, 2162438152] ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 72,
+      "isMB": false,
+      "sportMarketId": 72137,
+      "id": 913334101,
+      "name": "1st half - Aparecidense/GO exact goals"
+    },
+    {
+      "shortName": "1st half - CRAC/GO exact goals",
+      "desktopOddIds": [ [2162438155, 2162438156] ],
+      "mobileOddIds": [ [2162438155, 2162438156] ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 73,
+      "isMB": false,
+      "sportMarketId": 72138,
+      "id": 913334102,
+      "name": "1st half - CRAC/GO exact goals"
+    },
+    {
+      "shortName": "2nd half - 1x2 & both teams to score",
+      "desktopOddIds": [
+        [2162438111, 2162438112],
+        [2162438113, 2162438114],
+        [2162438115, 2162438116]
+      ],
+      "mobileOddIds": [
+        [2162438111, 2162438113, 2162438115, 2162438112, 2162438114, 2162438116]
+      ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 543,
+      "isMB": false,
+      "sportMarketId": 71009,
+      "id": 913334095,
+      "name": "2nd half - 1x2 & both teams to score"
+    },
+    {
+      "shortName": "2nd half - multigoals",
+      "desktopOddIds": [
+        [
+          2162438492, 2162438493, 2162438495, 2162438494, 2162438488,
+          2162438490, 2162438496
+        ],
+        [2162438489, 2162438497],
+        [2162438491]
+      ],
+      "mobileOddIds": [
+        [
+          2162438492, 2162438493, 2162438495, 2162438494, 2162438488,
+          2162438490, 2162438496
+        ],
+        [2162438489, 2162438497],
+        [2162438491]
+      ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 553,
+      "isMB": false,
+      "sportMarketId": 71019,
+      "id": 913334166,
+      "name": "2nd half - multigoals"
+    },
+    {
+      "shortName": "2nd half - odd/ even",
+      "desktopOddIds": [ [2162438081], [2162438082] ],
+      "mobileOddIds": [ [2162438081], [2162438082] ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 94,
+      "isMB": false,
+      "sportMarketId": 70662,
+      "id": 913334082,
+      "name": "2nd half - odd/ even"
+    },
+    {
+      "shortName": "Halftime/fulltime & exact goals",
+      "desktopOddIds": [
+        [
+          2162438426, 2162438430, 2162438431, 2162438437, 2162438438,
+          2162438443, 2162438444, 2162438445, 2162438452, 2162438453, 2162438454
+        ],
+        [
+          2162438425, 2162438427, 2162438428, 2162438432, 2162438433,
+          2162438434, 2162438439, 2162438440, 2162438446, 2162438447,
+          2162438448, 2162438455, 2162438456, 2162438457
+        ],
+        [
+          2162438429, 2162438436, 2162438435, 2162438442, 2162438441,
+          2162438451, 2162438450, 2162438449, 2162438460, 2162438459, 2162438458
+        ]
+      ],
+      "mobileOddIds": [
+        [
+          2162438426, 2162438430, 2162438431, 2162438437, 2162438438,
+          2162438443, 2162438444, 2162438445, 2162438452, 2162438453,
+          2162438454, 2162438425, 2162438427, 2162438428, 2162438432,
+          2162438433, 2162438434, 2162438439, 2162438440, 2162438446,
+          2162438447, 2162438448, 2162438455, 2162438456, 2162438457,
+          2162438429, 2162438436, 2162438435, 2162438442, 2162438441,
+          2162438451, 2162438450, 2162438449, 2162438460, 2162438459, 2162438458
+        ]
+      ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 820,
+      "isMB": false,
+      "sportMarketId": 71101,
+      "id": 913334156,
+      "name": "Halftime/fulltime & exact goals"
+    },
+    {
+      "shortName": "What will happen in next minute (26:00 - 26:59)",
+      "desktopOddIds": [ [2169063654] ],
+      "mobileOddIds": [ [2169063654] ],
+      "isBB": false,
+      "variant": 2,
+      "so": 0,
+      "typeId": 17520,
+      "isMB": false,
+      "sportMarketId": 71735,
+      "sv": "26:00|26:59",
+      "id": 915789639,
+      "name": "What will happen in next minute (26:00 - 26:59)"
+    },
+    {
+      "shortName": "What will happen in next minute (27:00 - 27:59)",
+      "desktopOddIds": [ [2169064226], [2169063655] ],
+      "mobileOddIds": [ [2169064226, 2169063655] ],
+      "isBB": false,
+      "variant": 2,
+      "so": 0,
+      "typeId": 17520,
+      "isMB": false,
+      "sportMarketId": 71735,
+      "sv": "27:00|27:59",
+      "id": 915789640,
+      "name": "What will happen in next minute (27:00 - 27:59)"
+    },
+    {
+      "shortName": "What will happen in next minute (28:00 - 28:59)",
+      "desktopOddIds": [ [2169064956], [2169064227] ],
+      "mobileOddIds": [ [2169064956, 2169064227] ],
+      "isBB": false,
+      "variant": 2,
+      "so": 0,
+      "typeId": 17520,
+      "isMB": false,
+      "sportMarketId": 71735,
+      "sv": "28:00|28:59",
+      "id": 915789915,
+      "name": "What will happen in next minute (28:00 - 28:59)"
+    },
+    {
+      "shortName": "What will happen in next minute (29:00 - 29:59)",
+      "desktopOddIds": [ [2169064957] ],
+      "mobileOddIds": [ [2169064957] ],
+      "isBB": false,
+      "variant": 2,
+      "so": 0,
+      "typeId": 17520,
+      "isMB": false,
+      "sportMarketId": 71735,
+      "sv": "29:00|29:59",
+      "id": 915790238,
+      "name": "What will happen in next minute (29:00 - 29:59)"
+    },
+    {
+      "shortName": "CRAC/GO to win",
+      "desktopOddIds": [ [2162438208], [2162438209] ],
+      "mobileOddIds": [ [2162438208], [2162438209] ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 879,
+      "isMB": false,
+      "sportMarketId": 71122,
+      "id": 913334123,
+      "name": "CRAC/GO to win"
+    },
+    {
+      "shortName": "Aparecidense/GO to win",
+      "desktopOddIds": [ [2162438099], [2162438100] ],
+      "mobileOddIds": [ [2162438099], [2162438100] ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 880,
+      "isMB": false,
+      "sportMarketId": 71123,
+      "id": 913334091,
+      "name": "Aparecidense/GO to win"
+    },
+    {
+      "shortName": "CRAC/GO win to nil",
+      "desktopOddIds": [ [2162438212], [2162438213] ],
+      "mobileOddIds": [ [2162438212], [2162438213] ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 34,
+      "isMB": false,
+      "sportMarketId": 70554,
+      "id": 913334125,
+      "name": "CRAC/GO win to nil"
+    },
+    {
+      "shortName": "Any team to win",
+      "desktopOddIds": [ [2162437833], [2162437834] ],
+      "mobileOddIds": [ [2162437833], [2162437834] ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 881,
+      "isMB": false,
+      "sportMarketId": 71124,
+      "id": 913334004,
+      "name": "Any team to win"
+    },
+    {
+      "shortName": "CRAC/GO clean sheet",
+      "desktopOddIds": [ [2162438198], [2162438199] ],
+      "mobileOddIds": [ [2162438198], [2162438199] ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 32,
+      "isMB": false,
+      "sportMarketId": 70551,
+      "id": 913334118,
+      "name": "CRAC/GO clean sheet"
+    },
+    {
+      "shortName": "Highest scoring half",
+      "desktopOddIds": [ [2162438076], [2162438077], [2162438078] ],
+      "mobileOddIds": [ [2162438076, 2162438077, 2162438078] ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 52,
+      "isMB": false,
+      "sportMarketId": 70577,
+      "id": 913334080,
+      "name": "Highest scoring half"
+    },
+    {
+      "shortName": "Aparecidense/GO highest scoring half",
+      "desktopOddIds": [ [2162438166], [2162438168], [2162438167] ],
+      "mobileOddIds": [ [2162438166, 2162438168, 2162438167] ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 53,
+      "isMB": false,
+      "sportMarketId": 70582,
+      "id": 913334105,
+      "name": "Aparecidense/GO highest scoring half"
+    },
+    {
+      "shortName": "CRAC/GO highest scoring half",
+      "desktopOddIds": [ [2162438169], [2162438171], [2162438170] ],
+      "mobileOddIds": [ [2162438169, 2162438171, 2162438170] ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 54,
+      "isMB": false,
+      "sportMarketId": 70584,
+      "id": 913334106,
+      "name": "CRAC/GO highest scoring half"
+    },
+    {
+      "shortName": "Multiscores",
+      "desktopOddIds": [
+        [2162438366, 2162438370, 2162438372, 2162438368, 2162438374],
+        [2162438376                                                ],
+        [2162438367, 2162438371, 2162438373, 2162438369, 2162438375]
+      ],
+      "mobileOddIds": [
+        [
+          2162438366, 2162438370, 2162438372, 2162438368, 2162438374,
+          2162438376, 2162438367, 2162438371, 2162438373, 2162438369, 2162438375
+        ]
+      ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 551,
+      "isMB": false,
+      "sportMarketId": 71017,
+      "id": 913334151,
+      "name": "Multiscores"
+    },
+    {
+      "shortName": "1st half - handicap 1X2",
+      "desktopOddIds": [ [2169058761], [2169058762], [2169058763] ],
+      "mobileOddIds": [ [2169058761, 2169058762, 2169058763] ],
+      "isBB": false,
+      "variant": 9,
+      "so": 0,
+      "typeId": 65,
+      "isMB": false,
+      "sportMarketId": 70607,
+      "sv": "1:0",
+      "id": 915787402,
+      "name": "1st half - handicap 1X2"
+    },
+    {
+      "shortName": "1st half - handicap",
+      "desktopOddIds": [ [2169058747, 2162437839], [2169058748, 2162437840] ],
+      "mobileOddIds": [ [2169058747, 2162437839, 2169058748, 2162437840] ],
+      "isBB": false,
+      "variant": 8,
+      "so": 0,
+      "typeId": 66,
+      "isMB": true,
+      "sportMarketId": 70610,
+      "sv": "+0.5",
+      "id": 913334007,
+      "name": "1st half - handicap"
+    },
+    {
+      "shortName": "1st half - Double chance and totals",
+      "desktopOddIds": [
+        [2169058755],
+        [2169058756],
+        [2169058757],
+        [2169058758],
+        [2169058759],
+        [2169058760]
+      ],
+      "mobileOddIds": [
+        [2169058755, 2169058758, 2169058757, 2169058760, 2169058756, 2169058759]
+      ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 3291,
+      "isMB": false,
+      "sportMarketId": 73810,
+      "sv": "2.5",
+      "id": 915787401,
+      "name": "1st half - Double chance and totals"
+    },
+    {
+      "shortName": "1st half - CRAC/GO clean sheet",
+      "desktopOddIds": [ [2162438194], [2162438195] ],
+      "mobileOddIds": [ [2162438194], [2162438195] ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 77,
+      "isMB": false,
+      "sportMarketId": 70637,
+      "id": 913334116,
+      "name": "1st half - CRAC/GO clean sheet"
+    },
+    {
+      "shortName": "1st half  - CRAC/GO to win to nil",
+      "desktopOddIds": [ [2162438210], [2162438211] ],
+      "mobileOddIds": [ [2162438210], [2162438211] ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 3201,
+      "isMB": false,
+      "sportMarketId": 73649,
+      "id": 913334124,
+      "name": "1st half  - CRAC/GO to win to nil"
+    },
+    {
+      "shortName": "2nd half - double chance",
+      "desktopOddIds": [ [2162438000], [2162437998], [2162437999] ],
+      "mobileOddIds": [ [2162438000, 2162437998, 2162437999] ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 85,
+      "isMB": false,
+      "sportMarketId": 70648,
+      "id": 913334063,
+      "name": "2nd half - double chance"
+    },
+    {
+      "shortName": "2nd half - both teams to score",
+      "desktopOddIds": [ [2162437935], [2162437936] ],
+      "mobileOddIds": [ [2162437935], [2162437936] ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 95,
+      "isMB": false,
+      "sportMarketId": 70665,
+      "id": 913334055,
+      "name": "2nd half - both teams to score"
+    },
+    {
+      "shortName": "2nd half - handicap 1X2",
+      "desktopOddIds": [ [2167799261], [2167799262], [2167799263] ],
+      "mobileOddIds": [ [2167799261, 2167799262, 2167799263] ],
+      "isBB": false,
+      "variant": 9,
+      "so": 0,
+      "typeId": 87,
+      "isMB": false,
+      "sportMarketId": 70653,
+      "sv": "0:0",
+      "id": 915263577,
+      "name": "2nd half - handicap 1X2"
+    },
+    {
+      "shortName": "2nd half - draw no bet",
+      "desktopOddIds": [ [2162438045], [2162438046] ],
+      "mobileOddIds": [ [2162438045], [2162438046] ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 86,
+      "isMB": false,
+      "sportMarketId": 70650,
+      "id": 913334074,
+      "name": "2nd half - draw no bet"
+    },
+    {
+      "shortName": "2nd half - 1x2 & total",
+      "desktopOddIds": [
+        [2162438131, 2162438129],
+        [2162438134, 2162438133],
+        [2162438132, 2162438130]
+      ],
+      "mobileOddIds": [
+        [2162438131, 2162438134, 2162438132, 2162438129, 2162438133, 2162438130]
+      ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 544,
+      "isMB": false,
+      "sportMarketId": 71010,
+      "sv": "1.5",
+      "id": 913334098,
+      "name": "2nd half - 1x2 & total"
+    },
+    {
+      "shortName": "Total & both teams to score",
+      "desktopOddIds": [
+        [2162438190],
+        [2162438192],
+        [2162438191],
+        [2162438193]
+      ],
+      "mobileOddIds": [ [2162438190, 2162438191, 2162438192, 2162438193] ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 36,
+      "isMB": false,
+      "sportMarketId": 70557,
+      "sv": "2.5",
+      "id": 913334115,
+      "name": "Total & both teams to score"
+    },
+    {
+      "shortName": "Second goal & 1x2",
+      "desktopOddIds": [
+        [2169058738, 2169058739, 2169058740],
+        [2169058744                        ],
+        [2169058741, 2169058742, 2169058743]
+      ],
+      "mobileOddIds": [
+        [
+          2169058738, 2169058739, 2169058740, 2169058744, 2169058741,
+          2169058742, 2169058743
+        ]
+      ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 184,
+      "isMB": false,
+      "sportMarketId": 70753,
+      "sv": "2",
+      "id": 915787395,
+      "name": "Second goal & 1x2"
+    },
+    {
+      "shortName": "Double chance (match) & 1st half both teams score",
+      "desktopOddIds": [
+        [2162438354, 2162438355],
+        [2162438356, 2162438357],
+        [2162438358, 2162438359]
+      ],
+      "mobileOddIds": [
+        [2162438354, 2162438355, 2162438356, 2162438357, 2162438358, 2162438359]
+      ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 540,
+      "isMB": false,
+      "sportMarketId": 71006,
+      "id": 913334149,
+      "name": "Double chance (match) & 1st half both teams score"
+    },
+    {
+      "shortName": "1x2 (match) & 1st half both teams score",
+      "desktopOddIds": [
+        [2162438380, 2162438381, 2162438379, 2162438378, 2162438377, 2162438382]
+      ],
+      "mobileOddIds": [
+        [2162438380, 2162438381, 2162438379, 2162438378, 2162438377, 2162438382]
+      ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 31065,
+      "isMB": false,
+      "sportMarketId": 74493,
+      "id": 913334152,
+      "name": "1x2 (match) & 1st half both teams score"
+    }
+  ],
+  "childMarkets": [],
+  "odds": [
+    {
+      "typeId": 1,
+      "price": 5.6667,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438040,
+      "name": "Aparecidense/GO"
+    },
+    {
+      "typeId": 2,
+      "price": 3.5,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438041,
+      "name": "X"
+    },
+    {
+      "typeId": 3,
+      "price": 1.6154,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438042,
+      "name": "CRAC/GO"
+    },
+    {
+      "typeId": 12,
+      "price": 1.2,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "1.5",
+      "id": 2162437897,
+      "name": "Over 1.5"
+    },
+    {
+      "typeId": 12,
+      "price": 1.9,
+      "isMB": true,
+      "oddStatus": 0,
+      "sv": "2.5",
+      "id": 2162437899,
+      "name": "Over 2.5"
+    },
+    {
+      "typeId": 12,
+      "price": 3.75,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "3.5",
+      "id": 2162437901,
+      "name": "Over 3.5"
+    },
+    {
+      "typeId": 12,
+      "price": 8,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "4.5",
+      "id": 2162437903,
+      "name": "Over 4.5"
+    },
+    {
+      "typeId": 13,
+      "price": 4,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "1.5",
+      "id": 2162437898,
+      "name": "Under 1.5"
+    },
+    {
+      "typeId": 13,
+      "price": 1.8,
+      "isMB": true,
+      "oddStatus": 0,
+      "sv": "2.5",
+      "id": 2162437900,
+      "name": "Under 2.5"
+    },
+    {
+      "typeId": 13,
+      "price": 1.2223,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "3.5",
+      "id": 2162437902,
+      "name": "Under 3.5"
+    },
+    {
+      "typeId": 13,
+      "price": 1.04,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "4.5",
+      "id": 2162437904,
+      "name": "Under 4.5"
+    },
+    {
+      "typeId": 9,
+      "price": 2.1667,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438003,
+      "name": "Aparecidense/GO or draw"
+    },
+    {
+      "typeId": 10,
+      "price": 1.2667,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438001,
+      "name": "Aparecidense/GO or CRAC/GO"
+    },
+    {
+      "typeId": 11,
+      "price": 1.1112,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438002,
+      "name": "Draw or CRAC/GO"
+    },
+    {
+      "typeId": 74,
+      "price": 1.5,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162437937,
+      "name": "Yes"
+    },
+    {
+      "typeId": 76,
+      "price": 2.4,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162437938,
+      "name": "No"
+    },
+    {
+      "typeId": 54,
+      "price": 0,
+      "isMB": false,
+      "oddStatus": 7,
+      "id": 2162438061,
+      "name": "0"
+    },
+    {
+      "typeId": 56,
+      "price": 4,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438062,
+      "name": "1"
+    },
+    {
+      "typeId": 58,
+      "price": 2.9,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438063,
+      "name": "2"
+    },
+    {
+      "typeId": 734,
+      "price": 3.6,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438065,
+      "name": "3"
+    },
+    {
+      "typeId": 712,
+      "price": 6.6667,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438064,
+      "name": "4"
+    },
+    {
+      "typeId": 966,
+      "price": 8,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438066,
+      "name": "5+"
+    },
+    {
+      "typeId": 1,
+      "price": 4,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438047,
+      "name": "Aparecidense/GO"
+    },
+    {
+      "typeId": 3,
+      "price": 1.2,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438048,
+      "name": "CRAC/GO"
+    },
+    {
+      "typeId": 12,
+      "price": 1.5,
+      "isMB": true,
+      "oddStatus": 0,
+      "sv": "0.5",
+      "id": 2162437875,
+      "name": "Over 0.5"
+    },
+    {
+      "typeId": 12,
+      "price": 3.4,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "1.5",
+      "id": 2162437877,
+      "name": "Over 1.5"
+    },
+    {
+      "typeId": 13,
+      "price": 2.4,
+      "isMB": true,
+      "oddStatus": 0,
+      "sv": "0.5",
+      "id": 2162437876,
+      "name": "Under 0.5"
+    },
+    {
+      "typeId": 13,
+      "price": 1.2728,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "1.5",
+      "id": 2162437878,
+      "name": "Under 1.5"
+    },
+    {
+      "typeId": 12,
+      "price": 1.95,
+      "isMB": true,
+      "oddStatus": 0,
+      "sv": "1.5",
+      "id": 2162437883,
+      "name": "Over 1.5"
+    },
+    {
+      "typeId": 12,
+      "price": 5.3334,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "2.5",
+      "id": 2162437885,
+      "name": "Over 2.5"
+    },
+    {
+      "typeId": 13,
+      "price": 1.75,
+      "isMB": true,
+      "oddStatus": 0,
+      "sv": "1.5",
+      "id": 2162437884,
+      "name": "Under 1.5"
+    },
+    {
+      "typeId": 13,
+      "price": 1.1112,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "2.5",
+      "id": 2162437886,
+      "name": "Under 2.5"
+    },
+    {
+      "typeId": 418,
+      "price": 31,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438067,
+      "name": "Aparecidense/GO/Aparecidense/GO"
+    },
+    {
+      "typeId": 420,
+      "price": 101,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438068,
+      "name": "Aparecidense/GO/X"
+    },
+    {
+      "typeId": 422,
+      "price": 101,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438069,
+      "name": "Aparecidense/GO/CRAC/GO"
+    },
+    {
+      "typeId": 424,
+      "price": 12,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438070,
+      "name": "X/Aparecidense/GO"
+    },
+    {
+      "typeId": 426,
+      "price": 10,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438071,
+      "name": "X/X"
+    },
+    {
+      "typeId": 428,
+      "price": 19,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438072,
+      "name": "X/CRAC/GO"
+    },
+    {
+      "typeId": 430,
+      "price": 10,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438073,
+      "name": "CRAC/GO/Aparecidense/GO"
+    },
+    {
+      "typeId": 432,
+      "price": 4.3334,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438074,
+      "name": "CRAC/GO/X"
+    },
+    {
+      "typeId": 434,
+      "price": 1.6,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438075,
+      "name": "CRAC/GO/CRAC/GO"
+    },
+    {
+      "typeId": 78,
+      "price": 5.9,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2167759357,
+      "name": "Aparecidense/GO & yes"
+    },
+    {
+      "typeId": 80,
+      "price": 1,
+      "isMB": false,
+      "oddStatus": 7,
+      "id": 2167759358,
+      "name": "Aparecidense/GO & no"
+    },
+    {
+      "typeId": 82,
+      "price": 3.3,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2167759359,
+      "name": "Draw & yes"
+    },
+    {
+      "typeId": 84,
+      "price": 1,
+      "isMB": false,
+      "oddStatus": 7,
+      "id": 2167759360,
+      "name": "Draw & no"
+    },
+    {
+      "typeId": 86,
+      "price": 4.2,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2167759361,
+      "name": "CRAC/GO & yes"
+    },
+    {
+      "typeId": 88,
+      "price": 2.4,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2167759362,
+      "name": "CRAC/GO & no"
+    },
+    {
+      "typeId": 1,
+      "price": 26,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438034,
+      "name": "Aparecidense/GO"
+    },
+    {
+      "typeId": 2,
+      "price": 4.5,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438035,
+      "name": "Draw"
+    },
+    {
+      "typeId": 3,
+      "price": 1.2,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438036,
+      "name": "CRAC/GO"
+    },
+    {
+      "typeId": 9,
+      "price": 3.75,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162437997,
+      "name": "Aparecidense/GO or draw"
+    },
+    {
+      "typeId": 10,
+      "price": 1.1429,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162437995,
+      "name": "Aparecidense/GO or CRAC/GO"
+    },
+    {
+      "typeId": 11,
+      "price": 1,
+      "isMB": false,
+      "oddStatus": 7,
+      "id": 2162437996,
+      "name": "Draw or CRAC/GO"
+    },
+    {
+      "typeId": 12,
+      "price": 2.4,
+      "isMB": true,
+      "oddStatus": 0,
+      "sv": "1.5",
+      "id": 2162437889,
+      "name": "Over 1.5"
+    },
+    {
+      "typeId": 12,
+      "price": 7,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "2.5",
+      "id": 2162437891,
+      "name": "Over 2.5"
+    },
+    {
+      "typeId": 13,
+      "price": 1.4546,
+      "isMB": true,
+      "oddStatus": 0,
+      "sv": "1.5",
+      "id": 2162437890,
+      "name": "Under 1.5"
+    },
+    {
+      "typeId": 13,
+      "price": 1.04,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "2.5",
+      "id": 2162437892,
+      "name": "Under 2.5"
+    },
+    {
+      "typeId": 12,
+      "price": 3.25,
+      "isMB": true,
+      "oddStatus": 0,
+      "sv": "0.5",
+      "id": 2162437863,
+      "name": "Over 0.5"
+    },
+    {
+      "typeId": 13,
+      "price": 1.25,
+      "isMB": true,
+      "oddStatus": 0,
+      "sv": "0.5",
+      "id": 2162437864,
+      "name": "Under 0.5"
+    },
+    {
+      "typeId": 12,
+      "price": 4.5,
+      "isMB": true,
+      "oddStatus": 0,
+      "sv": "1.5",
+      "id": 2162437869,
+      "name": "Over 1.5"
+    },
+    {
+      "typeId": 13,
+      "price": 1.1429,
+      "isMB": true,
+      "oddStatus": 0,
+      "sv": "1.5",
+      "id": 2162437870,
+      "name": "Under 1.5"
+    },
+    {
+      "typeId": 56,
+      "price": 1.4546,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438050,
+      "name": "1"
+    },
+    {
+      "typeId": 58,
+      "price": 2.75,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438051,
+      "name": "2"
+    },
+    {
+      "typeId": 734,
+      "price": 11,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438053,
+      "name": "3"
+    },
+    {
+      "typeId": 712,
+      "price": 15,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438052,
+      "name": "4"
+    },
+    {
+      "typeId": 1,
+      "price": 2.5455,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438037,
+      "name": "Aparecidense/GO"
+    },
+    {
+      "typeId": 2,
+      "price": 2.1429,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438038,
+      "name": "X"
+    },
+    {
+      "typeId": 3,
+      "price": 4.2,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438039,
+      "name": "CRAC/GO"
+    },
+    {
+      "typeId": 12,
+      "price": 2.6667,
+      "isMB": true,
+      "oddStatus": 0,
+      "sv": "1.5",
+      "id": 2169060998,
+      "name": "Over 1.5"
+    },
+    {
+      "typeId": 13,
+      "price": 1.3637,
+      "isMB": true,
+      "oddStatus": 0,
+      "sv": "1.5",
+      "id": 2169060999,
+      "name": "Under 1.5"
+    },
+    {
+      "typeId": 1711,
+      "price": 1.25,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "2:0",
+      "id": 2169058764,
+      "name": "Aparecidense/GO (2:0)"
+    },
+    {
+      "typeId": 1711,
+      "price": 2.1667,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "1:0",
+      "id": 2162438187,
+      "name": "Aparecidense/GO (1:0)"
+    },
+    {
+      "typeId": 1711,
+      "price": 5.6667,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "0:0",
+      "id": 2167799264,
+      "name": "Aparecidense/GO (0:0)"
+    },
+    {
+      "typeId": 1712,
+      "price": 4.75,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "2:0",
+      "id": 2169058765,
+      "name": "Draw (2:0)"
+    },
+    {
+      "typeId": 1712,
+      "price": 2.5715,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "1:0",
+      "id": 2162438188,
+      "name": "Draw (1:0)"
+    },
+    {
+      "typeId": 1712,
+      "price": 3.5,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "0:0",
+      "id": 2167799265,
+      "name": "Draw (0:0)"
+    },
+    {
+      "typeId": 1713,
+      "price": 8.5,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "2:0",
+      "id": 2169058766,
+      "name": "CRAC/GO (2:0)"
+    },
+    {
+      "typeId": 1713,
+      "price": 3.6,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "1:0",
+      "id": 2162438189,
+      "name": "CRAC/GO (1:0)"
+    },
+    {
+      "typeId": 1713,
+      "price": 1.6154,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "0:0",
+      "id": 2167799266,
+      "name": "CRAC/GO (0:0)"
+    },
+    {
+      "typeId": 1714,
+      "price": 1.25,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "+1.5",
+      "id": 2162437849,
+      "name": "Aparecidense/GO (+1.5)"
+    },
+    {
+      "typeId": 1714,
+      "price": 2.1667,
+      "isMB": true,
+      "oddStatus": 0,
+      "sv": "+0.5",
+      "id": 2162437847,
+      "name": "Aparecidense/GO (+0.5)"
+    },
+    {
+      "typeId": 1715,
+      "price": 3.6,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "+1.5",
+      "id": 2162437850,
+      "name": "CRAC/GO (-1.5)"
+    },
+    {
+      "typeId": 1715,
+      "price": 1.6154,
+      "isMB": true,
+      "oddStatus": 0,
+      "sv": "+0.5",
+      "id": 2162437848,
+      "name": "CRAC/GO (-0.5)"
+    },
+    {
+      "typeId": 1,
+      "price": 1.8462,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438292,
+      "name": "Aparecidense/GO"
+    },
+    {
+      "typeId": 7,
+      "price": 0,
+      "isMB": false,
+      "oddStatus": 7,
+      "id": 2162438294,
+      "name": "None"
+    },
+    {
+      "typeId": 3,
+      "price": 1.7,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438293,
+      "name": "CRAC/GO"
+    },
+    {
+      "typeId": 130,
+      "price": 7.5,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162437946,
+      "name": "2:1"
+    },
+    {
+      "typeId": 132,
+      "price": 21,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162437947,
+      "name": "3:1"
+    },
+    {
+      "typeId": 144,
+      "price": 31,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162437952,
+      "name": "3:2"
+    },
+    {
+      "typeId": 134,
+      "price": 91,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162437948,
+      "name": "4:1"
+    },
+    {
+      "typeId": 146,
+      "price": 101,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162437953,
+      "name": "4:2"
+    },
+    {
+      "typeId": 312,
+      "price": 151,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162437961,
+      "name": "4:3"
+    },
+    {
+      "typeId": 128,
+      "price": 3.75,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162437945,
+      "name": "1:1"
+    },
+    {
+      "typeId": 142,
+      "price": 11,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162437951,
+      "name": "2:2"
+    },
+    {
+      "typeId": 154,
+      "price": 101,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162437957,
+      "name": "3:3"
+    },
+    {
+      "typeId": 322,
+      "price": 151,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162437963,
+      "name": "4:4"
+    },
+    {
+      "typeId": 324,
+      "price": 81,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162437964,
+      "name": "Other"
+    },
+    {
+      "typeId": 126,
+      "price": 4,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162437944,
+      "name": "0:1"
+    },
+    {
+      "typeId": 138,
+      "price": 5.3334,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162437949,
+      "name": "0:2"
+    },
+    {
+      "typeId": 140,
+      "price": 5.6667,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162437950,
+      "name": "1:2"
+    },
+    {
+      "typeId": 148,
+      "price": 16,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162437954,
+      "name": "0:3"
+    },
+    {
+      "typeId": 150,
+      "price": 17,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162437955,
+      "name": "1:3"
+    },
+    {
+      "typeId": 152,
+      "price": 31,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162437956,
+      "name": "2:3"
+    },
+    {
+      "typeId": 156,
+      "price": 71,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162437958,
+      "name": "0:4"
+    },
+    {
+      "typeId": 158,
+      "price": 71,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162437959,
+      "name": "1:4"
+    },
+    {
+      "typeId": 160,
+      "price": 151,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162437960,
+      "name": "2:4"
+    },
+    {
+      "typeId": 320,
+      "price": 151,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162437962,
+      "name": "3:4"
+    },
+    {
+      "typeId": 408,
+      "price": 81,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438342,
+      "name": "2:1 2:1"
+    },
+    {
+      "typeId": 410,
+      "price": 36,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438343,
+      "name": "2:1 4+"
+    },
+    {
+      "typeId": 388,
+      "price": 12,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438332,
+      "name": "1:1 1:1"
+    },
+    {
+      "typeId": 392,
+      "price": 17,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438334,
+      "name": "1:1 2:1"
+    },
+    {
+      "typeId": 390,
+      "price": 21,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438333,
+      "name": "1:1 1:2"
+    },
+    {
+      "typeId": 394,
+      "price": 12,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438335,
+      "name": "1:1 4+"
+    },
+    {
+      "typeId": 416,
+      "price": 51,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438346,
+      "name": "4+ 4+"
+    },
+    {
+      "typeId": 348,
+      "price": 3.5,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438312,
+      "name": "0:1 0:1"
+    },
+    {
+      "typeId": 350,
+      "price": 7,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438313,
+      "name": "0:1 0:2"
+    },
+    {
+      "typeId": 352,
+      "price": 26,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438314,
+      "name": "0:1 0:3"
+    },
+    {
+      "typeId": 354,
+      "price": 5,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438315,
+      "name": "0:1 1:1"
+    },
+    {
+      "typeId": 356,
+      "price": 10,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438316,
+      "name": "0:1 1:2"
+    },
+    {
+      "typeId": 358,
+      "price": 14,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438317,
+      "name": "0:1 2:1"
+    },
+    {
+      "typeId": 360,
+      "price": 9.5,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438318,
+      "name": "0:1 4+"
+    },
+    {
+      "typeId": 362,
+      "price": 17,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438319,
+      "name": "0:2 0:2"
+    },
+    {
+      "typeId": 364,
+      "price": 36,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438320,
+      "name": "0:2 0:3"
+    },
+    {
+      "typeId": 366,
+      "price": 21,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438321,
+      "name": "0:2 1:2"
+    },
+    {
+      "typeId": 368,
+      "price": 17,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438322,
+      "name": "0:2 4+"
+    },
+    {
+      "typeId": 370,
+      "price": 151,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438323,
+      "name": "0:3 0:3"
+    },
+    {
+      "typeId": 372,
+      "price": 81,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438324,
+      "name": "0:3 4+"
+    },
+    {
+      "typeId": 396,
+      "price": 61,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438336,
+      "name": "1:2 1:2"
+    },
+    {
+      "typeId": 398,
+      "price": 26,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438337,
+      "name": "1:2 4+"
+    },
+    {
+      "typeId": 630,
+      "price": 7.5,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438228,
+      "name": "Aparecidense/GO by 1"
+    },
+    {
+      "typeId": 632,
+      "price": 0,
+      "isMB": false,
+      "oddStatus": 7,
+      "id": 2162438229,
+      "name": "Aparecidense/GO by 2"
+    },
+    {
+      "typeId": 634,
+      "price": 0,
+      "isMB": false,
+      "oddStatus": 7,
+      "id": 2162438230,
+      "name": "Aparecidense/GO by 3+"
+    },
+    {
+      "typeId": 2,
+      "price": 3.5,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438227,
+      "name": "Draw"
+    },
+    {
+      "typeId": 636,
+      "price": 2.5715,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438231,
+      "name": "CRAC/GO by 1"
+    },
+    {
+      "typeId": 638,
+      "price": 4.75,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438232,
+      "name": "CRAC/GO by 2"
+    },
+    {
+      "typeId": 640,
+      "price": 8.5,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438233,
+      "name": "CRAC/GO by 3+"
+    },
+    {
+      "typeId": 54,
+      "price": 2.4,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438158,
+      "name": "0"
+    },
+    {
+      "typeId": 56,
+      "price": 2.4286,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438159,
+      "name": "1"
+    },
+    {
+      "typeId": 58,
+      "price": 4.75,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438160,
+      "name": "2"
+    },
+    {
+      "typeId": 60,
+      "price": 8,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438161,
+      "name": "3+"
+    },
+    {
+      "typeId": 56,
+      "price": 1.75,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438163,
+      "name": "1"
+    },
+    {
+      "typeId": 58,
+      "price": 2.5,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438164,
+      "name": "2"
+    },
+    {
+      "typeId": 60,
+      "price": 5.3334,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438165,
+      "name": "3+"
+    },
+    {
+      "typeId": 788,
+      "price": 1,
+      "isMB": false,
+      "oddStatus": 7,
+      "id": 2167759331,
+      "name": "Only Aparecidense/GO"
+    },
+    {
+      "typeId": 790,
+      "price": 2.2,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2167759332,
+      "name": "Only CRAC/GO"
+    },
+    {
+      "typeId": 792,
+      "price": 1.45,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2167759330,
+      "name": "Both teams"
+    },
+    {
+      "typeId": 7,
+      "price": 1,
+      "isMB": false,
+      "oddStatus": 7,
+      "id": 2167759333,
+      "name": "None"
+    },
+    {
+      "typeId": 2,
+      "price": 2.9,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438091,
+      "name": "Draw"
+    },
+    {
+      "typeId": 3,
+      "price": 1.3637,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438092,
+      "name": "CRAC/GO"
+    },
+    {
+      "typeId": 1,
+      "price": 2.4,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438200,
+      "name": "Aparecidense/GO"
+    },
+    {
+      "typeId": 2,
+      "price": 1.5,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438201,
+      "name": "Draw"
+    },
+    {
+      "typeId": 3000,
+      "price": 1.3077,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162437977,
+      "name": "12/12"
+    },
+    {
+      "typeId": 3001,
+      "price": 2.4546,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162437978,
+      "name": "12/1X"
+    },
+    {
+      "typeId": 3002,
+      "price": 1.2,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162437979,
+      "name": "12/X2"
+    },
+    {
+      "typeId": 3003,
+      "price": 5,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162437980,
+      "name": "1X/12"
+    },
+    {
+      "typeId": 3004,
+      "price": 3.8,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162437981,
+      "name": "1X/1X"
+    },
+    {
+      "typeId": 3005,
+      "price": 5,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162437982,
+      "name": "1X/X2"
+    },
+    {
+      "typeId": 3006,
+      "price": 1.2223,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162437983,
+      "name": "X2/12"
+    },
+    {
+      "typeId": 3007,
+      "price": 1.8667,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162437984,
+      "name": "X2/1X"
+    },
+    {
+      "typeId": 3008,
+      "price": 1.1112,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162437985,
+      "name": "X2/X2"
+    },
+    {
+      "typeId": 3021,
+      "price": 10,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438141,
+      "name": "1/1X"
+    },
+    {
+      "typeId": 3022,
+      "price": 10,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438142,
+      "name": "1/12"
+    },
+    {
+      "typeId": 3023,
+      "price": 10,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438143,
+      "name": "1/X2"
+    },
+    {
+      "typeId": 3024,
+      "price": 5,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438144,
+      "name": "X/1X"
+    },
+    {
+      "typeId": 3025,
+      "price": 6.6667,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438145,
+      "name": "X/12"
+    },
+    {
+      "typeId": 3026,
+      "price": 6,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438146,
+      "name": "X/X2"
+    },
+    {
+      "typeId": 3027,
+      "price": 2.9,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438147,
+      "name": "2/1X"
+    },
+    {
+      "typeId": 3028,
+      "price": 1.4,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438148,
+      "name": "2/12"
+    },
+    {
+      "typeId": 3029,
+      "price": 1.25,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438149,
+      "name": "2/X2"
+    },
+    {
+      "typeId": 3012,
+      "price": 8.5,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162437986,
+      "name": "1X/1"
+    },
+    {
+      "typeId": 3013,
+      "price": 9,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162437987,
+      "name": "1X/X"
+    },
+    {
+      "typeId": 3014,
+      "price": 10,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162437988,
+      "name": "1X/2"
+    },
+    {
+      "typeId": 3015,
+      "price": 8,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162437989,
+      "name": "12/1"
+    },
+    {
+      "typeId": 3016,
+      "price": 4.2,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162437990,
+      "name": "12/X"
+    },
+    {
+      "typeId": 3017,
+      "price": 1.5834,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162437991,
+      "name": "12/2"
+    },
+    {
+      "typeId": 3018,
+      "price": 5.5,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162437992,
+      "name": "X2/1"
+    },
+    {
+      "typeId": 3019,
+      "price": 3.1,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162437993,
+      "name": "X2/X"
+    },
+    {
+      "typeId": 3020,
+      "price": 1.5,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162437994,
+      "name": "X2/2"
+    },
+    {
+      "typeId": 70,
+      "price": 1.8,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438083,
+      "name": "Odd"
+    },
+    {
+      "typeId": 72,
+      "price": 1.9,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438084,
+      "name": "Even"
+    },
+    {
+      "typeId": 70,
+      "price": 2.1,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2167759364,
+      "name": "Odd"
+    },
+    {
+      "typeId": 72,
+      "price": 1.63,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2167759363,
+      "name": "Even"
+    },
+    {
+      "typeId": 70,
+      "price": 1.4667,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2167759329,
+      "name": "Odd"
+    },
+    {
+      "typeId": 72,
+      "price": 2.45,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2167759328,
+      "name": "Even"
+    },
+    {
+      "typeId": 74,
+      "price": 1.5,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438097,
+      "name": "Yes"
+    },
+    {
+      "typeId": 76,
+      "price": 2.4,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438098,
+      "name": "No"
+    },
+    {
+      "typeId": 1730,
+      "price": 1.7334,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438498,
+      "name": "1-2"
+    },
+    {
+      "typeId": 1993,
+      "price": 1.7334,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438513,
+      "name": "0-2"
+    },
+    {
+      "typeId": 730,
+      "price": 3.8,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438514,
+      "name": "0-1"
+    },
+    {
+      "typeId": 1733,
+      "price": 1.01,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438501,
+      "name": "1-5"
+    },
+    {
+      "typeId": 1736,
+      "price": 1.3,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438504,
+      "name": "2-4"
+    },
+    {
+      "typeId": 1739,
+      "price": 2.2,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438507,
+      "name": "3-4"
+    },
+    {
+      "typeId": 1742,
+      "price": 4,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438510,
+      "name": "4-5"
+    },
+    {
+      "typeId": 885,
+      "price": 21,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438516,
+      "name": "7+"
+    },
+    {
+      "typeId": 1731,
+      "price": 1.2,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438499,
+      "name": "1-3"
+    },
+    {
+      "typeId": 1734,
+      "price": 1,
+      "isMB": false,
+      "oddStatus": 7,
+      "id": 2162438502,
+      "name": "1-6"
+    },
+    {
+      "typeId": 1737,
+      "price": 1.2,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438505,
+      "name": "2-5"
+    },
+    {
+      "typeId": 1740,
+      "price": 1.96,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438508,
+      "name": "3-5"
+    },
+    {
+      "typeId": 1743,
+      "price": 3.6667,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438511,
+      "name": "4-6"
+    },
+    {
+      "typeId": 826,
+      "price": 0,
+      "isMB": false,
+      "oddStatus": 7,
+      "id": 2162438515,
+      "name": "No goal"
+    },
+    {
+      "typeId": 1732,
+      "price": 1.056,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438500,
+      "name": "1-4"
+    },
+    {
+      "typeId": 1735,
+      "price": 1.5715,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438503,
+      "name": "2-3"
+    },
+    {
+      "typeId": 1738,
+      "price": 1.1819,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438506,
+      "name": "2-6"
+    },
+    {
+      "typeId": 1741,
+      "price": 1.9,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438509,
+      "name": "3-6"
+    },
+    {
+      "typeId": 1744,
+      "price": 9,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438512,
+      "name": "5-6"
+    },
+    {
+      "typeId": 730,
+      "price": 1.2223,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438279,
+      "name": "0-1"
+    },
+    {
+      "typeId": 1993,
+      "price": 1.04,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438278,
+      "name": "0-2"
+    },
+    {
+      "typeId": 1730,
+      "price": 1.6154,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438272,
+      "name": "1-2"
+    },
+    {
+      "typeId": 1731,
+      "price": 1.48,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438273,
+      "name": "1-3"
+    },
+    {
+      "typeId": 1732,
+      "price": 1.4546,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438274,
+      "name": "1-4"
+    },
+    {
+      "typeId": 736,
+      "price": 15,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438280,
+      "name": "4+"
+    },
+    {
+      "typeId": 826,
+      "price": 2.1667,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438281,
+      "name": "No goal"
+    },
+    {
+      "typeId": 1735,
+      "price": 3.1429,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438275,
+      "name": "2-3"
+    },
+    {
+      "typeId": 1736,
+      "price": 3,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438276,
+      "name": "2-4"
+    },
+    {
+      "typeId": 1739,
+      "price": 8,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438277,
+      "name": "3-4"
+    },
+    {
+      "typeId": 1730,
+      "price": 1.1,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438282,
+      "name": "1-2"
+    },
+    {
+      "typeId": 730,
+      "price": 1.68,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438289,
+      "name": "0-1"
+    },
+    {
+      "typeId": 1993,
+      "price": 1.1,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438288,
+      "name": "0-2"
+    },
+    {
+      "typeId": 736,
+      "price": 15,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438290,
+      "name": "4+"
+    },
+    {
+      "typeId": 1731,
+      "price": 1,
+      "isMB": false,
+      "oddStatus": 7,
+      "id": 2162438283,
+      "name": "1-3"
+    },
+    {
+      "typeId": 1732,
+      "price": 1,
+      "isMB": false,
+      "oddStatus": 7,
+      "id": 2162438284,
+      "name": "1-4"
+    },
+    {
+      "typeId": 826,
+      "price": 0,
+      "isMB": false,
+      "oddStatus": 7,
+      "id": 2162438291,
+      "name": "No goal"
+    },
+    {
+      "typeId": 1735,
+      "price": 1.9,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438285,
+      "name": "2-3"
+    },
+    {
+      "typeId": 1736,
+      "price": 1.8182,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438286,
+      "name": "2-4"
+    },
+    {
+      "typeId": 1739,
+      "price": 5,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438287,
+      "name": "3-4"
+    },
+    {
+      "typeId": 1,
+      "price": 5.6667,
+      "isMB": false,
+      "oddStatus": 0,
+      "isBB": true,
+      "id": 2162438040,
+      "name": "Aparecidense/GO"
+    },
+    {
+      "typeId": 2,
+      "price": 3.5,
+      "isMB": false,
+      "oddStatus": 0,
+      "isBB": true,
+      "id": 2162438041,
+      "name": "X"
+    },
+    {
+      "typeId": 3,
+      "price": 1.6154,
+      "isMB": false,
+      "oddStatus": 0,
+      "isBB": true,
+      "id": 2162438042,
+      "name": "CRAC/GO"
+    },
+    {
+      "typeId": 12,
+      "price": 1.2,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "1.5",
+      "isBB": true,
+      "id": 2162437897,
+      "name": "Over 1.5"
+    },
+    {
+      "typeId": 12,
+      "price": 1.9,
+      "isMB": true,
+      "oddStatus": 0,
+      "sv": "2.5",
+      "isBB": true,
+      "id": 2162437899,
+      "name": "Over 2.5"
+    },
+    {
+      "typeId": 12,
+      "price": 3.75,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "3.5",
+      "isBB": true,
+      "id": 2162437901,
+      "name": "Over 3.5"
+    },
+    {
+      "typeId": 12,
+      "price": 8,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "4.5",
+      "isBB": true,
+      "id": 2162437903,
+      "name": "Over 4.5"
+    },
+    {
+      "typeId": 13,
+      "price": 4,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "1.5",
+      "isBB": true,
+      "id": 2162437898,
+      "name": "Under 1.5"
+    },
+    {
+      "typeId": 13,
+      "price": 1.8,
+      "isMB": true,
+      "oddStatus": 0,
+      "sv": "2.5",
+      "isBB": true,
+      "id": 2162437900,
+      "name": "Under 2.5"
+    },
+    {
+      "typeId": 13,
+      "price": 1.2223,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "3.5",
+      "isBB": true,
+      "id": 2162437902,
+      "name": "Under 3.5"
+    },
+    {
+      "typeId": 13,
+      "price": 1.04,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "4.5",
+      "isBB": true,
+      "id": 2162437904,
+      "name": "Under 4.5"
+    },
+    {
+      "typeId": 9,
+      "price": 2.1667,
+      "isMB": false,
+      "oddStatus": 0,
+      "isBB": true,
+      "id": 2162438003,
+      "name": "Aparecidense/GO or draw"
+    },
+    {
+      "typeId": 10,
+      "price": 1.2667,
+      "isMB": false,
+      "oddStatus": 0,
+      "isBB": true,
+      "id": 2162438001,
+      "name": "Aparecidense/GO or CRAC/GO"
+    },
+    {
+      "typeId": 11,
+      "price": 1.1112,
+      "isMB": false,
+      "oddStatus": 0,
+      "isBB": true,
+      "id": 2162438002,
+      "name": "Draw or CRAC/GO"
+    },
+    {
+      "typeId": 1714,
+      "price": 1.25,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "+1.5",
+      "isBB": true,
+      "id": 2162437849,
+      "name": "Aparecidense/GO (+1.5)"
+    },
+    {
+      "typeId": 1714,
+      "price": 2.1667,
+      "isMB": true,
+      "oddStatus": 0,
+      "sv": "+0.5",
+      "isBB": true,
+      "id": 2162437847,
+      "name": "Aparecidense/GO (+0.5)"
+    },
+    {
+      "typeId": 1715,
+      "price": 3.6,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "+1.5",
+      "isBB": true,
+      "id": 2162437850,
+      "name": "CRAC/GO (-1.5)"
+    },
+    {
+      "typeId": 1715,
+      "price": 1.6154,
+      "isMB": true,
+      "oddStatus": 0,
+      "sv": "+0.5",
+      "isBB": true,
+      "id": 2162437848,
+      "name": "CRAC/GO (-0.5)"
+    },
+    {
+      "typeId": 74,
+      "price": 1.5,
+      "isMB": false,
+      "oddStatus": 0,
+      "isBB": true,
+      "id": 2162437937,
+      "name": "Yes"
+    },
+    {
+      "typeId": 76,
+      "price": 2.4,
+      "isMB": false,
+      "oddStatus": 0,
+      "isBB": true,
+      "id": 2162437938,
+      "name": "No"
+    },
+    {
+      "typeId": 12,
+      "price": 1.5,
+      "isMB": true,
+      "oddStatus": 0,
+      "sv": "0.5",
+      "isBB": true,
+      "id": 2162437875,
+      "name": "Over 0.5"
+    },
+    {
+      "typeId": 12,
+      "price": 3.4,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "1.5",
+      "isBB": true,
+      "id": 2162437877,
+      "name": "Over 1.5"
+    },
+    {
+      "typeId": 13,
+      "price": 2.4,
+      "isMB": true,
+      "oddStatus": 0,
+      "sv": "0.5",
+      "isBB": true,
+      "id": 2162437876,
+      "name": "Under 0.5"
+    },
+    {
+      "typeId": 13,
+      "price": 1.2728,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "1.5",
+      "isBB": true,
+      "id": 2162437878,
+      "name": "Under 1.5"
+    },
+    {
+      "typeId": 12,
+      "price": 1.95,
+      "isMB": true,
+      "oddStatus": 0,
+      "sv": "1.5",
+      "isBB": true,
+      "id": 2162437883,
+      "name": "Over 1.5"
+    },
+    {
+      "typeId": 12,
+      "price": 5.3334,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "2.5",
+      "isBB": true,
+      "id": 2162437885,
+      "name": "Over 2.5"
+    },
+    {
+      "typeId": 13,
+      "price": 1.75,
+      "isMB": true,
+      "oddStatus": 0,
+      "sv": "1.5",
+      "isBB": true,
+      "id": 2162437884,
+      "name": "Under 1.5"
+    },
+    {
+      "typeId": 13,
+      "price": 1.1112,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "2.5",
+      "isBB": true,
+      "id": 2162437886,
+      "name": "Under 2.5"
+    },
+    {
+      "typeId": 130,
+      "price": 7.5,
+      "isMB": false,
+      "oddStatus": 0,
+      "isBB": true,
+      "id": 2162437946,
+      "name": "2:1"
+    },
+    {
+      "typeId": 132,
+      "price": 21,
+      "isMB": false,
+      "oddStatus": 0,
+      "isBB": true,
+      "id": 2162437947,
+      "name": "3:1"
+    },
+    {
+      "typeId": 144,
+      "price": 31,
+      "isMB": false,
+      "oddStatus": 0,
+      "isBB": true,
+      "id": 2162437952,
+      "name": "3:2"
+    },
+    {
+      "typeId": 134,
+      "price": 91,
+      "isMB": false,
+      "oddStatus": 0,
+      "isBB": true,
+      "id": 2162437948,
+      "name": "4:1"
+    },
+    {
+      "typeId": 146,
+      "price": 101,
+      "isMB": false,
+      "oddStatus": 0,
+      "isBB": true,
+      "id": 2162437953,
+      "name": "4:2"
+    },
+    {
+      "typeId": 312,
+      "price": 151,
+      "isMB": false,
+      "oddStatus": 0,
+      "isBB": true,
+      "id": 2162437961,
+      "name": "4:3"
+    },
+    {
+      "typeId": 128,
+      "price": 3.75,
+      "isMB": false,
+      "oddStatus": 0,
+      "isBB": true,
+      "id": 2162437945,
+      "name": "1:1"
+    },
+    {
+      "typeId": 142,
+      "price": 11,
+      "isMB": false,
+      "oddStatus": 0,
+      "isBB": true,
+      "id": 2162437951,
+      "name": "2:2"
+    },
+    {
+      "typeId": 154,
+      "price": 101,
+      "isMB": false,
+      "oddStatus": 0,
+      "isBB": true,
+      "id": 2162437957,
+      "name": "3:3"
+    },
+    {
+      "typeId": 322,
+      "price": 151,
+      "isMB": false,
+      "oddStatus": 0,
+      "isBB": true,
+      "id": 2162437963,
+      "name": "4:4"
+    },
+    {
+      "typeId": 324,
+      "price": 81,
+      "isMB": false,
+      "oddStatus": 0,
+      "isBB": true,
+      "id": 2162437964,
+      "name": "Other"
+    },
+    {
+      "typeId": 126,
+      "price": 4,
+      "isMB": false,
+      "oddStatus": 0,
+      "isBB": true,
+      "id": 2162437944,
+      "name": "0:1"
+    },
+    {
+      "typeId": 138,
+      "price": 5.3334,
+      "isMB": false,
+      "oddStatus": 0,
+      "isBB": true,
+      "id": 2162437949,
+      "name": "0:2"
+    },
+    {
+      "typeId": 140,
+      "price": 5.6667,
+      "isMB": false,
+      "oddStatus": 0,
+      "isBB": true,
+      "id": 2162437950,
+      "name": "1:2"
+    },
+    {
+      "typeId": 148,
+      "price": 16,
+      "isMB": false,
+      "oddStatus": 0,
+      "isBB": true,
+      "id": 2162437954,
+      "name": "0:3"
+    },
+    {
+      "typeId": 150,
+      "price": 17,
+      "isMB": false,
+      "oddStatus": 0,
+      "isBB": true,
+      "id": 2162437955,
+      "name": "1:3"
+    },
+    {
+      "typeId": 152,
+      "price": 31,
+      "isMB": false,
+      "oddStatus": 0,
+      "isBB": true,
+      "id": 2162437956,
+      "name": "2:3"
+    },
+    {
+      "typeId": 156,
+      "price": 71,
+      "isMB": false,
+      "oddStatus": 0,
+      "isBB": true,
+      "id": 2162437958,
+      "name": "0:4"
+    },
+    {
+      "typeId": 158,
+      "price": 71,
+      "isMB": false,
+      "oddStatus": 0,
+      "isBB": true,
+      "id": 2162437959,
+      "name": "1:4"
+    },
+    {
+      "typeId": 160,
+      "price": 151,
+      "isMB": false,
+      "oddStatus": 0,
+      "isBB": true,
+      "id": 2162437960,
+      "name": "2:4"
+    },
+    {
+      "typeId": 320,
+      "price": 151,
+      "isMB": false,
+      "oddStatus": 0,
+      "isBB": true,
+      "id": 2162437962,
+      "name": "3:4"
+    },
+    {
+      "typeId": 70,
+      "price": 1.8,
+      "isMB": false,
+      "oddStatus": 0,
+      "isBB": true,
+      "id": 2162438083,
+      "name": "Odd"
+    },
+    {
+      "typeId": 72,
+      "price": 1.9,
+      "isMB": false,
+      "oddStatus": 0,
+      "isBB": true,
+      "id": 2162438084,
+      "name": "Even"
+    },
+    {
+      "typeId": 1,
+      "price": 26,
+      "isMB": false,
+      "oddStatus": 0,
+      "isBB": true,
+      "id": 2162438034,
+      "name": "Aparecidense/GO"
+    },
+    {
+      "typeId": 2,
+      "price": 4.5,
+      "isMB": false,
+      "oddStatus": 0,
+      "isBB": true,
+      "id": 2162438035,
+      "name": "Draw"
+    },
+    {
+      "typeId": 3,
+      "price": 1.2,
+      "isMB": false,
+      "oddStatus": 0,
+      "isBB": true,
+      "id": 2162438036,
+      "name": "CRAC/GO"
+    },
+    {
+      "typeId": 9,
+      "price": 3.75,
+      "isMB": false,
+      "oddStatus": 0,
+      "isBB": true,
+      "id": 2162437997,
+      "name": "Aparecidense/GO or draw"
+    },
+    {
+      "typeId": 10,
+      "price": 1.1429,
+      "isMB": false,
+      "oddStatus": 0,
+      "isBB": true,
+      "id": 2162437995,
+      "name": "Aparecidense/GO or CRAC/GO"
+    },
+    {
+      "typeId": 11,
+      "price": 1,
+      "isMB": false,
+      "oddStatus": 7,
+      "isBB": true,
+      "id": 2162437996,
+      "name": "Draw or CRAC/GO"
+    },
+    {
+      "typeId": 12,
+      "price": 2.4,
+      "isMB": true,
+      "oddStatus": 0,
+      "sv": "1.5",
+      "isBB": true,
+      "id": 2162437889,
+      "name": "Over 1.5"
+    },
+    {
+      "typeId": 12,
+      "price": 7,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "2.5",
+      "isBB": true,
+      "id": 2162437891,
+      "name": "Over 2.5"
+    },
+    {
+      "typeId": 13,
+      "price": 1.4546,
+      "isMB": true,
+      "oddStatus": 0,
+      "sv": "1.5",
+      "isBB": true,
+      "id": 2162437890,
+      "name": "Under 1.5"
+    },
+    {
+      "typeId": 13,
+      "price": 1.04,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "2.5",
+      "isBB": true,
+      "id": 2162437892,
+      "name": "Under 2.5"
+    },
+    {
+      "typeId": 12,
+      "price": 3.25,
+      "isMB": true,
+      "oddStatus": 0,
+      "sv": "0.5",
+      "isBB": true,
+      "id": 2162437863,
+      "name": "Over 0.5"
+    },
+    {
+      "typeId": 13,
+      "price": 1.25,
+      "isMB": true,
+      "oddStatus": 0,
+      "sv": "0.5",
+      "isBB": true,
+      "id": 2162437864,
+      "name": "Under 0.5"
+    },
+    {
+      "typeId": 12,
+      "price": 4.5,
+      "isMB": true,
+      "oddStatus": 0,
+      "sv": "1.5",
+      "isBB": true,
+      "id": 2162437869,
+      "name": "Over 1.5"
+    },
+    {
+      "typeId": 13,
+      "price": 1.1429,
+      "isMB": true,
+      "oddStatus": 0,
+      "sv": "1.5",
+      "isBB": true,
+      "id": 2162437870,
+      "name": "Under 1.5"
+    },
+    {
+      "typeId": 74,
+      "price": 3.25,
+      "isMB": false,
+      "oddStatus": 0,
+      "isBB": true,
+      "id": 2162437933,
+      "name": "Yes"
+    },
+    {
+      "typeId": 76,
+      "price": 1.25,
+      "isMB": false,
+      "oddStatus": 0,
+      "isBB": true,
+      "id": 2162437934,
+      "name": "No"
+    },
+    {
+      "typeId": 114,
+      "price": 0,
+      "isMB": false,
+      "oddStatus": 7,
+      "isBB": true,
+      "id": 2162438263,
+      "name": "1:0"
+    },
+    {
+      "typeId": 116,
+      "price": 0,
+      "isMB": false,
+      "oddStatus": 7,
+      "isBB": true,
+      "id": 2162438264,
+      "name": "2:0"
+    },
+    {
+      "typeId": 130,
+      "price": 21,
+      "isMB": false,
+      "oddStatus": 0,
+      "isBB": true,
+      "id": 2162438267,
+      "name": "2:1"
+    },
+    {
+      "typeId": 110,
+      "price": 0,
+      "isMB": false,
+      "oddStatus": 7,
+      "isBB": true,
+      "id": 2162438262,
+      "name": "0:0"
+    },
+    {
+      "typeId": 128,
+      "price": 3.5,
+      "isMB": false,
+      "oddStatus": 0,
+      "isBB": true,
+      "id": 2162438266,
+      "name": "1:1"
+    },
+    {
+      "typeId": 142,
+      "price": 99,
+      "isMB": false,
+      "oddStatus": 0,
+      "isBB": true,
+      "id": 2162438270,
+      "name": "2:2"
+    },
+    {
+      "typeId": 324,
+      "price": 26,
+      "isMB": false,
+      "oddStatus": 0,
+      "isBB": true,
+      "id": 2162438271,
+      "name": "Other"
+    },
+    {
+      "typeId": 126,
+      "price": 1.3077,
+      "isMB": false,
+      "oddStatus": 0,
+      "isBB": true,
+      "id": 2162438265,
+      "name": "0:1"
+    },
+    {
+      "typeId": 138,
+      "price": 5,
+      "isMB": false,
+      "oddStatus": 0,
+      "isBB": true,
+      "id": 2162438268,
+      "name": "0:2"
+    },
+    {
+      "typeId": 140,
+      "price": 17,
+      "isMB": false,
+      "oddStatus": 0,
+      "isBB": true,
+      "id": 2162438269,
+      "name": "1:2"
+    },
+    {
+      "typeId": 70,
+      "price": 1.3334,
+      "isMB": false,
+      "oddStatus": 0,
+      "isBB": true,
+      "id": 2162438079,
+      "name": "Odd"
+    },
+    {
+      "typeId": 72,
+      "price": 2.8334,
+      "isMB": false,
+      "oddStatus": 0,
+      "isBB": true,
+      "id": 2162438080,
+      "name": "Even"
+    },
+    {
+      "typeId": 12,
+      "price": 2.6667,
+      "isMB": true,
+      "oddStatus": 0,
+      "sv": "1.5",
+      "isBB": true,
+      "id": 2169060998,
+      "name": "Over 1.5"
+    },
+    {
+      "typeId": 13,
+      "price": 1.3637,
+      "isMB": true,
+      "oddStatus": 0,
+      "sv": "1.5",
+      "isBB": true,
+      "id": 2169060999,
+      "name": "Under 1.5"
+    },
+    {
+      "typeId": 74,
+      "price": 4.25,
+      "isMB": false,
+      "oddStatus": 0,
+      "isBB": true,
+      "id": 2162437935,
+      "name": "Yes"
+    },
+    {
+      "typeId": 76,
+      "price": 1.1539,
+      "isMB": false,
+      "oddStatus": 0,
+      "isBB": true,
+      "id": 2162437936,
+      "name": "No"
+    },
+    {
+      "typeId": 660,
+      "price": 13,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "3.5",
+      "id": 2163455838,
+      "name": "Aparecidense/GO & over 3.5"
+    },
+    {
+      "typeId": 800,
+      "price": 12,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "3.5",
+      "id": 2163455841,
+      "name": "Draw & over 3.5"
+    },
+    {
+      "typeId": 662,
+      "price": 9.5,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "3.5",
+      "id": 2163455839,
+      "name": "CRAC/GO & over 3.5"
+    },
+    {
+      "typeId": 656,
+      "price": 9,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "3.5",
+      "id": 2163455836,
+      "name": "Aparecidense/GO & under 3.5"
+    },
+    {
+      "typeId": 798,
+      "price": 4.5,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "3.5",
+      "id": 2163455840,
+      "name": "Draw & under 3.5"
+    },
+    {
+      "typeId": 658,
+      "price": 1.8182,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "3.5",
+      "id": 2163455837,
+      "name": "CRAC/GO & under 3.5"
+    },
+    {
+      "typeId": 1,
+      "price": 1.9231,
+      "isMB": true,
+      "oddStatus": 0,
+      "sv": "2",
+      "id": 2169058735,
+      "name": "Aparecidense/GO"
+    },
+    {
+      "typeId": 7,
+      "price": 4,
+      "isMB": true,
+      "oddStatus": 0,
+      "sv": "2",
+      "id": 2169058737,
+      "name": "None"
+    },
+    {
+      "typeId": 3,
+      "price": 2.75,
+      "isMB": true,
+      "oddStatus": 0,
+      "sv": "2",
+      "id": 2169058736,
+      "name": "CRAC/GO"
+    },
+    {
+      "typeId": 1718,
+      "price": 2.2,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2167759446,
+      "name": "1X & yes"
+    },
+    {
+      "typeId": 1720,
+      "price": 2.55,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2167759447,
+      "name": "12 & yes"
+    },
+    {
+      "typeId": 1722,
+      "price": 1.92,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2167759448,
+      "name": "X2 & yes"
+    },
+    {
+      "typeId": 1719,
+      "price": 1,
+      "isMB": false,
+      "oddStatus": 7,
+      "id": 2167759449,
+      "name": "1X & no"
+    },
+    {
+      "typeId": 1721,
+      "price": 2.35,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2167759450,
+      "name": "12 & no"
+    },
+    {
+      "typeId": 1723,
+      "price": 2.35,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2167759451,
+      "name": "X2 & no"
+    },
+    {
+      "typeId": 1727,
+      "price": 3.75,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "2.5",
+      "id": 2162438025,
+      "name": "Aparecidense/GO/X & over 2.5"
+    },
+    {
+      "typeId": 1728,
+      "price": 2.1429,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "2.5",
+      "id": 2162438026,
+      "name": "Aparecidense/GO/CRAC/GO & over 2.5"
+    },
+    {
+      "typeId": 1729,
+      "price": 2.6667,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "2.5",
+      "id": 2162438027,
+      "name": "X/CRAC/GO & over 2.5"
+    },
+    {
+      "typeId": 1724,
+      "price": 4.3334,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "2.5",
+      "id": 2162438022,
+      "name": "Aparecidense/GO/X & under 2.5"
+    },
+    {
+      "typeId": 1725,
+      "price": 2.6,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "2.5",
+      "id": 2162438023,
+      "name": "Aparecidense/GO/CRAC/GO & under 2.5"
+    },
+    {
+      "typeId": 1726,
+      "price": 1.7273,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "2.5",
+      "id": 2162438024,
+      "name": "X/CRAC/GO & under 2.5"
+    },
+    {
+      "typeId": 730,
+      "price": 4.25,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438260,
+      "name": "0-1"
+    },
+    {
+      "typeId": 1735,
+      "price": 1.5834,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438258,
+      "name": "2-3"
+    },
+    {
+      "typeId": 1743,
+      "price": 4,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438259,
+      "name": "4-6"
+    },
+    {
+      "typeId": 885,
+      "price": 10,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438261,
+      "name": "7+"
+    },
+    {
+      "typeId": 74,
+      "price": 3.25,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162437933,
+      "name": "Yes"
+    },
+    {
+      "typeId": 76,
+      "price": 1.25,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162437934,
+      "name": "No"
+    },
+    {
+      "typeId": 114,
+      "price": 0,
+      "isMB": false,
+      "oddStatus": 7,
+      "id": 2162438263,
+      "name": "1:0"
+    },
+    {
+      "typeId": 116,
+      "price": 0,
+      "isMB": false,
+      "oddStatus": 7,
+      "id": 2162438264,
+      "name": "2:0"
+    },
+    {
+      "typeId": 130,
+      "price": 21,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438267,
+      "name": "2:1"
+    },
+    {
+      "typeId": 110,
+      "price": 0,
+      "isMB": false,
+      "oddStatus": 7,
+      "id": 2162438262,
+      "name": "0:0"
+    },
+    {
+      "typeId": 128,
+      "price": 3.5,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438266,
+      "name": "1:1"
+    },
+    {
+      "typeId": 142,
+      "price": 99,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438270,
+      "name": "2:2"
+    },
+    {
+      "typeId": 324,
+      "price": 26,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438271,
+      "name": "Other"
+    },
+    {
+      "typeId": 126,
+      "price": 1.3077,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438265,
+      "name": "0:1"
+    },
+    {
+      "typeId": 138,
+      "price": 5,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438268,
+      "name": "0:2"
+    },
+    {
+      "typeId": 140,
+      "price": 17,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438269,
+      "name": "1:2"
+    },
+    {
+      "typeId": 70,
+      "price": 1.3334,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438079,
+      "name": "Odd"
+    },
+    {
+      "typeId": 72,
+      "price": 2.8334,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438080,
+      "name": "Even"
+    },
+    {
+      "typeId": 1,
+      "price": 3.3334,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438295,
+      "name": "Aparecidense/GO"
+    },
+    {
+      "typeId": 7,
+      "price": 0,
+      "isMB": false,
+      "oddStatus": 7,
+      "id": 2162438297,
+      "name": "None"
+    },
+    {
+      "typeId": 3,
+      "price": 1.1819,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438296,
+      "name": "CRAC/GO"
+    },
+    {
+      "typeId": 660,
+      "price": 25,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "1.5",
+      "id": 2167759496,
+      "name": "Aparecidense/GO & over 1.5"
+    },
+    {
+      "typeId": 800,
+      "price": 4.7,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "1.5",
+      "id": 2167759498,
+      "name": "Draw & over 1.5"
+    },
+    {
+      "typeId": 662,
+      "price": 5,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "1.5",
+      "id": 2167759500,
+      "name": "CRAC/GO & over 1.5"
+    },
+    {
+      "typeId": 656,
+      "price": 1,
+      "isMB": false,
+      "oddStatus": 7,
+      "sv": "1.5",
+      "id": 2167759497,
+      "name": "Aparecidense/GO & under 1.5"
+    },
+    {
+      "typeId": 798,
+      "price": 1,
+      "isMB": false,
+      "oddStatus": 7,
+      "sv": "1.5",
+      "id": 2167759499,
+      "name": "Draw & under 1.5"
+    },
+    {
+      "typeId": 658,
+      "price": 1.5,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "1.5",
+      "id": 2167759501,
+      "name": "CRAC/GO & under 1.5"
+    },
+    {
+      "typeId": 78,
+      "price": 27,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2167759423,
+      "name": "Aparecidense/GO & yes"
+    },
+    {
+      "typeId": 80,
+      "price": 1,
+      "isMB": false,
+      "oddStatus": 7,
+      "id": 2167759424,
+      "name": "Aparecidense/GO & no"
+    },
+    {
+      "typeId": 82,
+      "price": 4.8,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2167759425,
+      "name": "Draw & yes"
+    },
+    {
+      "typeId": 84,
+      "price": 1,
+      "isMB": false,
+      "oddStatus": 7,
+      "id": 2167759426,
+      "name": "Draw & no"
+    },
+    {
+      "typeId": 86,
+      "price": 19,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2167759427,
+      "name": "CRAC/GO & yes"
+    },
+    {
+      "typeId": 88,
+      "price": 1.26,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2167759428,
+      "name": "CRAC/GO & no"
+    },
+    {
+      "typeId": 76,
+      "price": 1.25,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438094,
+      "name": "No"
+    },
+    {
+      "typeId": 74,
+      "price": 3.25,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438093,
+      "name": "Yes"
+    },
+    {
+      "typeId": 54,
+      "price": 1.25,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438150,
+      "name": "0"
+    },
+    {
+      "typeId": 56,
+      "price": 3.2,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438151,
+      "name": "1"
+    },
+    {
+      "typeId": 58,
+      "price": 15,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438152,
+      "name": "2"
+    },
+    {
+      "typeId": 56,
+      "price": 1.1429,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438155,
+      "name": "1"
+    },
+    {
+      "typeId": 58,
+      "price": 3.5,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438156,
+      "name": "2"
+    },
+    {
+      "typeId": 78,
+      "price": 15,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438111,
+      "name": "Aparecidense/GO & yes"
+    },
+    {
+      "typeId": 82,
+      "price": 7.5,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438113,
+      "name": "Draw & yes"
+    },
+    {
+      "typeId": 86,
+      "price": 15,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438115,
+      "name": "CRAC/GO & yes"
+    },
+    {
+      "typeId": 80,
+      "price": 2.7143,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438112,
+      "name": "Aparecidense/GO & no"
+    },
+    {
+      "typeId": 84,
+      "price": 2.6667,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438114,
+      "name": "Draw & no"
+    },
+    {
+      "typeId": 88,
+      "price": 4.3334,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438116,
+      "name": "CRAC/GO & no"
+    },
+    {
+      "typeId": 1736,
+      "price": 2.6667,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438492,
+      "name": "2-4"
+    },
+    {
+      "typeId": 1739,
+      "price": 6.6667,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438493,
+      "name": "3-4"
+    },
+    {
+      "typeId": 730,
+      "price": 1.35,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438495,
+      "name": "0-1"
+    },
+    {
+      "typeId": 1993,
+      "price": 1.077,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438494,
+      "name": "0-2"
+    },
+    {
+      "typeId": 1730,
+      "price": 1.5834,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438488,
+      "name": "1-2"
+    },
+    {
+      "typeId": 1732,
+      "price": 1.3637,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438490,
+      "name": "1-4"
+    },
+    {
+      "typeId": 736,
+      "price": 18,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438496,
+      "name": "4+"
+    },
+    {
+      "typeId": 1731,
+      "price": 1.4,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438489,
+      "name": "1-3"
+    },
+    {
+      "typeId": 826,
+      "price": 2.625,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438497,
+      "name": "No goal"
+    },
+    {
+      "typeId": 1735,
+      "price": 2.8334,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438491,
+      "name": "2-3"
+    },
+    {
+      "typeId": 70,
+      "price": 2,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438081,
+      "name": "Odd"
+    },
+    {
+      "typeId": 72,
+      "price": 1.6667,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438082,
+      "name": "Even"
+    },
+    {
+      "typeId": 1855,
+      "price": 0,
+      "isMB": false,
+      "oddStatus": 7,
+      "id": 2162438426,
+      "name": "Aparecidense/GO/Aparecidense/GO & 1"
+    },
+    {
+      "typeId": 1859,
+      "price": 0,
+      "isMB": false,
+      "oddStatus": 7,
+      "id": 2162438430,
+      "name": "Aparecidense/GO/Aparecidense/GO & 2"
+    },
+    {
+      "typeId": 1860,
+      "price": 0,
+      "isMB": false,
+      "oddStatus": 7,
+      "id": 2162438431,
+      "name": "Aparecidense/GO/draw & 2"
+    },
+    {
+      "typeId": 1866,
+      "price": 91,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438437,
+      "name": "Aparecidense/GO/Aparecidense/GO & 3"
+    },
+    {
+      "typeId": 1867,
+      "price": 0,
+      "isMB": false,
+      "oddStatus": 7,
+      "id": 2162438438,
+      "name": "Aparecidense/GO/CRAC/GO & 3"
+    },
+    {
+      "typeId": 1872,
+      "price": 101,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438443,
+      "name": "Aparecidense/GO/Aparecidense/GO & 4"
+    },
+    {
+      "typeId": 1873,
+      "price": 151,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438444,
+      "name": "Aparecidense/GO/draw & 4"
+    },
+    {
+      "typeId": 1874,
+      "price": 0,
+      "isMB": false,
+      "oddStatus": 7,
+      "id": 2162438445,
+      "name": "Aparecidense/GO/CRAC/GO & 4"
+    },
+    {
+      "typeId": 1881,
+      "price": 91,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438452,
+      "name": "Aparecidense/GO/Aparecidense/GO & 5+"
+    },
+    {
+      "typeId": 1882,
+      "price": 151,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438453,
+      "name": "Aparecidense/GO/draw & 5+"
+    },
+    {
+      "typeId": 1883,
+      "price": 151,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438454,
+      "name": "Aparecidense/GO/CRAC/GO & 5+"
+    },
+    {
+      "typeId": 1854,
+      "price": 0,
+      "isMB": false,
+      "oddStatus": 7,
+      "id": 2162438425,
+      "name": "Draw/draw & 0"
+    },
+    {
+      "typeId": 1856,
+      "price": 0,
+      "isMB": false,
+      "oddStatus": 7,
+      "id": 2162438427,
+      "name": "Draw/Aparecidense/GO & 1"
+    },
+    {
+      "typeId": 1857,
+      "price": 0,
+      "isMB": false,
+      "oddStatus": 7,
+      "id": 2162438428,
+      "name": "Draw/CRAC/GO & 1"
+    },
+    {
+      "typeId": 1861,
+      "price": 0,
+      "isMB": false,
+      "oddStatus": 7,
+      "id": 2162438432,
+      "name": "Draw/Aparecidense/GO & 2"
+    },
+    {
+      "typeId": 1862,
+      "price": 14,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438433,
+      "name": "Draw/draw & 2"
+    },
+    {
+      "typeId": 1863,
+      "price": 0,
+      "isMB": false,
+      "oddStatus": 7,
+      "id": 2162438434,
+      "name": "Draw/CRAC/GO & 2"
+    },
+    {
+      "typeId": 1868,
+      "price": 20,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438439,
+      "name": "Draw/Aparecidense/GO & 3"
+    },
+    {
+      "typeId": 1869,
+      "price": 26,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438440,
+      "name": "Draw/CRAC/GO & 3"
+    },
+    {
+      "typeId": 1875,
+      "price": 51,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438446,
+      "name": "Draw/Aparecidense/GO & 4"
+    },
+    {
+      "typeId": 1876,
+      "price": 36,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438447,
+      "name": "Draw/draw & 4"
+    },
+    {
+      "typeId": 1877,
+      "price": 101,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438448,
+      "name": "Draw/CRAC/GO & 4"
+    },
+    {
+      "typeId": 1884,
+      "price": 51,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438455,
+      "name": "Draw/Aparecidense/GO & 5+"
+    },
+    {
+      "typeId": 1885,
+      "price": 151,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438456,
+      "name": "Draw/draw & 5+"
+    },
+    {
+      "typeId": 1886,
+      "price": 101,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438457,
+      "name": "Draw/CRAC/GO & 5+"
+    },
+    {
+      "typeId": 1858,
+      "price": 4,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438429,
+      "name": "CRAC/GO/CRAC/GO & 1"
+    },
+    {
+      "typeId": 1865,
+      "price": 6,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438436,
+      "name": "CRAC/GO/CRAC/GO & 2"
+    },
+    {
+      "typeId": 1864,
+      "price": 5.6667,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438435,
+      "name": "CRAC/GO/draw & 2"
+    },
+    {
+      "typeId": 1871,
+      "price": 5.5,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438442,
+      "name": "CRAC/GO/CRAC/GO & 3"
+    },
+    {
+      "typeId": 1870,
+      "price": 16,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438441,
+      "name": "CRAC/GO/Aparecidense/GO & 3"
+    },
+    {
+      "typeId": 1880,
+      "price": 17,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438451,
+      "name": "CRAC/GO/CRAC/GO & 4"
+    },
+    {
+      "typeId": 1879,
+      "price": 20,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438450,
+      "name": "CRAC/GO/draw & 4"
+    },
+    {
+      "typeId": 1878,
+      "price": 61,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438449,
+      "name": "CRAC/GO/Aparecidense/GO & 4"
+    },
+    {
+      "typeId": 1889,
+      "price": 21,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438460,
+      "name": "CRAC/GO/CRAC/GO & 5+"
+    },
+    {
+      "typeId": 1888,
+      "price": 151,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438459,
+      "name": "CRAC/GO/draw & 5+"
+    },
+    {
+      "typeId": 1887,
+      "price": 51,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438458,
+      "name": "CRAC/GO/Aparecidense/GO & 5+"
+    },
+    {
+      "typeId": 2086,
+      "price": 15,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "26:00|26:59",
+      "iconName": "goal",
+      "id": 2169063654,
+      "name": "Goal"
+    },
+    {
+      "typeId": 2086,
+      "price": 15,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "27:00|27:59",
+      "iconName": "goal",
+      "id": 2169064226,
+      "name": "Goal"
+    },
+    {
+      "typeId": 2088,
+      "price": 11,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "27:00|27:59",
+      "iconName": "booking",
+      "id": 2169063655,
+      "name": "Booking"
+    },
+    {
+      "typeId": 2086,
+      "price": 15,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "28:00|28:59",
+      "iconName": "goal",
+      "id": 2169064956,
+      "name": "Goal"
+    },
+    {
+      "typeId": 2088,
+      "price": 11,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "28:00|28:59",
+      "iconName": "booking",
+      "id": 2169064227,
+      "name": "Booking"
+    },
+    {
+      "typeId": 2088,
+      "price": 11,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "29:00|29:59",
+      "iconName": "booking",
+      "id": 2169064957,
+      "name": "Booking"
+    },
+    {
+      "typeId": 74,
+      "price": 1.6154,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438208,
+      "name": "Yes"
+    },
+    {
+      "typeId": 76,
+      "price": 2.1667,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438209,
+      "name": "No"
+    },
+    {
+      "typeId": 74,
+      "price": 5.6667,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438099,
+      "name": "Yes"
+    },
+    {
+      "typeId": 76,
+      "price": 1.1112,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438100,
+      "name": "No"
+    },
+    {
+      "typeId": 74,
+      "price": 2.4,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438212,
+      "name": "Yes"
+    },
+    {
+      "typeId": 76,
+      "price": 1.5,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438213,
+      "name": "No"
+    },
+    {
+      "typeId": 74,
+      "price": 1.2667,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162437833,
+      "name": "Yes"
+    },
+    {
+      "typeId": 76,
+      "price": 3.5,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162437834,
+      "name": "No"
+    },
+    {
+      "typeId": 74,
+      "price": 2.4,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438198,
+      "name": "Yes"
+    },
+    {
+      "typeId": 76,
+      "price": 1.5,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438199,
+      "name": "No"
+    },
+    {
+      "typeId": 436,
+      "price": 1.9231,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438076,
+      "name": "1st half"
+    },
+    {
+      "typeId": 438,
+      "price": 3.6667,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438077,
+      "name": "2nd half"
+    },
+    {
+      "typeId": 440,
+      "price": 3,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438078,
+      "name": "Equal"
+    },
+    {
+      "typeId": 436,
+      "price": 6.3334,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438166,
+      "name": "1st half"
+    },
+    {
+      "typeId": 440,
+      "price": 1.96,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438168,
+      "name": "Equal"
+    },
+    {
+      "typeId": 438,
+      "price": 2.1667,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438167,
+      "name": "2nd half"
+    },
+    {
+      "typeId": 436,
+      "price": 1.3637,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438169,
+      "name": "1st half"
+    },
+    {
+      "typeId": 440,
+      "price": 3.25,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438171,
+      "name": "Equal"
+    },
+    {
+      "typeId": 438,
+      "price": 12,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438170,
+      "name": "2nd half"
+    },
+    {
+      "typeId": 1750,
+      "price": 0,
+      "isMB": false,
+      "oddStatus": 7,
+      "id": 2162438366,
+      "name": "1:0, 2:0 or 3:0"
+    },
+    {
+      "typeId": 1754,
+      "price": 5.6667,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438370,
+      "name": "2:1, 3:1 or 4:1"
+    },
+    {
+      "typeId": 1756,
+      "price": 26,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438372,
+      "name": "3:2, 4:2, 4:3 or 5:1"
+    },
+    {
+      "typeId": 1752,
+      "price": 0,
+      "isMB": false,
+      "oddStatus": 7,
+      "id": 2162438368,
+      "name": "4:0, 5:0 or 6:0"
+    },
+    {
+      "typeId": 1758,
+      "price": 51,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438374,
+      "name": "Other homewin"
+    },
+    {
+      "typeId": 2,
+      "price": 3,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438376,
+      "name": "Draw"
+    },
+    {
+      "typeId": 1751,
+      "price": 2.1667,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438367,
+      "name": "0:1, 0:2 or 0:3"
+    },
+    {
+      "typeId": 1755,
+      "price": 4.25,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438371,
+      "name": "1:2, 1:3 or 1:4"
+    },
+    {
+      "typeId": 1757,
+      "price": 26,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438373,
+      "name": "2:3, 2:4, 3:4 or 1:5"
+    },
+    {
+      "typeId": 1753,
+      "price": 51,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438369,
+      "name": "0:4, 0:5 or 0:6"
+    },
+    {
+      "typeId": 1759,
+      "price": 51,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438375,
+      "name": "Other awaywin"
+    },
+    {
+      "typeId": 1711,
+      "price": 3.75,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "1:0",
+      "id": 2169058761,
+      "name": "Aparecidense/GO (1:0)"
+    },
+    {
+      "typeId": 1712,
+      "price": 1.48,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "1:0",
+      "id": 2169058762,
+      "name": "Draw (1:0)"
+    },
+    {
+      "typeId": 1713,
+      "price": 5.3334,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "1:0",
+      "id": 2169058763,
+      "name": "CRAC/GO (1:0)"
+    },
+    {
+      "typeId": 1714,
+      "price": 1.1,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "+1.5",
+      "id": 2169058747,
+      "name": "Aparecidense/GO (+1.5)"
+    },
+    {
+      "typeId": 1714,
+      "price": 3.75,
+      "isMB": true,
+      "oddStatus": 0,
+      "sv": "+0.5",
+      "id": 2162437839,
+      "name": "Aparecidense/GO (+0.5)"
+    },
+    {
+      "typeId": 1715,
+      "price": 5.3334,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "+1.5",
+      "id": 2169058748,
+      "name": "CRAC/GO (-1.5)"
+    },
+    {
+      "typeId": 1715,
+      "price": 1.2,
+      "isMB": true,
+      "oddStatus": 0,
+      "sv": "+0.5",
+      "id": 2162437840,
+      "name": "CRAC/GO (-0.5)"
+    },
+    {
+      "typeId": 1724,
+      "price": 3.6,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "2.5",
+      "id": 2169058755,
+      "name": "Aparecidense/GO/X & under 2.5"
+    },
+    {
+      "typeId": 1727,
+      "price": 10,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "2.5",
+      "id": 2169058758,
+      "name": "Aparecidense/GO/X & over 2.5"
+    },
+    {
+      "typeId": 1726,
+      "price": 1.05,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "2.5",
+      "id": 2169058757,
+      "name": "X/CRAC/GO & under 2.5"
+    },
+    {
+      "typeId": 1729,
+      "price": 10,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "2.5",
+      "id": 2169058760,
+      "name": "X/CRAC/GO & over 2.5"
+    },
+    {
+      "typeId": 1725,
+      "price": 1.1819,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "2.5",
+      "id": 2169058756,
+      "name": "Aparecidense/GO/CRAC/GO & under 2.5"
+    },
+    {
+      "typeId": 1728,
+      "price": 7.5,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "2.5",
+      "id": 2169058759,
+      "name": "Aparecidense/GO/CRAC/GO & over 2.5"
+    },
+    {
+      "typeId": 74,
+      "price": 1.25,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438194,
+      "name": "Yes"
+    },
+    {
+      "typeId": 76,
+      "price": 3.25,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438195,
+      "name": "No"
+    },
+    {
+      "typeId": 74,
+      "price": 1.25,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438210,
+      "name": "Yes"
+    },
+    {
+      "typeId": 76,
+      "price": 3.25,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438211,
+      "name": "No"
+    },
+    {
+      "typeId": 9,
+      "price": 1.1539,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438000,
+      "name": "Aparecidense/GO or draw"
+    },
+    {
+      "typeId": 10,
+      "price": 1.5834,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162437998,
+      "name": "Aparecidense/GO or CRAC/GO"
+    },
+    {
+      "typeId": 11,
+      "price": 1.4167,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162437999,
+      "name": "Draw or CRAC/GO"
+    },
+    {
+      "typeId": 74,
+      "price": 4.25,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162437935,
+      "name": "Yes"
+    },
+    {
+      "typeId": 76,
+      "price": 1.1539,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162437936,
+      "name": "No"
+    },
+    {
+      "typeId": 1711,
+      "price": 2.5455,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "0:0",
+      "id": 2167799261,
+      "name": "Aparecidense/GO (0:0)"
+    },
+    {
+      "typeId": 1712,
+      "price": 2.1429,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "0:0",
+      "id": 2167799262,
+      "name": "Draw (0:0)"
+    },
+    {
+      "typeId": 1713,
+      "price": 4.2,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "0:0",
+      "id": 2167799263,
+      "name": "CRAC/GO (0:0)"
+    },
+    {
+      "typeId": 1,
+      "price": 1.5,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438045,
+      "name": "Aparecidense/GO"
+    },
+    {
+      "typeId": 3,
+      "price": 2.3,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438046,
+      "name": "CRAC/GO"
+    },
+    {
+      "typeId": 660,
+      "price": 6,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "1.5",
+      "id": 2162438131,
+      "name": "Aparecidense/GO & over 1.5"
+    },
+    {
+      "typeId": 800,
+      "price": 7.5,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "1.5",
+      "id": 2162438134,
+      "name": "Draw & over 1.5"
+    },
+    {
+      "typeId": 662,
+      "price": 12,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "1.5",
+      "id": 2162438132,
+      "name": "CRAC/GO & over 1.5"
+    },
+    {
+      "typeId": 656,
+      "price": 4,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "1.5",
+      "id": 2162438129,
+      "name": "Aparecidense/GO & under 1.5"
+    },
+    {
+      "typeId": 798,
+      "price": 2.75,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "1.5",
+      "id": 2162438133,
+      "name": "Draw & under 1.5"
+    },
+    {
+      "typeId": 658,
+      "price": 5.6667,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "1.5",
+      "id": 2162438130,
+      "name": "CRAC/GO & under 1.5"
+    },
+    {
+      "typeId": 90,
+      "price": 2.05,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "2.5",
+      "id": 2162438190,
+      "name": "Over 2.5 & yes"
+    },
+    {
+      "typeId": 92,
+      "price": 4.25,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "2.5",
+      "id": 2162438191,
+      "name": "Under 2.5 & yes"
+    },
+    {
+      "typeId": 94,
+      "price": 15,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "2.5",
+      "id": 2162438192,
+      "name": "Over 2.5 & no"
+    },
+    {
+      "typeId": 96,
+      "price": 2.5715,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "2.5",
+      "id": 2162438193,
+      "name": "Under 2.5 & no"
+    },
+    {
+      "typeId": 814,
+      "price": 5.5,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "2",
+      "id": 2169058738,
+      "name": "Aparecidense/GO goal & Aparecidense/GO"
+    },
+    {
+      "typeId": 816,
+      "price": 3.6,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "2",
+      "id": 2169058739,
+      "name": "Aparecidense/GO goal & draw"
+    },
+    {
+      "typeId": 818,
+      "price": 9,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "2",
+      "id": 2169058740,
+      "name": "Aparecidense/GO goal & CRAC/GO"
+    },
+    {
+      "typeId": 826,
+      "price": 4.2,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "2",
+      "id": 2169058744,
+      "name": "No goal"
+    },
+    {
+      "typeId": 820,
+      "price": 51,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "2",
+      "id": 2169058741,
+      "name": "CRAC/GO goal & Aparecidense/GO"
+    },
+    {
+      "typeId": 822,
+      "price": 31,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "2",
+      "id": 2169058742,
+      "name": "CRAC/GO goal & draw"
+    },
+    {
+      "typeId": 824,
+      "price": 2.9,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "2",
+      "id": 2169058743,
+      "name": "CRAC/GO goal & CRAC/GO"
+    },
+    {
+      "typeId": 1718,
+      "price": 4.3334,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438354,
+      "name": "1X & yes"
+    },
+    {
+      "typeId": 1719,
+      "price": 3.3334,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438355,
+      "name": "1X & no"
+    },
+    {
+      "typeId": 1720,
+      "price": 5,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438356,
+      "name": "12 & yes"
+    },
+    {
+      "typeId": 1721,
+      "price": 1.5,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438357,
+      "name": "12 & no"
+    },
+    {
+      "typeId": 1722,
+      "price": 5,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438358,
+      "name": "X2 & yes"
+    },
+    {
+      "typeId": 1723,
+      "price": 1.32,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438359,
+      "name": "X2 & no"
+    },
+    {
+      "typeId": 84,
+      "price": 4.75,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438380,
+      "name": "Draw & no"
+    },
+    {
+      "typeId": 86,
+      "price": 12,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438381,
+      "name": "CRAC/GO & yes"
+    },
+    {
+      "typeId": 82,
+      "price": 9,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438379,
+      "name": "Draw & yes"
+    },
+    {
+      "typeId": 80,
+      "price": 12,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438378,
+      "name": "Aparecidense/GO & no"
+    },
+    {
+      "typeId": 78,
+      "price": 9,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438377,
+      "name": "Aparecidense/GO & yes"
+    },
+    {
+      "typeId": 88,
+      "price": 1.7143,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2162438382,
+      "name": "CRAC/GO & no"
+    }
+  ],
+  "boosts": [],
+  "isParlay": false,
+  "eventCode": 5323,
+  "rc": false,
+  "startDate": "2025-02-06T22:30:00Z",
+  "showAll": true
+}

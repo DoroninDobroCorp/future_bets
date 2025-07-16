@@ -1,0 +1,187 @@
+.wrapper {
+	position: relative;
+
+    background-color: white;
+	box-shadow: rgb(0 0 0 / 15%) 1.95px 1.95px 2.6px;
+
+    margin-bottom: 20px;
+}
+
+.h3 {
+    font-size: 26px;
+    font-weight: bold;
+    margin: 2px 10px;
+}
+
+.info {
+    background-color: lightgrey;
+    margin: 10px;
+}
+
+.sum {
+    font-size: 18px;
+    margin: 10px;
+}
+
+.p {
+    margin: 2px 10px;
+}
+
+.buttonContainer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.fakeROI {
+	color: rgba(37, 36, 36, 0.719);
+}
+
+.button {
+	width: 100%;
+	margin: 14px 20px;
+	padding: 12px 24px;
+	background: #00b327;
+	color: white;
+	border: none;
+	border-radius: 8px;
+	cursor: pointer;
+	font-size: 18px;
+	transition: 0.3s, transform 0.2s;
+}
+
+.button:hover {
+	background: #4be404;
+}
+
+.status {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+
+	height: 100%;
+	width: 100%;
+	margin: 0;
+
+	gap: 30px;
+}
+
+.closeBtn {
+	cursor: pointer;
+	position: absolute;
+	top: 36px;
+	right: 40px;
+	width: 2em;
+  	height: 2em;
+  	background-color: gray;
+  	clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+}
+
+.closeBtn:hover {
+	background-color: black;
+}
+
+.input::-webkit-outer-spin-button,
+.input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+.input[type=number] {
+    appearance:textfield; /* Firefox */
+}
+
+.input {
+	font-size: 18px;
+	border: solid 2px grey;
+	border-radius: 6px;
+}
+
+.inputs {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+	gap: 10px;
+	margin: 2px 10px;
+}
+
+.firstTeam {
+	display: inline;
+	color: rgb(170, 5, 5);
+}
+
+.secondTeam {
+	display: inline;
+	color: blue;
+}
+
+.roiSuperOk {
+	background-color: rgb(180, 2, 180);
+	font-size: 18px;
+}
+
+.roiOk {
+	background-color: rgb(157, 253, 133);
+	font-size: 18px;
+}
+
+.roiWarn {
+	background-color: rgb(252, 248, 38);
+	font-size: 18px;
+}
+
+.roiError {
+	background-color: rgb(250, 91, 99);
+	font-size: 18px;
+}
+
+@media (max-width: 768px) {
+    .h3 {
+		font-size: 16px;
+	}
+
+	.status {
+		gap: 10px;
+	}
+
+	.closeBtn {
+		top: 8px;
+		right: 8px;
+		width: 1.4em;
+		height: 1.4em;
+	}
+	
+	.inputs {
+		flex-direction: column;
+	}
+
+	.input {
+		font-size: 14px;
+	}
+
+	.info {
+		margin: 2px 6px;
+	}
+
+	.p {
+		margin: 0px 10px;
+		font-size: 14px;
+	}
+	
+	.sum {
+		font-size: 14px;
+		margin: 2px 10px;
+	}
+
+	.h4 {
+		margin: 0;
+	}
+
+	.button {
+		margin: 8px 14px;
+		padding: 6px 12px;
+		font-size: 14px;
+	}
+}

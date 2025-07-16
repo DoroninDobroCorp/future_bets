@@ -1,0 +1,1231 @@
+{
+  "id": 11757084,
+  "feedEventId": 12320082,
+  "name": "Nagal, Sumit vs. Ficovich, Juan Pablo",
+  "et": 0,
+  "liveTime": "2ème set",
+  "sport": {
+    "typeId": 4,
+    "iconName": "tennis",
+    "hasLiveEvents": false,
+    "id": 68,
+    "name": "Tennis"
+  },
+  "champ": {
+    "hasLiveEvents": false,
+    "id": 4495,
+    "name": "ATP Buenos Aires, Argentina Men Singles"
+  },
+  "category": {
+    "hasLiveEvents": false,
+    "id": 542,
+    "name": "ATP"
+  },
+  "competitors": [
+    {
+      "id": 57867,
+      "name": "Nagal, Sumit"
+    },
+    {
+      "id": 57765,
+      "name": "Ficovich, Juan Pablo"
+    }
+  ],
+  "marketGroups": [
+    {
+      "type": 0,
+      "marketIds": [
+        917040588,
+        31046,
+        917040590,
+        917469421,
+        917040582,
+        918011677,
+        917040587,
+        917040585,
+        918147225,
+        918147227,
+        918052843,
+        917040594,
+        917040589,
+        917040592,
+        917040586
+      ],
+      "isBundle": false,
+      "sortOrder": 0,
+      "id": 1,
+      "name": "Main"
+    },
+    {
+      "type": 0,
+      "marketIds": [
+        917040585,
+        918110837,
+        918110849,
+        918110848,
+        918110846,
+        918110833,
+        917040590
+      ],
+      "isBundle": false,
+      "sortOrder": 0,
+      "id": 13,
+      "name": "Set Markets"
+    },
+    {
+      "type": 0,
+      "marketIds": [
+        918163517,
+        918169625
+      ],
+      "isBundle": false,
+      "sortOrder": 0,
+      "id": 1045,
+      "name": "Game Markets"
+    },
+    {
+      "type": 0,
+      "marketIds": [
+        918163517,
+        918147227,
+        918052843
+      ],
+      "isBundle": false,
+      "sortOrder": 0,
+      "id": 1603,
+      "name": "Player Markets"
+    }
+  ],
+  "childMarketGroups": [],
+  "markets": [
+    {
+      "shortName": "Winner",
+      "desktopOddIds": [
+        [
+          2172173333
+        ],
+        [
+          2172173334
+        ]
+      ],
+      "mobileOddIds": [
+        [
+          2172173333
+        ],
+        [
+          2172173334
+        ]
+      ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 186,
+      "isMB": false,
+      "sportMarketId": 70755,
+      "id": 917040588,
+      "name": "Winner"
+    },
+    {
+      "desktopOddIds": [],
+      "mobileOddIds": [],
+      "childMarketIds": [],
+      "isBB": false,
+      "variant": 7,
+      "so": 0,
+      "typeId": 31046,
+      "isMB": false,
+      "sportMarketId": 0,
+      "id": 31046,
+      "name": "Boosted Odds"
+    },
+    {
+      "shortName": "Set handicap",
+      "desktopOddIds": [
+        [
+          2172173337
+        ],
+        [
+          2172173338
+        ]
+      ],
+      "mobileOddIds": [
+        [
+          2172173337
+        ],
+        [
+          2172173338
+        ]
+      ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 188,
+      "isMB": true,
+      "sportMarketId": 70761,
+      "sv": "+1.5",
+      "id": 917040590,
+      "name": "Set handicap"
+    },
+    {
+      "shortName": "Game handicap",
+      "desktopOddIds": [
+        [
+          2173244010
+        ],
+        [
+          2173244011
+        ]
+      ],
+      "mobileOddIds": [
+        [
+          2173244010
+        ],
+        [
+          2173244011
+        ]
+      ],
+      "isBB": false,
+      "variant": 8,
+      "so": 0,
+      "typeId": 187,
+      "isMB": true,
+      "sportMarketId": 70760,
+      "sv": "-3.5",
+      "id": 917469421,
+      "name": "Game handicap"
+    },
+    {
+      "shortName": "Total sets",
+      "desktopOddIds": [
+        [
+          2172173317
+        ],
+        [
+          2172173318
+        ]
+      ],
+      "mobileOddIds": [
+        [
+          2172173317
+        ],
+        [
+          2172173318
+        ]
+      ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 314,
+      "isMB": true,
+      "sportMarketId": 70898,
+      "sv": "2.5",
+      "id": 917040582,
+      "name": "Total sets"
+    },
+    {
+      "shortName": "Total games",
+      "desktopOddIds": [
+        [
+          2174752228
+        ],
+        [
+          2174752229
+        ]
+      ],
+      "mobileOddIds": [
+        [
+          2174752228
+        ],
+        [
+          2174752229
+        ]
+      ],
+      "headers": [
+        {
+          "typeId": 189,
+          "odds": [
+            {
+              "id": 12,
+              "name": "Over"
+            },
+            {
+              "id": 13,
+              "name": "Under"
+            }
+          ]
+        }
+      ],
+      "isBB": false,
+      "variant": 10,
+      "so": 0,
+      "typeId": 189,
+      "isMB": true,
+      "sportMarketId": 70762,
+      "sv": "30.5",
+      "id": 918011677,
+      "name": "Total games"
+    },
+    {
+      "shortName": "Correct score",
+      "desktopOddIds": [
+        [
+          2172173330
+        ],
+        [
+          2172173332,
+          2172173331
+        ]
+      ],
+      "mobileOddIds": [
+        [
+          2172173330
+        ],
+        [
+          2172173332,
+          2172173331
+        ]
+      ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 199,
+      "isMB": false,
+      "sportMarketId": 72337,
+      "sv": "sr:correct_score:bestof:3",
+      "id": 917040587,
+      "name": "Correct score"
+    },
+    {
+      "shortName": "Second set - winner",
+      "desktopOddIds": [
+        [
+          2172173325
+        ],
+        [
+          2172173326
+        ]
+      ],
+      "mobileOddIds": [
+        [
+          2172173325
+        ],
+        [
+          2172173326
+        ]
+      ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 202,
+      "isMB": false,
+      "sportMarketId": 70773,
+      "sv": "2",
+      "id": 917040585,
+      "name": "Second set - winner"
+    },
+    {
+      "shortName": "Winner & total",
+      "desktopOddIds": [
+        [
+          2174768990,
+          2174768992
+        ],
+        [
+          2174768991,
+          2174768993
+        ]
+      ],
+      "mobileOddIds": [
+        [
+          2174768990,
+          2174768992,
+          2174768991,
+          2174768993
+        ]
+      ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 1055,
+      "isMB": false,
+      "sportMarketId": 71150,
+      "sv": "30.5",
+      "id": 918147225,
+      "name": "Winner & total"
+    },
+    {
+      "shortName": "Nagal, Sumit total games",
+      "desktopOddIds": [
+        [
+          2174779126
+        ],
+        [
+          2174779127
+        ]
+      ],
+      "mobileOddIds": [
+        [
+          2174779126
+        ],
+        [
+          2174779127
+        ]
+      ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 190,
+      "isMB": true,
+      "sportMarketId": 70763,
+      "sv": "17.5",
+      "id": 918147227,
+      "name": "Nagal, Sumit total games"
+    },
+    {
+      "shortName": "Ficovich, Juan Pablo total games",
+      "desktopOddIds": [
+        [
+          2174768988
+        ],
+        [
+          2174768989
+        ]
+      ],
+      "mobileOddIds": [
+        [
+          2174768988
+        ],
+        [
+          2174768989
+        ]
+      ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 191,
+      "isMB": true,
+      "sportMarketId": 70764,
+      "sv": "14.5",
+      "id": 918052843,
+      "name": "Ficovich, Juan Pablo total games"
+    },
+    {
+      "shortName": "Nagal, Sumit to win a set",
+      "desktopOddIds": [
+        [
+          2172173345
+        ],
+        [
+          2172173346
+        ]
+      ],
+      "mobileOddIds": [
+        [
+          2172173345
+        ],
+        [
+          2172173346
+        ]
+      ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 192,
+      "isMB": false,
+      "sportMarketId": 70765,
+      "id": 917040594,
+      "name": "Nagal, Sumit to win a set"
+    },
+    {
+      "shortName": "Nagal, Sumit to win exactly 1 set",
+      "desktopOddIds": [
+        [
+          2172173335
+        ],
+        [
+          2172173336
+        ]
+      ],
+      "mobileOddIds": [
+        [
+          2172173335
+        ],
+        [
+          2172173336
+        ]
+      ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 850,
+      "isMB": false,
+      "sportMarketId": 71102,
+      "id": 917040589,
+      "name": "Nagal, Sumit to win exactly 1 set"
+    },
+    {
+      "shortName": "Ficovich, Juan Pablo to win exactly 1 set",
+      "desktopOddIds": [
+        [
+          2172173341
+        ],
+        [
+          2172173342
+        ]
+      ],
+      "mobileOddIds": [
+        [
+          2172173341
+        ],
+        [
+          2172173342
+        ]
+      ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 851,
+      "isMB": false,
+      "sportMarketId": 71104,
+      "id": 917040592,
+      "name": "Ficovich, Juan Pablo to win exactly 1 set"
+    },
+    {
+      "shortName": "Odd/even games",
+      "desktopOddIds": [
+        [
+          2172173327
+        ],
+        [
+          2172173328
+        ]
+      ],
+      "mobileOddIds": [
+        [
+          2172173327
+        ],
+        [
+          2172173328
+        ]
+      ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 198,
+      "isMB": false,
+      "sportMarketId": 70771,
+      "id": 917040586,
+      "name": "Odd/even games"
+    },
+    {
+      "shortName": "Second set - total games",
+      "desktopOddIds": [
+        [
+          2174692946
+        ],
+        [
+          2174692947
+        ]
+      ],
+      "mobileOddIds": [
+        [
+          2174692946
+        ],
+        [
+          2174692947
+        ]
+      ],
+      "headers": [
+        {
+          "typeId": 204,
+          "odds": [
+            {
+              "id": 12,
+              "name": "Over"
+            },
+            {
+              "id": 13,
+              "name": "Under"
+            }
+          ]
+        }
+      ],
+      "isBB": false,
+      "variant": 10,
+      "so": 0,
+      "typeId": 204,
+      "isMB": true,
+      "sportMarketId": 70777,
+      "sv": "2|9.5",
+      "id": 918110837,
+      "name": "Second set - total games"
+    },
+    {
+      "shortName": "Second set - game handicap",
+      "desktopOddIds": [
+        [
+          2174779679
+        ],
+        [
+          2174779680
+        ]
+      ],
+      "mobileOddIds": [
+        [
+          2174779679
+        ],
+        [
+          2174779680
+        ]
+      ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 203,
+      "isMB": true,
+      "sportMarketId": 70776,
+      "sv": "2|-2.5",
+      "id": 918110849,
+      "name": "Second set - game handicap"
+    },
+    {
+      "shortName": "Second set - correct score",
+      "desktopOddIds": [
+        [
+          2174692962,
+          2174692963,
+          2174692964,
+          2174692965,
+          2174692966
+        ],
+        [
+          2174692972,
+          2174692973
+        ]
+      ],
+      "mobileOddIds": [
+        [
+          2174692962,
+          2174692963,
+          2174692964,
+          2174692965,
+          2174692966
+        ],
+        [
+          2174692972,
+          2174692973
+        ]
+      ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 207,
+      "isMB": false,
+      "sportMarketId": 70780,
+      "sv": "2",
+      "id": 918110848,
+      "name": "Second set - correct score"
+    },
+    {
+      "shortName": "Second set - odd/even games",
+      "desktopOddIds": [
+        [
+          2174692958
+        ],
+        [
+          2174692959
+        ]
+      ],
+      "mobileOddIds": [
+        [
+          2174692958
+        ],
+        [
+          2174692959
+        ]
+      ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 205,
+      "isMB": false,
+      "sportMarketId": 70778,
+      "sv": "2",
+      "id": 918110846,
+      "name": "Second set - odd/even games"
+    },
+    {
+      "shortName": "Second set - will there be a tiebreak",
+      "desktopOddIds": [
+        [
+          2174692935
+        ],
+        [
+          2174692936
+        ]
+      ],
+      "mobileOddIds": [
+        [
+          2174692935
+        ],
+        [
+          2174692936
+        ]
+      ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 206,
+      "isMB": false,
+      "sportMarketId": 70779,
+      "sv": "2",
+      "id": 918110833,
+      "name": "Second set - will there be a tiebreak"
+    },
+    {
+      "shortName": "Second set game 8 - winner",
+      "desktopOddIds": [
+        [
+          2174804177
+        ],
+        [
+          2174804178
+        ]
+      ],
+      "mobileOddIds": [
+        [
+          2174804177
+        ],
+        [
+          2174804178
+        ]
+      ],
+      "isBB": false,
+      "so": 0,
+      "typeId": 210,
+      "isMB": false,
+      "sportMarketId": 70783,
+      "sv": "2|8",
+      "id": 918163517,
+      "name": "Second set game 8 - winner"
+    },
+    {
+      "shortName": "Second Set Game 8 - Point Betting",
+      "desktopOddIds": [
+        [
+          2174817681,
+          2174817677,
+          2174817679
+        ],
+        [
+          2174817682,
+          2174817678,
+          2174817680
+        ]
+      ],
+      "mobileOddIds": [
+        [
+          2174817681,
+          2174817677,
+          2174817679,
+          2174817682,
+          2174817678,
+          2174817680
+        ]
+      ],
+      "headers": [
+        {
+          "typeId": 218,
+          "odds": [
+            {
+              "id": 663,
+              "name": "Nagal, Sumit"
+            },
+            {
+              "id": 664,
+              "name": "Ficovich, Juan Pablo"
+            }
+          ]
+        }
+      ],
+      "isBB": false,
+      "variant": 10,
+      "so": 0,
+      "typeId": 218,
+      "isMB": false,
+      "sportMarketId": 70791,
+      "sv": "2|8|3",
+      "id": 918169625,
+      "name": "Second Set Game 8 - Point Betting"
+    }
+  ],
+  "childMarkets": [],
+  "odds": [
+    {
+      "typeId": 1,
+      "price": 1.7,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2172173333,
+      "name": "Nagal, Sumit"
+    },
+    {
+      "typeId": 3,
+      "price": 2.1,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2172173334,
+      "name": "Ficovich, Juan Pablo"
+    },
+    {
+      "typeId": 1714,
+      "price": 1.01,
+      "isMB": true,
+      "oddStatus": 0,
+      "sv": "+1.5",
+      "id": 2172173337,
+      "name": "Nagal, Sumit (+1.5)"
+    },
+    {
+      "typeId": 1715,
+      "price": 10,
+      "isMB": true,
+      "oddStatus": 0,
+      "sv": "+1.5",
+      "id": 2172173338,
+      "name": "Ficovich, Juan Pablo (-1.5)"
+    },
+    {
+      "typeId": 1714,
+      "price": 1.8334,
+      "isMB": true,
+      "oddStatus": 0,
+      "sv": "-3.5",
+      "id": 2173244010,
+      "name": "Nagal, Sumit (-3.5)"
+    },
+    {
+      "typeId": 1715,
+      "price": 1.8334,
+      "isMB": true,
+      "oddStatus": 0,
+      "sv": "-3.5",
+      "id": 2173244011,
+      "name": "Ficovich, Juan Pablo (+3.5)"
+    },
+    {
+      "typeId": 12,
+      "price": 1.02,
+      "isMB": true,
+      "oddStatus": 0,
+      "sv": "2.5",
+      "id": 2172173317,
+      "name": "Over 2.5"
+    },
+    {
+      "typeId": 13,
+      "price": 10.5,
+      "isMB": true,
+      "oddStatus": 0,
+      "sv": "2.5",
+      "id": 2172173318,
+      "name": "Under 2.5"
+    },
+    {
+      "typeId": 12,
+      "price": 1.75,
+      "isMB": true,
+      "oddStatus": 0,
+      "sv": "30.5",
+      "id": 2174752228,
+      "name": "Over 30.5"
+    },
+    {
+      "typeId": 13,
+      "price": 1.95,
+      "isMB": true,
+      "oddStatus": 0,
+      "sv": "30.5",
+      "id": 2174752229,
+      "name": "Under 30.5"
+    },
+    {
+      "typeId": 130,
+      "price": 1.6,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "sr:correct_score:bestof:3",
+      "id": 2172173330,
+      "name": "2:1"
+    },
+    {
+      "typeId": 138,
+      "price": 20,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "sr:correct_score:bestof:3",
+      "id": 2172173332,
+      "name": "0:2"
+    },
+    {
+      "typeId": 140,
+      "price": 2.15,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "sr:correct_score:bestof:3",
+      "id": 2172173331,
+      "name": "1:2"
+    },
+    {
+      "typeId": 1,
+      "price": 1.02,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "2",
+      "id": 2172173325,
+      "name": "Nagal, Sumit"
+    },
+    {
+      "typeId": 3,
+      "price": 10.5,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "2",
+      "id": 2172173326,
+      "name": "Ficovich, Juan Pablo"
+    },
+    {
+      "typeId": 660,
+      "price": 2.75,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "30.5",
+      "id": 2174768990,
+      "name": "Nagal, Sumit & over 30.5"
+    },
+    {
+      "typeId": 656,
+      "price": 3.65,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "30.5",
+      "id": 2174768992,
+      "name": "Nagal, Sumit & under 30.5"
+    },
+    {
+      "typeId": 662,
+      "price": 4.05,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "30.5",
+      "id": 2174768991,
+      "name": "Ficovich, Juan Pablo & over 30.5"
+    },
+    {
+      "typeId": 658,
+      "price": 3.8,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "30.5",
+      "id": 2174768993,
+      "name": "Ficovich, Juan Pablo & under 30.5"
+    },
+    {
+      "typeId": 12,
+      "price": 1.5,
+      "isMB": true,
+      "oddStatus": 0,
+      "sv": "17.5",
+      "id": 2174779126,
+      "name": "Over 17.5"
+    },
+    {
+      "typeId": 13,
+      "price": 2.3,
+      "isMB": true,
+      "oddStatus": 0,
+      "sv": "17.5",
+      "id": 2174779127,
+      "name": "Under 17.5"
+    },
+    {
+      "typeId": 12,
+      "price": 1.8,
+      "isMB": true,
+      "oddStatus": 0,
+      "sv": "14.5",
+      "id": 2174768988,
+      "name": "Over 14.5"
+    },
+    {
+      "typeId": 13,
+      "price": 1.85,
+      "isMB": true,
+      "oddStatus": 0,
+      "sv": "14.5",
+      "id": 2174768989,
+      "name": "Under 14.5"
+    },
+    {
+      "typeId": 74,
+      "price": 1.01,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2172173345,
+      "name": "Yes"
+    },
+    {
+      "typeId": 76,
+      "price": 10,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2172173346,
+      "name": "No"
+    },
+    {
+      "typeId": 74,
+      "price": 2.2,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2172173335,
+      "name": "Yes"
+    },
+    {
+      "typeId": 76,
+      "price": 1.5556,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2172173336,
+      "name": "No"
+    },
+    {
+      "typeId": 74,
+      "price": 1.6667,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2172173341,
+      "name": "Yes"
+    },
+    {
+      "typeId": 76,
+      "price": 2,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2172173342,
+      "name": "No"
+    },
+    {
+      "typeId": 70,
+      "price": 1.7,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2172173327,
+      "name": "Odd"
+    },
+    {
+      "typeId": 72,
+      "price": 2.05,
+      "isMB": false,
+      "oddStatus": 0,
+      "id": 2172173328,
+      "name": "Even"
+    },
+    {
+      "typeId": 12,
+      "price": 4,
+      "isMB": true,
+      "oddStatus": 0,
+      "sv": "9.5",
+      "id": 2174692946,
+      "name": "Over 9.5"
+    },
+    {
+      "typeId": 13,
+      "price": 1.2,
+      "isMB": true,
+      "oddStatus": 0,
+      "sv": "9.5",
+      "id": 2174692947,
+      "name": "Under 9.5"
+    },
+    {
+      "typeId": 1714,
+      "price": 1.2,
+      "isMB": true,
+      "oddStatus": 0,
+      "sv": "-2.5",
+      "id": 2174779679,
+      "name": "Nagal, Sumit (-2.5)"
+    },
+    {
+      "typeId": 1715,
+      "price": 4,
+      "isMB": true,
+      "oddStatus": 0,
+      "sv": "-2.5",
+      "id": 2174779680,
+      "name": "Ficovich, Juan Pablo (+2.5)"
+    },
+    {
+      "typeId": 867,
+      "price": 1.25,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "2",
+      "id": 2174692962,
+      "name": "6:2"
+    },
+    {
+      "typeId": 868,
+      "price": 6.75,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "2",
+      "id": 2174692963,
+      "name": "6:3"
+    },
+    {
+      "typeId": 869,
+      "price": 5.25,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "2",
+      "id": 2174692964,
+      "name": "6:4"
+    },
+    {
+      "typeId": 870,
+      "price": 48,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "2",
+      "id": 2174692965,
+      "name": "7:5"
+    },
+    {
+      "typeId": 871,
+      "price": 39,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "2",
+      "id": 2174692966,
+      "name": "7:6"
+    },
+    {
+      "typeId": 877,
+      "price": 36,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "2",
+      "id": 2174692972,
+      "name": "5:7"
+    },
+    {
+      "typeId": 878,
+      "price": 32,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "2",
+      "id": 2174692973,
+      "name": "6:7"
+    },
+    {
+      "typeId": 70,
+      "price": 5.3334,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "2",
+      "id": 2174692958,
+      "name": "Odd"
+    },
+    {
+      "typeId": 72,
+      "price": 1.1112,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "2",
+      "id": 2174692959,
+      "name": "Even"
+    },
+    {
+      "typeId": 74,
+      "price": 10.5,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "2",
+      "id": 2174692935,
+      "name": "Yes"
+    },
+    {
+      "typeId": 76,
+      "price": 1.01,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "2",
+      "id": 2174692936,
+      "name": "No"
+    },
+    {
+      "typeId": 1,
+      "price": 1.3572,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "2|8",
+      "id": 2174804177,
+      "name": "Nagal, Sumit"
+    },
+    {
+      "typeId": 3,
+      "price": 3,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "2|8",
+      "id": 2174804178,
+      "name": "Ficovich, Juan Pablo"
+    },
+    {
+      "typeId": 663,
+      "price": 1.6,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "2",
+      "id": 2174817681,
+      "name": "Nagal, Sumit (point 2)"
+    },
+    {
+      "typeId": 663,
+      "price": 1.6,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "3",
+      "id": 2174817677,
+      "name": "Nagal, Sumit (point 3)"
+    },
+    {
+      "typeId": 663,
+      "price": 1.6,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "4",
+      "id": 2174817679,
+      "name": "Nagal, Sumit (point 4)"
+    },
+    {
+      "typeId": 664,
+      "price": 2.2,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "2",
+      "id": 2174817682,
+      "name": "Ficovich, Juan Pablo (point 2)"
+    },
+    {
+      "typeId": 664,
+      "price": 2.2,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "3",
+      "id": 2174817678,
+      "name": "Ficovich, Juan Pablo (point 3)"
+    },
+    {
+      "typeId": 664,
+      "price": 2.2,
+      "isMB": false,
+      "oddStatus": 0,
+      "sv": "4",
+      "id": 2174817680,
+      "name": "Ficovich, Juan Pablo (point 4)"
+    }
+  ],
+  "boosts": [],
+  "isParlay": false,
+  "eventCode": 2444,
+  "rc": false,
+  "startDate": "2025-02-08T17:40:00Z",
+  "showAll": true
+}

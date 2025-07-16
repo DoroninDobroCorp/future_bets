@@ -1,0 +1,20 @@
+services:
+  tg_livebot:
+    container_name: tg_livebot
+    entrypoint: /tg_livebot
+    build:
+      context: ../
+      dockerfile: ./shared/Dockerfile
+      args:
+        code_dir: tg_livebot
+    restart: always
+    env_file:
+      - ../tg_livebot/.env
+    volumes:
+      - /Users/vladimirdoronin/VovkaNowEngineer/future_bets/logs/bets_logs:/logs
+    networks:
+      - livebets
+
+networks:
+  livebets:
+    external: true
