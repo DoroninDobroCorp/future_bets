@@ -23,34 +23,34 @@ func normalizeTotal(total string) string {
 }
 
 // Поиск общих исходов
-func findCommonOutcomes(sansabetData, pinnacleData []entity.PeriodData, homeScore, awayScore int) map[string]entity.OddsWithMarket {
-	if len(sansabetData) == 0 || len(pinnacleData) == 0 {
+func findCommonOutcomes(competitorData, pinnacleData []entity.PeriodData, homeScore, awayScore int) map[string]entity.OddsWithMarket {
+	if len(competitorData) == 0 || len(pinnacleData) == 0 {
 		return nil
 	}
 
 	common := make(map[string]entity.OddsWithMarket)
 
 	if pinnacleData[0].Win1x2.Win1.Value >= MIN_VALUE && pinnacleData[0].Win1x2.Win1.Value <= MAX_VALUE {
-		common["1"] = entity.OddsWithMarket{MarketType: checkMarketWinHome(homeScore, awayScore), Odds: [2]entity.Odd{sansabetData[0].Win1x2.Win1, pinnacleData[0].Win1x2.Win1}}
+		common["1"] = entity.OddsWithMarket{MarketType: checkMarketWinHome(homeScore, awayScore), Odds: [2]entity.Odd{competitorData[0].Win1x2.Win1, pinnacleData[0].Win1x2.Win1}}
 		// log.Printf("[DEBUG] Найден общий исход Win1x2: home")
 	}
 	if pinnacleData[0].Win1x2.WinNone.Value >= MIN_VALUE && pinnacleData[0].Win1x2.WinNone.Value <= MAX_VALUE {
-		common["X"] = entity.OddsWithMarket{MarketType: checkMarketWinNone(homeScore, awayScore), Odds: [2]entity.Odd{sansabetData[0].Win1x2.WinNone, pinnacleData[0].Win1x2.WinNone}}
+		common["X"] = entity.OddsWithMarket{MarketType: checkMarketWinNone(homeScore, awayScore), Odds: [2]entity.Odd{competitorData[0].Win1x2.WinNone, pinnacleData[0].Win1x2.WinNone}}
 		// log.Printf("[DEBUG] Найден общий исход Win1x2: draw")
 	}
 	if pinnacleData[0].Win1x2.Win2.Value >= MIN_VALUE && pinnacleData[0].Win1x2.Win2.Value <= MAX_VALUE {
-		common["2"] = entity.OddsWithMarket{MarketType: checkMarketWinAway(homeScore, awayScore), Odds: [2]entity.Odd{sansabetData[0].Win1x2.Win2, pinnacleData[0].Win1x2.Win2}}
+		common["2"] = entity.OddsWithMarket{MarketType: checkMarketWinAway(homeScore, awayScore), Odds: [2]entity.Odd{competitorData[0].Win1x2.Win2, pinnacleData[0].Win1x2.Win2}}
 		// log.Printf("[DEBUG] Найден общий исход Win1x2: away")
 	}
 
 	// Создаем нормализованные мапы для тоталов
-	normalizedSansaTotals := make(map[string]entity.WinLessMore)
+	normalizedCompetitorTotals := make(map[string]entity.WinLessMore)
 	normalizedPinnTotals := make(map[string]entity.WinLessMore)
 
 	// Нормализуем ключи для основных тоталов
-	for key, value := range sansabetData[0].Totals {
+	for key, value := range competitorData[0].Totals {
 		normalizedKey := normalizeTotal(key)
-		normalizedSansaTotals[normalizedKey] = *value
+		normalizedCompetitorTotals[normalizedKey] = *value
 	}
 	for key, value := range pinnacleData[0].Totals {
 		normalizedKey := normalizeTotal(key)
@@ -58,28 +58,28 @@ func findCommonOutcomes(sansabetData, pinnacleData []entity.PeriodData, homeScor
 	}
 
 	// Проверяем тоталы с нормализованными ключами
-	for key, sansabetTotal := range normalizedSansaTotals {
+	for key, competitorTotal := range normalizedCompetitorTotals {
 		if pinnacleTotal, exists := normalizedPinnTotals[key]; exists {
 			// Проверяем WinMore
 			if pinnacleTotal.WinMore.Value >= MIN_VALUE && pinnacleTotal.WinMore.Value <= MAX_VALUE {
-				common["T> "+key] = entity.OddsWithMarket{MarketType: chechMarketTotal(homeScore, awayScore, ">"), Odds: [2]entity.Odd{sansabetTotal.WinMore, pinnacleTotal.WinMore}}
+				common["T> "+key] = entity.OddsWithMarket{MarketType: chechMarketTotal(homeScore, awayScore, ">"), Odds: [2]entity.Odd{competitorTotal.WinMore, pinnacleTotal.WinMore}}
 				// log.Printf("[DEBUG] Найден общий исход Totals More: %s", key)
 			}
 			// Проверяем WinLess
 			if pinnacleTotal.WinLess.Value >= MIN_VALUE && pinnacleTotal.WinLess.Value <= MAX_VALUE {
-				common["T< "+key] = entity.OddsWithMarket{MarketType: chechMarketTotal(homeScore, awayScore, "<"), Odds: [2]entity.Odd{sansabetTotal.WinLess, pinnacleTotal.WinLess}}
+				common["T< "+key] = entity.OddsWithMarket{MarketType: chechMarketTotal(homeScore, awayScore, "<"), Odds: [2]entity.Odd{competitorTotal.WinLess, pinnacleTotal.WinLess}}
 				// log.Printf("[DEBUG] Найден общий исход Totals Less: %s", key)
 			}
 		}
 	}
 
 	// Нормализуем ключи для индивидуальных тоталов первой команды
-	normalizedSansaFirstTeam := make(map[string]entity.WinLessMore)
+	normalizedCompetitorFirstTeam := make(map[string]entity.WinLessMore)
 	normalizedPinnFirstTeam := make(map[string]entity.WinLessMore)
 
-	for key, value := range sansabetData[0].FirstTeamTotals {
+	for key, value := range competitorData[0].FirstTeamTotals {
 		normalizedKey := normalizeTotal(key)
-		normalizedSansaFirstTeam[normalizedKey] = *value
+		normalizedCompetitorFirstTeam[normalizedKey] = *value
 	}
 	for key, value := range pinnacleData[0].FirstTeamTotals {
 		normalizedKey := normalizeTotal(key)
@@ -87,28 +87,28 @@ func findCommonOutcomes(sansabetData, pinnacleData []entity.PeriodData, homeScor
 	}
 
 	// Проверяем индивидуальные тоталы первой команды с нормализованными ключами
-	for key, sansabetTotal := range normalizedSansaFirstTeam {
+	for key, competitorTotal := range normalizedCompetitorFirstTeam {
 		if pinnacleTotal, exists := normalizedPinnFirstTeam[key]; exists {
 			// Проверяем WinMore
 			if pinnacleTotal.WinMore.Value >= MIN_VALUE && pinnacleTotal.WinMore.Value <= MAX_VALUE {
-				common["IT1> "+key] = entity.OddsWithMarket{MarketType: chechMarketTotal(homeScore, awayScore, ">"), Odds: [2]entity.Odd{sansabetTotal.WinMore, pinnacleTotal.WinMore}}
+				common["IT1> "+key] = entity.OddsWithMarket{MarketType: chechMarketTotal(homeScore, awayScore, ">"), Odds: [2]entity.Odd{competitorTotal.WinMore, pinnacleTotal.WinMore}}
 				// log.Printf("[DEBUG] Найден общий исход First Team Totals More: %s", key)
 			}
 			// Проверяем WinLess
 			if pinnacleTotal.WinLess.Value >= MIN_VALUE && pinnacleTotal.WinLess.Value <= MAX_VALUE {
-				common["IT1< "+key] = entity.OddsWithMarket{MarketType: chechMarketTotal(homeScore, awayScore, "<"), Odds: [2]entity.Odd{sansabetTotal.WinLess, pinnacleTotal.WinLess}}
+				common["IT1< "+key] = entity.OddsWithMarket{MarketType: chechMarketTotal(homeScore, awayScore, "<"), Odds: [2]entity.Odd{competitorTotal.WinLess, pinnacleTotal.WinLess}}
 				// log.Printf("[DEBUG] Найден общий исход First Team Totals Less: %s", key)
 			}
 		}
 	}
 
 	// Нормализуем ключи для индивидуальных тоталов второй команды
-	normalizedSansaSecondTeam := make(map[string]entity.WinLessMore)
+	normalizedCompetitorSecondTeam := make(map[string]entity.WinLessMore)
 	normalizedPinnSecondTeam := make(map[string]entity.WinLessMore)
 
-	for key, value := range sansabetData[0].SecondTeamTotals {
+	for key, value := range competitorData[0].SecondTeamTotals {
 		normalizedKey := normalizeTotal(key)
-		normalizedSansaSecondTeam[normalizedKey] = *value
+		normalizedCompetitorSecondTeam[normalizedKey] = *value
 	}
 	for key, value := range pinnacleData[0].SecondTeamTotals {
 		normalizedKey := normalizeTotal(key)
@@ -116,28 +116,28 @@ func findCommonOutcomes(sansabetData, pinnacleData []entity.PeriodData, homeScor
 	}
 
 	// Проверяем индивидуальные тоталы второй команды с нормализованными ключами
-	for key, sansabetTotal := range normalizedSansaSecondTeam {
+	for key, competitorTotal := range normalizedCompetitorSecondTeam {
 		if pinnacleTotal, exists := normalizedPinnSecondTeam[key]; exists {
 			// Проверяем WinMore
 			if pinnacleTotal.WinMore.Value >= MIN_VALUE && pinnacleTotal.WinMore.Value <= MAX_VALUE {
-				common["IT2> "+key] = entity.OddsWithMarket{MarketType: chechMarketTotal(homeScore, awayScore, ">"), Odds: [2]entity.Odd{sansabetTotal.WinMore, pinnacleTotal.WinMore}}
+				common["IT2> "+key] = entity.OddsWithMarket{MarketType: chechMarketTotal(homeScore, awayScore, ">"), Odds: [2]entity.Odd{competitorTotal.WinMore, pinnacleTotal.WinMore}}
 				// log.Printf("[DEBUG] Найден общий исход Second Team Totals More: %s", key)
 			}
 			// Проверяем WinLess
 			if pinnacleTotal.WinLess.Value >= MIN_VALUE && pinnacleTotal.WinLess.Value <= MAX_VALUE {
-				common["IT2< "+key] = entity.OddsWithMarket{MarketType: chechMarketTotal(homeScore, awayScore, "<"), Odds: [2]entity.Odd{sansabetTotal.WinLess, pinnacleTotal.WinLess}}
+				common["IT2< "+key] = entity.OddsWithMarket{MarketType: chechMarketTotal(homeScore, awayScore, "<"), Odds: [2]entity.Odd{competitorTotal.WinLess, pinnacleTotal.WinLess}}
 				// log.Printf("[DEBUG] Найден общий исход Second Team Totals Less: %s", key)
 			}
 		}
 	}
 
 	// Нормализуем ключи для гандикапов
-	normalizedSansaHandicap := make(map[string]entity.WinHandicap)
+	normalizedCompetitorHandicap := make(map[string]entity.WinHandicap)
 	normalizedPinnHandicap := make(map[string]entity.WinHandicap)
 
-	for key, value := range sansabetData[0].Handicap {
+	for key, value := range competitorData[0].Handicap {
 		normalizedKey := normalizeTotal(key)
-		normalizedSansaHandicap[normalizedKey] = *value
+		normalizedCompetitorHandicap[normalizedKey] = *value
 	}
 	for key, value := range pinnacleData[0].Handicap {
 		normalizedKey := normalizeTotal(key)
@@ -145,158 +145,158 @@ func findCommonOutcomes(sansabetData, pinnacleData []entity.PeriodData, homeScor
 	}
 
 	// Проверяем гандикапы с нормализованными ключами
-	for key, sansabetHandicap := range normalizedSansaHandicap {
+	for key, competitorHandicap := range normalizedCompetitorHandicap {
 		if pinnacleHandicap, exists := normalizedPinnHandicap[key]; exists {
 			// Проверяем Win1
 			if pinnacleHandicap.Win1.Value >= MIN_VALUE && pinnacleHandicap.Win1.Value <= MAX_VALUE {
-				common["H1 "+key] = entity.OddsWithMarket{MarketType: checkMarketHomeHandicap(homeScore, awayScore, key), Odds: [2]entity.Odd{sansabetHandicap.Win1, pinnacleHandicap.Win1}}
+				common["H1 "+key] = entity.OddsWithMarket{MarketType: checkMarketHomeHandicap(homeScore, awayScore, key), Odds: [2]entity.Odd{competitorHandicap.Win1, pinnacleHandicap.Win1}}
 				// log.Printf("[DEBUG] Найден общий исход Handicap Win1: %s", key)
 			}
 			// Проверяем Win2
 			if pinnacleHandicap.Win2.Value >= MIN_VALUE && pinnacleHandicap.Win2.Value <= MAX_VALUE {
-				common["H2 "+key] = entity.OddsWithMarket{MarketType: checkMarketAwayHandicap(homeScore, awayScore, key), Odds: [2]entity.Odd{sansabetHandicap.Win2, pinnacleHandicap.Win2}}
+				common["H2 "+key] = entity.OddsWithMarket{MarketType: checkMarketAwayHandicap(homeScore, awayScore, key), Odds: [2]entity.Odd{competitorHandicap.Win2, pinnacleHandicap.Win2}}
 				// log.Printf("[DEBUG] Найден общий исход Handicap Win2: %s", key)
 			}
 		}
 	}
 
-	var maxIndex int 
-	if len(pinnacleData) >= len(sansabetData) {
-		maxIndex = len(sansabetData)
+	var maxIndex int
+	if len(pinnacleData) >= len(competitorData) {
+		maxIndex = len(competitorData)
 	} else {
 		maxIndex = len(pinnacleData)
 	}
 
 	for i := 1; i < maxIndex; i++ {
 
-		// Нормализуем геймы 
-		normalizedSansaGame := make(map[string]entity.Win1x2Struct)
+		// Нормализуем геймы
+		normalizedCompetitorGame := make(map[string]entity.Win1x2Struct)
 		normalizedPinnGame := make(map[string]entity.Win1x2Struct)
-		for key, value := range sansabetData[i].Games {
-			normalizedSansaGame[key] = *value
+		for key, value := range competitorData[i].Games {
+			normalizedCompetitorGame[key] = *value
 		}
 		for key, value := range pinnacleData[i].Games {
 			normalizedPinnGame[key] = *value
 		}
-		for key, sansabetGame := range normalizedSansaGame {
+		for key, competitorGame := range normalizedCompetitorGame {
 			if pinnacleGame, exists := normalizedPinnGame[key]; exists {
 				if pinnacleGame.Win1.Value >= MIN_VALUE && pinnacleGame.Win1.Value <= MAX_VALUE {
-					common["P"+strconv.Itoa(i)+" 1G "+key] = entity.OddsWithMarket{MarketType: 0, Odds: [2]entity.Odd{sansabetGame.Win1, pinnacleGame.Win1}}
+					common["P"+strconv.Itoa(i)+" 1G "+key] = entity.OddsWithMarket{MarketType: 0, Odds: [2]entity.Odd{competitorGame.Win1, pinnacleGame.Win1}}
 					// log.Printf("[DEBUG] Найден общий исход Win1x2: home")
 				}
 				if pinnacleGame.Win2.Value >= MIN_VALUE && pinnacleGame.Win2.Value <= MAX_VALUE {
-					common["P"+strconv.Itoa(i)+" 2G "+key] = entity.OddsWithMarket{MarketType: 0, Odds: [2]entity.Odd{sansabetGame.Win2, pinnacleGame.Win2}}
+					common["P"+strconv.Itoa(i)+" 2G "+key] = entity.OddsWithMarket{MarketType: 0, Odds: [2]entity.Odd{competitorGame.Win2, pinnacleGame.Win2}}
 					// log.Printf("[DEBUG] Найден общий исход Win1x2: away")
 				}
 			}
 		}
 
 		// Нормализуем тоталы первого тайма
-		normalizedSansaTime1Totals := make(map[string]entity.WinLessMore)
+		normalizedCompetitorTime1Totals := make(map[string]entity.WinLessMore)
 		normalizedPinnTime1Totals := make(map[string]entity.WinLessMore)
-		for key, value := range sansabetData[i].Totals {
+		for key, value := range competitorData[i].Totals {
 			normalizedKey := normalizeTotal(key)
-			normalizedSansaTime1Totals[normalizedKey] = *value
+			normalizedCompetitorTime1Totals[normalizedKey] = *value
 		}
 		for key, value := range pinnacleData[i].Totals {
 			normalizedKey := normalizeTotal(key)
 			normalizedPinnTime1Totals[normalizedKey] = *value
 		}
 
-		for key, sansabetTotal := range normalizedSansaTime1Totals {
+		for key, competitorTotal := range normalizedCompetitorTime1Totals {
 			if pinnacleTotal, exists := normalizedPinnTime1Totals[key]; exists {
 				// Проверяем WinMore
 				if pinnacleTotal.WinMore.Value >= MIN_VALUE && pinnacleTotal.WinMore.Value <= MAX_VALUE {
-					common["P"+strconv.Itoa(i)+" T> "+key] = entity.OddsWithMarket{MarketType: chechMarketTotal(homeScore, awayScore, ">"), Odds: [2]entity.Odd{sansabetTotal.WinMore, pinnacleTotal.WinMore}}
+					common["P"+strconv.Itoa(i)+" T> "+key] = entity.OddsWithMarket{MarketType: chechMarketTotal(homeScore, awayScore, ">"), Odds: [2]entity.Odd{competitorTotal.WinMore, pinnacleTotal.WinMore}}
 					// log.Printf("[DEBUG] Найден общий исход Time"+string(i)+" Totals More: %s", key)
 				}
 				// Проверяем WinLess
 				if pinnacleTotal.WinLess.Value >= MIN_VALUE && pinnacleTotal.WinLess.Value <= MAX_VALUE {
-					common["P"+strconv.Itoa(i)+" T< "+key] = entity.OddsWithMarket{MarketType: chechMarketTotal(homeScore, awayScore, "<"), Odds: [2]entity.Odd{sansabetTotal.WinLess, pinnacleTotal.WinLess}}
+					common["P"+strconv.Itoa(i)+" T< "+key] = entity.OddsWithMarket{MarketType: chechMarketTotal(homeScore, awayScore, "<"), Odds: [2]entity.Odd{competitorTotal.WinLess, pinnacleTotal.WinLess}}
 					// log.Printf("[DEBUG] Найден общий исход Time"+string(i)+" Totals Less: %s", key)
 				}
 			}
 		}
 
 		// Нормализуем индивидуальные тоталы первого тайма первой команды
-		normalizedSansaTime1FirstTeam := make(map[string]entity.WinLessMore)
+		normalizedCompetitorTime1FirstTeam := make(map[string]entity.WinLessMore)
 		normalizedPinnTime1FirstTeam := make(map[string]entity.WinLessMore)
 
-		for key, value := range sansabetData[i].FirstTeamTotals {
+		for key, value := range competitorData[i].FirstTeamTotals {
 			normalizedKey := normalizeTotal(key)
-			normalizedSansaTime1FirstTeam[normalizedKey] = *value
+			normalizedCompetitorTime1FirstTeam[normalizedKey] = *value
 		}
 		for key, value := range pinnacleData[i].FirstTeamTotals {
 			normalizedKey := normalizeTotal(key)
 			normalizedPinnTime1FirstTeam[normalizedKey] = *value
 		}
 
-		for key, sansabetTotal := range normalizedSansaTime1FirstTeam {
+		for key, competitorTotal := range normalizedCompetitorTime1FirstTeam {
 			if pinnacleTotal, exists := normalizedPinnTime1FirstTeam[key]; exists {
 				// Проверяем WinMore
 				if pinnacleTotal.WinMore.Value >= MIN_VALUE && pinnacleTotal.WinMore.Value <= MAX_VALUE {
-					common["P"+strconv.Itoa(i)+" IT1> "+key] = entity.OddsWithMarket{MarketType: chechMarketTotal(homeScore, awayScore, ">"), Odds: [2]entity.Odd{sansabetTotal.WinMore, pinnacleTotal.WinMore}}
+					common["P"+strconv.Itoa(i)+" IT1> "+key] = entity.OddsWithMarket{MarketType: chechMarketTotal(homeScore, awayScore, ">"), Odds: [2]entity.Odd{competitorTotal.WinMore, pinnacleTotal.WinMore}}
 					// log.Printf("[DEBUG] Найден общий исход Time"+string(i)+" First Team Totals More: %s", key)
 				}
 				// Проверяем WinLess
 				if pinnacleTotal.WinLess.Value >= MIN_VALUE && pinnacleTotal.WinLess.Value <= MAX_VALUE {
-					common["P"+strconv.Itoa(i)+" IT1< "+key] = entity.OddsWithMarket{MarketType: chechMarketTotal(homeScore, awayScore, "<"), Odds: [2]entity.Odd{sansabetTotal.WinLess, pinnacleTotal.WinLess}}
+					common["P"+strconv.Itoa(i)+" IT1< "+key] = entity.OddsWithMarket{MarketType: chechMarketTotal(homeScore, awayScore, "<"), Odds: [2]entity.Odd{competitorTotal.WinLess, pinnacleTotal.WinLess}}
 					// log.Printf("[DEBUG] Найден общий исход Time"+string(i)+" First Team Totals Less: %s", key)
 				}
 			}
 		}
 
 		// Нормализуем индивидуальные тоталы первого тайма второй команды
-		normalizedSansaTime1SecondTeam := make(map[string]entity.WinLessMore)
+		normalizedCompetitorTime1SecondTeam := make(map[string]entity.WinLessMore)
 		normalizedPinnacleTime1SecondTeam := make(map[string]entity.WinLessMore)
 
-		for key, value := range sansabetData[i].SecondTeamTotals {
+		for key, value := range competitorData[i].SecondTeamTotals {
 			normalizedKey := normalizeTotal(key)
-			normalizedSansaTime1SecondTeam[normalizedKey] = *value
+			normalizedCompetitorTime1SecondTeam[normalizedKey] = *value
 		}
 		for key, value := range pinnacleData[i].SecondTeamTotals {
 			normalizedKey := normalizeTotal(key)
 			normalizedPinnacleTime1SecondTeam[normalizedKey] = *value
 		}
 
-		for key, sansabetTotal := range normalizedSansaTime1SecondTeam {
+		for key, competitorTotal := range normalizedCompetitorTime1SecondTeam {
 			if pinnacleTotal, exists := normalizedPinnacleTime1SecondTeam[key]; exists {
 				// Проверяем WinMore
 				if pinnacleTotal.WinMore.Value >= MIN_VALUE && pinnacleTotal.WinMore.Value <= MAX_VALUE {
-					common["P"+strconv.Itoa(i)+" IT2> "+key] = entity.OddsWithMarket{MarketType: chechMarketTotal(homeScore, awayScore, ">"), Odds: [2]entity.Odd{sansabetTotal.WinMore, pinnacleTotal.WinMore}}
+					common["P"+strconv.Itoa(i)+" IT2> "+key] = entity.OddsWithMarket{MarketType: chechMarketTotal(homeScore, awayScore, ">"), Odds: [2]entity.Odd{competitorTotal.WinMore, pinnacleTotal.WinMore}}
 					// log.Printf("[DEBUG] Найден общий исход Time"+string(i)+" Second Team Totals More: %s", key)
 				}
 				// Проверяем WinLess
 				if pinnacleTotal.WinLess.Value >= MIN_VALUE && pinnacleTotal.WinLess.Value <= MAX_VALUE {
-					common["P"+strconv.Itoa(i)+" IT2< "+key] = entity.OddsWithMarket{MarketType: chechMarketTotal(homeScore, awayScore, "<"), Odds: [2]entity.Odd{sansabetTotal.WinLess, pinnacleTotal.WinLess}}
-					// log.Printf("[DEBUG] Найден общий исход Time"+string(i)+" Second Team Totals Less: %s", key)
+					common["P"+strconv.Itoa(i)+" IT2< "+key] = entity.OddsWithMarket{MarketType: chechMarketTotal(homeScore, awayScore, "<"), Odds: [2]entity.Odd{competitorTotal.WinLess, pinnacleTotal.WinLess}}
+					// log.Printf("[DEBUG] Найден общий исход Time"+string(i)+" Totals Less: %s", key)
 				}
 			}
 		}
 
 		// Нормализуем гандикапы первого тайма
-		normalizedSansaTime1Handicap := make(map[string]entity.WinHandicap)
+		normalizedCompetitorTime1Handicap := make(map[string]entity.WinHandicap)
 		normalizedPinnacleTime1Handicap := make(map[string]entity.WinHandicap)
 
-		for key, value := range sansabetData[i].Handicap {
+		for key, value := range competitorData[i].Handicap {
 			normalizedKey := normalizeTotal(key)
-			normalizedSansaTime1Handicap[normalizedKey] = *value
+			normalizedCompetitorTime1Handicap[normalizedKey] = *value
 		}
 		for key, value := range pinnacleData[i].Handicap {
 			normalizedKey := normalizeTotal(key)
 			normalizedPinnacleTime1Handicap[normalizedKey] = *value
 		}
 
-		for key, sansabetHandicap := range normalizedSansaTime1Handicap {
+		for key, competitorHandicap := range normalizedCompetitorTime1Handicap {
 			if pinnacleHandicap, exists := normalizedPinnacleTime1Handicap[key]; exists {
 				// Проверяем Win1
 				if pinnacleHandicap.Win1.Value >= MIN_VALUE && pinnacleHandicap.Win1.Value <= MAX_VALUE {
-					common["P"+strconv.Itoa(i)+" H1 "+key] = entity.OddsWithMarket{MarketType: checkMarketHomeHandicap(homeScore, awayScore, key), Odds: [2]entity.Odd{sansabetHandicap.Win1, pinnacleHandicap.Win1}}
+					common["P"+strconv.Itoa(i)+" H1 "+key] = entity.OddsWithMarket{MarketType: checkMarketHomeHandicap(homeScore, awayScore, key), Odds: [2]entity.Odd{competitorHandicap.Win1, pinnacleHandicap.Win1}}
 					// log.Printf("[DEBUG] Найден общий исход Time"+string(i)+" Handicap Win1: %s", key)
 				}
 				// Проверяем Win2
 				if pinnacleHandicap.Win2.Value >= MIN_VALUE && pinnacleHandicap.Win2.Value <= MAX_VALUE {
-					common["P"+strconv.Itoa(i)+" H2 "+key] = entity.OddsWithMarket{MarketType: checkMarketAwayHandicap(homeScore, awayScore, key), Odds: [2]entity.Odd{sansabetHandicap.Win2, pinnacleHandicap.Win2}}
+					common["P"+strconv.Itoa(i)+" H2 "+key] = entity.OddsWithMarket{MarketType: checkMarketAwayHandicap(homeScore, awayScore, key), Odds: [2]entity.Odd{competitorHandicap.Win2, pinnacleHandicap.Win2}}
 					// log.Printf("[DEBUG] Найден общий исход Time"+string(i)+" Handicap Win2: %s", key)
 				}
 			}

@@ -21,34 +21,34 @@ func getExtraPercent(pinnacleOdd float64) float64 {
 }
 
 // Расчет ROI
-func CalculateROI(sansaOdd, pinnacleOdd float64, margin float64, marketType int, secondBookmakerName Parser, sportName SportName) float64 {
+func CalculateROI(competitorOdd, pinnacleOdd float64, margin float64, marketType int, secondBookmakerName Parser, sportName SportName) float64 {
 	extraPercent := getExtraPercent(pinnacleOdd)
 
 	switch secondBookmakerName {
 	case LOBBET:
 		if sportName == TENNIS {
-			return (sansaOdd/(pinnacleOdd*margin*extraPercent) - 1 - 0.03) * 100 * 0.67
+			return (competitorOdd/(pinnacleOdd*margin*extraPercent) - 1 - 0.03) * 100 * 0.67
 		}
 		if marketType == 0 {
-			return (sansaOdd/(pinnacleOdd*margin*extraPercent) - 1 - 0.03) * 100 * 0.67
+			return (competitorOdd/(pinnacleOdd*margin*extraPercent) - 1 - 0.03) * 100 * 0.67
 		}
 		if marketType < 0 {
-			return (sansaOdd/(pinnacleOdd*margin*extraPercent) - 1 - 0.015) * 100 * 0.75
+			return (competitorOdd/(pinnacleOdd*margin*extraPercent) - 1 - 0.015) * 100 * 0.75
 		}
-		return (sansaOdd/(pinnacleOdd*margin*extraPercent) - 1 - 0.03) * 100 * 0.67
+		return (competitorOdd/(pinnacleOdd*margin*extraPercent) - 1 - 0.03) * 100 * 0.67
 	case LADBROKES:
 		if sportName == TENNIS {
-			return (sansaOdd/(pinnacleOdd*margin*extraPercent) - 1 - 0.02) * 100 * 0.75
+			return (competitorOdd/(pinnacleOdd*margin*extraPercent) - 1 - 0.02) * 100 * 0.75
 		}
 		if marketType == 0 {
-			return (sansaOdd/(pinnacleOdd*margin*extraPercent) - 1 - 0.02) * 100 * 0.75
+			return (competitorOdd/(pinnacleOdd*margin*extraPercent) - 1 - 0.02) * 100 * 0.75
 		}
 		if marketType < 0 {
-			return (sansaOdd/(pinnacleOdd*margin*extraPercent) - 1) * 100 * 0.85
+			return (competitorOdd/(pinnacleOdd*margin*extraPercent) - 1) * 100 * 0.85
 		}
-		return (sansaOdd/(pinnacleOdd*margin*extraPercent) - 1 - 0.02) * 100 * 0.75
+		return (competitorOdd/(pinnacleOdd*margin*extraPercent) - 1 - 0.02) * 100 * 0.75
 
 	}
 
-	return (sansaOdd/(pinnacleOdd*margin*extraPercent) - 1 - 0.03) * 100 * 0.67
+	return (competitorOdd/(pinnacleOdd*margin*extraPercent) - 1 - 0.03) * 100 * 0.67
 }

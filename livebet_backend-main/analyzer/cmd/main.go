@@ -74,11 +74,11 @@ func main() {
 	sendChan := make(chan []entity.ResponsePair, 500)
 	defer close(sendChan)
 
-	receiverSansabet := receiver.NewReceiver(receiveChan)
+	receiverOther := receiver.NewReceiver(receiveChan)
 	receiverPinnacle := receiver.NewReceiver(receiveChan)
 
 	// TODO: ADD CONTEXT AND WAITGROUP
-	go receiverSansabet.StartParserServer(appConfig.Port.Other, "Sansabet")
+	go receiverOther.StartParserServer(appConfig.Port.Other, "Sansabet")
 	go receiverPinnacle.StartParserServer(appConfig.Port.Pinnacle, "Pinnacle")
 
 	pairsMatchService := service.NewPairsMatchingService(pairsMatchTxStorage, redisClient, receiveChan, sendChan, priceStorage, &logger)
