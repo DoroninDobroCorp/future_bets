@@ -14,11 +14,18 @@ import (
 	redis_client "livebets/analazer/pkg/redis"
 	"livebets/analazer/pkg/utils"
 	"livebets/shared"
+	"strings"
 	"sync"
 	"time"
 
 	"github.com/rs/zerolog"
 )
+
+// НОВАЯ СТРУКТУРА ДЛЯ ГРУППЫ
+type MatchGroup struct {
+	ID      string // Будем использовать ID матча Pinnacle как ID группы
+	Matches []entity.GameData
+}
 
 type PairsMatchingService struct {
 	txStorage       rdbms.TxStorage[repository.PairsMatchingStorage]
@@ -31,6 +38,9 @@ type PairsMatchingService struct {
 	sendChan        chan<- []entity.ResponsePair
 	priceStorage    *priceStorage.PriceStorage
 	logger          *zerolog.Logger
+
+	// Кэш для готовых групп. Ключ - pinnacleMatchId
+	groupsCache cache.MemoryCacheInterface[string, MatchGroup]
 }
 
 func NewPairsMatchingService(
@@ -41,21 +51,18 @@ func NewPairsMatchingService(
 	priceStorage *priceStorage.PriceStorage,
 	logger *zerolog.Logger,
 ) *PairsMatchingService {
-	matchDataCache := cache.NewMemoryCache[string, entity.GameData]()
-	matchKeysCache := cache.NewMemoryCache[string, cache.MemoryCacheInterface[string, bool]]()
-	matchPairsCache := bikeymap.NewBiKeyMap[string, bool]()
-	pairs := cache.NewMemoryCache[string, entity.ResponsePair]()
 	return &PairsMatchingService{
 		txStorage:       txStorage,
 		redisClient:     redisClient,
 		receiveChan:     receiveChan,
-		matchDataCache:  matchDataCache,
-		matchKeysCache:  matchKeysCache,
-		matchPairsCache: matchPairsCache,
-		pairs:           pairs,
+		matchDataCache:  cache.NewMemoryCache[string, entity.GameData](),
+		matchKeysCache:  cache.NewMemoryCache[string, cache.MemoryCacheInterface[string, bool]](),
+		matchPairsCache: bikeymap.NewBiKeyMap[string, bool](),
+		pairs:           cache.NewMemoryCache[string, entity.ResponsePair](),
 		sendChan:        sendChan,
 		priceStorage:    priceStorage,
 		logger:          logger,
+		groupsCache:     cache.NewMemoryCache[string, MatchGroup](),
 	}
 }
 
@@ -68,20 +75,110 @@ func (p *PairsMatchingService) Run(ctx context.Context, cfg config.PairsMatching
 		go p.workerMatchData(ctx, wgMatchWork)
 	}
 
+	// ЗАПУСК ПЕРИОДИЧЕСКОГО ПОСТРОИТЕЛЯ ГРУПП
+	wgMatchWork.Add(1)
+	go p.buildGroupsPeriodically(ctx, wgMatchWork)
+
 	wgMatchWork.Add(1)
 	go p.cleanCaches(ctx, cfg, wgMatchWork)
-
 	wgMatchWork.Add(1)
 	go p.updateKeysCache(ctx, cfg, wgMatchWork)
-
 	wgMatchWork.Add(1)
 	go p.updatePairsCache(ctx, cfg, wgMatchWork)
-
 	wgMatchWork.Add(1)
 	go p.send(ctx, cfg, wgMatchWork)
 
 	wgMatchWork.Wait()
 	p.logger.Info().Msg("[PairsMatchingService.Run] workers stopped")
+}
+
+// ИСПРАВЛЕННЫЙ ПЕРИОДИЧЕСКИЙ ПРОЦЕСС ДЛЯ СОЗДАНИЯ ГРУПП
+func (p *PairsMatchingService) buildGroupsPeriodically(ctx context.Context, wg *sync.WaitGroup) {
+	defer wg.Done()
+	ticker := time.NewTicker(5 * time.Second) // Интервал можно вынести в конфиг
+	defer ticker.Stop()
+
+	for {
+		select {
+		case <-ticker.C:
+			groupsByPinnacleId := make(map[string]*MatchGroup)
+			allMatches := p.matchDataCache.ReadAll()
+			allPairedKeys, _ := p.matchPairsCache.ReadAll()
+
+			// 1. Проходим по всем парам и строим группы вокруг Pinnacle
+			for key1, key2 := range allPairedKeys {
+				match1, ok1 := allMatches[key1]
+				match2, ok2 := allMatches[key2]
+
+				if !ok1 || !ok2 {
+					continue
+				}
+
+				var pinnacleMatch, partnerMatch entity.GameData
+				if match1.Source == string(shared.PINNACLE) {
+					pinnacleMatch = match1
+					partnerMatch = match2
+				} else if match2.Source == string(shared.PINNACLE) {
+					pinnacleMatch = match2
+					partnerMatch = match1
+				} else {
+					continue
+				}
+
+				pinnacleId := pinnacleMatch.MatchId
+
+				if _, exists := groupsByPinnacleId[pinnacleId]; !exists {
+					groupsByPinnacleId[pinnacleId] = &MatchGroup{
+						ID:      pinnacleId,
+						Matches: []entity.GameData{pinnacleMatch},
+					}
+				}
+
+				// ИЗМЕНЕНИЕ: Проверяем, что такой партнер еще не в группе, чтобы избежать дубликатов
+				alreadyInGroup := false
+				for _, m := range groupsByPinnacleId[pinnacleId].Matches {
+					if m.Source == partnerMatch.Source {
+						alreadyInGroup = true
+						break
+					}
+				}
+				if !alreadyInGroup {
+					groupsByPinnacleId[pinnacleId].Matches = append(groupsByPinnacleId[pinnacleId].Matches, partnerMatch)
+				}
+			}
+
+			// 2. Атомарно обновляем кэш и логируем
+			p.groupsCache.Lock()
+			p.groupsCache.CleanUnsafe()
+			for pinnacleId, group := range groupsByPinnacleId {
+				p.groupsCache.WriteUnsafe(pinnacleId, *group)
+
+				// ИЗМЕНЕНИЕ: Улучшенное и более информативное логирование
+				if len(group.Matches) > 2 {
+					// Собираем названия матчей от каждого букмекера
+					matchTitles := []string{}
+					for _, match := range group.Matches {
+						// Формируем строку: "Букмекер: Команда1 vs Команда2"
+						title := fmt.Sprintf("%s: %s vs %s", match.Source, match.HomeName, match.AwayName)
+						matchTitles = append(matchTitles, title)
+					}
+					
+					// Объединяем все названия в одну строку для красивого вывода
+					fullLogMessage := strings.Join(matchTitles, " | ")
+
+					p.logger.Info().
+						Str("pinnacleMatchId", group.ID).
+						Int("groupSize", len(group.Matches)).
+						Msgf("Group Found -> %s", fullLogMessage)
+				}
+			}
+			p.groupsCache.Unlock()
+
+		case <-ctx.Done():
+			p.logger.Info().Msg("[PairsMatchingService.buildGroupsPeriodically] context cancelled")
+			return
+		}
+	}
 }
 
 func (p *PairsMatchingService) cleanCaches(ctx context.Context, cfg config.PairsMatching, wgMatchWork *sync.WaitGroup) {
@@ -93,30 +190,23 @@ func (p *PairsMatchingService) cleanCaches(ctx context.Context, cfg config.Pairs
 	for {
 		select {
 		case <-cleanCacheTicker.C:
-
-			// Delete element by time
 			data := p.matchDataCache.ReadAll()
 			for matchKey, matchValue := range data {
 				if time.Since(matchValue.CreatedAt) > (time.Duration(cfg.MatchDataTimeout) * time.Second) {
-					// Clear match data cache
 					p.matchDataCache.Delete(matchKey)
-
-					// Clear key cache
 					p.matchKeysCache.Delete(matchKey)
-
-					//Clear pair cache
 					p.matchPairsCache.Delete(matchKey)
+					if matchValue.Source == string(shared.PINNACLE) {
+						p.groupsCache.Delete(matchValue.MatchId)
+					}
 				}
 			}
 
-			// Delete element by keys
 			keysMap := p.matchKeysCache.ReadAll()
 			for key := range keysMap {
 				_, ok := p.matchDataCache.Read(key)
 				if !ok {
 					p.matchKeysCache.Delete(key)
-
-					//Clear pair cache
 					p.matchPairsCache.Delete(key)
 				}
 			}
@@ -128,7 +218,6 @@ func (p *PairsMatchingService) cleanCaches(ctx context.Context, cfg config.Pairs
 					p.matchPairsCache.Delete(key)
 				}
 			}
-
 		case <-ctx.Done():
 			cleanCacheTicker.Stop()
 			return
@@ -142,12 +231,11 @@ func (p *PairsMatchingService) workerMatchData(ctx context.Context, wgMatchWork 
 	for {
 		select {
 		case msg := <-p.receiveChan:
-
 			var gameData entity.GameData
 			err := json.Unmarshal(msg, &gameData)
 			if err != nil {
 				p.logger.Error().Err(err).Msg("[PairsMatchingService.worker] game data unmarhall error")
-				fmt.Println(string(msg))
+				continue
 			}
 
 			if gameData.Periods == nil {
@@ -155,6 +243,7 @@ func (p *PairsMatchingService) workerMatchData(ctx context.Context, wgMatchWork 
 			}
 
 			key := createKeyMatchData(gameData.Source, string(gameData.SportName), gameData.Pid)
+			p.matchDataCache.Write(key, gameData)
 
 			_, ok := p.matchDataCache.Read(key)
 			if !ok {
@@ -177,18 +266,13 @@ func (p *PairsMatchingService) workerMatchData(ctx context.Context, wgMatchWork 
 				}
 			}
 
-			p.matchDataCache.Write(key, gameData)
-
-			// Process match
 			keyPair, ok := p.matchPairsCache.ReadKey(key)
 			if ok {
 				match1, ok1 := p.matchDataCache.Read(key)
 				match2, ok2 := p.matchDataCache.Read(keyPair)
 
 				if ok1 && ok2 {
-
-					// Only for PINNACLE pairs
-					var value1 entity.GameData = match1 // value1 always IS PINNACLE
+					var value1 entity.GameData = match1
 					var value2 entity.GameData = match2
 					if match2.Source == string(shared.PINNACLE) {
 						value1 = match2
@@ -200,7 +284,7 @@ func (p *PairsMatchingService) workerMatchData(ctx context.Context, wgMatchWork 
 						continue
 					}
 
-					commonOutcomes := findCommonOutcomes(value2.Periods, value1.Periods, int(value1.HomeScore), int(value1.AwayScore)) // 2 arg PINNACLE important!!!
+					commonOutcomes := findCommonOutcomes(value2.Periods, value1.Periods, int(value1.HomeScore), int(value1.AwayScore))
 					if commonOutcomes == nil || len(commonOutcomes) == 0 {
 						continue
 					}
@@ -241,7 +325,6 @@ func (p *PairsMatchingService) workerMatchData(ctx context.Context, wgMatchWork 
 
 					p.pairs.Write(value1.Source+string(value1.MatchId)+string(value1.SportName)+value2.Source+string(value2.MatchId), result)
 
-					// Add data to price storage
 					for _, out := range filtered {
 						fullKey := utils.GenerateFullMatchKey(value1.Source, value2.Source, value1.MatchId, value2.MatchId, string(value1.SportName), out.Outcome)
 						p.priceStorage.Write(fullKey, result.CreatedAt, entity.FullPriceRecord{
@@ -316,10 +399,8 @@ func (p *PairsMatchingService) updateKeysCache(ctx context.Context, cfg config.P
 	for {
 		select {
 		case <-updateKeysCacheTicker.C:
-
 			data := p.matchDataCache.ReadAll()
 			for keyMatch, valueMatch := range data {
-
 				uuids, err := p.txStorage.Storage().GetUUIDKeys(ctx, valueMatch.Source, string(valueMatch.SportName),
 					valueMatch.LeagueName, valueMatch.HomeName, valueMatch.AwayName)
 				if err != nil {
@@ -337,7 +418,6 @@ func (p *PairsMatchingService) updateKeysCache(ctx context.Context, cfg config.P
 
 				p.matchKeysCache.Write(keyMatch, newKeys)
 			}
-
 		case <-ctx.Done():
 			updateKeysCacheTicker.Stop()
 			return
@@ -354,7 +434,6 @@ func (p *PairsMatchingService) updatePairsCache(ctx context.Context, cfg config.
 	for {
 		select {
 		case <-updatePairsCacheTicker.C:
-
 			matchKeys := p.matchKeysCache.ReadAll()
 
 			for key1 := range matchKeys {
@@ -395,7 +474,6 @@ func (p *PairsMatchingService) updatePairsCache(ctx context.Context, cfg config.
 			return
 		}
 	}
-
 }
 
 func (p *PairsMatchingService) GetMatchData(ctx context.Context) map[string]entity.GameData {
@@ -408,7 +486,6 @@ func (p *PairsMatchingService) GetCacheKeys(ctx context.Context) map[string]map[
 	for key, value := range cacheKeys {
 		newMap[key] = value.ReadAll()
 	}
-
 	return newMap
 }
 
@@ -439,6 +516,5 @@ func (p *PairsMatchingService) GetOnlineMatchData(ctx context.Context) []entity.
 			CreatedAt:  match.CreatedAt,
 		})
 	}
-
 	return matchData
 }
