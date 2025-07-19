@@ -1,3 +1,6 @@
+// Файл: livebet_backend-main/analyzer/internal/service/pairs-matching.go
+// ФИНАЛЬНАЯ ЧИСТАЯ ВЕРСИЯ
+
 package service
 
 import (
@@ -14,17 +17,23 @@ import (
 	redis_client "livebets/analazer/pkg/redis"
 	"livebets/analazer/pkg/utils"
 	"livebets/shared"
+	"strconv"
 	"strings"
 	"sync"
 	"time"
 
+	fuzz "github.com/paul-mannino/go-fuzzywuzzy"
 	"github.com/rs/zerolog"
 )
 
-// НОВАЯ СТРУКТУРА ДЛЯ ГРУППЫ
 type MatchGroup struct {
-	ID      string // Будем использовать ID матча Pinnacle как ID группы
+	ID      string
 	Matches []entity.GameData
+}
+
+type BookmakerOdds struct {
+	Bookmaker string
+	Odds      float64
 }
 
 type PairsMatchingService struct {
@@ -38,9 +47,7 @@ type PairsMatchingService struct {
 	sendChan        chan<- []entity.ResponsePair
 	priceStorage    *priceStorage.PriceStorage
 	logger          *zerolog.Logger
-
-	// Кэш для готовых групп. Ключ - pinnacleMatchId
-	groupsCache cache.MemoryCacheInterface[string, MatchGroup]
+	groupsCache     cache.MemoryCacheInterface[string, MatchGroup]
 }
 
 func NewPairsMatchingService(
@@ -74,11 +81,8 @@ func (p *PairsMatchingService) Run(ctx context.Context, cfg config.PairsMatching
 		wgMatchWork.Add(1)
 		go p.workerMatchData(ctx, wgMatchWork)
 	}
-
-	// ЗАПУСК ПЕРИОДИЧЕСКОГО ПОСТРОИТЕЛЯ ГРУПП
 	wgMatchWork.Add(1)
 	go p.buildGroupsPeriodically(ctx, wgMatchWork)
-
 	wgMatchWork.Add(1)
 	go p.cleanCaches(ctx, cfg, wgMatchWork)
 	wgMatchWork.Add(1)
@@ -92,28 +96,94 @@ func (p *PairsMatchingService) Run(ctx context.Context, cfg config.PairsMatching
 	p.logger.Info().Msg("[PairsMatchingService.Run] workers stopped")
 }
 
-// ИСПРАВЛЕННЫЙ ПЕРИОДИЧЕСКИЙ ПРОЦЕСС ДЛЯ СОЗДАНИЯ ГРУПП
+func normalizeOutcomeKey(key string) string {
+	value, err := strconv.ParseFloat(key, 64)
+	if err != nil {
+		return key
+	}
+	return fmt.Sprintf("%.1f", value)
+}
+
+func extractAllOutcomes(match entity.GameData) map[string]float64 {
+	outcomes := make(map[string]float64)
+	for i, period := range match.Periods {
+		prefix := ""
+		if i > 0 {
+			prefix = fmt.Sprintf("P%d ", i)
+		}
+		if period.Win1x2.Win1.Value > 0 {
+			outcomes[prefix+"1"] = period.Win1x2.Win1.Value
+		}
+		if period.Win1x2.WinNone.Value > 0 {
+			outcomes[prefix+"X"] = period.Win1x2.WinNone.Value
+		}
+		if period.Win1x2.Win2.Value > 0 {
+			outcomes[prefix+"2"] = period.Win1x2.Win2.Value
+		}
+		for key, total := range period.Totals {
+			normalizedKey := normalizeOutcomeKey(key)
+			if total.WinMore.Value > 0 {
+				outcomes[fmt.Sprintf("%sT> %s", prefix, normalizedKey)] = total.WinMore.Value
+			}
+			if total.WinLess.Value > 0 {
+				outcomes[fmt.Sprintf("%sT< %s", prefix, normalizedKey)] = total.WinLess.Value
+			}
+		}
+		for key, handicap := range period.Handicap {
+			normalizedKey := normalizeOutcomeKey(key)
+			if handicap.Win1.Value > 0 {
+				outcomes[fmt.Sprintf("%sH1 %s", prefix, normalizedKey)] = handicap.Win1.Value
+			}
+			if handicap.Win2.Value > 0 {
+				outcomes[fmt.Sprintf("%sH2 %s", prefix, normalizedKey)] = handicap.Win2.Value
+			}
+		}
+		for key, total := range period.FirstTeamTotals {
+			normalizedKey := normalizeOutcomeKey(key)
+			if total.WinMore.Value > 0 {
+				outcomes[fmt.Sprintf("%sIT1> %s", prefix, normalizedKey)] = total.WinMore.Value
+			}
+			if total.WinLess.Value > 0 {
+				outcomes[fmt.Sprintf("%sIT1< %s", prefix, normalizedKey)] = total.WinLess.Value
+			}
+		}
+		for key, total := range period.SecondTeamTotals {
+			normalizedKey := normalizeOutcomeKey(key)
+			if total.WinMore.Value > 0 {
+				outcomes[fmt.Sprintf("%sIT2> %s", prefix, normalizedKey)] = total.WinMore.Value
+			}
+			if total.WinLess.Value > 0 {
+				outcomes[fmt.Sprintf("%sIT2< %s", prefix, normalizedKey)] = total.WinLess.Value
+			}
+		}
+		for key, game := range period.Games {
+			if game.Win1.Value > 0 {
+				outcomes[fmt.Sprintf("%s1G %s", prefix, key)] = game.Win1.Value
+			}
+			if game.Win2.Value > 0 {
+				outcomes[fmt.Sprintf("%s2G %s", prefix, key)] = game.Win2.Value
+			}
+		}
+	}
+	return outcomes
+}
+
 func (p *PairsMatchingService) buildGroupsPeriodically(ctx context.Context, wg *sync.WaitGroup) {
 	defer wg.Done()
-	ticker := time.NewTicker(5 * time.Second) // Интервал можно вынести в конфиг
+	ticker := time.NewTicker(5 * time.Second)
 	defer ticker.Stop()
-
 	for {
 		select {
 		case <-ticker.C:
 			groupsByPinnacleId := make(map[string]*MatchGroup)
 			allMatches := p.matchDataCache.ReadAll()
 			allPairedKeys, _ := p.matchPairsCache.ReadAll()
-
-			// 1. Проходим по всем парам и строим группы вокруг Pinnacle
 			for key1, key2 := range allPairedKeys {
 				match1, ok1 := allMatches[key1]
 				match2, ok2 := allMatches[key2]
-
 				if !ok1 || !ok2 {
 					continue
 				}
-
 				var pinnacleMatch, partnerMatch entity.GameData
 				if match1.Source == string(shared.PINNACLE) {
 					pinnacleMatch = match1
@@ -124,17 +194,13 @@ func (p *PairsMatchingService) buildGroupsPeriodically(ctx context.Context, wg *
 				} else {
 					continue
 				}
-
 				pinnacleId := pinnacleMatch.MatchId
-
 				if _, exists := groupsByPinnacleId[pinnacleId]; !exists {
 					groupsByPinnacleId[pinnacleId] = &MatchGroup{
 						ID:      pinnacleId,
 						Matches: []entity.GameData{pinnacleMatch},
 					}
 				}
-
-				// ИЗМЕНЕНИЕ: Проверяем, что такой партнер еще не в группе, чтобы избежать дубликатов
 				alreadyInGroup := false
 				for _, m := range groupsByPinnacleId[pinnacleId].Matches {
 					if m.Source == partnerMatch.Source {
@@ -146,34 +212,37 @@ func (p *PairsMatchingService) buildGroupsPeriodically(ctx context.Context, wg *
 					groupsByPinnacleId[pinnacleId].Matches = append(groupsByPinnacleId[pinnacleId].Matches, partnerMatch)
 				}
 			}
-
-			// 2. Атомарно обновляем кэш и логируем
 			p.groupsCache.Lock()
 			p.groupsCache.CleanUnsafe()
 			for pinnacleId, group := range groupsByPinnacleId {
 				p.groupsCache.WriteUnsafe(pinnacleId, *group)
-
-				// ИЗМЕНЕНИЕ: Улучшенное и более информативное логирование
-				if len(group.Matches) > 2 {
-					// Собираем названия матчей от каждого букмекера
-					matchTitles := []string{}
+				if len(group.Matches) >= 3 {
+					outcomesAcrossGroup := make(map[string][]BookmakerOdds)
 					for _, match := range group.Matches {
-						// Формируем строку: "Букмекер: Команда1 vs Команда2"
-						title := fmt.Sprintf("%s: %s vs %s", match.Source, match.HomeName, match.AwayName)
-						matchTitles = append(matchTitles, title)
+						if time.Since(match.CreatedAt) > 10*time.Second {
+							continue
+						}
+						allOutcomes := extractAllOutcomes(match)
+						for outcomeStr, odds := range allOutcomes {
+							outcomesAcrossGroup[outcomeStr] = append(outcomesAcrossGroup[outcomeStr], BookmakerOdds{Bookmaker: match.Source, Odds: odds})
+						}
 					}
-					
-					// Объединяем все названия в одну строку для красивого вывода
-					fullLogMessage := strings.Join(matchTitles, " | ")
-
-					p.logger.Info().
-						Str("pinnacleMatchId", group.ID).
-						Int("groupSize", len(group.Matches)).
-						Msgf("Group Found -> %s", fullLogMessage)
+					for outcomeStr, prices := range outcomesAcrossGroup {
+						if len(prices) >= 3 {
+							var pricesLog strings.Builder
+							for _, pr := range prices {
+								pricesLog.WriteString(fmt.Sprintf("%s: %.2f, ", pr.Bookmaker, pr.Odds))
+							}
+							finalPricesStr := strings.TrimSuffix(pricesLog.String(), ", ")
+							p.logger.Info().
+								Str("pinnacleMatchId", group.ID).
+								Str("outcome", outcomeStr).
+								Msgf("[GROUP PRICE] Prices: [%s]", finalPricesStr)
+						}
+					}
 				}
 			}
 			p.groupsCache.Unlock()
-
 		case <-ctx.Done():
 			p.logger.Info().Msg("[PairsMatchingService.buildGroupsPeriodically] context cancelled")
 			return
@@ -183,10 +252,8 @@ func (p *PairsMatchingService) buildGroupsPeriodically(ctx context.Context, wg *
 
 func (p *PairsMatchingService) cleanCaches(ctx context.Context, cfg config.PairsMatching, wgMatchWork *sync.WaitGroup) {
 	defer wgMatchWork.Done()
-
 	cleanCacheInterval := time.Duration(time.Duration(cfg.ClearCacheInterval) * time.Second)
 	cleanCacheTicker := time.NewTicker(cleanCacheInterval)
-
 	for {
 		select {
 		case <-cleanCacheTicker.C:
@@ -201,7 +268,6 @@ func (p *PairsMatchingService) cleanCaches(ctx context.Context, cfg config.Pairs
 					}
 				}
 			}
-
 			keysMap := p.matchKeysCache.ReadAll()
 			for key := range keysMap {
 				_, ok := p.matchDataCache.Read(key)
@@ -210,7 +276,6 @@ func (p *PairsMatchingService) cleanCaches(ctx context.Context, cfg config.Pairs
 					p.matchPairsCache.Delete(key)
 				}
 			}
-
 			keysCachePair, _ := p.matchPairsCache.ReadAll()
 			for key := range keysCachePair {
 				_, ok := p.matchDataCache.Read(key)
@@ -225,9 +290,81 @@ func (p *PairsMatchingService) cleanCaches(ctx context.Context, cfg config.Pairs
 	}
 }
 
+func (p *PairsMatchingService) processAndCachePair(pinnacleMatch, partnerMatch entity.GameData) {
+	partnerMatch, err := reverseCoefs(fmt.Sprintf("%s %s", pinnacleMatch.HomeName, pinnacleMatch.AwayName), partnerMatch)
+	if err != nil {
+		return
+	}
+	commonOutcomes := findCommonOutcomes(partnerMatch.Periods, pinnacleMatch.Periods, int(pinnacleMatch.HomeScore), int(pinnacleMatch.AwayScore))
+	if len(commonOutcomes) == 0 {
+		return
+	}
+	filteredOutcomes := p.calculateAndFilterCommonOutcomes(commonOutcomes, partnerMatch.Source, pinnacleMatch.SportName)
+	if len(filteredOutcomes) == 0 {
+		return
+	}
+	result := entity.ResponsePair{
+		First: entity.ResponseMatch{
+			Bookmaker:  pinnacleMatch.Source,
+			LeagueName: pinnacleMatch.LeagueName,
+			HomeScore:  pinnacleMatch.HomeScore,
+			AwayScore:  pinnacleMatch.AwayScore,
+			HomeName:   pinnacleMatch.HomeName,
+			AwayName:   pinnacleMatch.AwayName,
+			MatchID:    pinnacleMatch.MatchId,
+			CreatedAt:  pinnacleMatch.CreatedAt,
+			Raw:        pinnacleMatch.Raw,
+		},
+		Second: entity.ResponseMatch{
+			Bookmaker:  partnerMatch.Source,
+			LeagueName: partnerMatch.LeagueName,
+			HomeScore:  partnerMatch.HomeScore,
+			AwayScore:  partnerMatch.AwayScore,
+			HomeName:   partnerMatch.HomeName,
+			AwayName:   partnerMatch.AwayName,
+			MatchID:    partnerMatch.MatchId,
+			CreatedAt:  partnerMatch.CreatedAt,
+			Raw:        partnerMatch.Raw,
+		},
+		Outcome:   filteredOutcomes,
+		IsLive:    pinnacleMatch.IsLive,
+		SportName: string(pinnacleMatch.SportName),
+		CreatedAt: time.Now(),
+	}
+	pairKey := pinnacleMatch.Source + string(pinnacleMatch.MatchId) + string(pinnacleMatch.SportName) + partnerMatch.Source + string(partnerMatch.MatchId)
+	p.pairs.Write(pairKey, result)
+	for _, out := range filteredOutcomes {
+		fullKey := utils.GenerateFullMatchKey(pinnacleMatch.Source, partnerMatch.Source, pinnacleMatch.MatchId, partnerMatch.MatchId, string(pinnacleMatch.SportName), out.Outcome)
+		p.priceStorage.Write(fullKey, result.CreatedAt, entity.FullPriceRecord{
+			First: entity.PriceRecord{
+				Bookmaker: pinnacleMatch.Source,
+				Score:     out.Score1.Value,
+				CreatedAt: pinnacleMatch.CreatedAt,
+			},
+			Second: entity.PriceRecord{
+				Bookmaker: partnerMatch.Source,
+				Score:     out.Score2.Value,
+				CreatedAt: partnerMatch.CreatedAt,
+			},
+			Outcome: out.Outcome,
+			ROI:     out.ROI,
+			Margin:  out.Margin,
+		})
+	}
+}
+
+func getPinnaclePartner(match1, match2 entity.GameData) (pinnacle, partner entity.GameData, isPinnaclePair bool) {
+	if match1.Source == string(shared.PINNACLE) {
+		return match1, match2, true
+	}
+	if match2.Source == string(shared.PINNACLE) {
+		return match2, match1, true
+	}
+	return entity.GameData{}, entity.GameData{}, false
+}
+
 func (p *PairsMatchingService) workerMatchData(ctx context.Context, wgMatchWork *sync.WaitGroup) {
 	defer wgMatchWork.Done()
-
 	for {
 		select {
 		case msg := <-p.receiveChan:
@@ -237,114 +374,42 @@ func (p *PairsMatchingService) workerMatchData(ctx context.Context, wgMatchWork 
 				p.logger.Error().Err(err).Msg("[PairsMatchingService.worker] game data unmarhall error")
 				continue
 			}
-
 			if gameData.Periods == nil {
 				continue
 			}
-
 			key := createKeyMatchData(gameData.Source, string(gameData.SportName), gameData.Pid)
 			p.matchDataCache.Write(key, gameData)
-
-			_, ok := p.matchDataCache.Read(key)
-			if !ok {
-				if gameData.Source == "" || gameData.SportName == "" || gameData.LeagueName == "" {
-					continue
-				}
-
-				leagueID, err := p.txStorage.Storage().InsertLeague(ctx, gameData.Source, string(gameData.SportName), gameData.LeagueName)
-				if err != nil {
-					p.logger.Error().Err(err).Msg("[PairsMatchingService.worker] insert league error")
-				} else {
-					if leagueID != nil {
-						if err := p.txStorage.Storage().InsertTeam(ctx, *leagueID, gameData.HomeName); err != nil {
-							p.logger.Error().Err(err).Msg("[PairsMatchingService.worker] insert home team error")
-						}
-						if err := p.txStorage.Storage().InsertTeam(ctx, *leagueID, gameData.AwayName); err != nil {
-							p.logger.Error().Err(err).Msg("[PairsMatchingService.worker] insert away team error")
-						}
-					}
-				}
-			}
 
 			keyPair, ok := p.matchPairsCache.ReadKey(key)
 			if ok {
 				match1, ok1 := p.matchDataCache.Read(key)
 				match2, ok2 := p.matchDataCache.Read(keyPair)
-
 				if ok1 && ok2 {
-					var value1 entity.GameData = match1
-					var value2 entity.GameData = match2
-					if match2.Source == string(shared.PINNACLE) {
-						value1 = match2
-						value2 = match1
+					pinnacleMatch, partnerMatch, isPinnaclePair := getPinnaclePartner(match1, match2)
+					if isPinnaclePair {
+						p.processAndCachePair(pinnacleMatch, partnerMatch)
 					}
+				}
+				continue
+			}
 
-					value2, err = reverseCoefs(fmt.Sprintf("%s %s", value1.HomeName, value1.AwayName), value2)
-					if err != nil {
-						continue
-					}
+			if gameData.Source != string(shared.PINNACLE) {
+				allMatches := p.matchDataCache.ReadAll()
+				for _, pinnacleCandidate := range allMatches {
+					if pinnacleCandidate.Source == string(shared.PINNACLE) &&
+						pinnacleCandidate.SportName == gameData.SportName &&
+						fuzz.Ratio(
+							fmt.Sprintf("%s %s", gameData.HomeName, gameData.AwayName),
+							fmt.Sprintf("%s %s", pinnacleCandidate.HomeName, pinnacleCandidate.AwayName),
+						) > 85 {
 
-					commonOutcomes := findCommonOutcomes(value2.Periods, value1.Periods, int(value1.HomeScore), int(value1.AwayScore))
-					if commonOutcomes == nil || len(commonOutcomes) == 0 {
-						continue
-					}
-
-					filtered := p.calculateAndFilterCommonOutcomes(commonOutcomes, value2.Source, value1.SportName)
-					if len(filtered) == 0 {
-						continue
-					}
-
-					result := entity.ResponsePair{
-						First: entity.ResponseMatch{
-							Bookmaker:  value1.Source,
-							LeagueName: value1.LeagueName,
-							HomeScore:  value1.HomeScore,
-							AwayScore:  value1.AwayScore,
-							HomeName:   value1.HomeName,
-							AwayName:   value1.AwayName,
-							MatchID:    value1.MatchId,
-							CreatedAt:  value1.CreatedAt,
-							Raw:        value1.Raw,
-						},
-						Second: entity.ResponseMatch{
-							Bookmaker:  value2.Source,
-							LeagueName: value2.LeagueName,
-							HomeScore:  value2.HomeScore,
-							AwayScore:  value2.AwayScore,
-							HomeName:   value2.HomeName,
-							AwayName:   value2.AwayName,
-							MatchID:    value2.MatchId,
-							CreatedAt:  value2.CreatedAt,
-							Raw:        value2.Raw,
-						},
-						Outcome:   filtered,
-						IsLive:    value1.IsLive,
-						SportName: string(value1.SportName),
-						CreatedAt: time.Now(),
-					}
-
-					p.pairs.Write(value1.Source+string(value1.MatchId)+string(value1.SportName)+value2.Source+string(value2.MatchId), result)
-
-					for _, out := range filtered {
-						fullKey := utils.GenerateFullMatchKey(value1.Source, value2.Source, value1.MatchId, value2.MatchId, string(value1.SportName), out.Outcome)
-						p.priceStorage.Write(fullKey, result.CreatedAt, entity.FullPriceRecord{
-							First: entity.PriceRecord{
-								Bookmaker: value1.Source,
-								Score:     out.Score1.Value,
-								CreatedAt: value1.CreatedAt,
-							},
-							Second: entity.PriceRecord{
-								Bookmaker: value2.Source,
-								Score:     out.Score2.Value,
-								CreatedAt: value2.CreatedAt,
-							},
-							Outcome: out.Outcome,
-							ROI:     out.ROI,
-							Margin:  out.Margin,
-						})
+						p.logger.Info().Msgf("[TEMP MATCH] Found temporary pair for %s with Pinnacle by name similarity.", gameData.Source)
+						p.processAndCachePair(pinnacleCandidate, gameData)
+						break
 					}
 				}
 			}
+
 		case <-ctx.Done():
 			return
 		}
@@ -355,24 +420,20 @@ func (p *PairsMatchingService) send(ctx context.Context, cfg config.PairsMatchin
 	defer wgWork.Done()
 	interval := time.Duration(time.Duration(cfg.SendInterval) * time.Millisecond)
 	ticker := time.NewTicker(interval)
-
 	for {
 		select {
 		case <-ticker.C:
 			pairs := p.pairs.ReadAll()
 			var results []entity.ResponsePair
-
 			for key, val := range pairs {
 				if time.Since(val.CreatedAt) > (time.Duration(cfg.PairTimeout) * time.Second) {
 					p.pairs.Delete(key)
 				} else {
 					results = append(results, val)
-
 					msg, err := json.Marshal(val)
 					if err != nil {
 						p.logger.Error().Err(err).Msg("[PairsMatchingService.send] value marshall error")
 					}
-
 					redisKey := shared.GetRKeyPairs(val.IsLive, val.First.Bookmaker, val.Second.Bookmaker)
 					err = p.redisClient.Publish(ctx, redisKey, msg)
 					if err != nil {
@@ -380,9 +441,7 @@ func (p *PairsMatchingService) send(ctx context.Context, cfg config.PairsMatchin
 					}
 				}
 			}
-
 			p.sendChan <- results
-
 		case <-ctx.Done():
 			ticker.Stop()
 			return
@@ -392,10 +451,8 @@ func (p *PairsMatchingService) send(ctx context.Context, cfg config.PairsMatchin
 
 func (p *PairsMatchingService) updateKeysCache(ctx context.Context, cfg config.PairsMatching, wgMatchWork *sync.WaitGroup) {
 	defer wgMatchWork.Done()
-
 	updateKeysCacheInterval := time.Duration(time.Duration(cfg.UpdateKeysCacheInterval) * time.Second)
 	updateKeysCacheTicker := time.NewTicker(updateKeysCacheInterval)
-
 	for {
 		select {
 		case <-updateKeysCacheTicker.C:
@@ -406,16 +463,13 @@ func (p *PairsMatchingService) updateKeysCache(ctx context.Context, cfg config.P
 				if err != nil {
 					p.logger.Error().Err(err).Msg("[PairsMatchingService.updateKeysCache] get uuid keys error")
 				}
-
 				if len(uuids) < 2 {
 					continue
 				}
-
 				newKeys := cache.NewMemoryCache[string, bool]()
 				for _, uuid := range uuids {
 					newKeys.Write(uuid, true)
 				}
-
 				p.matchKeysCache.Write(keyMatch, newKeys)
 			}
 		case <-ctx.Done():
@@ -427,15 +481,12 @@ func (p *PairsMatchingService) updateKeysCache(ctx context.Context, cfg config.P
 
 func (p *PairsMatchingService) updatePairsCache(ctx context.Context, cfg config.PairsMatching, wgMatchWork *sync.WaitGroup) {
 	defer wgMatchWork.Done()
-
 	updatePairsCacheInterval := time.Duration(time.Duration(cfg.UpdatePairsCacheInterval) * time.Second)
 	updatePairsCacheTicker := time.NewTicker(updatePairsCacheInterval)
-
 	for {
 		select {
 		case <-updatePairsCacheTicker.C:
 			matchKeys := p.matchKeysCache.ReadAll()
-
 			for key1 := range matchKeys {
 				for key2 := range matchKeys {
 					if key1 != key2 {
@@ -444,10 +495,8 @@ func (p *PairsMatchingService) updatePairsCache(ctx context.Context, cfg config.
 						if uuidsKey1 == nil || uuidsKey2 == nil {
 							continue
 						}
-
 						uuids1 := uuidsKey1.ReadAll()
 						uuids2 := uuidsKey2.ReadAll()
-
 						counter := 0
 						for uuid := range uuids1 {
 							uuidEqual := uuids2[uuid]
@@ -456,19 +505,16 @@ func (p *PairsMatchingService) updatePairsCache(ctx context.Context, cfg config.
 							}
 							counter++
 						}
-
 						if counter == 2 {
 							p.matchPairsCache.WriteBothKeys(key1, key2, true)
 						}
 					}
 				}
 			}
-
 			fmt.Printf("Match Data - %d\n", p.matchDataCache.Len())
 			fmt.Printf("Match Keys - %d\n", p.matchKeysCache.Len())
 			keyC, valueC := p.matchPairsCache.Len()
 			fmt.Printf("Match Pairs - %d : %d\n", keyC, valueC)
-
 		case <-ctx.Done():
 			updatePairsCacheTicker.Stop()
 			return
@@ -503,7 +549,6 @@ func createKeyMatchData(bookmaker, sportName string, pid int64) string {
 
 func (p *PairsMatchingService) GetOnlineMatchData(ctx context.Context) []entity.MatchData {
 	matchDataMap := p.matchDataCache.ReadAll()
-
 	var matchData []entity.MatchData
 	for _, match := range matchDataMap {
 		matchData = append(matchData, entity.MatchData{

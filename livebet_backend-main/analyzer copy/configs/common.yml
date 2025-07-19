@@ -1,0 +1,16 @@
+# pairs_matching:
+#   send_interval: 500 #Milliseconds
+#   update_keys_cache_interval: 20
+#   update_pairs_cache_interval: 15
+#   clear_cache_interval: 30
+#   match_data_timeout: 120
+#   receive_workers_count: 12
+#   pair_timeout: 3
+
+# price_storage:
+#   clear_interval: 300
+#   data_timeout: 900
+
+market_storage:
+  clear_interval: 300
+  data_timeout: 900

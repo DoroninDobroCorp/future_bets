@@ -74,6 +74,26 @@ services:
       - ../parse_maxbet/.env
     networks:
       - livebets
+      
+  parse_fonbet:
+    container_name: parse_fonbet
+    entrypoint: /parse_fonbet
+    build:
+      context: ../
+      dockerfile: ./shared/Dockerfile
+      args:
+        code_dir: parse_fonbet
+    restart: always
+    ports:
+      - "9007:9007"
+    deploy:
+      mode: replicated
+      replicas: ${BOOKMAKER_7_REPLICAS}
+    env_file:
+      - ../parse_fonbet/.env
+    networks:
+      - livebets
+
 
 networks:
   livebets:

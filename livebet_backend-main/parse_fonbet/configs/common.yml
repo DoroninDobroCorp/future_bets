@@ -1,0 +1,9 @@
+fonbet:
+  api:
+    url: https://line02w.bk6bba-resources.com
+    timeout: 5
+    matches_url: /events/list
+    odds_url: /events/event
+    proxy_url: socks5://rabcheniukm:NKN3g3yWJH@104.253.151.144:49155
+    interval_match: 2
+    interval_odds: 2

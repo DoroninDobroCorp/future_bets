@@ -1,0 +1,42 @@
+services:
+  analyzer:
+    container_name: analyzer
+    entrypoint: /analyzer
+    build:
+      context: ../
+      dockerfile: ./shared/Dockerfile
+      args:
+        code_dir: analyzer
+    restart: always
+    ports:
+      - "7100:7100"
+      - "7200:7200"
+      - "7300:7300"
+      - "7005:7005"
+    env_file:
+      - ../analyzer/.env
+    networks:
+      - livebets
+
+  analyzer_prematch:
+    container_name: analyzer_prematch
+    entrypoint: /analyzer
+    build:
+      context: ../
+      dockerfile: ./shared/Dockerfile
+      args:
+        code_dir: analyzer
+    restart: unless-stopped
+    ports:
+      - "7101:7101"
+      - "7201:7201"
+      - "7301:7301"
+      - "7006:7006"
+    env_file:
+      - ../analyzer/.env.prematch
+    networks:
+      - livebets
+
+networks:
+  livebets:
+    external: true

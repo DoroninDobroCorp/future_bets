@@ -13,4 +13,5 @@ use (
 	./shared
 	./tg_livebot
 	./tg_testbot
+	./parse_fonbet
 )
